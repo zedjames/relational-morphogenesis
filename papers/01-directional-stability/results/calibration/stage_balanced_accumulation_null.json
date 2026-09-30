@@ -1,0 +1,16 @@
+{
+  "endpointStageWeight": 0.5,
+  "independentEdgeDrawsDoNotPreserveSharedStageDependence": true,
+  "lowerTailP": 0.11465410364492934,
+  "mean": 0.0006983615905181531,
+  "median": 0.0005512823074059481,
+  "orientationSymmetrized": true,
+  "pseudoChains": 262144,
+  "q025": -0.2367577642184615,
+  "q05": -0.19601058085960707,
+  "q90": 0.15127773245374596,
+  "q95": 0.1979861927938488,
+  "q975": 0.237756395496311,
+  "seed": 2026093002,
+  "twoSidedP": 0.2317000133513895
+}

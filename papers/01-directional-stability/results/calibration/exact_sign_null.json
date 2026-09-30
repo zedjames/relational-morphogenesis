@@ -1,0 +1,14 @@
+{
+  "assignmentCount": 128,
+  "assumption": "the seven observed magnitudes are fixed and every orientation sign assignment is exchangeable; edge signs are not asserted biologically independent",
+  "lowerTailProbability": 0.078125,
+  "median": 0.0,
+  "observedChronologicalScore": -0.13977910974666574,
+  "q025": -0.18174149128590927,
+  "q05": -0.1519790669249,
+  "q90": 0.12422106709081107,
+  "q95": 0.15197906692489996,
+  "q975": 0.1817414912859093,
+  "twoSidedProbability": 0.15625,
+  "upperTailProbability": 0.9296875
+}
