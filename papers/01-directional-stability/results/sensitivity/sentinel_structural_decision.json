@@ -1,0 +1,13 @@
+{
+  "branchingCoalescenceMateriallyChanged": false,
+  "compositionRawMagnitudeMateriallyChanged": false,
+  "compositionResidualInterpretationChanged": false,
+  "coverageMateriallyChanged": false,
+  "directionalBoundaryPreserved": true,
+  "historicalHolmCrossingCount": 5,
+  "historicalMaximumAbsoluteCurveballDeltaJ": 0.0007732060236939065,
+  "materialThreshold": 0.05,
+  "recurrenceCountsMateriallyChanged": false,
+  "sentinelHolmCrossingCount": 5,
+  "sentinelMaximumAbsoluteCurveballDeltaJ": 0.0007754275842241087
+}
