@@ -1,0 +1,4 @@
+variant,k,configurationCount,chronologicalChainScore,reverseChainScore,adjacentSignPattern,mappedFullSignConcordance,sinkFullSignConcordance,chronologyRank,pooledResolvedCount,equalStageResolvedCount,endpointResolvedCount
+historical_k32,32,104377,-0.13977910974666596,0.13977910974666596,-+-----,1.0,0.2857142857142857,39663,0,0,0
+k16,16,87825,-0.08511438198177923,0.08511438198177923,-+++---,1.0,0.14285714285714285,32663,0,0,0
+k64,64,116743,-0.12027491928513334,0.12027491928513334,---+-+-,1.0,0.42857142857142855,39857,0,0,0

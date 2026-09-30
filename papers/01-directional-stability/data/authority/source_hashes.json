@@ -1,0 +1,16 @@
+{
+  "aggregateH5adShape": [
+    520815,
+    23761
+  ],
+  "aggregateSha256": "e7d76b606a801c0c9d32cc8b45d8c9e47527a7fc602db0463b3ca86c49834b8c",
+  "bytes": 23011190802,
+  "coordinateSource": "per-section obsm/spatial",
+  "obsAnnotationColumn": "obs/annotation",
+  "obsSectionColumn": "official per-section object identity",
+  "officialDataset": "STDS0000058",
+  "primaryCarrierManifestSha256": "460f9e2c17d4569d92455f171c8c3ad75c7480551570a06f0a53db0bed850ab9",
+  "primaryCarrierRootCount": 4099397,
+  "primaryCarrierSectionCount": 53,
+  "rawProject": "CNP0001543"
+}
