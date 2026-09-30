@@ -1,0 +1,2 @@
+source_id	role	dataset	accession	raw_project	citation	doi	mirrored	notes
+MOSTA	primary spatial transcriptomic atlas	Mouse Organogenesis Spatiotemporal Transcriptomic Atlas	STDS0000058	CNP0001543	Chen et al., Cell (2022)	10.1016/j.cell.2022.04.003	no	Raw third-party data remain at the source archive; exact authority is recorded in data/authority.

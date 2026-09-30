@@ -1,0 +1,18 @@
+{
+  "paper": "01-directional-stability",
+  "publicExtractionRef": "aad8f0bd7f2ca31bb8fe4264ace2804a9cb43366",
+  "completionCommits": {
+    "referee01": "d5e9aa0c3a8e72150cc199dde4432b7d2d53cddc",
+    "referee02": "10aaea36896452367e362e1076af19f18391cfdd",
+    "referee03": "c9f61fda9aa4d3a67b65fa449587787714911854",
+    "referee04": "ee7a396e32552b0c17131d920c7232de56301155",
+    "referee04ProvenanceRefresh": "aad8f0bd7f2ca31bb8fe4264ace2804a9cb43366"
+  },
+  "preOutcomePlans": {
+    "referee03": "b3c168257737c01b31d422887a2379c7de7c172a5a85",
+    "referee04": "c8895eb64d2fe419318d817614d9c72c5be38069"
+  },
+  "finalManuscriptDoi": null,
+  "finalPublicReleaseTag": null,
+  "finalManuscriptSha256": null
+}
