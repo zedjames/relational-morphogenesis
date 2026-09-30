@@ -1,0 +1,19 @@
+{
+  "labelCountByStageCount": {
+    "1": 4,
+    "2": 8,
+    "3": 11,
+    "4": 5,
+    "5": 7,
+    "6": 3,
+    "7": 5,
+    "8": 6
+  },
+  "outcomesDerivedNotHardCoded": true,
+  "rootFractionStageCountAtLeast4": 0.930276086946446,
+  "rootFractionStageCountAtMost2": 0.02962045393505435,
+  "rootFractionStageCountAtMost3": 0.06972391305355398,
+  "rootFractionStageCountEquals1": 0.002184467618042361,
+  "rootFractionStageCountEquals8": 0.5695244934803826,
+  "totalSourceLabels": 49
+}

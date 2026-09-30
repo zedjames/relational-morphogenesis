@@ -1,0 +1,21 @@
+{
+  "admitCount": 0,
+  "axiomAuditExitCode": 0,
+  "buildExitCode": 0,
+  "empiricalValuesEncodedAsScientificAxioms": false,
+  "missingTheorems": [],
+  "newScientificAxioms": false,
+  "passed": true,
+  "scientificAxiomDeclarations": [],
+  "sorryCount": 0,
+  "theoremCount": 7,
+  "theorems": [
+    "neighborhood_scale_sensitivity_is_distinct_from_relation_tolerance_sensitivity",
+    "direct_stage_label_absence_does_not_imply_source_annotation_stage_independence",
+    "source_authored_category_conditioning_is_distinct_from_learned_category_discovery",
+    "degenerate_quantile_edges_need_not_define_four_empirically_occupied_bins",
+    "sentinel_directional_stability_does_not_imply_structural_count_invariance",
+    "root_only_gate_is_information_ablation_not_primary_carrier_redefinition",
+    "carrier_robustness_of_direction_does_not_imply_carrier_invariance_of_architecture"
+  ]
+}

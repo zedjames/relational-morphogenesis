@@ -1,0 +1,8 @@
+{
+  "authorizedLanguage": "a stage-label-free relational construction over source-authored tissue annotations",
+  "directSourceMethodAuthorityEstablishingStageIndependenceFound": false,
+  "presentAnalysisManuallyHarmonizesAcrossStages": false,
+  "presentAnalysisUsesStageLabelsToConstructAnnotations": false,
+  "sourceAnnotationStageIndependenceEstablished": false,
+  "sourceColumn": "obs/annotation"
+}
