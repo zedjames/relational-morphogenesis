@@ -1,0 +1,12 @@
+{
+  "allDegreeBlockEdgeSimpleConstraintsPassed": true,
+  "compositionResidualConclusionChanged": true,
+  "effort20HolmSignificantTripleCount": 6,
+  "effort5HolmSignificantTripleCount": 5,
+  "effortTradesPerActiveSource": 20,
+  "maximumAbsoluteEffort20DeltaJ": 0.0008054545435571825,
+  "maximumAbsoluteNullMeanShiftFromEffort5": 4.035831792037481e-05,
+  "replicatesPerTriple": 256,
+  "simpleRelationVerification": "constructive: set-valued source neighborhoods inside disjoint categorical blocks",
+  "tripleCount": 6
+}

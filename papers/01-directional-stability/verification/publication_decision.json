@@ -17,5 +17,17 @@
   "sentinelStructuralArchitecturePreserved": true,
   "sourceAnnotationConditionalityExplicit": true,
   "sourceAnnotationStageIndependenceEstablished": false,
-  "stopPaper1AnalysisWithoutConcreteNewRefereeFlaw": true
+  "stopPaper1AnalysisWithoutConcreteNewRefereeFlaw": true,
+  "methodsRobustnessComplete": true,
+  "negativeAggregateEstimatorStable": true,
+  "zeroOfSevenLocalBoundaryEstimatorStable": true,
+  "mappedFullSignConcordanceRepresentationSensitive": true,
+  "compositionResidualMagnitudeStable": true,
+  "compositionMultiplicityDecisionEffortSensitive": true,
+  "supportAuthorityQualified": true,
+  "potentialReferenceReconciledExactly": true,
+  "manuscriptFrozen": true,
+  "zenodoPublished": true,
+  "zenodoDoi": "10.5281/zenodo.23090479",
+  "publicReleaseTagName": "paper-01-v1.0-preprint"
 }

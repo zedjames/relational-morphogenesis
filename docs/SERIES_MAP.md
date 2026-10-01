@@ -6,7 +6,9 @@ RMMO is maintained as a continuing research series rather than a fixed paper-cou
 
 ### Paper 1 — Relational Organization and Directional Stability Across Mouse Organogenesis
 
-Status: **prepublication companion active; manuscript freeze pending**.
+Status: **published preprint; scientific manuscript frozen**.
+
+DOI: https://doi.org/10.5281/zenodo.23090479
 
 Public folder: `papers/01-directional-stability/`
 

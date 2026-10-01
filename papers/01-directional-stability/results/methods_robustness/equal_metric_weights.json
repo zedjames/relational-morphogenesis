@@ -1,0 +1,30 @@
+{
+  "adjacentRelationCount": 1641191,
+  "adjacentSignPattern": "-+-----",
+  "all28RelationPairCount": 4258405,
+  "all28RelationsRebuilt": true,
+  "bootstrap": {
+    "median": -0.10255883845199815,
+    "negativeFrequency": 1.0,
+    "q025": -0.14528190597216575,
+    "q975": -0.05020269232793896,
+    "replicates": 4096
+  },
+  "chronologicalChainScore": -0.16008013308743524,
+  "compositionJaccardMaximum": 0.8255325179764239,
+  "compositionJaccardMinimum": 0.6714087682204517,
+  "endpointResolvedCount": 0,
+  "epsilon": 0.25,
+  "epsilonFractionOfMaximumWeightedNumericDistance": 0.3846153846153846,
+  "mappedFullSignConcordance": 1.0,
+  "mappedFullSignConcordanceAdjacent": 1.0,
+  "mappedFullSignConcordanceAll28": 0.8928571428571429,
+  "provenance": "Primary coefficients were prespecified and give greater influence to dominant/secondary neighborhood fractions; this equal-weight control is not an optimality fit.",
+  "weights": [
+    0.13,
+    0.13,
+    0.13,
+    0.13,
+    0.13
+  ]
+}

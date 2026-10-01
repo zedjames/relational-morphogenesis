@@ -1,0 +1,24 @@
+{
+  "all28RelationsRewiredPerReplicate": true,
+  "gradientEmpiricalP": 0.5073170731707317,
+  "historical32RewireBankIsReportedResultSource": false,
+  "historical32RewireReplicates": 32,
+  "methodsReplicateCountMustBe": 1024,
+  "methodsSentence": "Potential-fit significance used an independent 1,024-field typed-degree endpoint-rewiring null over all 28 relations with an add-one upper-tail Monte Carlo p-value; it was not the historical 32-rewire bank.",
+  "minimumMonteCarloResolution": 0.000975609756097561,
+  "nullGradientMean": 0.8993586941994708,
+  "nullGradientQ95": 0.9009096004813905,
+  "observedGradientFraction": 0.8993464017937398,
+  "recomputedGradientEmpiricalP": 0.5073170731707317,
+  "reportedNullReplicates": 1024,
+  "reportedResultSource": "RMMO-P1-R1 independent full-field typed-degree endpoint null",
+  "seedNamespace": "RMMO-P1-R1:full-field-null:v1",
+  "sourceHashes": {
+    "research/relational_morphogenesis10/potential/null_distribution.csv": "0dc83c080e2c0a7fa2e6298fa0969e99258bd15322ed7fb237b1dc2eff74798d",
+    "research/rmmo_paper1_referee01/build_potential_null.py": "ce2f846944b18994e8ffe7e3a9766642380d4eb4354ff01647909a3885d052e6",
+    "research/rmmo_paper1_referee01/potential/expanded_null_distribution.csv": "8ab726a8621ff0898777d8a4b0b195044aeccebb682de31b41189a33fd9782c7",
+    "research/rmmo_paper1_referee01/potential/expanded_null_field.csv.gz": "194dc0e4faed5b566e15356f7b7564207a2f28f5f5d00b9a0d115ff75bb02c5e",
+    "research/rmmo_paper1_referee01/potential/expanded_null_summary.json": "100caf7054bdab13cb950dfc5b5ebb9555b789933e67e004babbe78e230c2b74"
+  },
+  "tailConvention": "upper-tail add-one Monte Carlo fraction: (1 + count(null G >= observed G - 1e-15))/(1 + 1024)"
+}

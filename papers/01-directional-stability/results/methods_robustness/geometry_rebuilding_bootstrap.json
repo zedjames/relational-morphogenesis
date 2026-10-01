@@ -1,0 +1,58 @@
+{
+  "aggregateNegativeSignSurvivesSupportUncertainty": true,
+  "allSupportGainsZeroAsRequiredByWithinStageResampling": true,
+  "fixedGeometry4096": {
+    "median": -0.10364806062132115,
+    "negativeFrequency": 0.999755859375,
+    "q025": -0.14757081147944953,
+    "q975": -0.05068065313677311
+  },
+  "geometryRebuildImplementedAsExactPrimaryRelationRestriction": true,
+  "median": -0.11640788472019892,
+  "negativeFrequency": 1.0,
+  "q025": -0.15508694726852673,
+  "q975": -0.07923901123868912,
+  "replicates": 256,
+  "stageSupportLossSummary": {
+    "E10.5": {
+      "maximum": 6255,
+      "median": 1917.0,
+      "q95": 4091.0
+    },
+    "E11.5": {
+      "maximum": 8954,
+      "median": 2769.0,
+      "q95": 5996.0
+    },
+    "E12.5": {
+      "maximum": 10007,
+      "median": 4371.0,
+      "q95": 7969.0
+    },
+    "E13.5": {
+      "maximum": 10647,
+      "median": 3609.0,
+      "q95": 6210.0
+    },
+    "E14.5": {
+      "maximum": 17362,
+      "median": 6494.0,
+      "q95": 12925.75
+    },
+    "E15.5": {
+      "maximum": 12237,
+      "median": 5265.0,
+      "q95": 9341.0
+    },
+    "E16.5": {
+      "maximum": 23724,
+      "median": 0.0,
+      "q95": 23724.0
+    },
+    "E9.5": {
+      "maximum": 3731,
+      "median": 1829.0,
+      "q95": 3369.0
+    }
+  }
+}

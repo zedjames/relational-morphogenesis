@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this preprint when using Paper 1 materials."
+title: "Relational Organization and Directional Stability Across Mouse Organogenesis"
+type: article
+authors:
+  - family-names: James
+    given-names: Zed
+doi: "10.5281/zenodo.23090479"
+url: "https://doi.org/10.5281/zenodo.23090479"
+repository-code: "https://github.com/zedjames/relational-morphogenesis"
+version: "1.0.0-preprint"
+date-released: "2026-10-01"
+license: "CC-BY-NC-ND-4.0"

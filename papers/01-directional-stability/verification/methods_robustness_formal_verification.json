@@ -1,0 +1,13 @@
+{
+  "axiomFreeTheorems": [
+    "neighboring_model_control_does_not_redefine_registered_primary",
+    "aggregate_and_local_stability_do_not_force_component_sign_stability",
+    "section_recurrent_support_is_not_embryo_replicated_support",
+    "reported_potential_null_is_not_the_historical_thirty_two_rewire_bank",
+    "small_composition_residual_does_not_imply_holm_count_invariance"
+  ],
+  "exitCode": 0,
+  "stderr": "",
+  "stdout": "",
+  "target": "Tier30.Publication.RMMOPaper1.Controls.MethodsRobustness"
+}

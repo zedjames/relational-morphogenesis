@@ -1,0 +1,165 @@
+{
+  "checkCount": 31,
+  "checks": [
+    {
+      "detail": "",
+      "label": "plan frozen before new outcomes",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "all 75 pseudo-stage splits",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "pseudo-stage local boundary",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "256 geometry-rebuilding replicates",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "geometry-rebuilding interval below zero",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "geometry rebuilding has no impossible support gains",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "distance kernel all 28 pairs",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "distance kernel full bootstrap",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "distance kernel hierarchy",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "distance kernel representation sensitivity",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "equal weights all 28 relations",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "equal weight fraction exact",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "equal weight hierarchy",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "equal weight full-field sign sensitivity",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "six effort20 banks",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "effort20 graph invariants",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "effort20 tiny residual",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "effort20 multiplicity change recorded",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "potential exact p reproduction",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "potential source is 1024 fields",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "24 stage radius summaries",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "111 embryo radius summaries",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "support classes separated",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "balanced discretization executed",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "balanced hierarchy",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "balanced stage normalization",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "balanced embryo normalization",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "all lanes final decision",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "primary was not retrofitted",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "comparison matrix complete",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "label": "all JSON parses",
+      "passed": true
+    }
+  ],
+  "historicalPrimaryMutated": false,
+  "passed": true,
+  "planBlobSha256": "df20e1fb3d28ef98eade5148579de4066726e3cae8a4e508dc0593770ff64889",
+  "planCommitSubject": "RMMO-P1 methods robustness: freeze analysis plan",
+  "tranche": "RMMO-P1-METHODS-ROBUSTNESS-01"
+}

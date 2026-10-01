@@ -1,0 +1,60 @@
+{
+  "schema": "rmmo-paper-release-manifest/v1",
+  "paper": "01-directional-stability",
+  "title": "Relational Organization and Directional Stability Across Mouse Organogenesis",
+  "author": "Zed James",
+  "preprintDate": "2026-10-01",
+  "doi": "10.5281/zenodo.23090479",
+  "releaseTag": "paper-01-v1.0-preprint",
+  "canonicalAuthority": "Zenodo PDF",
+  "files": [
+    {
+      "path": "manuscript/Relational_Organization_and_Directional_Stability_Across_Mouse_Organogenesis.pdf",
+      "bytes": 652050,
+      "sha256": "ae56f6af9280e13a3851b6e5d31339619176764d03b9b400dbe12805eaf15c19",
+      "role": "canonical scholarly PDF mirror"
+    },
+    {
+      "path": "manuscript/Relational_Organization_and_Directional_Stability_Across_Mouse_Organogenesis.tex",
+      "bytes": 81757,
+      "sha256": "81cbaf7038de814d967925f1dfc12115ac187901a5c9d477967b4073782e811c",
+      "role": "final manuscript source"
+    },
+    {
+      "path": "figures/Figure1.pdf",
+      "bytes": 149591,
+      "sha256": "6ec23754f11b9d0c394c6a2b1b8db1d7b234c1f9ed2fa4d0150606be2a82e427",
+      "role": "publication figure"
+    },
+    {
+      "path": "figures/Figure2.pdf",
+      "bytes": 112120,
+      "sha256": "c8a3444436a5d209769785af8f34b64da98c6ae7dc8f7053f3c0423d5cc5c79e",
+      "role": "publication figure"
+    },
+    {
+      "path": "figures/Figure3.pdf",
+      "bytes": 72949,
+      "sha256": "5e7fbe612e86e9000cbd06428f291d5b63f49bb65d2e85d997c7a86190af732c",
+      "role": "publication figure"
+    },
+    {
+      "path": "figures/Figure4.pdf",
+      "bytes": 41903,
+      "sha256": "60d17376953bc8b84c8456e9d0147bcd08b602b1a19979c28c4cea88d0fe3652",
+      "role": "publication figure"
+    },
+    {
+      "path": "figures/Figure5.pdf",
+      "bytes": 96745,
+      "sha256": "cf5da8e03209b424c2da29ea36949b0fb6a7da8edbc54390ba0074a8b004723e",
+      "role": "publication figure"
+    },
+    {
+      "path": "figures/Figure6.pdf",
+      "bytes": 109310,
+      "sha256": "8b21a0a64d8166ac7ad5eba886b4cbc85cc894f10ec06a4b80c53811a9c0d560",
+      "role": "publication figure"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "adjacentRelationCount": 1700946,
+  "adjacentSignPattern": "-+--+--",
+  "bootstrap": {
+    "median": -0.10614866540712775,
+    "negativeFrequency": 1.0,
+    "q025": -0.1485871449921664,
+    "q975": -0.053501879700345346,
+    "replicates": 4096
+  },
+  "chronologicalChainScore": -0.16389238942040163,
+  "endpointResolvedCount": 0,
+  "kernel": "exp(-weightedL1Distance/0.25) normalized per mapped source",
+  "localAggregateHierarchyPreserved": true,
+  "mappedFullSignConcordance": 0.8571428571428571,
+  "mappedFullSignConcordanceAdjacent": 0.8571428571428571,
+  "mappedFullSignConcordanceAll28": 0.9285714285714286
+}

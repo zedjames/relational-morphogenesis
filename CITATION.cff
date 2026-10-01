@@ -1,11 +1,20 @@
 cff-version: 1.2.0
-message: "Please cite the individual RMMO paper associated with the materials you use. Paper-specific DOI metadata will be added at publication freeze."
+message: "Please cite the individual RMMO paper associated with the materials you use. For Paper 1, use the preferred citation below."
 title: "Relational Morphogenesis and Multicellular Organization (RMMO)"
 type: dataset
 authors:
   - family-names: James
     given-names: Zed
 repository-code: "https://github.com/zedjames/relational-morphogenesis"
-version: "0.1.0-prepublication"
-date-released: "2026-09-30"
+version: "1.0.0"
+date-released: "2026-10-01"
 abstract: "Public reproducibility materials for the Relational Morphogenesis and Multicellular Organization research series."
+preferred-citation:
+  type: article
+  title: "Relational Organization and Directional Stability Across Mouse Organogenesis"
+  authors:
+    - family-names: James
+      given-names: Zed
+  year: 2026
+  doi: "10.5281/zenodo.23090479"
+  url: "https://doi.org/10.5281/zenodo.23090479"

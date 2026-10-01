@@ -1,0 +1,9 @@
+{
+  "B_embryo": 25533,
+  "B_section": 25533,
+  "C_embryo": 21635,
+  "C_section": 26350,
+  "embryoReplicationThreshold": 2,
+  "sectionAndEmbryoClassesKeptDistinct": true,
+  "sectionClassName": "section-recurrent support-qualified"
+}

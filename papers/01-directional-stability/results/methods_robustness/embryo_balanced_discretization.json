@@ -1,0 +1,34 @@
+{
+  "adjacentRelationCount": 2927801,
+  "adjacentSignPattern": "-+--+--",
+  "all28RelationPairCount": 7637006,
+  "bootstrap": {
+    "median": -0.09808096153810403,
+    "negativeFrequency": 0.995849609375,
+    "q025": -0.15109518983545703,
+    "q975": -0.03192967619309596,
+    "replicates": 4096
+  },
+  "chronologicalChainScore": -0.1662468547934301,
+  "computationalObstruction": null,
+  "configurationCount": 127453,
+  "densityWeightedQuartileEdges": [
+    0.7024000883102417,
+    0.7024000883102417,
+    0.7024003863334656
+  ],
+  "eachEmbryoTotalQuartileWeight": 0.02702702702702703,
+  "embryoCount": 37,
+  "endpointResolvedCount": 0,
+  "entropyWeightedQuartileEdges": [
+    -0.0,
+    0.13924245536327362,
+    0.2219230681657791
+  ],
+  "mappedFullSignConcordance": 1.0,
+  "mappedFullSignConcordanceAdjacent": 1.0,
+  "mappedFullSignConcordanceAll28": 0.9285714285714286,
+  "primaryEstimatorReplaced": false,
+  "rootCount": 4099397,
+  "runCompleted": true
+}

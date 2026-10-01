@@ -6,13 +6,19 @@
     "referee02": "10aaea36896452367e362e1076af19f18391cfdd",
     "referee03": "c9f61fda9aa4d3a67b65fa449587787714911854",
     "referee04": "ee7a396e32552b0c17131d920c7232de56301155",
-    "referee04ProvenanceRefresh": "aad8f0bd7f2ca31bb8fe4264ace2804a9cb43366"
+    "referee04ProvenanceRefresh": "aad8f0bd7f2ca31bb8fe4264ace2804a9cb43366",
+    "methodsRobustnessPlan": "77135ee736c845e7131161f69ff97110b8d5e9b4",
+    "methodsRobustnessCompletion": "bb44b319471428a68a066b643fe207b3c32fa2c4",
+    "methodsRobustnessResultTables": "4c0a8c08745a5e992bfec660f226dc51f793afda",
+    "methodsRobustnessProvenance": "66abe5d5a9b66fda7a9433bf021b31064637de6c"
   },
   "preOutcomePlans": {
     "referee03": "b3c168257737c01c7bbfd80d37c49bd053d4761f",
-    "referee04": "c8895eb64d2fe419318d817614d9c72c5be38069"
+    "referee04": "c8895eb64d2fe419318d817614d9c72c5be38069",
+    "methodsRobustness": "77135ee736c845e7131161f69ff97110b8d5e9b4"
   },
-  "finalManuscriptDoi": null,
-  "finalPublicReleaseTag": null,
-  "finalManuscriptSha256": null
+  "finalManuscriptDoi": "10.5281/zenodo.23090479",
+  "finalPublicReleaseTag": "paper-01-v1.0-preprint",
+  "finalManuscriptSha256": "ae56f6af9280e13a3851b6e5d31339619176764d03b9b400dbe12805eaf15c19",
+  "finalSourceSha256": "81cbaf7038de814d967925f1dfc12115ac187901a5c9d477967b4073782e811c"
 }

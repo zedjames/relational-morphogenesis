@@ -1,0 +1,1515 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+% Float control
+\usepackage{float}    % provides [H] to place selected figures exactly here
+\usepackage{flafter}  % never place figures/tables before their definition in the source
+\usepackage{placeins} % provides \FloatBarrier to keep floats within a section
+
+% Hyphenation control (suppress hyphenation throughout)
+\usepackage[none]{hyphenat}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+% Cross-references: clickable "Figure 3" / "Table 2" text (not just the number)
+\usepackage[nameinlink,capitalise,noabbrev]{cleveref}
+\usepackage{caption}
+\usepackage{authblk}
+
+\setstretch{1.08}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\captionsetup{font=small,labelfont=bf}
+
+\title{\textit{Relational Organization and Directional Stability Across Mouse Organogenesis}}
+\author{Zed James}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.17\textheight}
+  {\LARGE\bfseries Relational Organization and Directional Stability Across Mouse Organogenesis\par}
+  \vfill
+  {\large Zed James\par}
+  \vspace{1.5em}
+  {\small \copyright\ 2026 Zed James. This work is licensed under the\\
+  Creative Commons Attribution-NonCommercial-NoDerivatives 4.0\\
+  International License.\\[0.8em]
+  Preprint -- October 1, 2026.\\
+  \texttt{10.5281/zenodo.23090479}\par}
+  \vspace*{0.12\textheight}
+\end{titlepage}
+
+\clearpage
+\begin{abstract}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+Developmental atlases compare independently sampled tissues across time, making the definition of biological comparability an upstream part of directional inference. We ask how that comparison space shapes relational organization in mouse organogenesis. Using the Mouse Organogenesis Spatiotemporal Transcriptomic Atlas from E9.5 through E16.5, we analyzed 4.10 million spatial roots from 53 sections and 37 biological embryos.
+
+We construct a spatial-relational carrier from source-authored tissue annotations, local neighborhood context, and discretized numeric descriptors, with developmental-stage labels excluded from relation construction. The carrier shows extensive recurrence, many-to-many organization, and strong direct-versus-composed overlap. Architecture-preserving references reproduce nearly all of the raw two-step agreement, with residual Jaccard excesses bounded by $7.73\times10^{-4}$.
+
+All seven adjacent developmental contrasts remain within same-stage biological variation. Their accumulated chronological score is negative ($S_{\rm chron}=-0.139779$) and shows strong stability under biological-embryo resampling, embryo and edge deletion, mapped-support conditioning, relation-tolerance sensitivity, density ablation, secondary-support handling, and neighborhood scales $k=16,32,64$. Architectural magnitude changes substantially across these representations. Coarsening exact comparability from root-plus-neighborhood tissue context to root tissue identity alone expands the relation graph from 1.70 million to 144.92 million adjacent pairs and brings two local developmental contrasts above their edge-specific biological references.
+
+These results separate three levels of organization: architectural magnitude reflects the chosen comparison space, local directional resolution depends on biological context, and the aggregate negative score persists across the tested representation family. Relational comparability is therefore part of the biological information used to infer developmental direction.
+\end{abstract}
+\newpage
+\section{Introduction}
+
+Embryonic development unfolds through coordinated changes in molecular state, tissue organization, and spatial context. Single-cell and spatial atlases resolve these changes at increasingly fine scales, enabling quantitative comparison of developing tissues across time.\footnote{Chen et al. introduced Stereo-seq and the Mouse Organogenesis Spatiotemporal Transcriptomic Atlas used here. Full reference notes appear in Appendix~\ref{app:references}, Ref.~R1.} Earlier single-cell atlases of mammalian organogenesis reconstructed developmental trajectories from molecular state at large scale, providing an important non-spatial precedent for stage-resolved developmental inference.\footnote{Appendix~\ref{app:references}, Ref.~R15.}
+
+Most developmental atlases are cross-sectional. Different embryos are measured at different stages, so developmental direction is inferred from relations among independently sampled populations. Trajectory inference, pseudotime, RNA velocity, optimal transport, and lineage-aware methods address this problem using molecular geometry, transcriptional kinetics, sampling time, ancestry, or combinations of these information sources.\footnote{Appendix~\ref{app:references}, Refs.~R2--R7.} Spatial transcriptomics adds a distinct inferential layer because tissue geometry, section-to-section variation, and spatial sampling become part of the trajectory problem.\footnote{Appendix~\ref{app:references}, Ref.~R9.}
+
+Spatially informed transport methods have progressively incorporated those structures into correspondence models. SpaOTsc established an early structured optimal-transport route for connecting transcriptomic state with spatial measurements; moscot later combined molecular and spatial information in a scalable spatiotemporal transport framework and applied it directly to MOSTA; SOCS further constrains trajectories to preserve contiguous biological structures and likewise evaluates MOSTA.\footnote{Appendix~\ref{app:references}, Refs.~R16, R10, and R11.} These approaches demonstrate that the biological structure supplied to a spatial trajectory model can materially change the inferred mapping. The present study examines a complementary upstream question: how does the definition of biological comparability itself alter relational architecture and directional inference, and which levels of that inference remain stable when the comparison space changes?
+
+\subsection{The comparison problem in cross-sectional development}
+
+Every developmental comparison begins with a biological decision about comparability. Two observations can be related only after the analysis specifies the context in which they count as sufficiently similar. In a spatial atlas, tissue identity, neighborhood composition, local density, and multicellular organization can all contribute to that context.
+
+This decision sits upstream of the directional statistic itself. The comparison rule determines how many cross-stage relations are available, which local structures can recur, how strongly developmental stages are connected, and which directional differences become visible. A change in comparison context can therefore change the observed relational architecture and the apparent strength of developmental asymmetry.
+
+The problem is especially important in morphogenesis because the objects under comparison are changing as development proceeds. Tissue composition reorganizes, local neighborhoods change, and the spatial contexts surrounding molecular states evolve. A useful relational analysis therefore needs to define its comparison space explicitly and test how conclusions depend on that definition.
+
+The present study addresses this problem in the Mouse Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA), spanning E9.5 through E16.5. We construct a spatial-relational carrier from source-authored tissue annotations, neighborhood tissue context, and discretized local descriptors. Developmental-stage labels are excluded from relation construction. The resulting carrier allows recurrence, many-to-many organization, composition, and direction to be evaluated within a transparent biological comparison space.
+
+Directional organization is evaluated at three levels. Each adjacent developmental contrast is compared with biological variation among embryos at the same stage. Weak local asymmetries are then accumulated across the developmental chain. Finally, the aggregate score is calibrated against reference families that preserve different aspects of the observed biological structure. This separation keeps local resolution, resampling stability, and chain-level calibration on distinct biological scales.
+
+\subsection{Contributions}
+
+This study makes three main contributions.
+
+\begin{enumerate}[leftmargin=1.8em]
+\item \textit{A relational comparison space for mouse organogenesis.} We define a spatial-relational carrier and show that extensive recurrence and many-to-many organization persist across neighborhood scales. Configuration count, relation volume, branching, coalescence, and raw composition change substantially across the same scale family.
+
+\item \textit{A separation of local and aggregate directional organization.} All seven adjacent developmental contrasts remain within same-stage biological variation under the primary comparison space; their accumulated chronological score retains a stable negative sign across biological-replicate resampling and a broad family of carrier perturbations.
+
+\item \textit{A direct test of biological comparability.} Removing neighborhood tissue context from exact categorical matching expands the relation graph by nearly two orders of magnitude and brings two local developmental contrasts above their edge-specific same-stage references. The comparison space therefore changes which directional structure becomes visible in the same atlas.
+\end{enumerate}
+
+Taken together, these analyses motivate a robustness principle for cross-sectional developmental inference: directional conclusions can be evaluated along two distinct axes, biological variation across sampled embryos and perturbations of the comparison space or transport representation that determine how observations are allowed to relate.
+
+Together, these results establish a hierarchy of representation dependence. Architectural magnitude is strongly shaped by the comparison space. Local directional resolution reflects biological context. The aggregate directional sign is the most persistent feature across the representations tested here.
+
+\section{Results}
+
+\subsection{A relational comparison space spans eight stages of mouse organogenesis}
+
+We analyzed 4,099,397 bin-50 spatial roots from 53 official sections and 37 biological embryos across E9.5, E10.5, E11.5, E12.5, E13.5, E14.5, E15.5, and E16.5. Biological embryo counts by stage are
+\[
+(5,4,4,6,4,7,5,2).
+\]
+Sections remain nested within embryos for prevalence estimation and uncertainty analysis.
+
+Each spatial root is represented by its source tissue annotation, the dominant and secondary annotations in its local neighborhood, neighborhood composition shares, same-type fraction, local density, and neighbor entropy. Exact tissue context defines which roots can be compared. Discretized numeric descriptors determine relational proximity within that comparison class. The primary construction uses the 32 nearest roots within the same section, with $k=16$ and $k=64$ providing neighborhood-scale reconstructions. Full definitions of the carrier and relation metric are given in Methods.
+
+Developmental-stage labels are excluded from relation construction. Tissue annotations are inherited directly from the source atlas. The resulting information boundary is therefore explicit: stage is withheld from the relational geometry, and tissue context enters as biological information supplied by the atlas (\Cref{fig:carrier}).
+
+The source atlas contains 49 annotation classes. Four occur at a single developmental stage, and six occur at all eight stages. Stage-exclusive annotation classes account for 0.218\% of spatial-root mass. At the level of the full categorical comparison key, 98.09\% of roots occupy keys with support at more than one developmental stage. The comparison space therefore connects developmental stages broadly within the tissue-context framework supplied by the atlas.
+
+\begin{figure}[H]
+\centering
+\vspace{-0.4\baselineskip}
+\includegraphics[width=0.98\textwidth]{Figure1.pdf}
+\caption{\textit{Relational carrier and information boundary. The developmental series is represented by biological embryos and section-local spatial roots. Relation membership is conditional on source-authored categorical tissue context and normalized discretized numeric descriptors. Direction is evaluated from prevalence transport on the resulting many-to-many relation.}}
+\label{fig:carrier}
+\end{figure}
+\FloatBarrier
+
+\subsection{Relational organization recurs and reorganizes across development}
+
+The primary carrier contains extensive recurrence across developmental time. A total of 22,249 configurations recur across at least two consecutive stages, 10,741 recur across at least three consecutive stages, and 167 are observed at all eight stages.
+
+The carrier also records substantial support turnover, with 71,087 first-observation events and 87,484 last-observation events. These events mark the sampled appearance and disappearance of relational configurations across the atlas.
+
+Many-to-many organization is widespread. Across the seven adjacent developmental intervals, 71,460 source-side records have more than one relational target and 84,499 target-side records receive more than one relational source. Requiring recurrence in at least two sections together with positive excess over same-stage branching or coalescence controls yields 25,533 \emph{section-recurrent support-qualified} branching records and 26,350 section-recurrent support-qualified coalescing records. A stricter biological-replication criterion requiring support in at least two embryos preserves all 25,533 branching records and retains 21,635 coalescing records. The strongest branching excess occurs from E15.5 to E16.5 ($\Delta_{\rm branch}=0.445$), and the strongest coalescence excess occurs from E12.5 to E13.5 ($\Delta_{\rm coal}=0.189$).
+
+Together, these results show that the relational carrier contains recurrent organization, turnover, branching, and coalescence across the developmental series. Branching is unchanged by the embryo-replication filter, and the stricter embryo criterion identifies the subset of coalescing records supported across independent biological embryos.
+
+\subsection{Neighborhood scale changes architectural magnitude}
+
+Neighborhood scale changes how much relational structure is observed (\Cref{fig:architecture_k}). Configuration count increases from 87,825 at $k=16$ to 116,743 at $k=64$. Adjacent relation volume increases from 1.14 million to 2.03 million pairs. Raw branching and coalescence counts also increase across the scale family.
+
+Recurrence remains extensive at every scale. Between 18,879 and 23,381 configurations recur across at least two consecutive stages, and between 165 and 182 configurations are observed at all eight stages. Mean source and target coverage remain similar across the three reconstructions. Neighborhood scale therefore sets the quantitative resolution of the architecture. Recurrence and many-to-many organization remain prominent across the full scale family.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth]{Figure2.pdf}
+\caption{\textit{Neighborhood scale changes architectural magnitude. Configuration count, interval-summed branching/coalescence records, relation volume, and raw direct/composed overlap vary across the tested $k=16,32,64$ carrier family. Extensive recurrence and many-to-many organization remain present at all three scales.}}
+\label{fig:architecture_k}
+\end{figure}
+
+\begin{table}[!tbp]
+\centering
+\caption{\textit{Relational architecture across tested neighborhood scales.}}
+\label{tab:kstructure}
+\begin{tabular}{lrrr}
+\toprule
+Quantity & $k=16$ & $k=32$ & $k=64$\\
+\midrule
+Configurations & 87,825 & 104,377 & 116,743\\
+Recurring $\geq2$ stages & 18,879 & 22,249 & 23,381\\
+Recurring $\geq3$ stages & 9,243 & 10,741 & 11,328\\
+Recurring all 8 stages & 165 & 167 & 182\\
+Adjacent relation pairs & 1,142,384 & 1,700,946 & 2,025,826\\
+Mean source coverage & 0.636 & 0.640 & 0.631\\
+Mean target coverage & 0.548 & 0.556 & 0.556\\
+Raw interval-summed branching records & 59,114 & 71,460 & 76,606\\
+Raw interval-summed coalescing records & 70,212 & 84,499 & 94,602\\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\subsection{Most two-step compositional agreement is carried by local architecture}
+
+Relations measured directly across two developmental steps agree strongly with relations obtained by composing the two adjacent one-step relations. At the primary carrier, direct/composed Jaccard similarity ranges from 0.703 to 0.866 across the six developmental triples.
+
+We then asked how much of this agreement is already implied by local relational architecture. Two reference constructions preserve categorical and degree information. The first permutes endpoint identities within exact-degree and categorical-configuration groups. The second uses categorical-block bipartite Curveball randomization, preserving source degree, target degree, edge count, categorical block, and simple bipartite structure.
+
+Both references reproduce nearly all of the raw Jaccard magnitude. Under the primary Curveball production bank at five trades per active source, the largest observed-minus-reference excess is
+\[
+\boxed{\max |\Delta J|=7.73\times10^{-4}}.
+\]
+A second production bank at 20 trades per active source preserves the same effect-size conclusion. The largest residual is $8.05\times10^{-4}$, and the largest shift in a null mean relative to the five-trade bank is $4.04\times10^{-5}$. The Holm-adjusted count below 0.05 changes from 5/6 triples at effort 5 to 6/6 at effort 20. The exact threshold count is therefore mixing-effort sensitive; the residual magnitude remains small at both production efforts.
+Most of the apparent two-step compositional coherence is therefore already encoded by tissue-context blocks and their degree architecture. The small residual measures the additional sequential organization beyond that local structure.
+
+\begin{figure}[!b]
+\centering
+\vspace{-0.5\baselineskip}
+\includegraphics[width=0.97\textwidth,trim=0 110 0 70,clip]{Figure3.pdf}
+\caption{\textit{Composition is predominantly architecture-conditioned. Raw direct/composed Jaccards are high. A categorical-block, degree-preserving Curveball reference reproduces nearly all of their magnitude, and the remaining sequential excess is small across the six adjacent developmental triples.}}
+\label{fig:composition_architecture}
+\end{figure}
+\FloatBarrier
+
+\subsection{All seven adjacent developmental contrasts remain within same-stage biological variation}
+
+Direction is quantified from forward and reverse prevalence-transport errors using Jensen--Shannon divergence. For an ordered stage pair $(i,j)$,
+\[
+\Omega_{ij}=E_{j\rightarrow i}-E_{i\rightarrow j}.
+\]
+The full transport construction is given in Methods.
+
+The seven chronological adjacent scores contain both positive and negative local signs:
+\[
+(-0.058526,\;
+0.039793,\;
+-0.002965,\;
+-0.032655,\;
+-0.022993,\;
+-0.047473,\;
+-0.014959).
+\]
+
+Same-stage biological variation differs across developmental stages (\Cref{tab:samestage}). E16.5 contributes one same-stage embryo pair, so endpoint calibration uses the larger 95th-percentile magnitude from the two stages forming each developmental edge.
+
+\begin{samepage}
+Pooled, equal-stage-weighted, and endpoint-specific embryo-pair calibration all give the same local result:
+\[
+\boxed{0/7}
+\]
+chronological adjacencies exceed the corresponding biological reference.
+
+A second calibration matches the aggregation level of the cross-stage statistic more closely. Within each stage, maximally balanced disjoint embryo subsets were averaged into two pseudo-populations, their relation was rebuilt from the two positive supports, and the same directional statistic was recomputed. Across 75 unique pseudo-population splits, the stage-specific 95th-percentile references again place
+\[
+\boxed{0/7}
+\]
+chronological adjacencies above their endpoint references.
+
+\Cref{fig:local_calibration} shows the primary embryo-pair comparison directly. Local signs vary in direction, and every observed contrast lies within its endpoint-specific same-stage interval.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figure4.pdf}
+\caption{\textit{Chronological adjacent contrasts remain within same-stage biological variation. Observed adjacent directional scores $\Omega$ are shown for the seven developmental edges of the primary carrier. Vertical intervals show the endpoint-conservative same-stage biological-variation reference $[-q_{0.95}^{\rm endpoint},+q_{0.95}^{\rm endpoint}]$ for each edge. Every observed contrast lies within its corresponding reference interval.}}
+\label{fig:local_calibration}
+\end{figure}
+\end{samepage}
+
+\begin{table}[!htbp]
+\centering
+\small
+\caption{\textit{Stage-specific same-stage directional variation at the primary tolerance.}}
+\label{tab:samestage}
+\begin{tabular}{lrrr}
+\toprule
+Stage & Embryos & Same-stage pairs & $q_{0.95}(|\Omega|)$\\
+\midrule
+E9.5  & 5 & 10 & 0.021566\\
+E10.5 & 4 & 6  & 0.149202\\
+E11.5 & 4 & 6  & 0.054993\\
+E12.5 & 6 & 15 & 0.023815\\
+E13.5 & 4 & 6  & 0.072773\\
+E14.5 & 7 & 21 & 0.055137\\
+E15.5 & 5 & 10 & 0.059026\\
+E16.5 & 2 & 1  & 0.003074\\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+\newpage
+\subsection{Weak local asymmetries accumulate into a stable negative chain score}
+
+The seven local contrasts sum to a chronological chain score of
+\[
+\boxed{S_{\rm chron}=-0.1397791097},
+\]
+corresponding to a mean adjacent contrast of $-0.0199684$.
+
+Biological-embryo resampling preserves this aggregate pattern on the primary carrier. Across 4,096 stage-stratified bootstrap replicates with relation geometry fixed, the median chain score is $-0.103648$ and the 95\% interval is
+\[
+\boxed{[-0.147571,-0.050681]}.
+\]
+The negative-sign frequency is 0.999756.
+
+A 256-member sensitivity rebuilt positive stage support after each embryo resample and reconstructed the corresponding relations. Its median chain score is
+\[
+-0.116408
+\]
+with 95\% interval
+\[
+\boxed{[-0.155087,-0.079239]}
+\]
+and negative-sign frequency 1.000. The negative aggregate therefore persists when resampling includes observed relation-support loss in addition to prevalence variation.
+
+The aggregate is distributed across biological embryos and developmental edges. Deleting each of the 37 embryos in turn preserves the negative sign. Removing each developmental edge in turn also preserves the sign, with six-edge sums ranging from $-0.081253$ to $-0.179572$.
+
+The local/aggregate separation also persists across neighborhood scale. At $k=16$, $k=32$, and $k=64$, the local result remains 0/7. The corresponding chain scores are
+\[
+S_{16}=-0.085114,\qquad
+S_{32}=-0.139779,\qquad
+S_{64}=-0.120275.
+\]
+Bootstrap intervals remain below zero at $k=32$ and $k=64$. The $k=16$ interval extends slightly above zero, $[-0.100353,0.002407]$, with a negative-sign frequency of 0.9695. The aggregate sign is therefore shared across all three neighborhood scales, with the strongest biological-replicate support at $k=32$ and $k=64$.
+
+Mapped-support conditioning preserves all 28 pairwise directional signs at every tested neighborhood scale.
+
+\subsection{Reference families calibrate the aggregate at different biological scales}
+
+Three reference families probe different aspects of the primary-carrier chain score.
+
+\paragraph{Centered biological-embryo references.}
+Biological embryos are resampled within stage and the resulting stage-level directional field is centered before evaluating the chain statistic. Centering on the bootstrap mean gives a two-sided empirical tail probability of 0.000244; centering on the observed vector gives 0.000488. These references preserve the covariance created by shared developmental stages.
+
+\paragraph{Independent sign reference.}
+The seven observed magnitudes are held fixed and all $2^7=128$ sign vectors receive equal weight. The exact two-sided tail probability is 0.15625.
+
+\paragraph{Stage-balanced embryo-pair reference.}
+Same-stage embryo-pair directional fluctuations are orientation-symmetrized and accumulated across the seven developmental edges with equal endpoint weighting. Among 262,144 pseudo-chains, the observed score has a two-sided reference-tail fraction of
+\[
+\boxed{0.231700}.
+\]
+
+The centered biological-embryo references place the observed score in a narrow resampling tail. The broader sign and embryo-pair ranges include the observed score. These references therefore calibrate the aggregate at different biological scales (\Cref{fig:chain_calibration}).
+
+Together, the three references place the stable negative aggregate on distinct calibration scales. The biological interpretation of that aggregate is therefore tied to the comparison space and to the reference family used to evaluate it.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{Figure5.pdf}
+\caption{\textit{Primary-carrier chain-level calibration. Horizontal segments show central 95\% reference ranges and points show reference centers. The centered conditional bootstrap ranges separate clearly from the observed chain score. The broader independent sign-flip and stage-balanced embryo-pair ranges include the observed score. These chain-level reference families are evaluated on the primary $k=32$, $G_3$, $\epsilon=0.25$ carrier.}}
+\label{fig:chain_calibration}
+\end{figure}
+\FloatBarrier
+
+\subsection{Changing comparison context changes which local asymmetries become visible}
+
+Neighborhood tissue context strongly constrains relational opportunity. The primary exact categorical gate,
+\[
+G_3=(a_x,a_1,a_2),
+\]
+requires agreement in root tissue identity together with dominant and secondary neighborhood tissue context. We repeated the analysis using root tissue identity alone,
+\[
+G_1=(a_x),
+\]
+with the numeric descriptors, weights, $k=32$, and $\epsilon=0.25$ held fixed.
+
+This single change expands adjacent relation volume from 1.70 million to 144.92 million pairs. Mean source coverage rises from 0.640 to 0.907, and mean target coverage rises from 0.556 to 0.884. Branching and coalescence increase to 101,997 and 142,440 records.
+
+The aggregate score remains negative:
+\[
+\boxed{S_{\rm chron}^{G_1}=-0.369391},
+\]
+with bootstrap interval
+\[
+[-0.378005,-0.188475].
+\]
+Mapped-support conditioning preserves all 28 pairwise signs.
+
+The local result changes. Two of seven chronological adjacencies exceed their edge-specific same-stage references under the coarser gate. The same atlas therefore reveals different local directional structure when the biological comparison space changes.
+
+This experiment shows directly that relational comparability is a biological variable in the analysis. Tissue-context constraints determine which spatial states participate in the same relational problem, and that choice changes which local developmental asymmetries become visible.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth]{Figure6.pdf}
+\caption{\textit{Carrier robustness hierarchy. The observed aggregate chain score remains negative across every tested carrier. The $k=16$ conditional bootstrap interval extends slightly above zero. Neighborhood-scale, sentinel, and density-ablation sensitivities place all chronological adjacencies within their corresponding edge-specific same-stage references. Root-only categorical gating yields two adjacencies above that reference and expands relation opportunity by nearly two orders of magnitude.}}
+\label{fig:carrier_robustness}
+\end{figure}
+\FloatBarrier
+
+\subsection{The local/aggregate hierarchy persists across neighboring estimator choices}
+
+The primary estimator uses uniform transport over admissible relation targets, the prespecified metric weights
+\[
+(0.175,0.175,0.10,0.10,0.10),
+\]
+root-weighted density/entropy quartiles, and relation tolerance $\epsilon=0.25$. Neighboring-model controls change these choices one at a time and rebuild the downstream calibration appropriate to each representation.
+
+\paragraph{Relation tolerance.}
+Repeating the directional analysis at $\epsilon=0.15$, $0.25$, and $0.35$ preserves the same hierarchy: all seven adjacent contrasts remain within their endpoint-specific references, all three chain scores are negative, and mapped-support conditioning preserves all 28 pairwise signs under the primary transport kernel.
+
+\begin{table}[ht]
+\centering
+\caption{\textit{Tolerance sensitivity of local resolution and aggregate stability.}}
+\label{tab:tolerance}
+\begin{tabular}{cclcc}
+\toprule
+$\epsilon$ & $S_{\rm chron}$ & Bootstrap 95\% interval & Endpoint-resolved & Mapped/full sign\\
+\midrule
+0.15 & -0.127875 & [-0.138475,-0.045949] & 0/7 & 28/28\\
+0.25 & -0.139779 & [-0.147571,-0.050681] & 0/7 & 28/28\\
+0.35 & -0.124853 & [-0.134994,-0.033368] & 0/7 & 28/28\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Distance-weighted transport.}
+The primary kernel divides source mass uniformly among admissible targets. A distance-decay control assigns weights proportional to
+\[
+\exp[-d(x,y)/0.25]
+\]
+over admissible targets, preserving the relation and sink definitions. This gives
+\[
+S_{\rm chron}=-0.163892,
+\]
+with bootstrap median
+\[
+-0.106149,
+\]
+95\% interval
+\[
+[-0.148587,-0.053502],
+\]
+negative-sign frequency 1.000, and 0/7 locally resolved edges. Mapped/full sign concordance is 26/28 across all stage pairs and 6/7 on chronological adjacencies.
+
+\paragraph{Equal metric weights.}
+The primary metric weights sum to 0.65 and give greater influence to dominant and secondary neighborhood shares. An equal-weight control preserves the same total metric budget:
+\[
+(0.13,0.13,0.13,0.13,0.13).
+\]
+With $k=32$, $G_3$, and $\epsilon=0.25$ fixed, the equal-weight carrier gives
+\[
+S_{\rm chron}=-0.160080,
+\]
+with bootstrap median
+\[
+-0.102559,
+\]
+95\% interval
+\[
+[-0.145282,-0.050203],
+\]
+negative-sign frequency 1.000, and 0/7 locally resolved edges. Mapped/full sign concordance is 25/28 across the complete pairwise field and 7/7 on chronological adjacencies.
+
+\paragraph{Embryo-balanced descriptor discretization.}
+A separate control gives each of the 37 embryos equal total weight when estimating the density and entropy quartile boundaries, then rebuilds the complete primary-scale carrier. The resulting score is
+\[
+S_{\rm chron}=-0.166247,
+\]
+with bootstrap median
+\[
+-0.098081,
+\]
+95\% interval
+\[
+[-0.151095,-0.031930],
+\]
+negative-sign frequency 0.99585, and 0/7 local resolution. Mapped/full sign concordance is 26/28 across all stage pairs and 7/7 on chronological adjacencies.
+
+\paragraph{Mapped support, secondary support, and density.}
+Under the primary estimator, conditioning on mapped support preserves all 28 pairwise signs at every tested tolerance. A sink-only statistic reproduces 12/28 signs at $\epsilon=0.25$. The explicit no-secondary-support sentinel changes the main structural summaries minimally, preserves 0/7 local resolution, and gives negative chain scores at all three tolerances. Removing the density contribution gives
+\[
+S_{\rm chron}=-0.126624
+\]
+with bootstrap interval
+\[
+[-0.137341,-0.035056],
+\]
+0/7 local resolution, and 28/28 mapped/full sign concordance.
+
+
+Across these neighboring constructions, the local biological-resolution boundary remains 0/7 and the aggregate score remains negative. Fine pairwise sign concordance varies with the transport kernel, metric weighting, and discretization scheme, identifying that component of the directional field as representation-sensitive.
+
+The fixed-$k$ construction also corresponds to a stable central spatial scale. At $k=32$, the median $r_{32}$ is approximately $3.1623$ source-coordinate units at every developmental stage; stagewise 95th percentiles range from approximately $3.1623$ to $4.1231$. These radii are descriptive visibility scales and are not fitted biological cutoffs.
+
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\caption{\textit{Neighboring-estimator robustness of the local and aggregate directional results.} Sensitivities retain the primary source atlas and biological-embryo registry.}
+\label{tab:methods_robustness}
+\begin{tabular}{p{0.26\textwidth}cccc p{0.20\textwidth}}
+\toprule
+Estimator/control & Local & $S_{\rm chron}$ & Bootstrap median & Negative freq. & Pairwise sensitivity\\
+\midrule
+Primary & 0/7 & -0.139779 & -0.103648 & 0.99976 & mapped/full 28/28\\
+Pseudo-stage calibration & 0/7 & -- & -- & -- & stage-like local reference\\
+Geometry-rebuilding bootstrap & -- & -- & -0.116408 & 1.000 & support rebuilt per resample\\
+Distance-weighted kernel & 0/7 & -0.163892 & -0.106149 & 1.000 & mapped/full 26/28; 6/7 adjacent\\
+Equal metric weights & 0/7 & -0.160080 & -0.102559 & 1.000 & mapped/full 25/28; 7/7 adjacent\\
+Embryo-balanced discretization & 0/7 & -0.166247 & -0.098081 & 0.99585 & mapped/full 26/28; 7/7 adjacent\\
+\bottomrule
+\end{tabular}
+
+\vspace{0.35em}
+{\footnotesize The geometry-rebuilding row reports the median of its 256 resampled chain scores; its 95\% interval is $[-0.155087,-0.079239]$. Percentile bootstrap intervals summarize empirical resampling distributions and need not be centered on the observed statistic.}
+\end{table}
+\FloatBarrier
+
+\newpage
+\subsection{Potential-like geometry is a property of the relation architecture}
+
+The complete pairwise directional field admits a strong scalar-potential fit,
+\[
+\widehat\Omega_{ij}=\phi_j-\phi_i,
+\]
+with observed gradient fraction
+\[
+G_{\rm obs}=0.899346.
+\]
+
+An independent 1,024-field typed-degree endpoint-rewiring reference over all 28 stage-pair relations gives mean
+\[
+G_{\rm null,mean}=0.899359
+\]
+and 95th percentile
+\[
+G_{\rm null,q95}=0.900910,
+\]
+with add-one upper-tail Monte Carlo value
+\[
+p=0.507317.
+\]
+
+The potential-like geometry is reproduced by the degree/configuration-matched reference and serves as a compact summary of geometry already present in the carrier.
+
+\section{Discussion}
+
+Three conclusions emerge from these analyses.
+
+First, \textit{relational comparability is itself biological information}. The structure visible in a developmental atlas depends on the context within which observations are allowed to relate. Neighborhood scale changes the amount of relational architecture, and categorical tissue context changes which local developmental asymmetries become visible. The root-only experiment makes this dependence explicit: relaxing neighborhood-context matching expands relation opportunity by nearly two orders of magnitude and changes the local directional result.
+
+This finding adds an upstream consideration to trajectory, velocity, and transport approaches that derive developmental organization from molecular geometry, kinetics, sampling time, or ancestry. Recent spatial trajectory frameworks already show that adding spatial geometry or explicit contiguous-structure constraints changes the inferred developmental mapping.\footnote{Appendix~\ref{app:references}, Refs.~R10 and R11.} The present analysis shifts attention to the comparison relation itself: the relation between two developmental observations depends on the biological context in which they are permitted to compare. In spatial development, tissue identity and neighborhood context therefore contribute directly to the directional information available to an analysis.
+
+The composition analysis exposes a complementary aspect of the same problem. Direct and two-step-composed relations show high raw agreement, with Jaccard values from 0.703 to 0.866. Category- and degree-preserving references reproduce nearly all of that magnitude, and the maximum residual remains below \(8.1\times10^{-4}\) under the deeper Curveball production sensitivity. In this dataset, most apparent sequential coherence is therefore already encoded in local relational architecture. Architecture-preserving calibration separates that inherited structural coherence from the much smaller residual sequential component.
+
+Second, \textit{local and aggregate direction describe different organizational scales}. The seven adjacent developmental contrasts contain mixed signs and remain within same-stage biological variation under the primary comparison space. The same 0/7 boundary is recovered by the stage-like pseudo-population calibration. Their accumulated score retains a negative sign under embryo resampling, relation-support rebuilding, embryo deletion, edge deletion, mapped-support conditioning, neighborhood-scale reconstruction, relation-tolerance sensitivity, density ablation, secondary-support handling, distance-weighted transport, equal metric weights, and embryo-balanced descriptor discretization.
+
+Under the score convention used here, a negative chronological chain score means that reverse transports collectively have lower prediction error than forward chronological transports. The analyses establish the persistence of this asymmetry across the tested estimator family. Its biological mechanism remains unresolved. Separating possible contributions from support change, prevalence redistribution, and many-to-many relation geometry requires additional biological information or mechanistic models.
+
+The chain-level reference families place that aggregate on different biological scales. Centered embryo-resampling references place the observed score in a narrow tail. Independent sign and embryo-pair accumulation references provide broader ranges that include it. The resulting conclusion is a representation-specific directional-stability statement for the defined comparison space, with calibration strength depending on the sampling structure represented by the reference family.
+
+Third, \textit{fine directional structure is more representation-sensitive than the local-resolution boundary and aggregate sign}. Configuration count, relation volume, branching, coalescence, and raw composition change with neighborhood scale and categorical gating. Pairwise mapped/full sign concordance also changes under distance weighting, equal metric weights, and embryo-balanced discretization. Across those same neighboring estimators, the local biological-resolution boundary remains 0/7 and the aggregate score remains negative.
+
+This hierarchy separates three levels of stability:
+\[
+\boxed{\begin{aligned}
+\text{fine pairwise field: representation-sensitive}\\
+\text{local resolution: stable at }0/7\\
+\text{aggregate sign: stable}
+\end{aligned}}
+\]
+The comparison space therefore has strong architectural leverage, the fine directional field retains representation dependence, and the higher-level local/aggregate distinction persists across the tested estimator family.
+
+These results motivate a practical robustness principle for cross-sectional developmental analysis. Biological resampling quantifies variation across embryos within a specified representation. Comparison-space and estimator perturbations quantify sensitivity to the representation itself. Evaluating both axes separates biological sampling uncertainty from representational dependence and makes the scope of a directional conclusion explicit.
+
+The present study addresses prevalence-transport direction on a defined relational carrier. Its conclusions concern population-level organization in a cross-sectional atlas. Lineage ancestry, causal signaling, mechanical causation, thermodynamic irreversibility, and intrinsic developmental direction require additional biological information. Within this scope, the analysis provides a foundation for subsequent questions about developmental state, history, and the organizational structures that persist through morphogenesis.
+
+
+\newpage
+\section{Scope and limitations}
+
+\paragraph{Cross-sectional design.}
+The atlas provides stage-indexed spatial roots from distinct embryos. The analysis therefore operates on stage-indexed population configurations.
+
+\paragraph{Source annotations.}
+The analysis preserves the source atlas \texttt{obs/annotation} labels unchanged across developmental stages. These annotations supply biological tissue context to the relational comparison space.
+
+\paragraph{Biological sample size.}
+The study contains 37 biological embryos, including two at E16.5. Bootstrap iterations quantify resampling uncertainty; biological sample size is defined by the source embryos.
+
+\paragraph{Neighborhood scale.}
+The tested neighborhood family $k=16,32,64$ preserves the 0/7 local-resolution result and the negative observed aggregate. Biological-replicate support is weaker at $k=16$, where the 95\% bootstrap interval extends slightly above zero.
+
+\paragraph{Categorical comparison context.}
+Root-only categorical gating produces two local contrasts above their edge-specific same-stage references. This sensitivity identifies exact tissue-context matching as a substantive component of local directional resolution.
+
+\paragraph{Density descriptor.}
+The primary density discretization is empirically two-level because the pooled quartile cut points coincide. Density ablation preserves the principal directional pattern. Density and entropy discretization boundaries are estimated over spatial roots and therefore follow the carrier's root-weighted sampling distribution.
+
+\paragraph{Reference families.}
+Centered biological-embryo, independent-sign, and embryo-pair accumulation references encode different sampling structures. Their joint use defines the statistical scope of the aggregate directional result.
+
+\paragraph{Analysis provenance.}
+The primary carrier and directional statistic were fixed before chronology reveal. Subsequent calibration analyses test biological resampling, relation tolerance, mapped support, graph references, and carrier sensitivity. Detailed analysis provenance and pre-outcome plan commits are recorded in the public reproducibility companion.
+
+\section{Methods}
+
+\subsection{Overview of the analysis pipeline}
+
+The analysis proceeds from spatial roots to relational configurations, from configurations to stage-to-stage relations, and from those relations to directional prevalence transport. The primary computational path is
+\[
+\boxed{
+\text{spatial root}
+\longrightarrow
+C_2\text{ configuration}
+\longrightarrow
+R_{ij}
+\longrightarrow
+p_e
+\longrightarrow
+p_t
+\longrightarrow
+T_{ij}
+\longrightarrow
+\Omega_{ij}
+\longrightarrow
+S_{\rm chron}.
+}
+\]
+Each object in this chain is defined below. Carrier perturbations are constructed by changing one specified component of this pipeline and rebuilding the downstream objects that depend on it.
+
+\subsection{Source atlas and biological replication}
+
+We used the Mouse Organogenesis Spatiotemporal Transcriptomic Atlas generated with Stereo-seq.\footnote{Appendix~\ref{app:references}, Ref.~R1.} The analysis uses 53 official section-level objects spanning E9.5--E16.5 and 4,099,397 official bin-50 spatial roots. Spatial coordinates are read from the section-specific \texttt{obsm/spatial} arrays, and tissue identity is taken directly from \texttt{obs/annotation}. Literal source annotation labels are preserved across stages.
+
+The 53 sections are nested within 37 biological embryos according to the frozen sample registry. Biological embryo counts by stage are
+\[
+(5,4,4,6,4,7,5,2).
+\]
+All sections assigned to the same biological embryo contribute to that embryo before embryo-level normalization. E16.5 contains 18 sections nested within two biological embryos. Developmental-stage labels are retained for stage membership and subsequent evaluation; they are excluded from construction of the relational configuration and relation metric.
+
+\subsection{Section-local spatial neighborhoods}
+
+For a spatial root \(x\) in an official section, let
+\[
+\mathcal N_k(x)
+\]
+denote the \(k\) nearest other roots in the same section under Euclidean distance in the source spatial coordinates. The root itself is excluded. The primary neighborhood size is
+\[
+k=32,
+\]
+with complete reconstructions at
+\[
+k\in\{16,64\}
+\]
+used for neighborhood-scale sensitivity.
+
+Let \(\mathcal A\) be the globally sorted set of source annotation classes. For each annotation \(a\in\mathcal A\),
+\[
+n_a^{(k)}(x)
+=
+\#\{y\in\mathcal N_k(x):a_y=a\},
+\qquad
+\sum_{a\in\mathcal A}n_a^{(k)}(x)=k.
+\]
+The dominant neighborhood annotation is
+\[
+a_1^{(k)}(x)
+=
+\arg\max_{a\in\mathcal A}n_a^{(k)}(x).
+\]
+Ties are resolved deterministically by the globally sorted annotation order, matching NumPy's first-maximum rule. The dominant count is then set to zero and the same rule is applied to obtain the secondary neighborhood annotation \(a_2^{(k)}(x)\). The explicit secondary-support sensitivity described below addresses roots for which every non-dominant count is zero.
+
+Three neighborhood-composition shares are then defined:
+\[
+q_{\rm dom}^{(k)}(x)
+=
+\frac{n_{a_1^{(k)}(x)}^{(k)}(x)}{k},
+\qquad
+q_{\rm sec}^{(k)}(x)
+=
+\frac{n_{a_2^{(k)}(x)}^{(k)}(x)}{k},
+\]
+and
+\[
+q_{\rm same}^{(k)}(x)
+=
+\frac{n_{a_x}^{(k)}(x)}{k},
+\]
+where \(a_x\) is the source annotation of the root itself.
+
+Local density is defined from the distance \(r_k(x)\) to the \(k\)-th nearest neighbor:
+\begin{equation}
+\rho_k(x)
+=
+\frac{k}{\pi\max(r_k(x),10^{-8})^2}.
+\label{eq:density}
+\end{equation}
+For neighborhood annotation proportions
+\[
+p_a^{(k)}(x)=\frac{n_a^{(k)}(x)}{k},
+\]
+normalized neighborhood entropy is
+\begin{equation}
+H_k(x)
+=
+-\frac{
+\sum_{a:p_a^{(k)}(x)>0}
+p_a^{(k)}(x)\ln p_a^{(k)}(x)
+}{
+\ln k
+}.
+\label{eq:entropy}
+\end{equation}
+Natural logarithms are used.
+
+\subsection{Discretization and the \(C_2\) relational configuration}
+
+Neighbor-composition shares are discretized into deciles using
+\[
+D(v)
+=
+\min\!\left(9,\max\!\left(0,\left\lfloor10v\right\rfloor\right)\right).
+\]
+Density is discretized after the transform
+\[
+\log(1+\rho_k),
+\]
+and entropy is discretized directly from \(H_k\). For each tested \(k\), the 25th, 50th, and 75th percentiles of the corresponding finite values are computed over the complete root carrier without using stage labels. Quartile assignment uses a right-sided boundary rule: a value equal to a quartile boundary is assigned to the higher matching bin. The resulting quartile codes are
+\[
+Q_{\rho_k},Q_{H_k}\in\{0,1,2,3\}.
+\]
+
+The root-level relational configuration is
+\begin{equation}
+C_2^{(k)}(x)
+=
+\left(
+a_x,\,
+a_1^{(k)}(x),\,
+a_2^{(k)}(x),\,
+D(q_{\rm dom}^{(k)}(x)),\,
+D(q_{\rm sec}^{(k)}(x)),\,
+D(q_{\rm same}^{(k)}(x)),\,
+Q_{\rho_k}(x),\,
+Q_{H_k}(x)
+\right).
+\label{eq:c2}
+\end{equation}
+Thus each \(C_2\) configuration has three categorical coordinates followed by five discretized numeric coordinates. The construction deliberately omits developmental-stage labels, local anisotropy, and normalized position.
+
+For relation construction, the three decile codes and two quartile codes are normalized to
+\begin{equation}
+z(x)
+=
+\left(
+\frac{D_{\rm dom}(x)}9,\,
+\frac{D_{\rm sec}(x)}9,\,
+\frac{D_{\rm same}(x)}9,\,
+\frac{Q_\rho(x)}3,\,
+\frac{Q_H(x)}3
+\right),
+\label{eq:numericvector}
+\end{equation}
+so every numeric coordinate lies in \([0,1]\).
+
+\subsection{Cross-stage relation construction}
+
+For developmental stages \(i\) and \(j\), let \(C_i\) and \(C_j\) be the sets of distinct \(C_2\) configurations observed at those stages. The primary exact categorical gate is
+\[
+G_3(x)
+=
+(a_x,a_1,a_2).
+\]
+Two configurations \(x\in C_i\) and \(y\in C_j\) are eligible for relation membership only when
+\[
+G_3(x)=G_3(y).
+\]
+
+Within an exact categorical block, numeric distance is the weighted \(L^1\) metric
+\begin{align}
+d(x,y)={}&
+0.175\left|\frac{D_{\rm dom}(x)-D_{\rm dom}(y)}9\right|
++
+0.175\left|\frac{D_{\rm sec}(x)-D_{\rm sec}(y)}9\right|
+\nonumber\\
+&+
+0.10\left|\frac{D_{\rm same}(x)-D_{\rm same}(y)}9\right|
++
+0.10\left|\frac{Q_\rho(x)-Q_\rho(y)}3\right|
++
+0.10\left|\frac{Q_H(x)-Q_H(y)}3\right|.
+\label{eq:metric}
+\end{align}
+The coefficients sum to \(0.65\); they are metric weights and are not probability weights. They were fixed before directional outcomes were available and give greater metric influence to dominant and secondary neighborhood composition than to same-type fraction, density, or entropy. No claim of biological optimality is assigned to this allocation. At the primary tolerance,
+\[
+\frac{\epsilon}{0.65}
+=
+\frac{0.25}{0.65}
+=
+0.384615,
+\]
+so the threshold spans approximately 38.5\% of the maximum possible weighted numeric distance.
+
+A prespecified neighboring-model control uses equal weights
+\[
+(0.13,0.13,0.13,0.13,0.13),
+\]
+which preserve the same total metric budget. With \(k=32\), \(G_3\), and \(\epsilon=0.25\) fixed, all 28 relations, same-stage references, directional scores, mapped-support calculations, composition summaries, and the 4,096-member conditional embryo bootstrap are rebuilt under this control.
+
+Candidate neighbors are located with an \(L^1\) radius query on the weighted numeric coordinates.
+
+The stage-to-stage relation is the simple bipartite relation
+\begin{equation}
+R_{ij}
+=
+\left\{
+(x,y)\in C_i\times C_j:
+G_3(x)=G_3(y),\;
+d(x,y)\le\epsilon
+\right\}.
+\label{eq:relation}
+\end{equation}
+The primary tolerance is
+\[
+\epsilon=0.25,
+\]
+with complete relation replays at
+\[
+\epsilon=0.15,\;0.35.
+\]
+Relations are constructed for all 28 unordered pairs of the eight developmental stages. Reversing a relation exchanges its source and target coordinates.
+
+\subsection{Configuration prevalence within embryos and stages}
+
+Let \(N_e(c)\) be the number of spatial roots assigned to configuration \(c\) across all sections belonging to biological embryo \(e\). Each embryo is normalized to unit configuration mass:
+\begin{equation}
+p_e(c)
+=
+\frac{N_e(c)}
+{\sum_{c'}N_e(c')}.
+\label{eq:embryoprev}
+\end{equation}
+This normalization gives every biological embryo equal total weight, independent of its number of sections or roots.
+
+For developmental stage \(t\), with embryo set \(\mathcal E_t\) and \(n_t=|\mathcal E_t|\), stage prevalence is
+\begin{equation}
+p_t(c)
+=
+\frac1{n_t}
+\sum_{e\in\mathcal E_t}
+p_e(c).
+\label{eq:stageprev}
+\end{equation}
+The stage vectors therefore average complete embryo-level configuration distributions. Root counts are not pooled directly across embryos.
+
+\subsection{Directional prevalence transport}
+
+For relation \(R_{ij}\), define the target neighborhood of source configuration \(x\) by
+\[
+N_{ij}(x)
+=
+\{y\in C_j:(x,y)\in R_{ij}\},
+\]
+with out-degree
+\[
+d_{ij}^{+}(x)=|N_{ij}(x)|.
+\]
+A mapped source configuration distributes all of its prevalence uniformly over its related targets:
+\begin{equation}
+T_{ij}(y\mid x)
+=
+\begin{cases}
+1/d_{ij}^{+}(x),
+& y\in N_{ij}(x),\\[3pt]
+0,
+& y\notin N_{ij}(x).
+\end{cases}
+\label{eq:transportkernel}
+\end{equation}
+The predicted prevalence on target configuration \(y\) is
+\begin{equation}
+(T_{ij}p_i)(y)
+=
+\sum_{x:d_{ij}^{+}(x)>0}
+p_i(x)T_{ij}(y\mid x).
+\label{eq:transport}
+\end{equation}
+Source configurations with \(d_{ij}^{+}(x)=0\) contribute their full mass to an explicit sink:
+\begin{equation}
+s_{i\rightarrow j}
+=
+\sum_{x:d_{ij}^{+}(x)=0}p_i(x).
+\label{eq:sink}
+\end{equation}
+
+Forward predictive error is Jensen--Shannon divergence on the common configuration universe augmented by the sink state.\footnote{Appendix~\ref{app:references}, Ref.~R13.}
+\begin{equation}
+E_{i\rightarrow j}
+=
+D_{\rm JS}
+\left(
+\left(T_{ij}p_i,s_{i\rightarrow j}\right),
+\left(p_j,0\right)
+\right).
+\label{eq:forwarderror}
+\end{equation}
+The implementation uses base-2 logarithms:
+\[
+D_{\rm JS}(P,Q)
+=
+\frac12 D_{\rm KL}(P\|M)
++
+\frac12 D_{\rm KL}(Q\|M),
+\qquad
+M=\frac{P+Q}{2}.
+\]
+Reverse predictive error is computed from the converse relation \(R_{ji}\). The antisymmetric directional score is
+\begin{equation}
+\Omega_{ij}
+=
+E_{j\rightarrow i}
+-
+E_{i\rightarrow j},
+\qquad
+\Omega_{ji}=-\Omega_{ij}.
+\label{eq:omega}
+\end{equation}
+Thus \(\Omega_{ij}>0\) means that transport from \(i\) to \(j\) has lower prediction error than transport from \(j\) to \(i\). A negative value means that the reverse transport has lower prediction error. Under this convention, a negative chronological chain score records cumulative reverse-preferred predictive asymmetry along the known chronological adjacency path.
+
+Uniform splitting is the primary relation-support kernel: conditional on relation membership, it introduces no additional preference among admissible targets. A neighboring-model control retains the same relation and sink rule and weights admissible targets by
+\begin{equation}
+T_{ij}^{\rm dist}(y\mid x)
+=
+\frac{\exp[-d(x,y)/0.25]}
+{\sum_{z\in N_{ij}(x)}\exp[-d(x,z)/0.25]}.
+\label{eq:distancekernel}
+\end{equation}
+The scale 0.25 equals the primary relation tolerance. All 28 directional scores, same-stage references, mapped-support calculations, and a 4,096-member conditional embryo bootstrap are recomputed under this kernel.
+
+For the chronological path
+\[
+\pi_{\rm chron}
+=
+({\rm E9.5},\ldots,{\rm E16.5}),
+\]
+the aggregate chain score is
+\begin{equation}
+S_{\rm chron}
+=
+\sum_{m=1}^{7}
+\Omega_{\pi_m,\pi_{m+1}}.
+\label{eq:pathscore}
+\end{equation}
+
+\subsection{Same-stage biological calibration}
+
+Local directional resolution is calibrated from biological-embryo comparisons within each developmental stage. For every unordered embryo pair \((e,e')\) at stage \(t\), a same-stage relation is rebuilt between the configurations with positive prevalence in the two embryos using the same categorical gate, numeric metric, and tolerance as the corresponding carrier. The directional score
+\[
+\Omega_{e,e'}^{(t)}
+\]
+is then computed by the same prevalence-transport procedure used for cross-stage comparisons. Across the eight stages this yields 75 same-stage embryo pairs.
+
+For each stage \(t\), define the empirical stage-specific reference
+\begin{equation}
+q_{0.95}^{(t)}
+=
+Q_{0.95}
+\left(
+\left\{
+\left|\Omega_{e,e'}^{(t)}\right|
+:
+e<e',\;
+e,e'\in\mathcal E_t
+\right\}
+\right).
+\label{eq:stageq95}
+\end{equation}
+The pooled reference is the 95th percentile after pooling all 75 absolute same-stage scores.
+
+An equal-stage-weighted reference gives every developmental stage total weight \(1/8\), then distributes that weight equally among the same-stage embryo pairs available at that stage. Its empirical quantile is taken from the resulting weighted empirical distribution.
+
+For chronological edge \(i\rightarrow j\), the endpoint-conservative reference is
+\begin{equation}
+q_{0.95}^{\rm endpoint}(i,j)
+=
+\max
+\left(
+q_{0.95}^{(i)},
+q_{0.95}^{(j)}
+\right).
+\label{eq:endpointq95}
+\end{equation}
+A local edge is counted as resolved under this rule when
+\[
+|\Omega_{ij}|
+>
+q_{0.95}^{\rm endpoint}(i,j).
+\]
+Every carrier perturbation reported in the paper receives a fresh same-stage calibration under that carrier before cross-stage resolution is evaluated.
+
+\paragraph{Stage-like pseudo-population calibration.}
+A second same-stage control matches the aggregation level of the cross-stage statistic more closely. At each developmental stage, embryos are partitioned into all unique unordered maximally balanced disjoint splits. Even-\(n\) stages retain one representative from each complementary split pair; odd-\(n\) stages enumerate every smaller-half subset. This yields 75 pseudo-population comparisons across the eight stages.
+
+For split \(A\sqcup B=\mathcal E_t\),
+\[
+p_A(c)=\frac1{|A|}\sum_{e\in A}p_e(c),
+\qquad
+p_B(c)=\frac1{|B|}\sum_{e\in B}p_e(c).
+\]
+The relation is rebuilt from the positive supports of \(p_A\) and \(p_B\) using the primary \(G_3\), metric weights, and \(\epsilon=0.25\). The resulting \(\Omega_{A,B}^{(t)}\) values define stage-specific empirical 95th-percentile absolute-score references, and each chronological edge uses the maximum of its two endpoint-stage values. This reference remains separate from the single-embryo-pair calibration.
+
+\subsection{Biological-embryo bootstrap and deletion analyses}
+
+Aggregate uncertainty is evaluated by stage-stratified biological-embryo resampling.\footnote{Appendix~\ref{app:references}, Ref.~R17.} We generated 4,096 bootstrap replicates. Within each stage \(t\), each replicate samples \(n_t\) embryos with replacement from the observed \(n_t\) embryos. Complete embryo prevalence vectors \(p_e\) are resampled; section nesting within each embryo is therefore preserved. Relation geometry remains fixed during a bootstrap analysis.
+
+If embryo \(e\) appears \(m_e^{(b)}\) times in bootstrap replicate \(b\), the bootstrap stage prevalence is
+\begin{equation}
+p_t^{(b)}(c)
+=
+\frac1{n_t}
+\sum_{e\in\mathcal E_t}
+m_e^{(b)}p_e(c).
+\label{eq:bootstageprev}
+\end{equation}
+All 28 pairwise directional scores are recomputed from these stage prevalences. The seven chronological adjacent scores are collected into
+\[
+\boldsymbol\Omega^{(b)}
+=
+\left(
+\Omega_1^{(b)},\ldots,\Omega_7^{(b)}
+\right),
+\]
+and the bootstrap chain score is
+\begin{equation}
+S_{\rm chron}^{(b)}
+=
+\sum_{m=1}^{7}\Omega_m^{(b)}.
+\label{eq:bootscore}
+\end{equation}
+Reported bootstrap intervals are empirical 2.5th and 97.5th percentiles. The negative-sign frequency is the fraction of bootstrap chain scores below zero.
+
+The bootstrap schedule uses deterministic stage-specific seeds derived from base seed 2026093001. The 4,096 iterations provide Monte Carlo resolution for conditional resampling and leave the biological sample count at 37. This primary bootstrap estimates prevalence-composition uncertainty conditional on the observed relational carrier.
+
+\paragraph{Relation-support-rebuilding sensitivity.}
+A separate 256-member control uses the first 256 resamples from the frozen biological-embryo schedule and rebuilds positive relation support after every resample. For stage prevalence \(p_t^{(b)}\), the resampled active support is
+\[
+C_t^{(b)}=\{c:p_t^{(b)}(c)>0\}.
+\]
+At fixed configuration coordinates, rebuilding \(R_{ij}^{(b)}\) is exactly restriction of the complete primary metric relation to
+\[
+C_i^{(b)}\times C_j^{(b)}.
+\]
+Directional scores and the chronological chain score are recomputed on this resample-specific relation support. This sensitivity adds observed support loss to the prevalence uncertainty represented by the primary bootstrap.
+
+For leave-one-embryo analysis, each of the 37 embryos is removed once. The remaining embryos at the affected stage are renormalized to equal weight and the full directional field is recomputed on the fixed relation geometry. For leave-one-edge analysis, each chronological \(\Omega_m\) is omitted once from the seven-edge sum.
+
+\subsection{Chain-level reference families}
+
+Three chain-level reference families evaluate different features of the primary
+\[
+k=32,\qquad G_3=(a_x,a_1,a_2),\qquad\epsilon=0.25
+\]
+carrier.
+
+\paragraph{Centered biological-embryo bootstrap references.}
+Let
+\[
+\boldsymbol\Omega^{(b)}\in\mathbb R^7
+\]
+be the adjacent-score vector from bootstrap replicate \(b\). Two center vectors are used:
+\[
+\mathbf c_{\rm obs}
+=
+\boldsymbol\Omega_{\rm obs},
+\qquad
+\mathbf c_{\rm mean}
+=
+\frac1B\sum_{b=1}^{B}\boldsymbol\Omega^{(b)},
+\]
+with \(B=4096\). For either center \(\mathbf c\), the centered reference score is
+\begin{equation}
+S_{\mathbf c}^{(b)}
+=
+\sum_{m=1}^{7}
+\left(
+\Omega_m^{(b)}-c_m
+\right).
+\label{eq:centeredbootstrap}
+\end{equation}
+Because each bootstrap replicate supplies the full seven-edge vector, cross-edge covariance induced by shared stages is retained. Two-sided empirical tail probabilities use
+\begin{equation}
+\widehat p_{\rm two}
+=
+\frac{
+1+
+\#\left\{
+b:
+|S_{\mathbf c}^{(b)}|
+\ge
+|S_{\rm chron}|
+\right\}
+}{
+B+1
+}.
+\label{eq:empiricalp}
+\end{equation}
+
+\paragraph{Independent sign reference.}
+The seven observed magnitudes are held fixed. All
+\[
+2^7=128
+\]
+sign vectors \(\boldsymbol\sigma\in\{-1,+1\}^7\) are enumerated exactly, giving
+\[
+S_{\boldsymbol\sigma}
+=
+\sum_{m=1}^{7}
+\sigma_m|\Omega_m|.
+\]
+The two-sided probability is the exact fraction satisfying
+\[
+|S_{\boldsymbol\sigma}|
+\ge
+|S_{\rm chron}|.
+\]
+
+\paragraph{Stage-balanced embryo-pair accumulation reference.}
+A bank of 262,144 pseudo-chains is generated with deterministic seed 2026093002. For each chronological edge \(i\rightarrow j\), one endpoint stage is selected with probability \(1/2\). An absolute same-stage embryo-pair score is drawn uniformly from that endpoint stage's pool
+\[
+\left\{
+|\Omega_{e,e'}^{(t)}|
+\right\},
+\]
+and an independent random sign is assigned with equal probability. The seven signed draws are summed to form one pseudo-chain. Endpoint stages therefore receive equal weight at every edge. Edge draws are independent, so this reference does not preserve shared-stage dependence. Two-sided reference-tail fractions use the same plus-one empirical formula in equation~\eqref{eq:empiricalp}.
+
+\subsection{Relational composition}
+
+For three consecutive stages \(A,B,C\), the composed relation is
+\begin{equation}
+R_{AB}\circ R_{BC}
+=
+\left\{
+(x,z):
+\exists y,\;
+(x,y)\in R_{AB},\;
+(y,z)\in R_{BC}
+\right\}.
+\label{eq:composition}
+\end{equation}
+The composed relation is treated as a simple binary relation: multiple intermediate paths between the same pair \((x,z)\) count once for the Jaccard comparison. The direct two-step relation \(R_{AC}\) is constructed from the same carrier and tolerance. Agreement is measured by
+\begin{equation}
+J
+=
+\frac{
+|R_{AC}\cap(R_{AB}\circ R_{BC})|
+}{
+|R_{AC}\cup(R_{AB}\circ R_{BC})|
+}.
+\label{eq:compositionjaccard}
+\end{equation}
+
+\subsection{Architecture-preserving composition references}
+
+Two independent reference mechanisms assess how much direct/composed agreement remains after local relational architecture is preserved.
+
+\paragraph{Degree/configuration-matched endpoint permutation.}
+For each of the relations \(R_{AB}\), \(R_{BC}\), and \(R_{AC}\), active source and target configurations are grouped independently by exact categorical key and exact graph degree. Source identities are permuted within source groups and target identities within target groups. Singleton groups remain unchanged. This procedure preserves relation-pair count, source degree, target degree, categorical block, and simple-pair uniqueness. It is a constrained endpoint permutation and does not claim uniform sampling over all fixed-degree bipartite graphs.
+
+For each developmental triple, 1,024 independently seeded reference realizations are generated. Seeds are derived deterministically from the triple, relation role, replicate number, and endpoint side using SHA-256. The one-sided empirical tail fraction for an observed Jaccard \(J_{\rm obs}\) is
+\[
+\widehat p
+=
+\frac{
+1+
+\#\{J_{\rm null}\ge J_{\rm obs}\}
+}{
+1025
+}.
+\]
+
+\paragraph{Categorical-block Curveball reference.}
+The second reference randomizes each bipartite relation with Curveball trades performed independently inside categorical blocks.\footnote{The Curveball algorithm was introduced by Strona et al.; Appendix~\ref{app:references}, Ref.~R12.} Within every randomized relation, source degree, target degree, edge count, categorical block membership, and simple-relation structure are preserved exactly.
+
+Mixing behavior was evaluated on prespecified representative small, medium, and large blocks using efforts of 1, 2, 5, 10, and 20 attempted trades per active source and four independent chains per effort. Five trades per active source were then used for production. Each of the six developmental triples received 256 independently seeded reference realizations under the deterministic namespace \texttt{RMMO-P1-R2:curveball:v1}. Empirical upper-tail fractions use
+\[
+\widehat p
+=
+\frac{
+1+
+\#\{J_{\rm null}\ge J_{\rm obs}\}
+}{
+257
+}.
+\]
+Holm adjustment is applied across the six developmental triples.\footnote{Appendix~\ref{app:references}, Ref.~R14.} Mixing diagnostics, acceptance fractions, preserved-degree checks, and effort-stability summaries are released with the public reproducibility materials.
+
+A separate production sensitivity repeats all six triples at 20 attempted trades per active source with 256 independently seeded realizations per triple under the deterministic seed namespace \texttt{RMMO-P1-METHODS-ROBUSTNESS-01:}\allowbreak\texttt{curveball-effort20:v1}. Source degree, target degree, edge count, categorical block, and simple-relation structure remain exact. The five-trade bank remains the primary production reference; the 20-trade bank tests mixing-effort sensitivity.
+
+\subsection{Branching, coalescence, and support-qualified records}
+
+For relation \(R_{ij}\), source and target degrees are
+\[
+d_{ij}^{+}(x)
+=
+\#\{y:(x,y)\in R_{ij}\},
+\qquad
+d_{ij}^{-}(y)
+=
+\#\{x:(x,y)\in R_{ij}\}.
+\]
+Raw interval-specific branching and coalescing records are
+\begin{equation}
+B_{\rm raw}(i,j)
+=
+\#\{x:d_{ij}^{+}(x)>1\},
+\qquad
+C_{\rm raw}(i,j)
+=
+\#\{y:d_{ij}^{-}(y)>1\}.
+\label{eq:rawbranchcoal}
+\end{equation}
+
+For calibration of interval-level excess, same-stage section pairs are constructed at the primary tolerance. Independent biological-embryo section pairs are used when available; the complete candidate set is used when an independent pair is unavailable. For each same-stage relation, branching rate is the number of branching source configurations divided by the source configuration count, and coalescence rate is the number of coalescing target configurations divided by the target configuration count. Let
+\[
+\widetilde b_{\rm same},
+\qquad
+\widetilde c_{\rm same}
+\]
+denote the medians of these same-stage rates over the complete same-stage control bank.
+
+For adjacent developmental interval \(i\rightarrow j\),
+\[
+b_{ij}
+=
+\frac{B_{\rm raw}(i,j)}{|C_i|},
+\qquad
+c_{ij}
+=
+\frac{C_{\rm raw}(i,j)}{|C_j|},
+\]
+with interval excesses
+\[
+\Delta b_{ij}
+=
+b_{ij}-\widetilde b_{\rm same},
+\qquad
+\Delta c_{ij}
+=
+c_{ij}-\widetilde c_{\rm same}.
+\]
+A branching record is \emph{section-recurrent support-qualified} when its source configuration has out-degree greater than one, is observed in at least two source-stage sections, and belongs to an interval with \(\Delta b_{ij}>0\). A coalescing record is section-recurrent support-qualified when its target configuration has in-degree greater than one, is observed in at least two target-stage sections, and belongs to an interval with \(\Delta c_{ij}>0\). The two-section filter measures recurrence across sampled sections and is not treated as independent biological replication.
+
+A stricter embryo-replicated class retains the same interval-excess criterion and additionally requires the corresponding source or target configuration to occur in at least two biological embryos at the relevant endpoint stage. Section-recurrent and embryo-replicated counts are reported separately. Both classes quantify relational multiplicity and carry no lineage identity claim.
+
+\subsection{Mapped-support and sink sensitivity}
+
+For relation \(R_{ij}\), mapped source and target supports are
+\[
+M_i
+=
+\{x:d_{ij}^{+}(x)>0\},
+\qquad
+M_j
+=
+\{y:d_{ij}^{-}(y)>0\}.
+\]
+Mapped-support conditioning sets prevalence outside \(M_i\) and \(M_j\) to zero, renormalizes the remaining distributions to unit mass, and then recomputes forward and reverse transport on the original relation. The conditioned calculation has zero sink mass by construction. Its directional score is denoted
+\[
+\Omega_{ij}^{\rm mapped}.
+\]
+
+The sink-only sensitivity isolates mapped-versus-unmapped mass. For an unmapped mass \(u\), define
+\[
+J_{\rm sink}(u)
+=
+D_{\rm JS}\left(
+(1-u,u),(1,0)
+\right).
+\]
+If \(u_i\) and \(u_j\) are the source and target unmapped masses for \(R_{ij}\), then
+\[
+\Omega_{ij}^{\rm sink}
+=
+J_{\rm sink}(u_j)
+-
+J_{\rm sink}(u_i).
+\]
+Mapped-support and sink-only statistics are separate sensitivity calculations on different normalized objects.
+
+\subsection{Carrier perturbations}
+
+Every perturbation is propagated through the full downstream analysis.
+
+\paragraph{Neighborhood scale.}
+The complete root-level neighborhood construction, pooled density/entropy quartiles, \(C_2\) configurations, cross-stage relations, same-stage calibration, embryo prevalence transport, and bootstrap analysis are rebuilt independently for
+\[
+k=16,\;32,\;64.
+\]
+
+\paragraph{Relation tolerance.}
+With the carrier fixed, all 28 stage-pair relations are rebuilt at
+\[
+\epsilon=0.15,\;0.25,\;0.35.
+\]
+Same-stage embryo-pair references, directional scores, mapped-support sensitivities, composition, and bootstrap summaries are recomputed at each tolerance.
+
+\paragraph{Explicit secondary-support sentinel.}
+When a root has zero distinct non-dominant neighbor support, the primary deterministic secondary-label rule still returns a label through the global first-maximum convention. The sentinel analysis replaces that fallback with
+\[
+\texttt{\_\_NO\_SECONDARY\_SUPPORT\_}
+\]
+and then rebuilds recurrence, relations, branching/coalescence, composition, same-stage calibration, directional scores, and mapped-support sensitivity.
+
+\paragraph{Density ablation.}
+At
+\[
+k=32,\qquad\epsilon=0.25,
+\]
+the density contribution to equation~\eqref{eq:metric} is set to zero. All remaining metric weights and the relation threshold remain fixed, and the downstream relation, calibration, and directional analyses are recomputed.
+
+\paragraph{Root-only categorical gate.}
+The coarser categorical gate is
+\[
+G_1(x)=a_x.
+\]
+Only exact root tissue identity is required for categorical matching. The same five numeric descriptors, normalized coordinates, weights, \(k=32\), and \(\epsilon=0.25\) are retained. Relations, same-stage references, mapped-support scores, and biological-embryo bootstrap summaries are then recomputed under this comparison space.
+
+\paragraph{Embryo-balanced density and entropy discretization.}
+The primary density and entropy quartile boundaries are root-weighted over the complete carrier. A neighboring-model control assigns every biological embryo total weight \(1/37\). A root in embryo \(e\), containing \(N_e\) roots, receives weight
+\[
+w_{\rm root}=\frac{1}{37N_e}.
+\]
+Weighted global quartiles of \(\log(1+\rho)\) and \(H\) define the alternative density and entropy bins. The complete \(k=32\), \(G_3\), \(\epsilon=0.25\) carrier is rebuilt with the primary metric weights and uniform transport, followed by fresh same-stage calibration, mapped-support analysis, and a 4,096-member fixed-geometry embryo bootstrap.
+
+\paragraph{Physical neighborhood-radius diagnostic.}
+For \(k=16,32,64\), the Euclidean distance \(r_k(x)\) from each root to its \(k\)-th same-section neighbor is summarized by stage and by embryo using minimum, 5th, 25th, 50th, 75th, and 95th percentiles and maximum. Values are reported in source-atlas coordinate units as visibility diagnostics; no physical cutoff is fitted or imposed on the carrier.
+
+\subsection{Potential fit}
+
+The complete eight-stage directional field contains one score for every unordered stage pair. Let \(\Omega_{ij}\) denote the antisymmetric score with a fixed stage indexing. The scalar potential is the equal-pair least-squares fit
+\begin{equation}
+\phi^\ast
+=
+\arg\min_{\phi:\sum_i\phi_i=0}
+\sum_{i<j}
+\left[
+\Omega_{ij}
+-
+(\phi_j-\phi_i)
+\right]^2.
+\label{eq:potentialfit}
+\end{equation}
+For the complete graph on \(n=8\) stages, the implemented solution is
+\[
+\phi_i
+=
+\frac1n
+\sum_{j=1}^{n}\Omega_{ji}.
+\]
+The fitted gradient field is
+\[
+\widehat\Omega_{ij}
+=
+\phi_j-\phi_i.
+\]
+Its gradient fraction is
+\begin{equation}
+G
+=
+1-
+\frac{
+\sum_{i<j}
+(\Omega_{ij}-\widehat\Omega_{ij})^2
+}{
+\sum_{i<j}\Omega_{ij}^2
+}.
+\label{eq:gradientfraction}
+\end{equation}
+
+The reported potential reference is an independent 1,024-field typed-degree endpoint-rewiring bank over all 28 stage-pair relations. For each unordered stage pair, active source endpoints are grouped by exact categorical key and source degree, and active target endpoints are grouped independently by exact categorical key and target degree. Within each group, source and target endpoint identities, together with their associated prevalence masses, are independently permuted using deterministic SHA-256-derived seeds. The original relation incidence kernel is retained. This preserves relation-pair count, source-degree sequence, target-degree sequence, categorical-block membership, and simple-pair uniqueness exactly. Forward and reverse errors are computed from the same permuted pair; the reverse calculation uses the converse relation and is not randomized independently.
+
+Every replicate rewires the complete 28-pair field. The deterministic seed namespace is \texttt{RMMO-P1-R1:}\allowbreak\texttt{full-field-null:v1}. Its upper-tail Monte Carlo value is
+\[
+\widehat p_G
+=
+\frac{
+1+\#\{G_{\rm null}\ge G_{\rm obs}-10^{-15}\}
+}{
+1025
+}.
+\]
+This reference produces the reported null mean, 95th percentile, and \(p=0.507317\). A separate historical 32-rewire bank is an earlier descriptive diagnostic and is not the source of the reported inferential values. The potential analysis is interpreted as a geometric summary of the relation architecture.
+
+\subsection{Analysis timeline and computational implementation}
+
+The primary relation geometry, metric weights, primary tolerance, prevalence transport, directional score, and initial same-stage calibration were specified before chronological orientation was revealed. Stage identifiers were replaced by neutral identifiers during directional construction; only the undirected developmental adjacency path was exposed to the direction engine. Biological-embryo bootstrap, mapped-support conditioning, expanded chain references, tolerance replay, and graph-reference analyses were added subsequently as calibration and sensitivity analyses.
+
+The methods-hardening plan was frozen in a dedicated pre-outcome commit before its results were computed. Eight lanes test or diagnose the primary estimator without redefining it: stage-like same-stage calibration, relation-support rebuilding, distance-decay transport, equal metric weights, deeper Curveball mixing, physical-radius visibility, embryo-replicated branching/coalescence, and embryo-balanced descriptor discretization. A ninth lane reconciles the provenance of the potential reference. The public reproducibility companion records the complete analysis timeline and plan commits.
+
+The computational pipeline is implemented in Python. The frozen environment constrains
+\[
+\texttt{h5py}\ge3.12,<4,\qquad
+\texttt{numpy}\ge2,<3,\qquad
+\texttt{scipy}\ge1.14,<2.
+\]
+Nearest-neighbor and relation-radius queries use SciPy spatial search routines; sparse relational composition uses SciPy sparse matrices. Randomized analyses use deterministic seeds or SHA-256-derived seed namespaces, and their seed schedules are released in the reproducibility artifacts.
+
+\subsection{Formal and numerical verification}
+
+The public verification layer checks source authority, sample counts, carrier reconstructions, relation counts, directional scores, calibration thresholds, chain-reference outputs, sensitivity summaries, and the published numerical invariants. The methods-robustness tranche adds 31 numerical validation checks spanning nine registered lanes: eight neighboring-estimator or diagnostic controls and one potential-reference reconciliation. A publication-facing Lean layer formalizes the algebraic distinctions used in the manuscript, including antisymmetry under relation reversal, separation of local resolution from aggregate sign stability, distinction among chain-reference families, separation of section recurrence from embryo replication, separation of the primary estimator from neighboring-model controls, and the potential-null provenance correction.\footnote{Repository and verification mapping are provided in Appendix~\ref{app:provenance}.} The audited publication formal surface contains zero \texttt{sorry}, zero \texttt{admit}, and zero project-specific scientific axiom declarations.
+
+\section{Data availability}
+
+The primary data are from the publicly released Mouse Organogenesis Spatiotemporal Transcriptomic Atlas and associated STOmicsDB/CNGB resources.\footnote{Appendix~\ref{app:references}, Refs.~R1 and R8.} Public source identifiers, section/embryo registries, annotation summaries, and source hashes are released in the Paper 1 reproducibility companion.
+
+\section{Code availability}
+
+Processed result tables, calibration surfaces, sensitivity analyses, validation receipts, manuscript source, figure files, and publication-facing formal controls are available at
+\url{https://github.com/zedjames/relational-morphogenesis}.
+Paper 1 materials are maintained under
+\path{papers/01-directional-stability/}.
+The scholarly record for this preprint is available from Zenodo at
+\href{https://doi.org/10.5281/zenodo.23090479}{doi:10.5281/zenodo.23090479}.
+
+\section{Author contributions}
+
+Zed James conceived the study, designed the relational analysis, developed the computational and formal framework, analyzed the results, and wrote the manuscript.
+
+\section{Competing interests}
+
+Competing interests: none declared.
+
+\section{Acknowledgments}
+
+Acknowledgments: none.
+
+\section{AI-assisted research and writing disclosure}
+
+Artificial intelligence tools were used as research-assistance software for code review, literature organization, manuscript drafting, and editorial revision. Scientific claims, source selection, computational authority, formal verification, interpretation, and final manuscript responsibility remain with the author.
+\newpage
+\appendix
+
+\section{Reference notes}
+\label{app:references}
+
+\begin{description}[leftmargin=1.2cm,labelwidth=1cm]
+\item[R1.] Chen, A., Liao, S., Cheng, M., Ma, K., Wu, L., Lai, Y., et al. (2022).
+\emph{Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays}.
+Cell 185, 1777--1792.e21.
+doi:10.1016/j.cell.2022.04.003.
+
+\item[R2.] Saelens, W., Cannoodt, R., Todorov, H., and Saeys, Y. (2019).
+\emph{A comparison of single-cell trajectory inference methods}.
+Nature Biotechnology 37, 547--554.
+doi:10.1038/s41587-019-0071-9.
+
+\item[R3.] Campbell, K. R., and Yau, C. (2018).
+\emph{Uncovering pseudotemporal trajectories with covariates from single cell and bulk expression data}.
+Nature Communications 9, 2442.
+doi:10.1038/s41467-018-04696-6.
+
+\item[R4.] La Manno, G., Soldatov, R., Zeisel, A., et al. (2018).
+\emph{RNA velocity of single cells}.
+Nature 560, 494--498.
+doi:10.1038/s41586-018-0414-6.
+
+\item[R5.] Lange, M., Bergen, V., Klein, M., et al. (2022).
+\emph{CellRank for directed single-cell fate mapping}.
+Nature Methods 19, 159--170.
+doi:10.1038/s41592-021-01346-6.
+
+\item[R6.] Schiebinger, G., Shu, J., Tabaka, M., et al. (2019).
+\emph{Optimal-transport analysis of single-cell gene expression identifies developmental trajectories in reprogramming}.
+Cell 176, 928--943.e22.
+doi:10.1016/j.cell.2019.01.006.
+
+\item[R7.] Forrow, A., and Schiebinger, G. (2021).
+\emph{LineageOT is a unified framework for lineage tracing and trajectory inference}.
+Nature Communications 12, 4940.
+doi:10.1038/s41467-021-25133-1.
+
+\item[R8.] Mouse Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA), STOmicsDB/CNGB, dataset STDS0000058; raw project CNP0001543.
+
+\item[R9.] Heitz, M., Ma, Y., Kubal, S., and Schiebinger, G. (2025).
+\emph{Spatial Transcriptomics Brings New Challenges and Opportunities for Trajectory Inference}.
+Annual Review of Biomedical Data Science 8, 1--19.
+doi:10.1146/annurev-biodatasci-040324-030052.
+
+\item[R10.] Klein, D., Palla, G., Lange, M., et al. (2025).
+\emph{Mapping cells through time and space with moscot}.
+Nature 638, 1065--1075.
+doi:10.1038/s41586-024-08453-2.
+
+\item[R11.] Bryan, J. P., Farhi, S. L., and Cleary, B. (2026).
+\emph{Accurate trajectory inference in time-series spatial transcriptomics with structurally-constrained optimal transport}.
+Nature Communications 17, 8075.
+doi:10.1038/s41467-026-74927-8.
+
+\item[R12.] Strona, G., Nappo, D., Boccacci, F., Fattorini, S., and San-Miguel-Ayanz, J. (2014).
+\emph{A fast and unbiased procedure to randomize ecological binary matrices with fixed row and column totals}.
+Nature Communications 5, 4114.
+doi:10.1038/ncomms5114.
+
+\item[R13.] Lin, J. (1991).
+\emph{Divergence measures based on the Shannon entropy}.
+IEEE Transactions on Information Theory 37, 145--151.
+doi:10.1109/18.61115.
+
+\item[R14.] Holm, S. (1979).
+\emph{A simple sequentially rejective multiple test procedure}.
+Scandinavian Journal of Statistics 6, 65--70.
+
+\item[R15.] Cao, J., Spielmann, M., Qiu, X., et al. (2019).
+\emph{The single-cell transcriptional landscape of mammalian organogenesis}.
+Nature 566, 496--502.
+doi:10.1038/s41586-019-0969-x.
+
+\item[R16.] Cang, Z., and Nie, Q. (2020).
+\emph{Inferring spatial and signaling relationships between cells from single cell transcriptomic data}.
+Nature Communications 11, 2084.
+doi:10.1038/s41467-020-15968-5.
+
+\item[R17.] Efron, B. (1979).
+\emph{Bootstrap Methods: Another Look at the Jackknife}.
+The Annals of Statistics 7, 1--26.
+doi:10.1214/aos/1176344552.
+\end{description}
+\newpage
+\section{Public reproducibility companion}
+\label{app:provenance}
+
+Paper 1 reproducibility materials are maintained at:
+\begin{verbatim}
+https://github.com/zedjames/relational-morphogenesis
+\end{verbatim}
+
+The Paper 1 release surface is organized under:
+\begin{verbatim}
+papers/01-directional-stability/
+\end{verbatim}
+
+The public companion contains source and sample provenance, finite result tables, same-stage and chain-level calibration surfaces, carrier and neighboring-estimator sensitivity analyses, claim-to-artifact mapping, verification code, and publication-facing formal controls.
+
+The scholarly preprint record is:
+\begin{verbatim}
+https://doi.org/10.5281/zenodo.23090479
+\end{verbatim}
+
+Repository verification is designed to run from a fresh checkout. Analysis provenance includes pre-outcome plans, numerical validation receipts, formal-verification surfaces, and publication-stage robustness analyses. The final public release tag and external manuscript/figure hash manifest identify the exact repository state corresponding to this preprint.
+
+\end{document}

@@ -1,0 +1,8 @@
+estimator,adjacentRelationCount,localResolvedCount,chainScore,bootstrap95Interval,negativeFrequency,mappedFullSignConcordance,compositionMaxAbsDeltaJ,statusInterpretation
+primary,1700946,0,-0.13977910974666596,"[-0.147571, -0.050681]",0.999755859375,1.0,0.0007732060236939065,registered primary; negative aggregate and 0/7 local
+pseudo-stage calibration,NA,0,NA,NA,NA,NA,NA,local 0/7 stable under balanced disjoint pseudo-populations
+geometry-rebuilding bootstrap,replicate-specific,NA,-0.11640788472019892,"[-0.155087, -0.079239]",1.0,NA,NA,negative aggregate survives relation-support uncertainty
+distance-weighted kernel,1700946,0,-0.16389238942040163,"[-0.148587, -0.053502]",1.0,0.9285714285714286,NA,aggregate/local stable; mapped/full 26/28 all-pair and 6/7 adjacent
+equal metric weights,1641191,0,-0.16008013308743524,"[-0.145282, -0.050203]",1.0,0.8928571428571429,NA,aggregate/local stable; mapped/full 25/28 all-pair and 7/7 adjacent
+Curveball effort20,NA,NA,NA,NA,NA,NA,0.0008054545435571825,tiny residual stable; Holm-significant count changes 5/6 to 6/6
+embryo-replicated branching/coalescence,NA,NA,NA,NA,NA,NA,NA,section B/C=25533/26350; embryo B/C=25533/21635

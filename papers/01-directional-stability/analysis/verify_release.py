@@ -111,6 +111,74 @@ check(formal["passed"] is True, "private formal verification receipt passed")
 check(formal["sorryCount"] == 0 and formal["admitCount"] == 0, "zero sorry/admit")
 check(formal["newScientificAxioms"] is False, "zero new scientific axioms")
 
+
+# Final Methods-robustness surfaces.
+comparison = read_csv("results/methods_robustness/comparison_matrix.csv")
+check(len(comparison) == 7, "seven-row neighboring-estimator comparison matrix")
+by_estimator = {r["estimator"]: r for r in comparison}
+check(int(by_estimator["primary"]["localResolvedCount"]) == 0, "methods matrix primary 0/7")
+check(float(by_estimator["primary"]["chainScore"]) < 0, "methods matrix primary negative chain")
+check(int(by_estimator["pseudo-stage calibration"]["localResolvedCount"]) == 0, "pseudo-stage 0/7")
+check(float(by_estimator["distance-weighted kernel"]["chainScore"]) < 0, "distance-kernel negative chain")
+check(float(by_estimator["equal metric weights"]["chainScore"]) < 0, "equal-weight negative chain")
+
+pseudo = read_json("results/methods_robustness/pseudo_stage_calibration.json")
+check(pseudo["splitCount"] == 75, "75 pseudo-stage splits")
+check(pseudo["endpointResolvedCount"] == 0, "pseudo-stage endpoint resolution remains 0/7")
+
+rebuilt = read_json("results/methods_robustness/geometry_rebuilding_bootstrap.json")
+check(rebuilt["replicates"] == 256, "256 relation-support-rebuilding replicates")
+check(close(rebuilt["negativeFrequency"], 1.0), "relation-support-rebuilding negative frequency")
+check(float(rebuilt["q975"]) < 0, "relation-support-rebuilding interval below zero")
+
+kernel = read_json("results/methods_robustness/distance_weighted_kernel.json")
+check(kernel["endpointResolvedCount"] == 0, "distance-kernel 0/7")
+check(close(kernel["mappedFullSignConcordanceAll28"], 26/28), "distance-kernel 26/28 mapped/full")
+check(close(kernel["mappedFullSignConcordanceAdjacent"], 6/7), "distance-kernel 6/7 adjacent mapped/full")
+
+weights = read_json("results/methods_robustness/equal_metric_weights.json")
+check(weights["endpointResolvedCount"] == 0, "equal-weight 0/7")
+check(close(weights["mappedFullSignConcordanceAll28"], 25/28), "equal-weight 25/28 mapped/full")
+check(close(weights["epsilonFractionOfMaximumWeightedNumericDistance"], 0.25/0.65), "equal-weight epsilon fraction")
+
+balanced = read_json("results/methods_robustness/embryo_balanced_discretization.json")
+check(balanced["endpointResolvedCount"] == 0, "embryo-balanced 0/7")
+check(float(balanced["chronologicalChainScore"]) < 0, "embryo-balanced negative chain")
+check(close(balanced["mappedFullSignConcordanceAll28"], 26/28), "embryo-balanced 26/28 mapped/full")
+
+support = read_json("results/methods_robustness/embryo_replicated_support.json")
+check(support["B_section"] == 25533 and support["B_embryo"] == 25533, "branching survives embryo criterion")
+check(support["C_section"] == 26350 and support["C_embryo"] == 21635, "coalescence embryo-qualified count")
+
+curve20 = read_csv("results/methods_robustness/curveball_effort20_summary.csv")
+check(len(curve20) == 6, "six effort-20 Curveball triples")
+check(max(abs(float(r["effort20DeltaJ"])) for r in curve20) < 0.001, "effort-20 residual below 1e-3")
+curve20_decision = read_json("results/methods_robustness/curveball_effort20_decision.json")
+check(curve20_decision["effort5HolmSignificantTripleCount"] == 5 and curve20_decision["effort20HolmSignificantTripleCount"] == 6, "Curveball multiplicity sensitivity recorded")
+
+potential = read_json("results/methods_robustness/potential_reference_reconciliation.json")
+check(potential["reportedNullReplicates"] == 1024, "potential reference uses 1024 fields")
+check(close(potential["gradientEmpiricalP"], 0.5073170731707317), "potential reference p-value")
+check(potential["historical32RewireBankIsReportedResultSource"] is False, "historical 32-rewire bank excluded from reported potential result")
+
+radii = read_csv("results/methods_robustness/spatial_radius_by_stage.csv")
+k32 = [r for r in radii if r["k"] == "32"]
+check(len(k32) == 8, "eight stagewise k32 radius summaries")
+check(max(abs(float(r["median"]) - 3.1622776601683795) for r in k32) < 2e-5, "stable k32 median spatial scale")
+
+hardening = read_json("results/methods_robustness/validation_receipt.json")
+check(hardening["passed"] is True and hardening["checkCount"] == 31, "31-check methods robustness receipt")
+check(hardening["historicalPrimaryMutated"] is False, "registered primary not retrofitted")
+
+# Frozen publication identity.
+import hashlib
+manifest = read_json("verification/release_manifest.json")
+for entry in manifest["files"]:
+    p = PAPER / entry["path"]
+    check(p.exists(), f"release file exists: {entry['path']}")
+    digest = hashlib.sha256(p.read_bytes()).hexdigest()
+    check(digest == entry["sha256"], f"release SHA-256: {entry['path']}")
+
 print(f"PASS: {len(checks)} Paper 1 public verification checks")
 for item in checks:
     print(f"  - {item}")
