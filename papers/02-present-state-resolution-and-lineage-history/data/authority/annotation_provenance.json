@@ -1,0 +1,76 @@
+{
+  "documentationSearch": [
+    {
+      "URL": "https://zenodo.org/records/19892785",
+      "result": "deposited H5TD columns, expressions, characters, reconstructed trees; no column-construction code in raw metadata"
+    },
+    {
+      "URL": "https://mela.wi.mit.edu/celltypes/",
+      "result": "hierarchical annotation/markers, not column-construction implementation"
+    },
+    {
+      "URL": "https://github.com/jweissmanlab/mela-website",
+      "result": "public visualization website; not the raw annotation pipeline"
+    },
+    {
+      "URL": "https://pure.mpg.de/rest/items/item_3711344_1/component/file_3711345/content",
+      "result": "source-study Methods explicitly describe field construction"
+    }
+  ],
+  "fields": {
+    "cell_type": {
+      "construction": "reference expression label transfer, marker-guided manual curation, automated annotation, then grouping",
+      "exactSourceCodeAssignment": "PROVENANCE_NOT_IDENTIFIED",
+      "expressionDerived": true,
+      "features": "filtered5000 HVGs/scVI clustering; local/global marker genes; exact per-label feature list not recovered",
+      "locator": "PDF pp73-74, Cell type annotation and Embedding with scVI",
+      "manualVsComputational": "both",
+      "meaning": "broader grouping of transcriptional subtypes",
+      "relationships": "measured separately in field_relationships.json; do not infer undocumented mappings",
+      "sourceColumn": "obs/cell_type",
+      "sourceURL": "https://pure.mpg.de/rest/items/item_3711344_1/component/file_3711345/content"
+    },
+    "germ_layer": {
+      "construction": "annotated transcriptional subtypes receive germ-layer/domain labels",
+      "exactSourceCodeAssignment": "PROVENANCE_NOT_IDENTIFIED",
+      "expressionDerived": "downstream of expression annotation",
+      "features": "subtype labels, not independently measured germ-layer identity",
+      "locator": "PDF p74, Cell type annotation",
+      "manualVsComputational": "exact assignment implementation PROVENANCE_NOT_IDENTIFIED",
+      "meaning": "developmental germ-layer assignment",
+      "relationships": "measured separately in field_relationships.json; do not infer undocumented mappings",
+      "sourceColumn": "obs/germ_layer",
+      "sourceURL": "https://pure.mpg.de/rest/items/item_3711344_1/component/file_3711345/content"
+    },
+    "phase": {
+      "construction": "curated S-phase and G2/M expression scores; exact phase-calling implementation not deposited here",
+      "exactSourceCodeAssignment": "PROVENANCE_NOT_IDENTIFIED",
+      "expressionDerived": true,
+      "features": "curated S/G2M gene sets; exact list PROVENANCE_NOT_IDENTIFIED",
+      "locator": "PDF p73, Normalization and highly-variable gene selection",
+      "manualVsComputational": "computational scores",
+      "meaning": "cell-cycle phase",
+      "relationships": "measured separately in field_relationships.json; do not infer undocumented mappings",
+      "sourceColumn": "obs/phase",
+      "sourceURL": "https://pure.mpg.de/rest/items/item_3711344_1/component/file_3711345/content"
+    },
+    "type": {
+      "construction": "LTC expression and transcriptome SNP thresholds, doublet exclusion",
+      "exactSourceCodeAssignment": "PROVENANCE_NOT_IDENTIFIED",
+      "expressionDerived": true,
+      "features": "LTC UMIs, transcriptome UMIs, host SNPs; Xist in specified doublet checks",
+      "locator": "PDF p70, Identification of donor, host, and doublet cells",
+      "manualVsComputational": "computational thresholds",
+      "meaning": "donor/host origin; not cell-type annotation",
+      "relationships": "measured separately in field_relationships.json; do not infer undocumented mappings",
+      "sourceColumn": "obs/type",
+      "sourceURL": "https://pure.mpg.de/rest/items/item_3711344_1/component/file_3711345/content"
+    }
+  },
+  "historicalWitnessClass": "annotation-based descriptive calibration; not transcriptome-independent validation of developmental memory",
+  "noIndependentContemporaneousPhenotypeIdentified": true,
+  "officialPaper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13174701/",
+  "orthogonalMeasurement": "obsm/characters records lineage marks from targeted LTC readout; orthogonal molecular modality to expression but the same information used to reconstruct H, not an independent phenotype or future outcome",
+  "sourcePDFSHA256": "62a7abd6fb0840329fa6a68ddb9f2dfe9bbc0afef027816a3a4a740137e63d95",
+  "sourceVersion": "bioRxiv v1, May9 2026; read Methods pp70,73,74; current public v2 paper also indexed by PMC13174701"
+}

@@ -1,0 +1,12 @@
+{
+  "biologicalReplicates": 3,
+  "commonStrata": "S0, embryo, joint five-state-code vector",
+  "conditionalFamilyP": 0.31007751937984496,
+  "contrasts": 100,
+  "correctedDepartures": 0,
+  "informativeExposure": true,
+  "movableFraction": 0.4978401727861771,
+  "observedMax": 0.12556409386465944,
+  "permutations": 128,
+  "populationInference": false
+}

@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "largestFractionMax": 0.25,
+    "medianMin": 4,
+    "recurrentMin": 100,
+    "singletonMax": 0.25
+  },
+  "registration": "internal diagnostic specification; no immutable external registration",
+  "scientificMeaning": "qualification heuristic, not biological identity; 99 vs100 has no privileged biological discontinuity",
+  "sensitivitySettingsPerK": 81,
+  "source": "relational_morphogenesis12/preregistration/codebook_plan.json and rmmo12_common.py/code_recurrence"
+}

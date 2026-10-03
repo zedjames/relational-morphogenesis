@@ -1,0 +1,47 @@
+{
+  "allHistoryVariantsConsistent": false,
+  "allPassGlobalMean": true,
+  "allPassS0Only": false,
+  "consistentHistoryVariants": [
+    {
+      "allMaterial1e4": false,
+      "analysis": "extended",
+      "family": "jointMetric",
+      "gainStd": 2.4749982279453176e-06,
+      "maxNSEGain": 9.80119949590963e-06,
+      "meanNSEGain": 6.420989112655244e-06,
+      "minNSEGain": 3.944081743728622e-06,
+      "positiveFolds": 3,
+      "replicated3of3": true,
+      "scope": "tested estimator and representation only",
+      "variant": "hash64_seed6"
+    }
+  ],
+  "decision": "DIMENSION_SENSITIVE",
+  "doNotSelectBestSeed": true,
+  "failedBaselineGates": [
+    {
+      "S0FallbackCells": "3",
+      "S0OnlyNSE": 0.0924329187847115,
+      "fractionalS0Improvement": -0.012046112663305627,
+      "gainOverGlobalMean": 0.004750401772132512,
+      "gainOverS0": -0.001113457353478814,
+      "globalMeanNSE": 0.09829677791032283,
+      "heldOutEmbryo": "E7.5-R1",
+      "molecularNSE": 0.09354637613819032,
+      "variant": "hash32_seed0"
+    },
+    {
+      "S0FallbackCells": "0",
+      "S0OnlyNSE": 0.13038586373528374,
+      "fractionalS0Improvement": -0.002519391989049291,
+      "gainOverGlobalMean": 0.005250315374930814,
+      "gainOverS0": -0.0003284931005799463,
+      "globalMeanNSE": 0.1359646722107945,
+      "heldOutEmbryo": "E7.5-R2",
+      "molecularNSE": 0.1307143568358637,
+      "variant": "hash32_seed0"
+    }
+  ],
+  "variantCount": 19
+}

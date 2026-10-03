@@ -1,0 +1,13 @@
+{
+  "biologicalExchangeabilityCertified": false,
+  "lean": "4.28.0-rc1",
+  "mathlib": "5352afccd6866369be9de43f5b7ec47203555f44",
+  "newControls": 3,
+  "newFile": "lean/Tier30/Publication/RMMOPaper2/Controls/FamilyCalibration.lean",
+  "newFileSHA256": "91c51c051f0183f5e4d1d3905979e6e7caee3a3b25b575d0bf38f221e3d60db1",
+  "retainedControls": 4,
+  "retainedFileSHA256": "f8096cccea5f5f20bf420d1c75e5531f2e3aaf0481e9ddd3f40999be5ca4e244",
+  "status": "PASS",
+  "warmCacheLeafCompile": true,
+  "wholeCodebaseRebuild": false
+}

@@ -1,0 +1,28 @@
+{
+  "biologicalReplicates": 3,
+  "officialArchive": "https://zenodo.org/records/19892785",
+  "rawFiles": [
+    {
+      "bytes": 97216576,
+      "filename": "E7.5-R1.h5td",
+      "officialURL": "https://zenodo.org/records/19892785/files/E7.5-R1.h5td?download=1",
+      "replicate": "E7.5-R1",
+      "sha256": "e9033b2fd3f60e1c480d56e69fc08488d3fa72cf7b8be4be6d9352d1609787b4"
+    },
+    {
+      "bytes": 116412680,
+      "filename": "E7.5-R2.h5td",
+      "officialURL": "https://zenodo.org/records/19892785/files/E7.5-R2.h5td?download=1",
+      "replicate": "E7.5-R2",
+      "sha256": "181454797b8b4486b3dc1efbfc037b067b8d16a5c5a94064bfbda3c4f8c09300"
+    },
+    {
+      "bytes": 104533756,
+      "filename": "E7.5-R3.h5td",
+      "officialURL": "https://zenodo.org/records/19892785/files/E7.5-R3.h5td?download=1",
+      "replicate": "E7.5-R3",
+      "sha256": "63374b872d1e9cc337a34fce53c05d465b915ccbe24fdfb3e8c6642775ef4c28"
+    }
+  ],
+  "source": "MELA v1 frozen files"
+}

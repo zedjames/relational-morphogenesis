@@ -1,0 +1,36 @@
+{
+  "combinedCorrectedP": 0.553,
+  "conditionalNullOnly": true,
+  "continuousStateConditionalIndependenceEstablished": false,
+  "earlyStopping": false,
+  "effect": {
+    "R1_gain": 3.944081744020056e-06,
+    "R2_gain": 5.517686098299723e-06,
+    "R3_gain": 9.80119949584024e-06,
+    "analysis_stage": "E1",
+    "configuration": "hash64_seed6",
+    "history_family": "jointMetric",
+    "material_all_folds": false,
+    "mean_gain": 6.420989112720006e-06,
+    "member": "E1|hash64_seed6|jointMetric",
+    "positive_fold_count": 3,
+    "statistic": 3.944081744020056e-06
+  },
+  "exceedances": 552,
+  "exchangeabilityAssumedWithinDeclaredStrata": true,
+  "materialityThreshold": 0.0001,
+  "memberCount": 76,
+  "minimumP": 0.001,
+  "nestedTuningReplayed": true,
+  "observedFamilyMaximum": 3.944081744020056e-06,
+  "permutations": 999,
+  "secondaryStageP": {
+    "E1": 0.553,
+    "original": 1.0
+  },
+  "statement": "One prospectively specified model configuration produced positive finite gains in all three held-out embryos, but the effect was small, representation-specific, and did not establish a family-wise lineage contribution.",
+  "statistic": "min three foldwise gains; max over all 76 members",
+  "status": "FINITE_POSITIVE_CONFIGURATION_WITHOUT_FAMILY_WISE_SUPPORT",
+  "winner": "E1|hash64_seed6|jointMetric",
+  "winnerMaterial": false
+}

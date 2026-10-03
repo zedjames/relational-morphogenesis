@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Verify Paper 1 release surfaces
+      - name: Verify all released paper surfaces
         run: make verify

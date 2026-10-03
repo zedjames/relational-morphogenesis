@@ -1,0 +1,120 @@
+{
+  "family": {
+    "E1_alpha": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "E1_lambda": [
+      0,
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "configurations": [
+      "hash64_seed0",
+      "hash64_seed1",
+      "hash64_seed2",
+      "hash64_seed3",
+      "hash64_seed4",
+      "hash64_seed5",
+      "hash64_seed6",
+      "hash64_seed7",
+      "hash32_seed0",
+      "hash128_seed0",
+      "hash256_seed0",
+      "pca32",
+      "target_seed1",
+      "target_seed2",
+      "target_seed3",
+      "target_seed4",
+      "target_seed5",
+      "target_seed6",
+      "target_seed7"
+    ],
+    "history_models": [
+      "jointMetric",
+      "ridge"
+    ],
+    "k": [
+      10,
+      25,
+      50
+    ],
+    "member_count": 76,
+    "original_alpha": [
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "original_lambda": [
+      0,
+      0.01,
+      0.1,
+      1
+    ],
+    "primary": "combined_original_and_E1",
+    "references": "jointMetric vs independently tuned original knn; ridgeH vs independently tuned stage-matched ridge",
+    "secondary": "original-only and E1-only maxima; never substitute for combined primary",
+    "selection": "unweighted mean NSE of the two inner validation embryos; exact numerical ties resolved lexicographically by parameter tuple",
+    "simultaneous_statistic": "maximum member statistic over all 76 members",
+    "stages": [
+      "original",
+      "E1"
+    ],
+    "statistic": "minimum of the three foldwise molecular-minus-history NSE gains, including nonpositive minima",
+    "unit": "stage_configuration_history_model, summarized over the three outer embryos"
+  },
+  "immutable_input": "research/rmmo_paper2_referee01",
+  "null": {
+    "conditioning": [
+      "embryo",
+      "historical S0",
+      "balanced molecular-neighborhood stratum"
+    ],
+    "decision": "combined corrected p <= 0.05 and positive observed minimum -> FAMILY_WISE_LINEAGE_SIGNAL under declared conditional null; otherwise FINITE_POSITIVE_CONFIGURATION_WITHOUT_FAMILY_WISE_SUPPORT when observed positive members exist; no positive member -> NO_POSITIVE_CONFIGURATION_AFTER_REPLAY; invalid/incomplete replay -> UNRESOLVED_NULL_AUTHORITY",
+    "execution": "At most two numerical worker processes, checkpoint by permutation. Runtime measurement after freeze changes scheduling only, not B, strata, family, statistic or decision rule. No outcome-based pruning.",
+    "implementation": "float64 exact nearest-neighbor selection, optional certified nonnegative-history-distance pruning and algebraically equivalent block ridge solves; require observed replay and independent direct-solver checks before accepting accelerated results",
+    "molecular_strata": "For each embryo, use the canonical 64D state hash based only on that embryo's eligible state-panel genes. Within each embryo/S0 block, repeatedly take the lowest remaining source-order cell and group it with its nearest remaining cells until 32 cells or the remaining block is exhausted. Distance ties use source order. No target or history enters partitioning.",
+    "nested_replay": "Repeat all history-bearing candidate evaluations and parameter selection in each realization. Molecular-only tuning is exactly invariant and reused, not altered by the null.",
+    "no_early_stopping": true,
+    "ownership": "Permutations never cross embryos. A single permuted feature assignment is used in all inner and outer fits. TRAIN-derived standardization is refitted; eligibility, state and target frames are invariant because neither counts nor targets change.",
+    "p_value": "(1 + number of null family maxima >= observed statistic)/(999 + 1); inclusive upper-tail ties; minimum 0.001",
+    "permutations": 999,
+    "qualification": "Conditional randomization calibration assumes exchangeability of history tuples within declared finite strata. It does not prove conditional independence given an arbitrary continuous molecular state or population-level biological replication.",
+    "seed": "SHA256 first 8 bytes, big endian, of RMMO_P2_REFEREE02_LINEAGE_NULL_{b}, b=0..998",
+    "support": "Whole tuple reassignment preserves joint feature support, marginal embryo/S0 distributions, molecular-stratum history multisets, and source tree topology up to terminal-cell relabeling; it does not fabricate independent tree features.",
+    "transformation": "one synchronized permutation of complete seven-feature history tuples across all configurations and both stages"
+  },
+  "release": "prepare isolated ordinary-file surface, current author draft if supplied, updated scientific specification and finite tables; no third-party raw data, private URLs, local paths, symlinks or tokens; external publication requires separate approval",
+  "target_PCA": {
+    "baselines": [
+      "mean of normalized training target coordinates",
+      "mean of normalized training target coordinates within matching historical S0, global normalized-coordinate mean fallback"
+    ],
+    "configuration": "canonical hash64_seed0 predictor, target-panel PCA32",
+    "coordinates": "row L2-normalize projected coordinates for matching REFEREE-01 metrics; save raw centered projections and loadings too. A numerically zero global centered mean has no direction: define global baseline as the exact zero vector, not normalization of rounding noise.",
+    "decision": "NSE molecular < S0 in all three outer folds -> NONHASH_TARGET_REPLICATES_3OF3; one or two -> NONHASH_TARGET_PARTIAL; zero -> NONHASH_TARGET_FAILS",
+    "dimension": 32,
+    "eligibility": "detection >= 0.01 in every available fit embryo, positive fit-set mean, exclude mt-/Mt-/MT-/Rpl/Rps prefixes; SHA256 panel assignment from the same immutable rule",
+    "fit": "center and top 32 singular vectors using only the fitting cells; sparse centered ARPACK tol 1e-8 maxiter 5000; seed RMMO_P2_REFEREE02_TARGET_PCA_V0; descending singular values; largest-absolute loading entry positive, first gene-order index resolves ties; training Gram eigensolver fallback only on solver failure",
+    "metrics": "REFEREE-01 row-normalized prediction NSE, cosine and coordinate MAE; all baselines frame-matched. Also report unnormalized centered-PC squared error divided by fit mean squared PC norm, with exact-zero centered global baseline, as fixed sensitivity, never select between metrics.",
+    "nested_tuning": "rebuild eligibility, panel denominator, canonical state hash and target PCA on each single inner-fit embryo. Select k in [10,25,50] by mean inner NSE; then fit outer target PCA on the other two embryos, excluding held-out embryo throughout",
+    "normalization": "log1p(10000 * target gene count / sum of eligible target-panel counts), separate from state-panel denominator",
+    "optional_gene_level": "not a closure requirement; no outcome-adaptive target dimension or additional configuration search"
+  },
+  "thresholds": {
+    "alpha": 0.05,
+    "material_absolute_NSE_gain": 0.0001
+  },
+  "tranche": "RMMO-P2-REFEREE-02",
+  "validation": "hash every REFEREE-01 artifact including its manifest, verify plan-only commit and hashes; 999 complete synchronous replay receipts; frame ownership/disjointness; accelerated-vs-direct numerical checks; all displayed results regenerated; standalone public isolation validation"
+}

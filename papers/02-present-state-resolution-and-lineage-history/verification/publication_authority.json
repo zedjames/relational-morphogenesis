@@ -1,0 +1,15 @@
+{
+  "title": "Present-State Resolution and Lineage History in Early Mouse Embryogenesis",
+  "author": "Zed James",
+  "status": "published preprint; scientific manuscript frozen",
+  "publicationDate": "2026-10-03",
+  "versionDOI": "10.5281/zenodo.23125763",
+  "allVersionsDOI": "10.5281/zenodo.23125762",
+  "canonicalPDF": {
+    "authority": "Zenodo version DOI 10.5281/zenodo.23125763",
+    "sha256": "216707a03c0abde7bf9e6f3cfd12598830b2d2d2fd0ec07d40c66a194bc33b92",
+    "bytes": 629019
+  },
+  "repositoryCopyIncluded": false,
+  "reason": "The canonical immutable PDF is maintained on Zenodo; this repository publishes the computational companion and records the canonical PDF checksum."
+}

@@ -1,0 +1,47 @@
+{
+  "foldwise": [
+    {
+      "MAE": 0.09352819944922022,
+      "S0_NSE": 0.8491022822365014,
+      "cosine": 0.7128837072730184,
+      "fractional_gain_over_S0": 0.3237180049246158,
+      "gain_over_S0": 0.27486969678253825,
+      "gain_over_global": 1.297747628367562,
+      "global_mean_NSE": 1.8719802138215251,
+      "held_out_embryo": "E7.5-R1",
+      "molecular_NSE": 0.5742325854539632,
+      "selected_k": 50
+    },
+    {
+      "MAE": 0.1088447421406219,
+      "S0_NSE": 0.9027596408085911,
+      "cosine": 0.627146803242038,
+      "fractional_gain_over_S0": 0.17397016901641316,
+      "gain_over_S0": 0.157053247292667,
+      "gain_over_global": 1.3208775093875884,
+      "global_mean_NSE": 2.0665839029035125,
+      "held_out_embryo": "E7.5-R2",
+      "molecular_NSE": 0.745706393515924,
+      "selected_k": 25
+    },
+    {
+      "MAE": 0.09557364092840087,
+      "S0_NSE": 0.804506843439572,
+      "cosine": 0.7055803308752113,
+      "fractional_gain_over_S0": 0.2680741710883827,
+      "gain_over_S0": 0.21566750518999456,
+      "gain_over_global": 1.1434736612650598,
+      "global_mean_NSE": 1.7323129995146374,
+      "held_out_embryo": "E7.5-R3",
+      "molecular_NSE": 0.5888393382495775,
+      "selected_k": 25
+    }
+  ],
+  "globalMeanPositiveFolds": 3,
+  "heldOutEmbryoExcludedFromAllFits": true,
+  "populationReplication": false,
+  "positiveFolds": 3,
+  "representationIndependent": false,
+  "status": "NONHASH_TARGET_REPLICATES_3OF3",
+  "targetDimension": 32
+}

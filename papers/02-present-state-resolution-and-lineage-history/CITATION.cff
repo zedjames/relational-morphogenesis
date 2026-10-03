@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this preprint when using Paper 2 materials."
+title: "Present-State Resolution and Lineage History in Early Mouse Embryogenesis"
+type: article
+authors:
+  - family-names: James
+    given-names: Zed
+doi: "10.5281/zenodo.23125763"
+url: "https://doi.org/10.5281/zenodo.23125763"
+repository-code: "https://github.com/zedjames/relational-morphogenesis"
+version: "1.0.0-preprint"
+date-released: "2026-10-03"
+license: "CC-BY-NC-ND-4.0"

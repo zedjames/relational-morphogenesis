@@ -2,22 +2,30 @@
 
 Public reproducibility materials for the **Relational Morphogenesis and Multicellular Organization (RMMO)** research series.
 
-## Current public paper
+## Public papers
 
-**Paper 1 — Relational Organization and Directional Stability Across Mouse Organogenesis**
+### Paper 1 — Relational Organization and Directional Stability Across Mouse Organogenesis
 
 - Author: Zed James
 - Preprint date: October 1, 2026
 - Zenodo DOI: https://doi.org/10.5281/zenodo.23090479
 - Public companion: `papers/01-directional-stability/`
 
-The scientific manuscript is frozen on Zenodo. This repository contains the finite manuscript-facing result surfaces, provenance, sensitivity analyses, verification code, exact manuscript/figure release assets and checksums, and publication-facing formal controls for Paper 1.
+### Paper 2 — Present-State Resolution and Lineage History in Early Mouse Embryogenesis
+
+- Author: Zed James
+- Preprint date: October 3, 2026
+- Version DOI: https://doi.org/10.5281/zenodo.23125763
+- All-versions DOI: https://doi.org/10.5281/zenodo.23125762
+- Public companion: `papers/02-present-state-resolution-and-lineage-history/`
+
+The scientific manuscripts are frozen on Zenodo. This repository contains paper-specific finite result surfaces, provenance, validation code, replay specifications, manuscript identity, figure-data authorities, and publication-facing formal controls.
 
 ## Purpose
 
 RMMO studies multicellular development through relational organization: which biological states are comparable, what relational structure persists, how direction is expressed, and which levels of description remain stable across developmental change.
 
-This repository is the public publication and reproducibility surface for the series. It is intentionally smaller than the private development environment. Each paper receives a self-contained folder only after its scientific object and publication boundary have been independently hardened.
+This repository is the public publication and reproducibility surface for the series. It is intentionally smaller than the private development environment. Each paper receives a self-contained folder only after its scientific object and publication boundary have passed standalone and adversarial review.
 
 ## Publication principles
 
@@ -32,16 +40,20 @@ See `docs/PUBLICATION_PRINCIPLES.md`.
 
 ## Structure
 
-    docs/                              series-level publication and release policy
-    papers/01-directional-stability/  self-contained Paper 1 public companion
+    docs/                                              series-level publication and release policy
+    papers/01-directional-stability/                   Paper 1 public companion
+    papers/02-present-state-resolution-and-lineage-history/  Paper 2 public companion
 
 ## Source data
 
-Third-party raw data are not mirrored. Paper 1 uses the Mouse Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA), dataset **STDS0000058**, raw project **CNP0001543**.
+Third-party raw data are not mirrored.
+
+- Paper 1: Mouse Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA), dataset **STDS0000058**, raw project **CNP0001543**.
+- Paper 2: MELA v1 E7.5-R1/R2/R3, Zenodo record **19892785**.
 
 ## Repository boundary
 
-This repository releases paper-specific empirical results, provenance, validation code, figure inputs/release assets, manuscript metadata, and publication-facing formal controls. It does not release the broader private research environment, unrelated theorem libraries, generic orchestration systems, or research programs outside RMMO.
+This repository releases paper-specific empirical results, provenance, validation code, figure inputs/release assets or authorities, manuscript metadata, and publication-facing formal controls. It does not release the broader private research environment, unrelated theorem libraries, generic orchestration systems, or research programs outside RMMO.
 
 ## Licensing
 
