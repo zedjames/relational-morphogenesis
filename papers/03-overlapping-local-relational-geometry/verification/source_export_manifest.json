@@ -35,10 +35,16 @@
       "reason": "Earlier combined manuscript/PDF/log; approved public manuscript and detached supplement are retained instead.",
       "sha256": "8e77d0d54226451228ef121c128394e9bc7d2dc2cb7555ef4625bc42cb1f0277",
       "source_path": "rmmo_paper3_final08/publication/manuscript/RMMO_Paper3_An_Overlapping_Local_Relational_Geometry.tex"
+    },
+    {
+      "bytes": 167,
+      "reason": "Private-source Git LFS tracking configuration is not a scientific dependency; public binaries must remain ordinary Git files. Source rules are unchanged.",
+      "sha256": "a022fe700e0293d5345e3ad1d47c2996c0f2153e66142faec26ec7ca759753cd",
+      "source_path": "rmmo_paper3_referee05/.gitattributes"
     }
   ],
-  "exported_bytes": 195430732,
-  "exported_files": 467,
+  "exported_bytes": 195430565,
+  "exported_files": 466,
   "files": {
     "figures/RMMO_Paper3_Figure1_StrictConstructionConsensus.pdf": {
       "bytes": 16329,
@@ -984,13 +990,6 @@
       "sha256": "b8c5fb40f80be4c4f37a808d52022e7dfc9dab591555a82ceec68c0636658108",
       "source_commit": "f00e67db6489df82cc4a1a6f5c7832a6fba6c479",
       "source_path": "research/rmmo_paper3_final08/reviewer_release/rmmo_paper3_referee04/spatial_overlap/S1_reference/component_statistics.csv"
-    },
-    "reproducibility/rmmo_paper3_referee05/.gitattributes": {
-      "bytes": 167,
-      "local_lfs_object": false,
-      "sha256": "a022fe700e0293d5345e3ad1d47c2996c0f2153e66142faec26ec7ca759753cd",
-      "source_commit": "f00e67db6489df82cc4a1a6f5c7832a6fba6c479",
-      "source_path": "research/rmmo_paper3_final08/reviewer_release/rmmo_paper3_referee05/.gitattributes"
     },
     "reproducibility/rmmo_paper3_referee05/README.md": {
       "bytes": 1114,

@@ -1,0 +1,6 @@
+# Paper 3 is a dependency-complete ordinary-file publication export.
+# Prevent machine/global LFS rules from replacing frozen public payloads.
+papers/03-overlapping-local-relational-geometry/**/*.npz -filter -diff -merge -text
+papers/03-overlapping-local-relational-geometry/**/*.gz -filter -diff -merge -text
+papers/03-overlapping-local-relational-geometry/**/*.pdf -filter -diff -merge -text
+papers/03-overlapping-local-relational-geometry/**/*.png -filter -diff -merge -text

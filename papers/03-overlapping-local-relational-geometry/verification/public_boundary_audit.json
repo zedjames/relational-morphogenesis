@@ -8,7 +8,7 @@
     }
   ],
   "credentials_or_private_configuration_exported": false,
-  "exported_scientific_files": 467,
+  "exported_scientific_files": 466,
   "final_pdf_doi_and_immutable_release": "pending",
   "papers_1_2_byte_unchanged": true,
   "passed": true,
@@ -19,11 +19,12 @@
   "reviewed_changed_file_inventory": "changed_file_inventory.json",
   "scan_coverage": "All released bytes, decompressed GZ/NPZ contents and PDF metadata/text; absolute private paths, private remote URLs, private keys and credential patterns; no symlinks.",
   "series_changed_file_hashes": {
-    ".github/workflows/verify.yml": "284baba052bc9503b9ebfbe12d2af9e686d8e9cc881f651315f2ec66b3a03803",
+    ".gitattributes": "7f85b206b86507138d4e136e3b71ff8e602f60afb03d7533e421a00c8425388e",
+    ".github/workflows/verify.yml": "e0bc16f18e8d41c53791c82b9400639b82b0147bd8ab3d20e4b94350004e9905",
     ".gitignore": "cbb4d7739d92cea261545cdc08a874321bb438113f0a68a15bfe9228bbd5fd64",
     "Makefile": "906ec9f35e7884c835bb81b20a4e4fc73037ccb8cce8e9b2fc1b1445d39a1380",
     "README.md": "ae6e23198909abff0d081f9e4681ba504a9214910a8b621ec0bdf133612a8686",
-    "docs/RELEASES.md": "5c96a725963d601089fe4c450d5529ac98905adc72e3377a546497d1a06a2a07",
+    "docs/RELEASES.md": "a2b90d1483f7b41d34da5932bb58cb34d2c6ed3b51aebcc84d610de81aa9116c",
     "docs/SERIES_MAP.md": "7b5b76a6e42c390758cbacd30c5c5f25fbdea096479295c24a0a5c3ed2d063d4"
   },
   "source_commit": "f00e67db6489df82cc4a1a6f5c7832a6fba6c479",

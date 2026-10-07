@@ -13,12 +13,12 @@ The study describes three lineage-qualified E7.5 mouse embryo carriers (3,704 ce
 
 ## Public evidence status
 
-- Released: 467 byte-exact Final08 scientific files, 195,430,732 bytes, including derived inputs, original inferential banks, independent calibration banks, numerical replay code, ten vector figures and their source tables.
+- Released: 466 byte-exact Final08 scientific files, 195,430,565 bytes, including derived inputs, original inferential banks, independent calibration banks, numerical replay code, ten vector figures and their source tables.
 - Independent verification: seven authorized calibration banks; 33,792 exact graph computations; 108 component rankings; 72 aggregate/minimum rankings; all 36 families; zero changed support decisions or inferential banks; exact finite composition and all 746 cellwise bridge checks.
 - Document validation: approved manuscript and detached supplement compile using the actual figures. Validation-build PDFs are not published as the final scholarly PDF.
 - Pending publication: author-supplied final PDF and checksum, version DOI, all-versions DOI, and associated immutable release/tag.
 
-The full verifier uses only these public files and declared software dependencies. Raw MELA acquisition, a private checkout, Git and Lean are unnecessary for numerical verification. The manifest records the six excluded older combined-manuscript files; no scientific dependency was omitted.
+The full verifier uses only these public files and declared software dependencies. Raw MELA acquisition, a private checkout, Git and Lean are unnecessary for numerical verification. The manifest records six excluded older combined-manuscript files and one excluded source Git LFS configuration; no scientific dependency was omitted.
 
 ## Run verification
 

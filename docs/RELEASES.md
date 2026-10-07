@@ -2,7 +2,7 @@
 
 ## 2026-10-07 — Paper 3 verified public reproducibility export (PUBLIC-09)
 
-- Exported 467 byte-exact scientific artifacts / 195,430,732 bytes from the frozen Final08 473-file manifest; six older combined-manuscript TeX/PDF/log files are explicitly excluded.
+- Exported 466 byte-exact scientific artifacts / 195,430,565 bytes from the frozen Final08 473-file manifest; six older combined-manuscript TeX/PDF/log files and source Git LFS configuration are explicitly excluded.
 - Recovered all required LFS payloads from the local object store; no pointers are released. Published all ten vector figure PDFs with source CSVs, provenance and binary SHA-256 authorities.
 - Preserved all numerical algorithms, constants, inferential banks and comparison logic. Full replay covers seven calibration banks / 33,792 graph computations, 108 component / 72 family-event rankings, all 36 families and zero changed decisions.
 - Verified strict geometry, three exact composition routes, 746 cellwise bridge diagnostics and 954 original Final08 displayed-statistic comparisons.

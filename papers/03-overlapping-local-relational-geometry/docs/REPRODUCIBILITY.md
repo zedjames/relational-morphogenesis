@@ -26,7 +26,7 @@ Install `latexmk` and TeX Live latex-extra, science and recommended fonts; alter
 
 ## Provenance and exclusions
 
-`verification/source_export_manifest.json` maps 467 scientific destinations / 195,430,732 bytes to the 473-file / 196,288,214-byte Final08 source manifest. Six old combined-manuscript TeX/PDF/log files are explicitly excluded. All exported scientific content is byte-identical. Historical original verifier/layout scripts and receipts are provenance; use public `analysis/` entry points, which distinguish numerical authority from the revised document layout.
+`verification/source_export_manifest.json` maps 466 scientific destinations / 195,430,565 bytes to the 473-file / 196,288,214-byte Final08 source manifest. Six old combined-manuscript TeX/PDF/log files and the source Git LFS configuration are explicitly excluded. All exported scientific content is byte-identical. Historical original verifier/layout scripts and receipts are provenance; use public `analysis/` entry points, which distinguish numerical authority from the revised document layout.
 
 Raw third-party H5TD files are absent. Original MELA v1 integrity records, licensing and attribution remain at [Zenodo record 19892785](https://doi.org/10.5281/zenodo.19892785). Released derived inputs suffice for this gate. Raw-carrier re-extraction is a distinct historical operation and is not claimed here. No private checkout, Git, raw archive, credentials or Lean is needed for numerical verification.
 

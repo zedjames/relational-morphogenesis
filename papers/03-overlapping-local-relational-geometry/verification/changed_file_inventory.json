@@ -3,6 +3,7 @@
   "private_history_imported": false,
   "private_repository_remote_added": false,
   "reviewed_paths": [
+    ".gitattributes",
     ".github/workflows/verify.yml",
     ".gitignore",
     "Makefile",
@@ -16,6 +17,7 @@
     "papers/03-overlapping-local-relational-geometry/analysis/verify_documents.py",
     "papers/03-overlapping-local-relational-geometry/analysis/verify_figures.py",
     "papers/03-overlapping-local-relational-geometry/analysis/verify_geometry.py",
+    "papers/03-overlapping-local-relational-geometry/analysis/verify_git_payloads.py",
     "papers/03-overlapping-local-relational-geometry/analysis/verify_numerical.py",
     "papers/03-overlapping-local-relational-geometry/analysis/verify_release.py",
     "papers/03-overlapping-local-relational-geometry/docs/METHODS_PROVENANCE.md",
@@ -160,7 +162,6 @@
     "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee04/matched_coherence/q25/component_statistics.csv",
     "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee04/source_fidelity/q25/component_statistics.csv",
     "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee04/spatial_overlap/S1_reference/component_statistics.csv",
-    "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee05/.gitattributes",
     "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee05/README.md",
     "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee05/audit05.py",
     "papers/03-overlapping-local-relational-geometry/reproducibility/rmmo_paper3_referee05/authority/cell_carrier.csv.gz",

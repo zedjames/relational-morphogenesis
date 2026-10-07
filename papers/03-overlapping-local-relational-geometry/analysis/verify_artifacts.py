@@ -43,7 +43,7 @@ def verify():
     for rec in export['excluded_files']:
         rel = rec['source_path']
         assert rel not in seen and source[rel] == {k: rec[k] for k in ('bytes', 'sha256')}
-        assert rel.startswith(('manuscript/', 'rmmo_paper3_final08/publication/manuscript/'))
+        assert rel.startswith(('manuscript/', 'rmmo_paper3_final08/publication/manuscript/')) or rel == 'rmmo_paper3_referee05/.gitattributes'
         seen.add(rel)
     assert seen == set(source)
     assert export['exported_files'] == len(export['files'])
