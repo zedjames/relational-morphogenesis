@@ -1,6 +1,6 @@
 # Release Log
 
-## 2026-10-07 — Paper 3 public reproducibility export PR (PUBLIC-09, incomplete)
+## 2026-10-07 — Paper 3 verified public reproducibility export (PUBLIC-09)
 
 - Exported 466 byte-exact scientific artifacts / 195,430,565 bytes from the frozen Final08 473-file manifest; six older combined-manuscript TeX/PDF/log files and source Git LFS configuration are explicitly excluded.
 - Recovered all required LFS payloads from the local object store; no pointers are released. Published all ten vector figure PDFs with source CSVs, provenance and binary SHA-256 authorities.
@@ -8,7 +8,7 @@
 - Verified strict geometry, three exact composition routes, 746 cellwise bridge diagnostics and 954 original Final08 displayed-statistic comparisons.
 - Preserved approved document bodies and full Methods byte-for-byte. Adapted only preamble paths, long-heading wrapping and URL wrapping; validation PDFs stay outside the companion.
 - Added full public numerical, binary, document and boundary CI gates; Papers 1 and 2 materials and checks remain intact.
-- Local full public-clone replay passed. Hosted Linux packaging/documents passed, but hosted Linux and macOS full replay failed the frozen hash-S0 q25 first-draw graph-hash check; the PR remains incomplete and unmerged. No bank, algorithm or comparison was changed to bypass this blocker.
+- Local full public-clone replay and documents passed. Unpinned hosted Linux/macOS showed a geometry/stratum reconstruction discrepancy; fixed Haswell OpenBLAS kernels restore full hosted replay of all 33,792 computations. The execution environment is declared, failed diagnostic runs remain visible, and no bank, scientific algorithm or comparison changed. Final-head CI gates remain mandatory before merge.
 - Final scholarly PDF/checksum, version DOI, all-versions DOI and associated immutable release/tag remain pending. No final Paper 3 tag is created.
 
 ## 2026-10-07 — Paper 3 pre-DOI public companion preparation

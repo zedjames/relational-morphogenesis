@@ -8,7 +8,7 @@
 - [x] Approved document bodies and complete Methods preserved; actual figures compile in both sources.
 - [x] Independent local public-clone verification, Papers 1/2 preservation and boundary audit.
 - [x] Hosted Linux packaging and manuscript/supplement compilation.
-- [ ] Hosted full numerical gate: hash-S0 q25 exact graph discrepancy unresolved; do not merge.
+- [x] Hosted full numerical gate: fixed Haswell OpenBLAS runtime reproduces all 33,792 computations; no scientific changes or relaxed comparisons.
 - [ ] Final author-supplied scholarly PDF and SHA-256.
 - [ ] Version DOI and all-versions DOI metadata.
 - [ ] Associated immutable release and Paper 3 tag after final artifacts arrive.
