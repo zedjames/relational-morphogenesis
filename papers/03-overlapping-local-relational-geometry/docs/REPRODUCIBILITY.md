@@ -24,6 +24,8 @@ Linux/OpenBLAS exact replay is not claimed portable: public Actions run 37692093
 
 `analysis/diagnose_replay_runtime.py` reports sanitized backend/version identifiers, frozen state and sampler-context hashes, and expected/actual first-draw hashes for all six orientations. It is read-only, does not generate a calibration bank, and never substitutes for or weakens the full gate. Linux document/packaging validation passed in runs 37693535965 and 37693539295.
 
+Fixed-kernel diagnostics in Actions run 37694743965 establish that Haswell and Zen OpenBLAS kernels reproduce all six frozen first-draw hashes, decile assignments and observed fiber memberships exactly; Sandybridge does not. The public wrapper now pins single-thread `OPENBLAS_CORETYPE=HASWELL` on Linux x86_64 and requires AVX2/FMA hardware. Public full numerical CI uses Ubuntu 24.04, Python 3.12.15 and this fixed kernel, with the original NumPy/SciPy pins. Full verification is still required; a diagnostic match alone is not release approval. No runtime is selected dynamically by comparing scientific outcomes, and no scientific source or hash assertion is changed.
+
 ## Document validation
 
 ```sh

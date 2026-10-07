@@ -2,6 +2,7 @@
 import argparse
 import json
 import os
+import platform
 import subprocess
 import sys
 import tempfile
@@ -22,6 +23,13 @@ def main():
                    RMMO_P3_CACHE=str(Path(runtime) / 'cache'),
                    PYTHONPYCACHEPREFIX=str(Path(runtime) / 'pycache'),
                    OPENBLAS_NUM_THREADS='1', VECLIB_MAXIMUM_THREADS='1', OMP_NUM_THREADS='1')
+        if platform.system() == 'Linux' and platform.machine() == 'x86_64':
+            # Pin execution kernels, not scientific algorithms or tolerances.
+            flags = Path('/proc/cpuinfo').read_text().split()
+            if not {'avx2', 'fma'}.issubset(flags):
+                raise RuntimeError('Frozen Linux replay requires AVX2/FMA for the pinned Haswell OpenBLAS kernel')
+            env['OPENBLAS_CORETYPE'] = 'HASWELL'
+            print('Runtime: Linux x86_64 / single-thread OpenBLAS HASWELL', flush=True)
         run(ROOT / 'analysis/verify_binary_release.py', [], env)
         for action in ('scalar_ranks', 'matched_replay', 'degree_replay'):
             run(base / 'rmmo_paper3_final08/verify_calibration08.py', [action], env)
