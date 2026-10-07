@@ -22,13 +22,13 @@ def main():
     supplement = (ROOT / "supplement/SupplementaryEvidence.tex").read_text()
     source = json.loads((ROOT / "data/authority/source_normalization_provenance.json").read_text())
 
-    require(r"\\section{Methods}" in manuscript, "Methods section missing")
-    require(r"\\section{Results}" in manuscript, "Results section missing")
-    require(r"\\section{Discussion}" in manuscript, "Discussion section missing")
-    require(r"\\section{Data availability}" in manuscript, "Data availability missing")
-    require(r"\\section{Code availability}" in manuscript, "Code availability missing")
-    require(r"\\appendix" not in manuscript, "Detached appendix remains in manuscript")
-    require(r"\\appendix" in supplement, "Supplement is missing appendix boundary")
+    require(r"\section{Methods}" in manuscript, "Methods section missing")
+    require(r"\section{Results}" in manuscript, "Results section missing")
+    require(r"\section{Discussion}" in manuscript, "Discussion section missing")
+    require(r"\section{Data availability}" in manuscript, "Data availability missing")
+    require(r"\section{Code availability}" in manuscript, "Code availability missing")
+    require(r"\appendix" not in manuscript, "Detached appendix remains in manuscript")
+    require(r"\appendix" in supplement, "Supplement is missing appendix boundary")
 
     required_methods = (
         "Carrier construction and coarse state",
@@ -53,7 +53,7 @@ def main():
     expected_pairs = ("P12", "P13", "P23")
     for lane in range(9):
         for pair in expected_pairs:
-            require(f"$\\ell_{lane}$&{pair}&" in supplement,
+            require(f"$\ell_{lane}$&{pair}&" in supplement,
                     f"Missing supplementary lane {lane}/{pair}")
     for fig in ("FigureS1_", "FigureS2_", "FigureS3_", "FigureS4_"):
         require(fig in supplement, "Missing supplementary figure " + fig)
