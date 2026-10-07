@@ -2051,7 +2051,7 @@
     },
     "verification/public_boundary_audit.json": {
       "bytes": 1944,
-      "sha256": "37b31835f510401cc14a15f3db91384bfc0de1d0f4adeb98362cab069155dde7"
+      "sha256": "ba6ecfa0c56d6e435eab856240610b11ad06cf69899db46b6301d42f2cf27014"
     },
     "verification/publication_authority.json": {
       "bytes": 2064,
