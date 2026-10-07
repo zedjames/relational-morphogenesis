@@ -1,5 +1,13 @@
 # Release Log
 
+## 2026-10-07 — Paper 3 pre-DOI public companion preparation
+
+- Added the Methods-complete pre-DOI source of **An Overlapping Local Relational Geometry of Early Mouse Embryogenesis**.
+- Detached the former end-of-paper appendix into a separate supplementary LaTeX file.
+- Published the original MELA source-file metadata and the paper-specific reproducibility, provenance, result and release-boundary documents.
+- Introduced a scope-limited source verifier. It verifies manuscript/appendix structure rather than claiming numerical bank replay.
+- Reserved the final scholarly PDF, DOI, figure binaries, compressed reference-bank payloads, verified full replay and immutable release tag for a later complete evidence release.
+
 ## 2026-10-03 — Paper 2 frozen preprint
 
 - Froze **Present-State Resolution and Lineage History in Early Mouse Embryogenesis**.
