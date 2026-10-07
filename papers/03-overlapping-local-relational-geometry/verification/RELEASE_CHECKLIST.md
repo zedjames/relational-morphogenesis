@@ -9,8 +9,9 @@
 - [x] Independent local public-clone verification, Papers 1/2 preservation and boundary audit.
 - [x] Hosted Linux packaging and manuscript/supplement compilation.
 - [x] Hosted full numerical gate: fixed Haswell OpenBLAS runtime reproduces all 33,792 computations; no scientific changes or relaxed comparisons.
-- [ ] Final author-supplied scholarly PDF and SHA-256.
-- [ ] Version DOI and all-versions DOI metadata.
-- [ ] Associated immutable release and Paper 3 tag after final artifacts arrive.
+- [x] Author-submitted final scholarly PDF received; byte count and SHA-256 recorded (canonical PDF linked through Zenodo).
+- [x] Zenodo version DOI and author-submitted PDF checksum recorded.
+- [ ] Independently verify the Zenodo all-versions DOI.
+- [ ] Verify final publication commit in hosted numerical/document CI and create immutable `paper-03-v1.0-preprint` release tag.
 
 Compilation PDFs and older Final08 manuscripts are not final scholarly artifacts. Numerical replay and document validation are separate gates.

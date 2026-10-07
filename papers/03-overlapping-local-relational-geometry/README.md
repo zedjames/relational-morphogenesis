@@ -3,9 +3,9 @@
 **Relational Morphogenesis and Multicellular Organization (RMMO), Paper 3**  
 **Zed James | October 2026**
 
-**Release status: verified public reproducibility companion; final scholarly PDF and DOI pending.** No immutable Paper 3 tag has been created. Publication requires passing final-head numerical and document CI gates.
+**Publication status: published Zenodo preprint; public scientific companion verified; Paper 3 release tag pending.** The version DOI is [10.5281/zenodo.23225035](https://doi.org/10.5281/zenodo.23225035). The author's final scholarly PDF is designated as the canonical Zenodo artifact; its submitted copy has SHA-256 `5d507094748517024a7f06d41716435bdbf9137601268f5593b585d88cb4a95f`.
 
-The [approved pre-DOI manuscript](manuscript/RMMO_Paper3_Manuscript_preDOI.tex) preserves its complete document body and full Methods. The [detached supplement](supplement/SupplementaryEvidence.tex) retains the former end appendix. All ten actual frozen scientific figure PDFs and source-data tables are in [figures/](figures/). Only preamble paths, heading wrapping and URL wrapping were adapted for public compilation.
+The [frozen, previously verified manuscript source](manuscript/RMMO_Paper3_Manuscript_preDOI.tex) preserves its complete document body and full Methods. The [publication-facing LaTeX source](manuscript/RMMO_Paper3_Manuscript_publication_updated.tex) updates availability statements while retaining the scientific document. The [detached supplement](supplement/SupplementaryEvidence.tex) retains the former end appendix. All ten actual frozen scientific figure PDFs and source-data tables are in [figures/](figures/). Only preamble paths, heading wrapping and URL wrapping were adapted for public compilation.
 
 ## Scientific scope
 
@@ -16,7 +16,7 @@ The study describes three lineage-qualified E7.5 mouse embryo carriers (3,704 ce
 - Released: 466 byte-exact Final08 scientific files, 195,430,565 bytes, including derived inputs, original inferential banks, independent calibration banks, numerical replay code, ten vector figures and their source tables.
 - Independent verification: seven authorized calibration banks; 33,792 exact graph computations; 108 component rankings; 72 aggregate/minimum rankings; all 36 families; zero changed support decisions or inferential banks; exact finite composition and all 746 cellwise bridge checks.
 - Document validation: approved manuscript and detached supplement compile using the actual figures. Validation-build PDFs are not published as the final scholarly PDF.
-- Pending publication: author-supplied final PDF and checksum, version DOI, all-versions DOI, and associated immutable release/tag.
+- Publication metadata: Zenodo version DOI `10.5281/zenodo.23225035`; checksum of the author-submitted final PDF `5d507094748517024a7f06d41716435bdbf9137601268f5593b585d88cb4a95f` (715930 bytes). Zenodo all-versions DOI has not been independently resolved, and the immutable Paper 3 release tag remains to be created.
 
 The full verifier uses only these public files and declared software dependencies. Raw MELA acquisition, a private checkout, Git and Lean are unnecessary for numerical verification. The manifest records six excluded older combined-manuscript files and one excluded source Git LFS configuration; no scientific dependency was omitted.
 
@@ -42,3 +42,12 @@ Primary third-party resource: [MELA v1](https://doi.org/10.5281/zenodo.19892785)
 - [Reproducibility and data coverage](docs/REPRODUCIBILITY.md)
 - [Result-to-artifact map](docs/RESULT_MAP.md)
 - [Release boundary and outstanding items](docs/RELEASE_BOUNDARY.md)
+
+## Published preprint and release handoff
+
+- [Zenodo paper (version DOI)](https://doi.org/10.5281/zenodo.23225035)
+- Author-submitted final PDF SHA-256: `5d507094748517024a7f06d41716435bdbf9137601268f5593b585d88cb4a95f`
+- Publication-facing LaTeX source: [`manuscript/RMMO_Paper3_Manuscript_publication_updated.tex`](manuscript/RMMO_Paper3_Manuscript_publication_updated.tex)
+- The scholarly PDF is cited at Zenodo, as in Paper 2's GitHub publication model. No repository copy of the PDF is included in this metadata commit.
+- The scientific inputs, replay banks, exact statistics, and previously verified manuscript/supplement sources have not been altered.
+- Pending final handoff: independently confirm the Zenodo all-versions DOI, pass CI at the publication commit, and create the immutable Paper 3 release tag.

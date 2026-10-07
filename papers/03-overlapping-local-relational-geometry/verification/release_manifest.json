@@ -2,12 +2,12 @@
   "all_versions_doi": null,
   "files": {
     "CITATION.cff": {
-      "bytes": 433,
-      "sha256": "d51447c0a17d1253a8fd90fe8f187fe10ae7f22a47aa539eefeb9b11ec71eea8"
+      "bytes": 473,
+      "sha256": "28ada405d0f34dcca1af99347a16f4aa61114b5d41ebc14ebffdf96cc26b6e86"
     },
     "README.md": {
-      "bytes": 4137,
-      "sha256": "f5fdecd961f2558c87c10806ee4bf1c6a0c1fc212a505d947f767808ebe1565d"
+      "bytes": 5497,
+      "sha256": "a4990682eec465d2ec8ffc9d99e1ddc9134329b90943c3c014178b6e8f8f582e"
     },
     "analysis/diagnose_replay_runtime.py": {
       "bytes": 1919,
@@ -58,8 +58,8 @@
       "sha256": "664de446033d88b1a602ebafee3083d8b691b46aaf1d1b5edaf64bb7488ab6ae"
     },
     "docs/RELEASE_BOUNDARY.md": {
-      "bytes": 2291,
-      "sha256": "c142b34fead485a4241e6a164f92b78fab698c7857ed4ebb154c86f36c83d7cb"
+      "bytes": 2640,
+      "sha256": "d6b36a629953f8da6bcd703e3eb6be912ec6f7807b44bb3404fccc53b20dcb6d"
     },
     "docs/REPRODUCIBILITY.md": {
       "bytes": 7072,
@@ -212,6 +212,10 @@
     "manuscript/RMMO_Paper3_Manuscript_preDOI.tex": {
       "bytes": 65405,
       "sha256": "187f8f8efa198b267fe00d1ca3733ffed02eb5ebb10c864c573ffd29cac99dcd"
+    },
+    "manuscript/RMMO_Paper3_Manuscript_publication_updated.tex": {
+      "bytes": 66341,
+      "sha256": "7df1ab83f4b76eec5ab2ff21a840399e47f21fc8d6d8d5c5de450d209d1930d2"
     },
     "reproducibility/README.md": {
       "bytes": 1437,
@@ -2014,8 +2018,8 @@
       "sha256": "db329ae49f2b68f3b09b4c67f0252d701adca76deab402339bd588552cbf9969"
     },
     "verification/RELEASE_CHECKLIST.md": {
-      "bytes": 1262,
-      "sha256": "6ef4d97c4471d8438e04aa5f754e8a6e588e1c90cb7f4d4f0f800299ac37c838"
+      "bytes": 1455,
+      "sha256": "d0d12a6c07c6a736240f443e7244fc653aeed95c43ddea0a233922f75ae5fc0c"
     },
     "verification/approved_document_authority.json": {
       "bytes": 842,
@@ -2054,18 +2058,20 @@
       "sha256": "5119f6b2684b57953f2646df71a9f79dd087310be459de55bbbd7eb0198d1679"
     },
     "verification/publication_authority.json": {
-      "bytes": 2394,
-      "sha256": "88afac15453e0d3362103453ea86923c8b6c10cdd7a6960b378e60f11aefa517"
+      "bytes": 2765,
+      "sha256": "72caf90a74e452eeb63b92bcd4a25be54336d97dddc4ee9e4254545362c91d41"
     },
     "verification/source_export_manifest.json": {
       "bytes": 208346,
       "sha256": "04f68d7d63840a58b97aa84df931bafd39dc5f80a296e93d13ac7fba27b30d3c"
     }
   },
-  "final_scholarly_pdf": "pending",
+  "final_scholarly_pdf": "Zenodo version DOI: 10.5281/zenodo.23225035 (not mirrored)",
   "generated_replay_completion_receipts_excluded": true,
   "immutable_release_tag": null,
   "manifest_self_hash_excluded": true,
   "scientific_source_mapping": "source_export_manifest.json",
-  "version_doi": null
+  "version_doi": "10.5281/zenodo.23225035",
+  "final_pdf_sha256": "5d507094748517024a7f06d41716435bdbf9137601268f5593b585d88cb4a95f",
+  "final_pdf_bytes": 715930
 }

@@ -1,8 +1,13 @@
 cff-version: 1.2.0
-message: "Please cite the final Zenodo version when the scholarly DOI is assigned. This file currently identifies the pre-DOI public companion only."
+message: "Please cite the published preprint when using Paper 3 materials."
 title: "An Overlapping Local Relational Geometry of Early Mouse Embryogenesis"
-type: report
+type: article
 authors:
   - family-names: James
     given-names: Zed
-url: "https://github.com/zedjames/relational-morphogenesis/tree/main/papers/03-overlapping-local-relational-geometry"
+doi: "10.5281/zenodo.23225035"
+url: "https://doi.org/10.5281/zenodo.23225035"
+repository-code: "https://github.com/zedjames/relational-morphogenesis"
+version: "1.0.0-preprint"
+date-released: "2026-10-07"
+license: "CC-BY-NC-ND-4.0"

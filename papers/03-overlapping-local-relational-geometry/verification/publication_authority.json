@@ -3,7 +3,7 @@
   "series": "Relational Morphogenesis and Multicellular Organization",
   "title": "An Overlapping Local Relational Geometry of Early Mouse Embryogenesis",
   "author": "Zed James",
-  "status": "verified_public_reproducibility_companion_final_pdf_doi_pending",
+  "status": "zenodo_version_doi_recorded_final_pdf_checksum_recorded_public_release_tag_pending",
   "hosted_numerical_verification_passed": true,
   "merge_requires_passing_final_head_checks": true,
   "validated_hosted_runtime": {
@@ -14,7 +14,10 @@
     "scipy": "1.13.1",
     "openblas_coretype": "HASWELL",
     "blas_threads": 1,
-    "required_cpu_features": ["avx2", "fma"],
+    "required_cpu_features": [
+      "avx2",
+      "fma"
+    ],
     "full_replay_evidence": "https://github.com/zedjames/relational-morphogenesis/actions/runs/37695015369/job/113044476032",
     "scientific_algorithm_or_bank_changes": false,
     "unrestricted_runtime_portability_claimed": false
@@ -45,10 +48,14 @@
   "numerical_verification": "verification/numerical_validation_receipt.json",
   "document_verification": "verification/document_validation_receipt.json",
   "independent_cleanroom_verification": "verification/cleanroom_validation_receipt.json",
-  "paper_version_doi": null,
+  "paper_version_doi": "10.5281/zenodo.23225035",
   "paper_all_versions_doi": null,
-  "final_pdf_sha256": null,
+  "final_pdf_sha256": "5d507094748517024a7f06d41716435bdbf9137601268f5593b585d88cb4a95f",
   "final_pdf_release_tag": null,
   "complete_scientific_replay_verified": true,
-  "release_tag": null
+  "release_tag": null,
+  "final_pdf_bytes": 715930,
+  "final_pdf_location": "https://doi.org/10.5281/zenodo.23225035",
+  "final_pdf_mirrored_in_public_repository": false,
+  "publication_facing_manuscript_source": "manuscript/RMMO_Paper3_Manuscript_publication_updated.tex"
 }
