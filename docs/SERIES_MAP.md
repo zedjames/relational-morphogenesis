@@ -22,6 +22,14 @@ All-versions DOI: https://doi.org/10.5281/zenodo.23125762
 
 Public folder: `papers/02-present-state-resolution-and-lineage-history/`
 
+### Paper 3 — An Overlapping Local Relational Geometry of Early Mouse Embryogenesis
+
+Status: **public preparation; final preprint DOI and PDF pending**.
+
+Public folder: `papers/03-overlapping-local-relational-geometry/`
+
+The Methods-complete manuscript and its former supplementary appendix are posted separately, with explicit source coverage, result map, and pre-DOI verification. The complete scientific PDF artwork and compressed reference banks remain release-gated.
+
 ## Future papers
 
 Future paper folders will be created only after each manuscript has passed its own standalone and adversarial review. The number, scope, order, and conclusions of later papers remain open to the evidence.
