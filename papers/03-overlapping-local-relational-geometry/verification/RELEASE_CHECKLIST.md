@@ -1,6 +1,6 @@
 # Paper 3 publication completion
 
-- [x] Frozen source mapping; six explicit older-manuscript exclusions.
+- [x] Frozen source mapping; six older-manuscript exclusions and one excluded source Git LFS configuration.
 - [x] Real binaries, signatures, byte counts and SHA-256; zero LFS pointers.
 - [x] Ten Final08 vector figures, source CSVs and generation provenance.
 - [x] Seven calibration banks, 33,792 graph computations, 108 component ranks, 72 aggregate/minimum ranks, unchanged complete decision ledger.

@@ -31,3 +31,7 @@ Install `latexmk` and TeX Live latex-extra, science and recommended fonts; alter
 Raw third-party H5TD files are absent. Original MELA v1 integrity records, licensing and attribution remain at [Zenodo record 19892785](https://doi.org/10.5281/zenodo.19892785). Released derived inputs suffice for this gate. Raw-carrier re-extraction is a distinct historical operation and is not claimed here. No private checkout, Git, raw archive, credentials or Lean is needed for numerical verification.
 
 Final author PDF/checksum, version DOI, all-versions DOI and immutable release/tag remain pending.
+
+## Independent clean-room receipt
+
+`verification/cleanroom_validation_receipt.json` records a fresh public GitHub clone, a new dependency environment, all 95 Paper 1 and 25 Paper 2 checks, full Paper 3 replay and document compilation. `analysis/verify_git_payloads.py` additionally checks actual committed Git blobs: all 466 payloads have frozen sizes/hashes and none is an LFS pointer. This packaging gate requires Git; numerical verification itself does not. GitHub Actions repeats the full numerical and document gates on Linux/Python 3.12 before merge.

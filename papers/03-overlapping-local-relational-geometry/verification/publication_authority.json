@@ -29,6 +29,7 @@
   "complete_approved_document_bodies_unchanged": true,
   "numerical_verification": "verification/numerical_validation_receipt.json",
   "document_verification": "verification/document_validation_receipt.json",
+  "independent_cleanroom_verification": "verification/cleanroom_validation_receipt.json",
   "paper_version_doi": null,
   "paper_all_versions_doi": null,
   "final_pdf_sha256": null,
