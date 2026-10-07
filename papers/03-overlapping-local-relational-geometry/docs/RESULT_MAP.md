@@ -16,6 +16,6 @@
 | Exact local-to-global failures | Results routewise counts and bridge fractions; Figure 6C–D; supplement finite tables |
 | Independent calibration closure (108 components / 72 family events) | Methods; supplementary calibration closure; numerical replay pending |
 
-**Current evidence coverage:** The main manuscript source, detached end appendix and MELA source integrity authority are online. The true figure PDF binaries, figure source tables, full inference banks and independent numerical verifier are not yet online. The current verifier validates manuscript/release structure only; refer to [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+**Current evidence coverage:** The main manuscript source, detached end appendix, MELA source integrity authority and 14 finite manuscript-derived CSV tables under `../results/manuscript_tables/` are online. The true figure PDF binaries, figure source tables, full inference banks and independent numerical verifier are not yet online. The current verifier validates manuscript/release structure only; refer to [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
 **Exact global boundary:** The three routewise exact-composition equalities all fail, and the historical existential common-refinement criterion fails on nonzero subsets of O1/O2/O3. The paper does not assert a universal global equivalence or population-level invariance.
