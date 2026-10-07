@@ -5,7 +5,9 @@
 - Added the Methods-complete pre-DOI source of **An Overlapping Local Relational Geometry of Early Mouse Embryogenesis**.
 - Detached the former end-of-paper appendix into a separate supplementary LaTeX file.
 - Published the original MELA source-file metadata and the paper-specific reproducibility, provenance, result and release-boundary documents.
-- Introduced a scope-limited source verifier. It verifies manuscript/appendix structure rather than claiming numerical bank replay.
+- Introduced a scope-limited public verifier checking document structure and 14 directly transcribed manuscript tables; it does not claim numerical bank replay.
+- Published the 27-lane/pair construction table, primary molecular/spatial summaries, scale/representation sensitivity, pool diagnostics, cell-category counts, exact composition and existential bridge tables.
+- Recorded the Paper 3 DOI/published-PDF fields as pending, with a final-artifact checklist.
 - Reserved the final scholarly PDF, DOI, figure binaries, compressed reference-bank payloads, verified full replay and immutable release tag for a later complete evidence release.
 
 ## 2026-10-03 — Paper 2 frozen preprint
