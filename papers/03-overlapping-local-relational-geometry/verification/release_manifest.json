@@ -14,8 +14,8 @@
       "sha256": "e4739010aa7a169331331ffaa228fea61cbd77501bbd437b4e696b7b8eb3187b"
     },
     "analysis/verify_artifacts.py": {
-      "bytes": 4766,
-      "sha256": "583f77d3713949321bf3dfcb6ff42b5fa61562bf5148275c02a1826829c103fd"
+      "bytes": 4826,
+      "sha256": "5e126fc96efdc7695ee29ed146638b9dfd639ca59733bca74f64fcb317d2e4fd"
     },
     "analysis/verify_binary_release.py": {
       "bytes": 3885,
@@ -42,8 +42,8 @@
       "sha256": "958a5b090738c66283eb264ada3dcd0527bcc63ffdb74469a986b72d8bf7f94b"
     },
     "analysis/verify_release.py": {
-      "bytes": 6262,
-      "sha256": "c811f4a1134a80d860ce35363a760f24664817164fbc7a79c194d4c3020f21be"
+      "bytes": 6263,
+      "sha256": "997bdc9f621b19e3de61410fd14683f8d6af5913927220804365ac2214d6b8e7"
     },
     "data/authority/source_normalization_provenance.json": {
       "bytes": 1131,

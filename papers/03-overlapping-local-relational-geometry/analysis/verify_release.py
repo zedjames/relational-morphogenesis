@@ -54,7 +54,7 @@ def main():
     expected_pairs = ("P12", "P13", "P23")
     for lane in range(9):
         for pair in expected_pairs:
-            require(f"$\ell_{lane}$&{pair}&" in supplement,
+            require(rf"$\ell_{lane}$&{pair}&" in supplement,
                     f"Missing supplementary lane {lane}/{pair}")
     for fig in ("FigureS1_", "FigureS2_", "FigureS3_", "FigureS4_"):
         require(fig in supplement, "Missing supplementary figure " + fig)

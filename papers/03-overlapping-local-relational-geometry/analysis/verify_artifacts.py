@@ -66,6 +66,8 @@ def verify():
              r'\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{40,}|AKIA[A-Z0-9]{16})\b']
     for path in ROOT.rglob('*'):
         rel = path.relative_to(ROOT)
+        if '__pycache__' in rel.parts:
+            continue
         assert not path.is_symlink(), str(rel)
         assert not any(p in ('.git', '.aws', '.ssh', '.env') for p in rel.parts), str(rel)
         assert path.suffix.lower() not in ('.h5td', '.h5', '.hdf5'), str(rel)
