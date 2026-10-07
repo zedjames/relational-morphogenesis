@@ -1,0 +1,33 @@
+{
+  "existing_primary_panel_coordinates_reproduced_exactly": true,
+  "historical_whole_projections_reproduced": true,
+  "partition_sha256": "39fa64283570d9a355678a6cd439ab48b34e77264f0dcc0808f6dd84ec11e570",
+  "raw_H5TD_included_in_release": false,
+  "raw_sources": [
+    {
+      "bytes": 97216576,
+      "embryo": "E7.5-R1",
+      "filename": "E7.5-R1.h5td",
+      "gene_ids_verified": true,
+      "sha256": "e9033b2fd3f60e1c480d56e69fc08488d3fa72cf7b8be4be6d9352d1609787b4",
+      "source_cells_verified": true
+    },
+    {
+      "bytes": 116412680,
+      "embryo": "E7.5-R2",
+      "filename": "E7.5-R2.h5td",
+      "gene_ids_verified": true,
+      "sha256": "181454797b8b4486b3dc1efbfc037b067b8d16a5c5a94064bfbda3c4f8c09300",
+      "source_cells_verified": true
+    },
+    {
+      "bytes": 104533756,
+      "embryo": "E7.5-R3",
+      "filename": "E7.5-R3.h5td",
+      "gene_ids_verified": true,
+      "sha256": "63374b872d1e9cc337a34fce53c05d465b915ccbe24fdfb3e8c6642775ef4c28",
+      "source_cells_verified": true
+    }
+  ],
+  "selected_raw_counts_sha256": "a00436aeee14376f0fa453b8a5f509bb2d5556a594f68b8dc4623779eff0a57f"
+}
