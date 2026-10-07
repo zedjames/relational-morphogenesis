@@ -19,7 +19,15 @@ Public reproducibility materials for the **Relational Morphogenesis and Multicel
 - All-versions DOI: https://doi.org/10.5281/zenodo.23125762
 - Public companion: `papers/02-present-state-resolution-and-lineage-history/`
 
-The scientific manuscripts are frozen on Zenodo. This repository contains paper-specific finite result surfaces, provenance, validation code, replay specifications, manuscript identity, figure-data authorities, and publication-facing formal controls.
+### Paper 3 — An Overlapping Local Relational Geometry of Early Mouse Embryogenesis
+
+- Author: Zed James
+- Release status: **pre-DOI public companion staging; final PDF pending**
+- Public companion: `papers/03-overlapping-local-relational-geometry/`
+- Source data: MELA v1 E7.5-R1/R2/R3, Zenodo record 19892785
+- See the Paper 3 companion README for evidence coverage and the outstanding binary-replay release gates.
+
+The Papers 1 and 2 manuscripts are frozen on Zenodo. The Paper 3 manuscript remains in pre-DOI staging. This repository contains paper-specific finite result surfaces, provenance, validation code, replay specifications, manuscript identity, figure-data authorities, and publication-facing formal controls.
 
 ## Purpose
 
@@ -43,6 +51,7 @@ See `docs/PUBLICATION_PRINCIPLES.md`.
     docs/                                              series-level publication and release policy
     papers/01-directional-stability/                   Paper 1 public companion
     papers/02-present-state-resolution-and-lineage-history/  Paper 2 public companion
+    papers/03-overlapping-local-relational-geometry/  Paper 3 pre-DOI public companion
 
 ## Source data
 
