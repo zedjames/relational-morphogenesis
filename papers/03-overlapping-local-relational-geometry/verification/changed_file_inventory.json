@@ -11,6 +11,7 @@
     "docs/RELEASES.md",
     "docs/SERIES_MAP.md",
     "papers/03-overlapping-local-relational-geometry/README.md",
+    "papers/03-overlapping-local-relational-geometry/analysis/diagnose_replay_runtime.py",
     "papers/03-overlapping-local-relational-geometry/analysis/requirements.txt",
     "papers/03-overlapping-local-relational-geometry/analysis/verify_artifacts.py",
     "papers/03-overlapping-local-relational-geometry/analysis/verify_binary_release.py",

@@ -6,8 +6,12 @@
       "sha256": "d51447c0a17d1253a8fd90fe8f187fe10ae7f22a47aa539eefeb9b11ec71eea8"
     },
     "README.md": {
-      "bytes": 3945,
-      "sha256": "7dfd8e1bdf40d7c8e94613ee9581730b16b64d64d7fe19f6c09a1219465cba50"
+      "bytes": 4053,
+      "sha256": "3dc35f0dcc89e53e2e68ed3dff01c8a8da0f6702ef189727310137cdf232daa2"
+    },
+    "analysis/diagnose_replay_runtime.py": {
+      "bytes": 1919,
+      "sha256": "8b4961e42dfb4109aedb41bd7430be3d0922ffc928c15e7076881182cce443a4"
     },
     "analysis/requirements.txt": {
       "bytes": 87,
@@ -54,12 +58,12 @@
       "sha256": "664de446033d88b1a602ebafee3083d8b691b46aaf1d1b5edaf64bb7488ab6ae"
     },
     "docs/RELEASE_BOUNDARY.md": {
-      "bytes": 1812,
-      "sha256": "46c5ec08f7c658914750afd62d5c6096d49ee65db170602686b36a3dfa096a2a"
+      "bytes": 2232,
+      "sha256": "95767a1ad140592413b8dbce60b12a38ae5a8f3ed58b83fcde470a28ed5bb9f8"
     },
     "docs/REPRODUCIBILITY.md": {
-      "bytes": 5541,
-      "sha256": "e63206e47d394213caa92d6e14fa838800d9876b20387a397a81e14aac200346"
+      "bytes": 6158,
+      "sha256": "54b9809e6d9ee177faae1fe05d330873ebb55f02d970dca773d4bee9553df7a1"
     },
     "docs/RESULT_MAP.md": {
       "bytes": 2644,
@@ -2010,8 +2014,8 @@
       "sha256": "db329ae49f2b68f3b09b4c67f0252d701adca76deab402339bd588552cbf9969"
     },
     "verification/RELEASE_CHECKLIST.md": {
-      "bytes": 1057,
-      "sha256": "1133163816c8d496e7af6803915c19278dd6f250c4ebbdd7ce4ffacff65a76ac"
+      "bytes": 1211,
+      "sha256": "c5ef0b510b548cddb2f608a00eea0334f41332d1cdf8cb5fb5c49a6db2da9903"
     },
     "verification/approved_document_authority.json": {
       "bytes": 842,
@@ -2022,8 +2026,8 @@
       "sha256": "cbd41b2a51cfedc4aec07d2918dd49b308333cad0dd25bae58b416a9f41ba7e9"
     },
     "verification/changed_file_inventory.json": {
-      "bytes": 67316,
-      "sha256": "dd386cbf651da9a1fb74a3776bb9e1d4cd0fbd466502fe87a7bb69f3aa012824"
+      "bytes": 67407,
+      "sha256": "758089a3830bbcbf620d4735ddb4bc17e381432dcaf3a1aae4beeae2cbf22eaa"
     },
     "verification/cleanroom_validation_receipt.json": {
       "bytes": 2054,
@@ -2047,11 +2051,11 @@
     },
     "verification/public_boundary_audit.json": {
       "bytes": 1944,
-      "sha256": "70cf3e7748ae6b887ecba661472e388623c7230ef583252d71298cac9ec615ad"
+      "sha256": "37b31835f510401cc14a15f3db91384bfc0de1d0f4adeb98362cab069155dde7"
     },
     "verification/publication_authority.json": {
-      "bytes": 1795,
-      "sha256": "72e2521153947b8b7887a0d34e484bd2ea1f65204a415d273136f982d2854d83"
+      "bytes": 2064,
+      "sha256": "a7d00224847575b667ae7b72f4656e8480807fd1a994b88382c76946a03994e2"
     },
     "verification/source_export_manifest.json": {
       "bytes": 208346,

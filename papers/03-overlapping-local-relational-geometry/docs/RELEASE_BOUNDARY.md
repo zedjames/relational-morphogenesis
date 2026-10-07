@@ -8,4 +8,6 @@ No private worktree, Git history, remotes, credentials, configuration, unrelated
 
 MELA v1 ([Zenodo 19892785](https://doi.org/10.5281/zenodo.19892785)) retains its original rights. Author manuscript, figures and original result tables follow CC BY-NC-ND 4.0; author code follows PolyForm Noncommercial 1.0.0. Derived third-party inputs are not blanket-relicensed.
 
-Only these fields remain pending: final author-supplied scholarly PDF and SHA-256, version DOI, all-versions DOI, and associated immutable release/tag. Compilation PDFs remain validation outputs outside the release. No final Paper 3 tag is created here.
+The export PR remains incomplete and must not merge until the hosted hash-S0 q25 exact graph replay discrepancy is resolved without changing frozen scientific authorities or weakening comparisons. Local full replay and independent public-clone verification passed; hosted Linux packaging and document compilation passed, but hosted numerical verification failed. See the runtime evidence in `REPRODUCIBILITY.md`.
+
+Publication fields also remain pending: final author-supplied scholarly PDF and SHA-256, version DOI, all-versions DOI, and associated immutable release/tag. Compilation PDFs remain validation outputs outside the release. No final Paper 3 tag is created here.

@@ -4,7 +4,7 @@ The approved manuscript's complete Methods and detached supplement remain the sc
 
 ## Numerical verification
 
-From a clean repository clone on Apple Silicon macOS, create a Python 3.9–3.12 environment and install `analysis/requirements.txt`. NumPy 2.0.2 and SciPy 1.13.1 are the original numerical pins; the macOS NumPy wheel uses Accelerate. Run:
+From a clean repository clone, install `analysis/requirements.txt` in an isolated environment. NumPy 2.0.2 and SciPy 1.13.1 are the original numerical pins. The validated local replay used Apple Silicon/macOS 27.0.1, Python 3.9.6 and Accelerate; hosted environments have an unresolved exact-replay discrepancy described below. Run:
 
 ```sh
 python papers/03-overlapping-local-relational-geometry/analysis/verify_numerical.py
@@ -18,9 +18,11 @@ The geometry gate reconstructs q10/q25/q50 domains, active anchors, fibers and o
 
 ### Exact-replay runtime boundary
 
-The full clean-room replay passed on Apple Silicon/macOS with Python 3.9 and the original pinned NumPy/SciPy wheels. Public CI uses `macos-15` (ARM64), Python 3.12.10 (the published Actions ARM64 build) and the same numerical pins, retaining the Accelerate backend. This platform requirement is part of the declared execution environment, not a change to the frozen algorithm or banks.
+The full clean-room replay passed locally on Apple Silicon/macOS 27.0.1, Python 3.9.6, NumPy 2.0.2 and SciPy 1.13.1, with Accelerate. Public CI also tested `macos-15` (ARM64), Python 3.12.10 (the published Actions ARM64 build) and the same numerical pins, but failed the frozen hash-S0 q25 first-draw graph-hash assertion in both runs 37693535965 and 37693539295. Apple Silicon/Accelerate alone is therefore not a sufficient compatibility specification. Hosted numerical validation remains unresolved and the release must not merge.
 
 Linux/OpenBLAS exact replay is not claimed portable: public Actions run 37692093364 passed all 33,792 computations, while runs 37692384954 and 37692395029, with identical scientific inputs, failed the original first-draw graph-hash assertion for `acceptance07/representation/hash_s0_q25`. Runtime-sensitive floating-point distance/decile construction is a suspected cause; it has not been established conclusively. These failures are recorded, not waived. No rounding, hash comparison, statistical tolerance, null model, bank, or decision was changed. Unsupported runtimes still fail the full gate on any discrepancy; Linux remains a separate required packaging/document-validation job.
+
+`analysis/diagnose_replay_runtime.py` reports sanitized backend/version identifiers, frozen state and sampler-context hashes, and expected/actual first-draw hashes for all six orientations. It is read-only, does not generate a calibration bank, and never substitutes for or weakens the full gate. Linux document/packaging validation passed in runs 37693535965 and 37693539295.
 
 ## Document validation
 

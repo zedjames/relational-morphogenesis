@@ -20,12 +20,12 @@
   "scan_coverage": "All released bytes, decompressed GZ/NPZ contents and PDF metadata/text; absolute private paths, private remote URLs, private keys and credential patterns; no symlinks.",
   "series_changed_file_hashes": {
     ".gitattributes": "7f85b206b86507138d4e136e3b71ff8e602f60afb03d7533e421a00c8425388e",
-    ".github/workflows/verify.yml": "4949d02382026cc521a58ad657ae1d3e59fa53dbe28934838ac72bff84b4dcd3",
+    ".github/workflows/verify.yml": "bb684f2eb074e8c1590c491dc003b429b08ce8230c08a9e7f5cf487d0c82781f",
     ".gitignore": "cbb4d7739d92cea261545cdc08a874321bb438113f0a68a15bfe9228bbd5fd64",
     "Makefile": "906ec9f35e7884c835bb81b20a4e4fc73037ccb8cce8e9b2fc1b1445d39a1380",
     "README.md": "ae6e23198909abff0d081f9e4681ba504a9214910a8b621ec0bdf133612a8686",
-    "docs/RELEASES.md": "a2b90d1483f7b41d34da5932bb58cb34d2c6ed3b51aebcc84d610de81aa9116c",
-    "docs/SERIES_MAP.md": "7b5b76a6e42c390758cbacd30c5c5f25fbdea096479295c24a0a5c3ed2d063d4"
+    "docs/RELEASES.md": "5380afa04e319a869b38c5498a3c088d9f98d5a511e99f52db6209ef10a2846e",
+    "docs/SERIES_MAP.md": "04a63e0e6701683971e34a966c825cd249307c827471cc8d4f553257279fd8dc"
   },
   "source_commit": "f00e67db6489df82cc4a1a6f5c7832a6fba6c479",
   "source_manifest_sha256": "5d6056e63871832a29ec19e12cf8d356c69c51d1e0353d3c1ae0558abeb3db98"

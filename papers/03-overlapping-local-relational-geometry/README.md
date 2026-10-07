@@ -3,7 +3,7 @@
 **Relational Morphogenesis and Multicellular Organization (RMMO), Paper 3**  
 **Zed James | October 2026**
 
-**Release status: verified public reproducibility companion; final scholarly PDF and DOI pending.** No immutable Paper 3 tag has been created.
+**Release status: incomplete public export PR; hosted exact-replay discrepancy unresolved.** Local clean-room verification passed, but this branch is not approved for merge. Final scholarly PDF and DOI are also pending. No immutable Paper 3 tag has been created.
 
 The [approved pre-DOI manuscript](manuscript/RMMO_Paper3_Manuscript_preDOI.tex) preserves its complete document body and full Methods. The [detached supplement](supplement/SupplementaryEvidence.tex) retains the former end appendix. All ten actual frozen scientific figure PDFs and source-data tables are in [figures/](figures/). Only preamble paths, heading wrapping and URL wrapping were adapted for public compilation.
 
@@ -31,7 +31,7 @@ make verify PYTHON=.venv/bin/python
 
 Numerical and document validation are separate gates. LaTeX needs `latexmk`, TeX Live latex-extra, science and recommended fonts, or Tectonic. See [reproducibility](docs/REPRODUCIBILITY.md) for coverage and the [source-to-destination manifest](verification/source_export_manifest.json).
 
-Exact graph replay requires the documented Apple Silicon/macOS numerical environment. Linux packaging and document validation are supported separately; full Linux graph replay showed a runtime-dependent hash discrepancy and is not claimed portable. Frozen scientific code, banks and strict comparisons remain unchanged.
+Exact graph replay passed in the documented local environment but failed in hosted Linux and macOS environments. Linux packaging and document validation passed separately. See the recorded [runtime discrepancy](docs/REPRODUCIBILITY.md); frozen scientific code, banks and strict comparisons remain unchanged.
 
 ## Source and licensing
 

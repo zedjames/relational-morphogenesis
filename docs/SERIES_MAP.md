@@ -24,7 +24,7 @@ Public folder: `papers/02-present-state-resolution-and-lineage-history/`
 
 ### Paper 3 — An Overlapping Local Relational Geometry of Early Mouse Embryogenesis
 
-Status: **verified public reproducibility companion; final preprint DOI and PDF pending**.
+Status: **incomplete public export PR: hosted exact-replay discrepancy unresolved; final preprint DOI and PDF pending**.
 
 Public folder: `papers/03-overlapping-local-relational-geometry/`
 
