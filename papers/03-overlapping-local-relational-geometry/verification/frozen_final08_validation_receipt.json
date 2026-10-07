@@ -1,0 +1,15 @@
+{
+  "Git_private_paths_raw_acquisition_Lean_required": false,
+  "component_decisions_changed": 0,
+  "components": 108,
+  "draws_per_bank": 1024,
+  "exact_graphs_replayed": 33792,
+  "families": 36,
+  "family_decisions_changed": 0,
+  "family_events": 72,
+  "figures": 10,
+  "inferential_banks_changed": 0,
+  "new_calibration_banks": 7,
+  "ordinary_files_verified": 473,
+  "passed": true
+}

@@ -1,0 +1,14 @@
+{
+  "ZR_authority_sha256": "fd64419abcab64148ff1fd6676a048fa3df3c159607eb2c7dbb93dd0c92d5f62",
+  "evaluation_input_hashes": {
+    "heldout_hash": "fd64419abcab64148ff1fd6676a048fa3df3c159607eb2c7dbb93dd0c92d5f62",
+    "pca32": "4a9b2b17afcd2ab57ad8fe2084308466cb359be10d1525b71c37a74ac292065c",
+    "pca64": "b1926a2bfc993ae46778d4ca2bd61dd14a82d313761918e58d156cdd8585b3bd",
+    "target_pca32": "833247c6b2914eb5002e34a7d3cd945213a37dadaae2717aa3a87c82b7afedfa"
+  },
+  "evaluation_start_utc": "2026-10-04T05:45:18.982586+00:00",
+  "geometry_commit": "cdaae26748b029035023127c70e196a5d3f46756",
+  "geometry_sha256": "34f6dfd459f9228f505d49c22f7d14ef5e00d207aa996f08f24ab5686f29ff46",
+  "loaded_only_after_geometry_commit": true,
+  "post_construction_annotation_access": true
+}

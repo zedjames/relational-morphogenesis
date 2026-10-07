@@ -1,0 +1,7 @@
+{
+  "geometry_sha256": "34f6dfd459f9228f505d49c22f7d14ef5e00d207aa996f08f24ab5686f29ff46",
+  "heldout_revealed_before_original_commit": false,
+  "original_geometry_commit": "cdaae26748b029035023127c70e196a5d3f46756",
+  "original_geometry_seal_utc": "2026-10-04T05:45:18.840949+00:00",
+  "reachable_geometry_commit": "825fb0ca7bc61f5ffa880e2a06f09ce1c51075ba"
+}

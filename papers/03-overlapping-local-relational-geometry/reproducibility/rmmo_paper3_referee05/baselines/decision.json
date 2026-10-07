@@ -1,0 +1,107 @@
+{
+  "biological_n": 3,
+  "comparisons": [
+    {
+      "baseline": "matched_knn",
+      "classification": "BASELINE_LOWER",
+      "overlap_differences": [
+        0.05116357674624349,
+        0.07883353059334812,
+        0.06619723244000908
+      ],
+      "panel": "state"
+    },
+    {
+      "baseline": "matched_knn",
+      "classification": "MIXED",
+      "overlap_differences": [
+        -0.018163057071841557,
+        0.0018189830505207388,
+        -0.006020498914403253
+      ],
+      "panel": "heldout"
+    },
+    {
+      "baseline": "pca32_knn",
+      "classification": "MIXED",
+      "overlap_differences": [
+        -0.03972248196012795,
+        0.001063014690890806,
+        -0.02225058553415954
+      ],
+      "panel": "state"
+    },
+    {
+      "baseline": "pca32_knn",
+      "classification": "MIXED",
+      "overlap_differences": [
+        -0.020377113949343065,
+        0.00863614972103989,
+        -0.0016820012827866342
+      ],
+      "panel": "heldout"
+    },
+    {
+      "baseline": "pca64_knn",
+      "classification": "MIXED",
+      "overlap_differences": [
+        -0.036892464383060306,
+        0.0016965974593486596,
+        -0.019294093045534234
+      ],
+      "panel": "state"
+    },
+    {
+      "baseline": "pca64_knn",
+      "classification": "MIXED",
+      "overlap_differences": [
+        -0.01689465703918276,
+        0.008880320432490273,
+        4.6905666092827256e-05
+      ],
+      "panel": "heldout"
+    },
+    {
+      "baseline": "mnn_k5",
+      "classification": "BASELINE_LOWER",
+      "overlap_differences": [
+        0.07446591175679457,
+        0.06687529811057569,
+        0.05618838274070703
+      ],
+      "panel": "state"
+    },
+    {
+      "baseline": "mnn_k5",
+      "classification": "NATIVE_LOWER",
+      "overlap_differences": [
+        -0.0030735185803012362,
+        -0.017434413778502803,
+        -0.020289674772854316
+      ],
+      "panel": "heldout"
+    },
+    {
+      "baseline": "mnn_fixed_size",
+      "classification": "BASELINE_LOWER",
+      "overlap_differences": [
+        0.04608613461057951,
+        0.0668780004381904,
+        0.059677909616351305
+      ],
+      "panel": "state"
+    },
+    {
+      "baseline": "mnn_fixed_size",
+      "classification": "NATIVE_LOWER",
+      "overlap_differences": [
+        -0.03193710218609649,
+        -0.011031963245780357,
+        -0.019882901727610244
+      ],
+      "panel": "heldout"
+    }
+  ],
+  "multiplicity_matched_mnn_completed": true,
+  "population_p_values": false
+}

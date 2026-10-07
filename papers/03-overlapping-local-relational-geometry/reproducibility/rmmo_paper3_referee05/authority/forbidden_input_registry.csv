@@ -1,0 +1,12 @@
+input,construction_permitted,enforcement
+G_R counts,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+G_R embedding,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+G_R gene identities except independent final audit,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+whole libraries,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+S0,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+cellType,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+germLayer,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+phase,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+lineage,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+history,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"
+heldout outcomes,False,"file allowlist, independent membership audit, poison replay and no evaluation imports"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Strict Paper 3 binary gate; source-level CI does not imply this passes."""
+"""Strict ordinary-file validation of every released Final08 binary."""
 import argparse
 import hashlib
 import json
@@ -37,19 +37,28 @@ def main():
     figures, banks = authority.get("figures", {}), authority.get("banks", {})
     if set(figures) != set(FIGURES) or not isinstance(banks, dict) or not banks:
         raise SystemExit("INCOMPLETE: ten figure PDFs and a nonempty bank manifest are required")
-    records = {"figures/" + name: rec for name, rec in figures.items()}
+    records = authority.get("files", {})
+    exports = json.loads((root / "verification/source_export_manifest.json").read_text())["files"]
+    expected = {rel: rec for rel, rec in exports.items()
+                if Path(rel).suffix in (".pdf", ".png", ".npz", ".gz")}
+    if records != expected:
+        raise SystemExit("Binary inventory differs from the frozen export authority")
+    if figures != {Path(rel).name: rec for rel, rec in records.items()
+                   if rel.startswith("figures/") and rel.endswith(".pdf")}:
+        raise SystemExit("Figure inventory differs from the frozen export authority")
     for rel, rec in banks.items():
-        if not rel.startswith("results/banks/") or rel in records:
+        if not rel.startswith("reproducibility/") or not rel.endswith(".npz") or rec != records.get(rel):
             raise SystemExit("Invalid bank path: " + rel)
-        records[rel] = rec
+    if banks != {rel: rec for rel, rec in records.items() if rel.endswith(".npz")}:
+        raise SystemExit("Incomplete NPZ inventory")
     for rel, rec in records.items():
-        path = (root / rel).resolve()
-        if not path.is_relative_to(root) or not path.is_file() or path.is_symlink():
+        path = root / rel
+        if Path(rel).is_absolute() or ".." in Path(rel).parts or not path.resolve().is_relative_to(root) or not path.is_file() or path.is_symlink():
             raise SystemExit("Missing or unsafe artifact: " + rel)
         start = path.read_bytes()[:160]
         if start.startswith(b"version https://git-lfs.github.com/spec/v1"):
             raise SystemExit("Git LFS pointer instead of actual artifact: " + rel)
-        magic = {".pdf": b"%PDF-", ".npz": b"PK\x03\x04", ".gz": b"\x1f\x8b"}
+        magic = {".pdf": b"%PDF-", ".png": b"\x89PNG\r\n\x1a\n", ".npz": b"PK\x03\x04", ".gz": b"\x1f\x8b"}
         if path.suffix not in magic or not start.startswith(magic[path.suffix]):
             raise SystemExit("Invalid artifact format: " + rel)
         if not isinstance(rec.get("bytes"), int) or path.stat().st_size != rec["bytes"]:
@@ -58,7 +67,7 @@ def main():
             raise SystemExit("Expected SHA-256 missing: " + rel)
         if sha256(path) != rec["sha256"]:
             raise SystemExit("SHA-256 mismatch: " + rel)
-    print(f"PASS: {len(FIGURES)} verified figure PDFs and {len(banks)} verified bank binaries")
+    print(f"PASS: {len(FIGURES)} verified figure PDFs; {len(records)} binaries including {len(banks)} NPZ inputs/banks")
     print("NOTE: numerical replay remains a separate scientific gate")
 
 if __name__ == "__main__":

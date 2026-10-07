@@ -1,0 +1,3 @@
+representation,input_genes,cells,input,center,variance_scaling,solver,components,tol,maxiter,seed_namespace,sign,unit_row_normalization,metric,relation,energy_fraction
+pca32,14660,3704,GS isolated log1p(10000c/GS library),global column mean,False,scipy.sparse.linalg.svds ARPACK,32,1e-08,20000,RMMO_P3_REFEREE01_V1|PCA|pca32,largest absolute loading positive; first argmax tie,True,chord,single-lane pair-symmetric pooled nearest q50 <=,0.23623011107086236
+pca64,14660,3704,GS isolated log1p(10000c/GS library),global column mean,False,scipy.sparse.linalg.svds ARPACK,64,1e-08,20000,RMMO_P3_REFEREE01_V1|PCA|pca64,largest absolute loading positive; first argmax tie,True,chord,single-lane pair-symmetric pooled nearest q50 <=,0.2618097662608175

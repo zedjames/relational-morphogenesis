@@ -1,5 +1,15 @@
 # Release Log
 
+## 2026-10-07 — Paper 3 verified public reproducibility export (PUBLIC-09)
+
+- Exported 467 byte-exact scientific artifacts / 195,430,732 bytes from the frozen Final08 473-file manifest; six older combined-manuscript TeX/PDF/log files are explicitly excluded.
+- Recovered all required LFS payloads from the local object store; no pointers are released. Published all ten vector figure PDFs with source CSVs, provenance and binary SHA-256 authorities.
+- Preserved all numerical algorithms, constants, inferential banks and comparison logic. Full replay covers seven calibration banks / 33,792 graph computations, 108 component / 72 family-event rankings, all 36 families and zero changed decisions.
+- Verified strict geometry, three exact composition routes, 746 cellwise bridge diagnostics and 954 original Final08 displayed-statistic comparisons.
+- Preserved approved document bodies and full Methods byte-for-byte. Adapted only preamble paths, long-heading wrapping and URL wrapping; validation PDFs stay outside the companion.
+- Added full public numerical, binary, document and boundary CI gates; Papers 1 and 2 materials and checks remain intact.
+- Final scholarly PDF/checksum, version DOI, all-versions DOI and associated immutable release/tag remain pending. No final Paper 3 tag is created.
+
 ## 2026-10-07 — Paper 3 pre-DOI public companion preparation
 
 - Added the Methods-complete pre-DOI source of **An Overlapping Local Relational Geometry of Early Mouse Embryogenesis**.

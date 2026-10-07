@@ -1,0 +1,8 @@
+{
+  "GR_raw_count_sha256": "3312bc2d646741e1ad1b4a934d59a007957c5193824b421e8c6bead090d650c3",
+  "copied_only_after_reveal": true,
+  "created_utc": "2026-10-04T06:10:58.297915+00:00",
+  "geometry_changed": false,
+  "historical_hash_denominator_precision": "sum of raw count dtype before float64 multiplication; PCA expression sums float64 counts",
+  "source_selected_count_sha256": "a00436aeee14376f0fa453b8a5f509bb2d5556a594f68b8dc4623779eff0a57f"
+}

@@ -1,0 +1,20 @@
+{
+  "cellTypeUsed": false,
+  "eligibleGeneCount": 20999,
+  "historyUsed": false,
+  "lineageUsed": false,
+  "minimumDetectionFractionPerEmbryo": 0.01,
+  "minimumEmbryosPassing": 2,
+  "mitochondrialGenesExcluded": true,
+  "outcomeUsed": false,
+  "panelsExactlyDisjoint": true,
+  "partitionSeed": "RMMO12_STATE_REALIZATION_V1",
+  "positiveMeanCountRequired": true,
+  "predictionErrorUsed": false,
+  "realizationGeneCount": 6339,
+  "ribosomalPrefixesExcluded": [
+    "Rpl",
+    "Rps"
+  ],
+  "stateGeneCount": 14660
+}

@@ -23,14 +23,16 @@
 \usepackage[nameinlink,capitalise,noabbrev]{cleveref}
 \usepackage{caption}
 \usepackage{authblk}
-\usepackage{url}
+\usepackage{xurl}
+\usepackage{titlesec}
+\titleformat{\subsection}{\normalfont\large\bfseries\raggedright}{\thesubsection}{1em}{}
 
 \setstretch{1.08}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.65em}
 \captionsetup{font=small,labelfont=bf,textfont=it}
 \renewcommand{\arraystretch}{1.10}
-\graphicspath{{figures/}}
+\graphicspath{{../figures/}{figures/}}
 
 \newcommand{\ZS}{Z_S}
 \newcommand{\ZR}{Z_R}

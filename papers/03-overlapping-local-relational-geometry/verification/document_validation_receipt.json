@@ -1,0 +1,25 @@
+{
+  "compiled_pdfs_are_validation_outputs_not_final_scholarly_pdf": true,
+  "documents": [
+    {
+      "overfull_boxes": 0,
+      "pages": 32,
+      "source": "manuscript/RMMO_Paper3_Manuscript_preDOI.tex",
+      "tex_sha256": "187f8f8efa198b267fe00d1ca3733ffed02eb5ebb10c864c573ffd29cac99dcd",
+      "undefined_references": 0,
+      "validation_pdf_sha256": "3a81eab137fe7d97736f7c73da05e8e94a6557b0c2985add2fd0b6929c9cb94b"
+    },
+    {
+      "overfull_boxes": 0,
+      "pages": 6,
+      "source": "supplement/SupplementaryEvidence.tex",
+      "tex_sha256": "db329ae49f2b68f3b09b4c67f0252d701adca76deab402339bd588552cbf9969",
+      "undefined_references": 0,
+      "validation_pdf_sha256": "f5a50c95d9372a6d9d307654a1b131eccce02175679b03132564ac1fdf14931f"
+    }
+  ],
+  "final_author_supplied_pdf": "pending",
+  "full_approved_methods_unchanged": true,
+  "passed": true,
+  "scientific_figures": 10
+}

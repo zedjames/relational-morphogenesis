@@ -1,0 +1,13 @@
+baseline,orientation,panel,native_support,error_mean,error_median,mean_target_size,descriptive_only,pair_native_comparison
+mnn_k5,L12,state,592,0.37789603609929295,0.37929807866511944,1.8614864864864864,True,not defined outside common support
+mnn_k5,L12,heldout,592,0.39323742079588525,0.38996216064044714,1.8614864864864864,True,not defined outside common support
+mnn_k5,L21,state,526,0.3899769085683215,0.385501102498769,2.0950570342205324,True,not defined outside common support
+mnn_k5,L21,heldout,526,0.40313121815372793,0.40217864026943967,2.0950570342205324,True,not defined outside common support
+mnn_k5,L13,state,594,0.353707221755715,0.3471857032948856,2.0673400673400675,True,not defined outside common support
+mnn_k5,L13,heldout,594,0.3603025476462758,0.3584885461722862,2.0673400673400675,True,not defined outside common support
+mnn_k5,L31,state,624,0.3627047640962115,0.36106074354838,1.9679487179487178,True,not defined outside common support
+mnn_k5,L31,heldout,624,0.3671596432447058,0.36509817616113216,1.9679487179487178,True,not defined outside common support
+mnn_k5,L23,state,606,0.38922376453678303,0.38704033931912896,2.1914191419141913,True,not defined outside common support
+mnn_k5,L23,heldout,606,0.40050603946189556,0.39757779246384434,2.1914191419141913,True,not defined outside common support
+mnn_k5,L32,state,723,0.3873045930821929,0.39702374354720865,1.8367911479944674,True,not defined outside common support
+mnn_k5,L32,heldout,723,0.4007291601036347,0.40097579043519754,1.8367911479944674,True,not defined outside common support

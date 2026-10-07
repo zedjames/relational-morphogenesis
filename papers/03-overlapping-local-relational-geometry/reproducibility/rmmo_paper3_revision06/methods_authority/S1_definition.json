@@ -1,0 +1,10 @@
+{
+  "all_1024_balanced": true,
+  "bins": "density quartiles; radial and NN deciles; whole source embryo scopes; linear quantiles; searchsorted right",
+  "density": "10th within-embryo nearest chord distance excluding self",
+  "fallback": 0,
+  "law": "uniform without replacement exact observed anchor count per fixed stratum; refit q25 radius around randomized anchors",
+  "local_NN": "nearest other cell within source embryo",
+  "radial": "Euclidean distance from unrenormalized mean of observed source anchors",
+  "stratum": "S0,densityQuartile,radialDecile,NNdecile"
+}

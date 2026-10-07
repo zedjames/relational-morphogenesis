@@ -1,0 +1,28 @@
+{
+  "B_cal":1024,"B_inferential":1024,"alpha":0.05,"eta":1e-8,
+  "calibration_seed_namespace":"RMMO_P3_REVISION06_CALIBRATION_V1|",
+  "inferential_authority":"rmmo_paper3_referee05",
+  "inferential_seed_namespace":"RMMO_P3_REFEREE05_V1|",
+  "primary_geometry":"unchanged strict GS-only nine-lane 7-of-9 consensus",
+  "primary_scale":"q25",
+  "banks":["edge_agreement","matched_coherence/q25","source_fidelity/q25","spatial_overlap/S1","retention/R0","retention/R1","retention/R2","retention/R3"],
+  "families":[
+    {"bank":"edge_agreement","panel":"heldout","metric":"edge_distance","offset":0,"direction":-1},
+    {"bank":"matched_coherence/q25","panel":"state","metric":"defect","offset":0,"direction":-1},
+    {"bank":"matched_coherence/q25","panel":"heldout","metric":"defect","offset":6,"direction":-1},
+    {"bank":"source_fidelity/q25","panel":"state","metric":"source_error","offset":3,"direction":-1},
+    {"bank":"source_fidelity/q25","panel":"heldout","metric":"source_error","offset":9,"direction":-1},
+    {"bank":"spatial_overlap/S1","panel":"spatial","metric":"overlap_size","offset":0,"direction":1}
+  ],
+  "retention_families":"each R0-R3: state/heldout x defect/source_error, offsets0/3/6/9",
+  "families_total":22,
+  "calibration":"component means and sample SD(ddof=1) estimated from fresh same-law calibration draws, then frozen before rescoring unchanged inferential banks",
+  "score":"s*(T-mu_cal)/(sigma_cal+1e-8)",
+  "family_rank":"+1 empirical exceedance rank for sum and minimum over3 synchronized components using original1024 inferential draws",
+  "component_and_maxT_tests":"remain byte-identical to Referee05; calibration is ONLY for sum/minimum",
+  "sampling":"direct IID draws; same source/endpoint/degree/matching constraints and rejection laws as Referee05, no chains or early stopping",
+  "decisions":"ROBUSTNESS_PRESERVED; FAMILY_RESULT_WEAKENED if only one formerly-supported family statistic survives; FAMILY_RESULT_LOST if neither survives",
+  "no_rescue":true,"no_new_biological_hypotheses":true,
+  "closed_programs":["R4","R5","composition enrichment","bridge enrichment","S2","exact ownership","cross-horizon","population claims"],
+  "finite_methods_audit":"direct definitions and cardinalities only; no new inferential test or threshold selection"
+}

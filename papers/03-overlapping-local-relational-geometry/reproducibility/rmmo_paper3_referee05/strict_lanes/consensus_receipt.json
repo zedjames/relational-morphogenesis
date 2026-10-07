@@ -1,0 +1,7 @@
+{
+  "calibration": "pairwise q50 quantile of all directional nearest distances",
+  "consensus_sha256": "478aa0b5d1a12459582d5113615d4faa90f3f41d9e08ea5b4743bfd5a8ec5afd",
+  "criterion": 7,
+  "lanes": 9,
+  "union_GR_intersection": 0
+}

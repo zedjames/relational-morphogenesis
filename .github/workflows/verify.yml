@@ -13,4 +13,14 @@ jobs:
         with:
           python-version: "3.12"
       - name: Verify all released paper surfaces
-        run: make verify
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+        run: |
+          python -m pip install -r papers/03-overlapping-local-relational-geometry/reproducibility/requirements.txt
+          make verify
+      - name: Compile approved Paper 3 manuscript and detached supplement
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-science latexmk
+          python papers/03-overlapping-local-relational-geometry/analysis/verify_documents.py --engine latexmk --output "$RUNNER_TEMP/paper3-documents"

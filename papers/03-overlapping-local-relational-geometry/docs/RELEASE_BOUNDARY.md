@@ -1,26 +1,11 @@
 # Paper 3 — Public release boundary
 
-This directory contains selected paper-specific publication material. Its purpose is to let readers locate the scientific manuscript, inspect the finite authority surface when released, and independently determine what is and is not reproducible from the public files.
+This companion exports the frozen paper-specific Final08 reviewer package and approved public documents. Of 473 source-manifest files, 467 scientific files are released byte-exactly. Six earlier combined-manuscript TeX/PDF/log files are explicitly excluded. The approved complete Methods and detached supplement remain intact; an older PDF is never published as the final scholarly PDF.
 
-## Present in this pre-DOI stage
+Released materials include ten vector figure PDFs with exact names, PNGs, source CSVs and generation provenance; derived carrier/geometry inputs; unchanged inferential banks; independent calibration banks/constants; original/calibrated comparison tables; and standalone replay. Source/export, binary and complete release SHA-256 manifests serve distinct checks. Pointer files fail the binary gate.
 
-- Full pre-DOI manuscript in LaTeX, including its original Methods text.
-- Detached end-of-manuscript supplementary appendix in LaTeX.
-- Source-data provenance metadata listing the three original MELA source files and exact byte hashes.
-- Publication-specific result map and release-coverage statements.
-- Lightweight manuscript/appendix structural verification (once enabled).
+No private worktree, Git history, remotes, credentials, configuration, unrelated scientific program or raw MELA H5TD archive is exported. Source commit identifiers are provenance hashes only; public Git history is independent. The private source repository remains private. Historical paper-specific scripts are retained as frozen provenance; only documented public entry points run during release verification.
 
-## Awaiting publication
+MELA v1 ([Zenodo 19892785](https://doi.org/10.5281/zenodo.19892785)) retains its original rights. Author manuscript, figures and original result tables follow CC BY-NC-ND 4.0; author code follows PolyForm Noncommercial 1.0.0. Derived third-party inputs are not blanket-relicensed.
 
-- Canonical final paper PDF, DOI and publication SHA-256.
-- Ten actual scientific figure PDF files (Figures 1–6 and S1–S4) and their complete figure-source CSV authorities.
-- Actual compressed inferential/calibration banks and complete standalone numerical replay dependencies.
-- Frozen reproducibility package audit, successful replay logs and release tag.
-
-A Git LFS pointer file is not a valid released figure or binary bank. The pending scientific binaries must be transferred and validated as real payloads.
-
-## Provenance, rights and privacy
-
-Primary third-party material is MELA v1 (Zenodo 10.5281/zenodo.19892785), retained at its official archive. Its raw H5TD files are not mirrored; their original rights remain intact. Public code and the author’s original manuscript are subject to the series licensing policy. This companion does not carry research worktree history, private remotes, branches, configuration, credentials, or unrelated research material.
-
-The complete published paper is the scholarly authority. Numerical statements from the manuscript may be transcribed into machine-readable tables but will be marked separately from independently replayed evidence.
+Only these fields remain pending: final author-supplied scholarly PDF and SHA-256, version DOI, all-versions DOI, and associated immutable release/tag. Compilation PDFs remain validation outputs outside the release. No final Paper 3 tag is created here.

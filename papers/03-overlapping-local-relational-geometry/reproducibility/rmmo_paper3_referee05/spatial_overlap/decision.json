@@ -1,0 +1,47 @@
+{
+  "S1": {
+    "T_min": 3.9502337587994676,
+    "T_sum": 14.431598217570674,
+    "components": [
+      {
+        "Z": 4.764761458885826,
+        "absolute_effect": 38.458984375,
+        "conditional_tail": 0.000975609756097561,
+        "maxT_tail": 0.000975609756097561,
+        "null95_hi": 184.0,
+        "null95_lo": 153.0,
+        "null_mean": 168.541015625,
+        "null_sd": 8.071544537792136,
+        "observed": 207.0,
+        "relative_effect": 0.22818768613908427
+      },
+      {
+        "Z": 5.716602999885381,
+        "absolute_effect": 64.87890625,
+        "conditional_tail": 0.000975609756097561,
+        "maxT_tail": 0.000975609756097561,
+        "null95_hi": 249.0,
+        "null95_lo": 201.575,
+        "null_mean": 222.12109375,
+        "null_sd": 11.3492061971305,
+        "observed": 287.0,
+        "relative_effect": 0.2920880009848232
+      },
+      {
+        "Z": 3.9502337587994676,
+        "absolute_effect": 42.6904296875,
+        "conditional_tail": 0.000975609756097561,
+        "maxT_tail": 0.000975609756097561,
+        "null95_hi": 231.0,
+        "null95_lo": 187.575,
+        "null_mean": 209.3095703125,
+        "null_sd": 10.807064152317885,
+        "observed": 252.0,
+        "relative_effect": 0.2039583265292792
+      }
+    ],
+    "componentwise_family_supported": true,
+    "min_tail": 0.000975609756097561,
+    "sum_tail": 0.000975609756097561
+  }
+}

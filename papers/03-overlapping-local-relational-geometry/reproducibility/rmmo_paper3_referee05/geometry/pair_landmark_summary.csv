@@ -1,0 +1,4 @@
+pair,edges,source_endpoints,target_endpoints,source_max_degree,target_max_degree
+P12,59,50,26,4,22
+P13,17,15,9,2,6
+P23,44,20,36,13,3

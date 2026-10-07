@@ -1,0 +1,9 @@
+{
+  "changed_events": [],
+  "component_maxT_and_banks_byte_identical": true,
+  "families": 22,
+  "family_events": 44,
+  "independent_constants_sha256": "4807766f3eddf25f87ea8df76c79337230e9e6a801ae1fb9beedf634767b0b27",
+  "no_rescue": true,
+  "status": "ROBUSTNESS_PRESERVED"
+}

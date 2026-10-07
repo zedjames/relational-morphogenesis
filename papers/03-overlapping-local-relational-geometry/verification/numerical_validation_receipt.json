@@ -1,0 +1,19 @@
+{
+  "aggregate_minimum_events": 72,
+  "component_decisions_changed": 0,
+  "components": 108,
+  "document_layout_validation": "separate",
+  "exact_bridge_overlaps": 3,
+  "exact_composition_routes": 3,
+  "exact_graph_draw_computations": 33792,
+  "families": 36,
+  "family_decisions_changed": 0,
+  "figures": 10,
+  "independent_calibration_banks": 7,
+  "inferential_banks_changed": 0,
+  "passed": true,
+  "private_checkout_required": false,
+  "raw_acquisition_required": false,
+  "scientific_bytes": 195430732,
+  "scientific_files": 467
+}

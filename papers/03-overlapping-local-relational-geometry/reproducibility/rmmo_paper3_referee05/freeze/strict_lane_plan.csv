@@ -1,0 +1,10 @@
+lane,role,selection_universe,membership_rule,gene_count,panel_seed,projection_seed,size_factor
+S0,primary,G_S,all ordered G_S,14660,,RMMO12_STATE_HASH_PROJECTION_V1,own lane only
+S1,projection,G_S,all ordered G_S,14660,,RMMO13_PROJECTION_A,own lane only
+S2,projection,G_S,all ordered G_S,14660,,RMMO13_PROJECTION_B,own lane only
+S3,projection,G_S,all ordered G_S,14660,,RMMO13_PROJECTION_C,own lane only
+S4,projection,G_S,all ordered G_S,14660,,RMMO13_PROJECTION_D,own lane only
+S5,subpanel,G_S,uint64 first8 SHA256(seed|geneId) mod10 <7,10300,RMMO13_PANEL_A,RMMO12_STATE_HASH_PROJECTION_V1,own lane only
+S6,subpanel,G_S,uint64 first8 SHA256(seed|geneId) mod10 <7,10307,RMMO13_PANEL_B,RMMO12_STATE_HASH_PROJECTION_V1,own lane only
+S7,subpanel,G_S,uint64 first8 SHA256(seed|geneId) mod10 <7,10268,RMMO13_PANEL_C,RMMO12_STATE_HASH_PROJECTION_V1,own lane only
+S8,subpanel,G_S,uint64 first8 SHA256(seed|geneId) mod10 <7,10207,RMMO13_PANEL_D,RMMO12_STATE_HASH_PROJECTION_V1,own lane only

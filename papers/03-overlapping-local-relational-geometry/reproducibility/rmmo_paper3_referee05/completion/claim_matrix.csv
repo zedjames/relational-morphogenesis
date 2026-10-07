@@ -1,0 +1,21 @@
+claim,title,status,authority,scope
+A,Strict construction union disjoint from GR,STRICT_FEATURE_SEPARATION_VERIFIED,separation_audit/union_gene_audit.json,independent preparation/poison auditor outside restricted Stage A; not biological independence
+B,No GR access before committed geometry,STRICT_FEATURE_SEPARATION_VERIFIED,separation_audit/reveal_receipt.json,independent preparation/poison auditor outside restricted Stage A; not biological independence
+C,GR poison invariance,STRICT_FEATURE_SEPARATION_VERIFIED,separation_audit/heldout_poison_test.json,independent preparation/poison auditor outside restricted Stage A; not biological independence
+D,Landmark-edge heldout agreement,COMPONENTWISE_SUPPORTED,edge_agreement/component_statistics.csv,positive directions; sum and minimum family evidence retained
+E,Matched heldout coherence,COMPONENTWISE_SUPPORTED,matched_coherence/q25/component_statistics.csv,positive directions; sum and minimum family evidence retained
+F,Degree-controlled heldout fidelity,COMPONENT_SUPPORT_PARTIAL,source_fidelity/q25/component_statistics.csv,positive directions; sum and minimum family evidence retained
+G,matched_knn heldout comparison,DESCRIPTIVE_CHANGED,baselines/comparison.csv,"native-minus-baseline paired error: O1=-0.018163057071841557, O2=0.0018189830505207388, O3=-0.006020498914403253; common/eligible support, no population inference"
+H,mnn_k5 heldout comparison,DESCRIPTIVE_CHANGED,baselines/comparison.csv,"native-minus-baseline paired error: O1=-0.0030735185803012362, O2=-0.017434413778502803, O3=-0.020289674772854316; common/eligible support, no population inference"
+I,mnn_fixed_size heldout comparison,DESCRIPTIVE_CHANGED,baselines/comparison.csv,"native-minus-baseline paired error: O1=-0.03193710218609649, O2=-0.011031963245780357, O3=-0.019882901727610244; common/eligible support, no population inference"
+J,S1 spatial overlap,COMPONENTWISE_SUPPORTED,spatial_overlap/S1/component_statistics.csv,positive directions; sum and minimum family evidence retained
+K,Matched state coherence,COMPONENTWISE_SUPPORTED,matched_coherence/q25/component_statistics.csv,positive directions; sum and minimum family evidence retained
+L,Degree-controlled state fidelity,COMPONENTWISE_SUPPORTED,source_fidelity/q25/component_statistics.csv,positive directions; sum and minimum family evidence retained
+M,Hash/PCA matched directions,REPRESENTATION_DIRECTION_PERSISTS,representation/effect_direction.csv,"tested representations only, not independent replication"
+N,Hash/PCA finite objects,OBJECT_IDENTITY_NOT_PRESERVED,representation/object_identity.csv,single-lane hash/PCA like-for-like; strict nine-lane comparison separately labeled
+O,q25 R0,NOT_REPRODUCED_BY_TESTED_REFERENCE,retention/R0/family_statistics.csv,conditional tested-reference result only; no structural necessity or ownership theorem
+P,q25 R1,NOT_REPRODUCED_BY_TESTED_REFERENCE,retention/R1/family_statistics.csv,conditional tested-reference result only; no structural necessity or ownership theorem
+Q,q25 R2,NOT_REPRODUCED_BY_TESTED_REFERENCE,retention/R2/family_statistics.csv,conditional tested-reference result only; no structural necessity or ownership theorem
+R,q25 R3,NOT_REPRODUCED_BY_TESTED_REFERENCE,retention/R3/family_statistics.csv,conditional tested-reference result only; no structural necessity or ownership theorem
+S,Landmark biology,DESCRIPTIVE_CHANGED,biology/landmark_annotation_summary.csv,"cell type, germ layer, S0 and phase; annotations loaded only after construction; no enrichment or causality"
+T,Overlap biology,DESCRIPTIVE_CHANGED,biology/overlap_annotation_summary.csv,"cell type, germ layer, S0 and phase; annotations loaded only after construction; no enrichment or causality"

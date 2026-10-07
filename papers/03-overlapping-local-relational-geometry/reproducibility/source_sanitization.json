@@ -1,0 +1,17 @@
+{
+  "actual_source_scanned": true,
+  "all_reported_families_calibrated": true,
+  "artifacts": {
+    "doubled_math_parentheses": [],
+    "doubled_named_control": [],
+    "html_space_entity": [],
+    "markdown_bold": [],
+    "markdown_code_fence": [],
+    "markdown_heading": [],
+    "markdown_inline_code": [],
+    "markdown_inside_textit": [],
+    "markdown_link": []
+  },
+  "passed": true,
+  "tex_sha256": "8e77d0d54226451228ef121c128394e9bc7d2dc2cb7555ef4625bc42cb1f0277"
+}

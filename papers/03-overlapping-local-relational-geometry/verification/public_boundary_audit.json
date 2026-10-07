@@ -1,0 +1,31 @@
+{
+  "all_scientific_source_bytes_unchanged": true,
+  "ambiguous_file_review": [
+    {
+      "finding": "git diff --check flags the seven-equals MISSION heading underline as a conflict marker. It is an original frozen scientific directive, not a merge conflict. Original bytes are preserved.",
+      "path": "reproducibility/rmmo_paper3_referee05/authority/research_directive.txt",
+      "sha256": "8e90b17392828c348034e0547333af7b7aa143d3acdbc3470019f9ff779ffb8c"
+    }
+  ],
+  "credentials_or_private_configuration_exported": false,
+  "exported_scientific_files": 467,
+  "final_pdf_doi_and_immutable_release": "pending",
+  "papers_1_2_byte_unchanged": true,
+  "passed": true,
+  "private_git_history_imported": false,
+  "private_repository_visibility": "private",
+  "public_repository_visibility": "public",
+  "raw_third_party_archives_exported": false,
+  "reviewed_changed_file_inventory": "changed_file_inventory.json",
+  "scan_coverage": "All released bytes, decompressed GZ/NPZ contents and PDF metadata/text; absolute private paths, private remote URLs, private keys and credential patterns; no symlinks.",
+  "series_changed_file_hashes": {
+    ".github/workflows/verify.yml": "284baba052bc9503b9ebfbe12d2af9e686d8e9cc881f651315f2ec66b3a03803",
+    ".gitignore": "cbb4d7739d92cea261545cdc08a874321bb438113f0a68a15bfe9228bbd5fd64",
+    "Makefile": "906ec9f35e7884c835bb81b20a4e4fc73037ccb8cce8e9b2fc1b1445d39a1380",
+    "README.md": "ae6e23198909abff0d081f9e4681ba504a9214910a8b621ec0bdf133612a8686",
+    "docs/RELEASES.md": "5c96a725963d601089fe4c450d5529ac98905adc72e3377a546497d1a06a2a07",
+    "docs/SERIES_MAP.md": "7b5b76a6e42c390758cbacd30c5c5f25fbdea096479295c24a0a5c3ed2d063d4"
+  },
+  "source_commit": "f00e67db6489df82cc4a1a6f5c7832a6fba6c479",
+  "source_manifest_sha256": "5d6056e63871832a29ec19e12cf8d356c69c51d1e0353d3c1ae0558abeb3db98"
+}

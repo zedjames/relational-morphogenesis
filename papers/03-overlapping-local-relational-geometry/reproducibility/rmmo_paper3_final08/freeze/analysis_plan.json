@@ -1,0 +1,15 @@
+{
+  "tranche":"RMMO-P3-FINAL-08",
+  "B_inferential":1024,"B_calibration":1024,"eta":1e-8,"alpha":0.05,
+  "parents_immutable":["rmmo_paper3_referee05","rmmo_paper3_revision06","rmmo_paper3_acceptance07"],
+  "operation":"deterministic restandardization and rank counting only",
+  "new_random_banks":0,"new_null_laws":0,"new_biological_analyses":0,
+  "scope":"all retained component-maxT families catalogued from Acceptance07; primary, manuscript sensitivity and companion-provenance roles explicit",
+  "constants":"matching existing independent calibration bank only; verify all66 prior frozen constants; other already-scored columns may use means/sampleSD of the same immutable calibration bank",
+  "maxT":"signed Z=(T-mu_cal)/(sigma_cal+eta); max over3 synchronized components; inclusive exceedance; plus-one/1025",
+  "raw_tails":"unchanged and independently reproduced",
+  "missing_calibration":"no substitution from another law, scale or representation; do not synthesize a bank or declare the publication freeze complete; await user choice",
+  "scientific_object":"unchanged strict GS-only consensus, 59/17/44 edges",
+  "manuscript":"paper-specific publication filenames; unchanged Paper1 shell; Results scientific findings first; Methods after Scope; actual-source sanitation and full PDF inspection",
+  "workflow":"reuse owned RMMO worktree and warm caches; no Lean build or other-agent worktree edits; do not push incomplete publication freeze"
+}

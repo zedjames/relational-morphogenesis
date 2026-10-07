@@ -1,21 +1,24 @@
 # Paper 3 — Result-to-artifact map
 
-| Manuscript result | Primary authority / eventual companion |
-|---|---|
-| Construction-held-out feature partition, nine lanes, strict 59/17/44 edges | Methods; Figure 1; full lane table in `../supplement/SupplementaryEvidence.tex` |
-| Six oriented q25 fibers and overlaps | Results fiber table; Figure 3 |
-| Disjoint G_R landmark-edge agreement | Results edge agreement table; Figure 2A |
-| q25 G_R matched-target coherence | Results matched-target table; Figure 2B |
-| q25 degree-controlled G_R source fidelity | Results source-fidelity table; Figure 2C–D |
-| Strict q25 spatial-source overlap reference | Results spatial table; Figure 3C |
-| Annotation composition and fiber direction asymmetry | Results text and Figure 3 |
-| Matched-size kNN and MNN comparisons | Results text and Figure 4 |
-| Historical-versus-strict construction, hash / PCA32 / PCA64 | Results representation tables; Figure 5 |
-| q10 / q25 / q50 scale sensitivity | Results scale table; Supplementary Figure S3 |
-| R0–R3 retained-structure effects | Results text; Figure 6A–B; Supplementary Figures S2 and S4 |
-| Exact local-to-global failures | Results routewise counts and bridge fractions; Figure 6C–D; supplement finite tables |
-| Independent calibration closure (108 components / 72 family events) | Methods; supplementary calibration closure; numerical replay pending |
+Paths are relative to this paper directory. Scientific authorities live under `reproducibility/`; figures display the final independently calibrated statistics.
 
-**Current evidence coverage:** The main manuscript source, detached end appendix, MELA source integrity authority and 14 finite manuscript-derived CSV tables under `../results/manuscript_tables/` are online. The true figure PDF binaries, figure source tables, full inference banks and independent numerical verifier are not yet online. The current verifier validates manuscript/release structure only; refer to [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+| Result | Released authority |
+| --- | --- |
+| Carrier, partition and provenance | `data/authority/source_normalization_provenance.json`; `reproducibility/rmmo_paper3_referee05/authority/`; `reproducibility/relational_morphogenesis12/` |
+| Nine lanes, 59/17/44 consensus, geometry/fibers/overlaps | Referee05 `strict_lanes/` and `geometry/`; Figures 1/3 source CSVs |
+| Matched-edge agreement | Referee05 `edge_agreement/`; Figure 2 edge-agreement CSV |
+| Matched-target coherence | Referee05 `matched_coherence/`; Figure 2 matched-coherence CSV |
+| Degree-controlled source fidelity | Referee05 `source_fidelity/`; Figure 2 source-fidelity CSV |
+| Spatial overlap | Referee05 `spatial_overlap/`; Figure 3 authority |
+| kNN/MNN baselines and descriptive biology | Referee05 `baselines/` and `biology/`; Figures 3/4 |
+| Representation and scale | Referee05 `representation/`; Acceptance07 hash-S0 bank; Final08 `final_scale_sensitivity.csv`; Figures 5/S3 |
+| R0–R3 retained structure | Referee05 `retention/`; Final08 `final_retention_effect_surface.csv`; Figures 6/S2/S4 |
+| Composition and existential common refinement | Revision06 `methods_authority/composition_exact_counts.csv`, `refinement_exact_counts.csv`, `refinement_cellwise.csv`; `analysis/verify_geometry.py`; Figure 6 |
+| 108 component / 72 aggregate-minimum comparisons | Final08 `statistical_authority/`, independent banks and `freeze/`; unchanged `verify_calibration08.py` |
+| Figure source data and generation provenance | `figures/*_authority.csv`, `name_registry.csv`; frozen Final08 `presentation08.py`, `names08.py`; Revision06 `methods_authority/` |
+| Approved document preservation | `verification/approved_document_authority.json`; `analysis/verify_documents.py` |
+| Export and complete release hashes | `verification/source_export_manifest.json`, `binary_authority.json`, `release_manifest.json` |
 
-**Exact global boundary:** The three routewise exact-composition equalities all fail, and the historical existential common-refinement criterion fails on nonzero subsets of O1/O2/O3. The paper does not assert a universal global equivalence or population-level invariance.
+Referee05, Revision06, Acceptance07 and Final08 abbreviate the corresponding `reproducibility/rmmo_paper3_*/` directories. Final statistical tables are under Final08 `statistical_authority/`.
+
+The 14 `results/manuscript_tables/` CSVs remain readable manuscript transcriptions, separate from unrounded scientific authorities. All three exact composition equalities fail. Existential bridges fail on nonzero subsets of O1/O2/O3; they do not establish universal partner coverage or global equivalence. Biological n=3 and original inferential limitations are unchanged.

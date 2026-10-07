@@ -1,0 +1,4 @@
+route,scope,direct,composed,intersection,direct_only,composed_only,exact_equality
+1->2->3,O1 q25; intermediate second-domain restriction,329,4161,250,79,3911,False
+1->3->2,O1 q25; intermediate second-domain restriction,517,1677,371,146,1306,False
+2->1->3,O2 q25; intermediate second-domain restriction,2105,862,321,1784,541,False

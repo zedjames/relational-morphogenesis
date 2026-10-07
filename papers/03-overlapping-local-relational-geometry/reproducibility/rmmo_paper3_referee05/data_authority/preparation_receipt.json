@@ -1,0 +1,12 @@
+{
+  "GR_or_annotations_supplied_to_StageA": false,
+  "GS_count_input_sha256": "3f74ff67ad0961465520d89f9535d2fbe51dbf5439b7157789e4bb5163b3f12d",
+  "GS_shape": [
+    3704,
+    14660
+  ],
+  "new_strict_outcomes_inspected": false,
+  "phase": "preparation OUTSIDE Stage A",
+  "source_all_gene_carrier_opened_here": true,
+  "source_selected_counts_sha256": "a00436aeee14376f0fa453b8a5f509bb2d5556a594f68b8dc4623779eff0a57f"
+}

@@ -1,0 +1,7 @@
+orientation,source_fibers,requests,requested_cells,min_pool,median_pool,min_slack,impossible,fallbacks,replacement
+L12,258,324,572,1,47.0,0,0,0,False
+L21,325,525,3303,1,16.0,0,0,0,False
+L13,258,309,390,4,54.0,3,0,0,False
+L31,344,416,1353,8,20.0,5,0,0,False
+L23,325,585,2254,2,34.0,1,0,0,False
+L32,344,420,900,28,57.0,25,0,0,False

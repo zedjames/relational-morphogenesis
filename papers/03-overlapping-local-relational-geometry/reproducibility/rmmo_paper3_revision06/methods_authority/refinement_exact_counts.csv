@@ -1,0 +1,4 @@
+overlap,tested,satisfying,failing,fraction,complete,criterion,full_partner_coverage
+O1,207,165,42,0.7971014492753623,False,at least one bridge pair; NOT universal partner coverage,97
+O2,287,168,119,0.5853658536585366,False,at least one bridge pair; NOT universal partner coverage,1
+O3,252,186,66,0.7380952380952381,False,at least one bridge pair; NOT universal partner coverage,1
