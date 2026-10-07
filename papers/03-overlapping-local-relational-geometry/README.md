@@ -31,6 +31,8 @@ make verify PYTHON=.venv/bin/python
 
 Numerical and document validation are separate gates. LaTeX needs `latexmk`, TeX Live latex-extra, science and recommended fonts, or Tectonic. See [reproducibility](docs/REPRODUCIBILITY.md) for coverage and the [source-to-destination manifest](verification/source_export_manifest.json).
 
+Exact graph replay requires the documented Apple Silicon/macOS numerical environment. Linux packaging and document validation are supported separately; full Linux graph replay showed a runtime-dependent hash discrepancy and is not claimed portable. Frozen scientific code, banks and strict comparisons remain unchanged.
+
 ## Source and licensing
 
 Primary third-party resource: [MELA v1](https://doi.org/10.5281/zenodo.19892785). Raw third-party H5TD files are not mirrored. The public companion is a selective scientific release, not a copy of any research worktree or history. See the repository's [licensing policy](../../LICENSE.md).

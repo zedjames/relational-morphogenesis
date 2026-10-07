@@ -20,7 +20,7 @@
   "scan_coverage": "All released bytes, decompressed GZ/NPZ contents and PDF metadata/text; absolute private paths, private remote URLs, private keys and credential patterns; no symlinks.",
   "series_changed_file_hashes": {
     ".gitattributes": "7f85b206b86507138d4e136e3b71ff8e602f60afb03d7533e421a00c8425388e",
-    ".github/workflows/verify.yml": "e0bc16f18e8d41c53791c82b9400639b82b0147bd8ab3d20e4b94350004e9905",
+    ".github/workflows/verify.yml": "d28d2a407ff94713ae0926b59745f962d5bf2673e90469f19e6b285669118854",
     ".gitignore": "cbb4d7739d92cea261545cdc08a874321bb438113f0a68a15bfe9228bbd5fd64",
     "Makefile": "906ec9f35e7884c835bb81b20a4e4fc73037ccb8cce8e9b2fc1b1445d39a1380",
     "README.md": "ae6e23198909abff0d081f9e4681ba504a9214910a8b621ec0bdf133612a8686",

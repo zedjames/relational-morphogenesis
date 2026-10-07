@@ -4,7 +4,7 @@ The approved manuscript's complete Methods and detached supplement remain the sc
 
 ## Numerical verification
 
-From a clean repository clone, create a Python 3.9–3.12 environment and install `analysis/requirements.txt`. NumPy 2.0.2 and SciPy 1.13.1 are the original numerical pins. Run:
+From a clean repository clone on Apple Silicon macOS, create a Python 3.9–3.12 environment and install `analysis/requirements.txt`. NumPy 2.0.2 and SciPy 1.13.1 are the original numerical pins; the macOS NumPy wheel uses Accelerate. Run:
 
 ```sh
 python papers/03-overlapping-local-relational-geometry/analysis/verify_numerical.py
@@ -15,6 +15,12 @@ The gate checks the frozen source mapping and strict binary signatures, byte cou
 The geometry gate reconstructs q10/q25/q50 domains, active anchors, fibers and overlaps from released frozen coordinates and cores; verifies nine-lane provenance and 59/17/44 edges; independently replays all three compositions and 746 sourcewise existential-bridge checks. The figure gate preserves all 954 original Final08 displayed-statistic comparisons, ten one-page vector PDFs, matching PNGs and source CSV authorities.
 
 `make verify` also runs the existing Papers 1 and 2 gates and Paper 3 document/table structure checks. Replay takes a few minutes on a typical CPU. The wrapper sets single-threaded BLAS. Generated receipts go under ignored `reproducibility/rmmo_paper3_final08/completion/`; optional `--receipt FILE` records only a completed successful run.
+
+### Exact-replay runtime boundary
+
+The full clean-room replay passed on Apple Silicon/macOS with Python 3.9 and the original pinned NumPy/SciPy wheels. Public CI uses `macos-15` (ARM64), Python 3.12.15 and the same numerical pins, retaining the Accelerate backend. This platform requirement is part of the declared execution environment, not a change to the frozen algorithm or banks.
+
+Linux/OpenBLAS exact replay is not claimed portable: public Actions run 37692093364 passed all 33,792 computations, while runs 37692384954 and 37692395029, with identical scientific inputs, failed the original first-draw graph-hash assertion for `acceptance07/representation/hash_s0_q25`. Runtime-sensitive floating-point distance/decile construction is a suspected cause; it has not been established conclusively. These failures are recorded, not waived. No rounding, hash comparison, statistical tolerance, null model, bank, or decision was changed. Unsupported runtimes still fail the full gate on any discrepancy; Linux remains a separate required packaging/document-validation job.
 
 ## Document validation
 
@@ -34,4 +40,4 @@ Final author PDF/checksum, version DOI, all-versions DOI and immutable release/t
 
 ## Independent clean-room receipt
 
-`verification/cleanroom_validation_receipt.json` records a fresh public GitHub clone, a new dependency environment, all 95 Paper 1 and 25 Paper 2 checks, full Paper 3 replay and document compilation. `analysis/verify_git_payloads.py` additionally checks actual committed Git blobs: all 466 payloads have frozen sizes/hashes and none is an LFS pointer. This packaging gate requires Git; numerical verification itself does not. GitHub Actions repeats the full numerical and document gates on Linux/Python 3.12 before merge.
+`verification/cleanroom_validation_receipt.json` records a fresh public GitHub clone, a new dependency environment, all 95 Paper 1 and 25 Paper 2 checks, full Paper 3 replay and document compilation. `analysis/verify_git_payloads.py` additionally checks actual committed Git blobs: all 466 payloads have frozen sizes/hashes and none is an LFS pointer. This packaging gate requires Git; numerical verification itself does not. GitHub Actions requires the complete numerical gate on Apple Silicon/macOS and a separate Linux document/packaging gate before merge.
