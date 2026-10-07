@@ -1,0 +1,23 @@
+{
+  "paper": 3,
+  "series": "Relational Morphogenesis and Multicellular Organization",
+  "title": "An Overlapping Local Relational Geometry of Early Mouse Embryogenesis",
+  "author": "Zed James",
+  "status": "pre_doi_public_companion_staging",
+  "source_archive": "https://doi.org/10.5281/zenodo.19892785",
+  "public_root": "papers/03-overlapping-local-relational-geometry",
+  "manuscript_source": "manuscript/RMMO_Paper3_Manuscript_preDOI.tex",
+  "detached_supplement": "supplement/SupplementaryEvidence.tex",
+  "manuscript_derived_csv_tables": 14,
+  "manuscripts_methods_retained": true,
+  "expected_primary_figures": 6,
+  "expected_supplementary_figures": 4,
+  "figures_verified_present": false,
+  "numerical_replay_banks_verified_present": false,
+  "paper_version_doi": null,
+  "paper_all_versions_doi": null,
+  "final_pdf_sha256": null,
+  "final_pdf_release_tag": null,
+  "complete_scientific_replay_verified": false,
+  "release_tag": null
+}
