@@ -1,0 +1,4 @@
+replicate,source_cells,lineage_qualified,transcriptome_joined,lost_before_join,unmatched_qualified,additional_filtering,final_cells
+E7.5-R1,1342,1032,1032,310,0,0,1032
+E7.5-R2,1838,1298,1298,540,0,0,1298
+E7.5-R3,1468,1374,1374,94,0,0,1374

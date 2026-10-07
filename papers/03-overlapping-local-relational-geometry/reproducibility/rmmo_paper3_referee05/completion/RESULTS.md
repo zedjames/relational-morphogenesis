@@ -1,0 +1,416 @@
+# Referee05 — strict feature-separation closure
+
+STRICT_HELDOUT_VALIDATION_ESTABLISHED_WITHIN_CARRIER (outcome A).
+
+The publication-primary relation was reconstructed from nine state lanes whose complete gene union is contained in G_S and disjoint from G_R. Geometry was frozen before G_R was loaded for evaluation. The panel is construction-held-out, not statistically or biologically independent. Historical Referee04 is sensitivity/provenance, not co-primary.
+
+Edge reductions: P12=0.168306843327, P13=0.173143190474, P23=0.162054500268. Matched coherence: O1=0.251455675517, O2=0.070327475066, O3=0.148817168815. Degree-controlled fidelity: O1=0.0198919698905, O2=0.0331460337414, O3=0.0383041603067. All three frozen primary families pass. Fidelity O1 maxT=0.12195121951219512 is unsupported; O2/O3 and family sum/minimum remain supported. T_min compares the weakest observed standardized component with the null minimum; component maxT compares each observed component with the null maximum. These are different rejection events. A supported weakest-component family test does not imply that every marginal maxT test passes.
+
+The final inferential hierarchy was developed and stress-tested on the same E7.5 carrier; independent embryos are required for external confirmation of the typed relational signature.
+
+| Claim | Status | Scope |
+|---|---|---|
+| A | STRICT_FEATURE_SEPARATION_VERIFIED | independent preparation/poison auditor outside restricted Stage A; not biological independence |
+| B | STRICT_FEATURE_SEPARATION_VERIFIED | independent preparation/poison auditor outside restricted Stage A; not biological independence |
+| C | STRICT_FEATURE_SEPARATION_VERIFIED | independent preparation/poison auditor outside restricted Stage A; not biological independence |
+| D | COMPONENTWISE_SUPPORTED | positive directions; sum and minimum family evidence retained |
+| E | COMPONENTWISE_SUPPORTED | positive directions; sum and minimum family evidence retained |
+| F | COMPONENT_SUPPORT_PARTIAL | positive directions; sum and minimum family evidence retained |
+| G | DESCRIPTIVE_CHANGED | native-minus-baseline paired error: O1=-0.018163057071841557, O2=0.0018189830505207388, O3=-0.006020498914403253; common/eligible support, no population inference |
+| H | DESCRIPTIVE_CHANGED | native-minus-baseline paired error: O1=-0.0030735185803012362, O2=-0.017434413778502803, O3=-0.020289674772854316; common/eligible support, no population inference |
+| I | DESCRIPTIVE_CHANGED | native-minus-baseline paired error: O1=-0.03193710218609649, O2=-0.011031963245780357, O3=-0.019882901727610244; common/eligible support, no population inference |
+| J | COMPONENTWISE_SUPPORTED | positive directions; sum and minimum family evidence retained |
+| K | COMPONENTWISE_SUPPORTED | positive directions; sum and minimum family evidence retained |
+| L | COMPONENTWISE_SUPPORTED | positive directions; sum and minimum family evidence retained |
+| M | REPRESENTATION_DIRECTION_PERSISTS | tested representations only, not independent replication |
+| N | OBJECT_IDENTITY_NOT_PRESERVED | single-lane hash/PCA like-for-like; strict nine-lane comparison separately labeled |
+| O | NOT_REPRODUCED_BY_TESTED_REFERENCE | conditional tested-reference result only; no structural necessity or ownership theorem |
+| P | NOT_REPRODUCED_BY_TESTED_REFERENCE | conditional tested-reference result only; no structural necessity or ownership theorem |
+| Q | NOT_REPRODUCED_BY_TESTED_REFERENCE | conditional tested-reference result only; no structural necessity or ownership theorem |
+| R | NOT_REPRODUCED_BY_TESTED_REFERENCE | conditional tested-reference result only; no structural necessity or ownership theorem |
+| S | DESCRIPTIVE_CHANGED | cell type, germ layer, S0 and phase; annotations loaded only after construction; no enrichment or causality |
+| T | DESCRIPTIVE_CHANGED | cell type, germ layer, S0 and phase; annotations loaded only after construction; no enrichment or causality |
+
+Closed programs remain closed; no new strict exact-descent/global-equivalence theorem is asserted from historical counterexamples.
+
+## All 95 completion answers
+
+1. What is G_S?
+
+Ordered 14,660 state genes in authority/primary_GS.csv.gz; unchanged primary split.
+
+2. What is G_R?
+
+Ordered 6,339 molecular genes in authority/primary_GR.csv.gz; unchanged primary split.
+
+3. Are they disjoint?
+
+YES; exact gene identities and complete union audit verify disjointness.
+
+4. What exact genes occur in each strict lane?
+
+Every exact identity, lane and original index is in strict_lanes/lane_gene_membership.csv.gz.
+
+5. How many genes occur in each lane?
+
+S0=14660; S1=14660; S2=14660; S3=14660; S4=14660; S5=10300; S6=10307; S7=10268; S8=10207
+
+6. Does any lane contain a G_R gene?
+
+NO; all nine intersections equal zero.
+
+7. Does the union of all nine lane genes contain any G_R gene?
+
+NO; union has exactly 14,660 GS genes and zero GR genes.
+
+8. How are S5–S8 selected?
+
+S5–S8 apply the historical independent per-gene uint64(first 8 SHA256(seed|geneId)) mod 10 < 7 assignment to GS only; not fixed-rank 10,262 sampling. Seeds and counts were frozen.
+
+9. Was their rule frozen before outcomes?
+
+YES; plan commit and original freeze receipt precede strict computation.
+
+10. Does any construction lane use a whole-cell denominator?
+
+NO; each lane sums only its own selected raw gene counts.
+
+11. Does any construction lane denominator include G_R counts?
+
+NO.
+
+12. Does Stage A read G_R raw counts?
+
+NO; preparation and independent poison auditor are outside Stage A and can read the complete historical raw matrix; compute receives only the extracted GS matrix.
+
+13. Does Stage A load Z_R?
+
+NO.
+
+14. Does Stage A read annotation outcomes?
+
+NO; only cellHash and replicate identities are supplied.
+
+15. Does Stage A read lineage/history?
+
+NO.
+
+16. Was geometry frozen before G_R reveal?
+
+YES; geometry commit receipt and timed reveal receipt preserve original provenance across rebase.
+
+17. Does the G_R poison test leave every geometry hash unchanged?
+
+YES; all 219 arrays and the complete compressed container are identical after GR poisoning.
+
+18. What are strict P12/P13/P23 edge counts?
+
+59, 17, 44.
+
+19. How do they compare with REFEREE-04 56/11/36?
+
+Versus 56, 11, 36: +3, +6, +8; changed objects, not a count-significance claim.
+
+20. What are source-endpoint Jaccards?
+
+P12=0.453125; P13=0.5625; P23=0.4
+
+21. Target-endpoint Jaccards?
+
+P12=0.42857142857142855; P13=0.45454545454545453; P23=0.47619047619047616
+
+22. Edge Jaccards?
+
+P12=0.3855421686746988; P13=0.47368421052631576; P23=0.40350877192982454
+
+23. What are strict q25 O1/O2/O3 sizes?
+
+207, 287, 252.
+
+24. What are strict-vs-REFEREE04 overlap-cell Jaccards?
+
+O1=0.5614035087719298; O2=0.6819571865443425; O3=0.7849462365591398
+
+25. Does strict landmark-edge G_R agreement remain positive in P12?
+
+YES.
+
+26. P13?
+
+YES.
+
+27. P23?
+
+YES.
+
+28. What are their observed means?
+
+P12=0.352698970136, P13=0.328082150109, P23=0.359625234416
+
+29. Reference means?
+
+P12=0.424073430575, P13=0.396782304179, P23=0.42917496965
+
+30. Reference SDs?
+
+P12=0.00598088572348, P13=0.0102318583722, P23=0.00686074865511
+
+31. Relative reductions?
+
+P12=0.168306843327, P13=0.173143190474, P23=0.162054500268
+
+32. Raw tails?
+
+P12=0.000975609756098, P13=0.000975609756098, P23=0.000975609756098
+
+33. maxT tails?
+
+P12=0.000975609756098, P13=0.000975609756098, P23=0.000975609756098
+
+34. Joint T_sum tail?
+
+0.000975609756098; sum observed=28.7853965592
+
+35. T_min tail?
+
+0.000975609756098; min observed=6.71433130006
+
+36. Does STRICT_EDGE_HELDOUT_PERSISTS hold?
+
+YES.
+
+37. What are strict matched-target G_R defect reductions in O1/O2/O3?
+
+O1=0.251455675517, O2=0.070327475066, O3=0.148817168815
+
+38. Are all three positive?
+
+YES.
+
+39. Component maxT tails?
+
+O1=0.000975609756098, O2=0.000975609756098, O3=0.000975609756098
+
+40. Joint T_sum tail?
+
+0.000975609756098; sum observed=63.0899554515
+
+41. T_min tail?
+
+0.000975609756098; min observed=10.6071299079
+
+42. Does STRICT_MATCHED_COHERENCE_PERSISTS hold?
+
+YES.
+
+43. What are strict degree-controlled G_R source-fidelity reductions?
+
+O1=0.0198919698905, O2=0.0331460337414, O3=0.0383041603067
+
+44. Are all three positive?
+
+YES.
+
+45. What are observed source errors?
+
+O1=0.33612638583, O2=0.354654294231, O3=0.32933332694
+
+46. Reference means?
+
+O1=0.34294830315, O2=0.366812679689, O3=0.342450610003
+
+47. Reference SDs?
+
+O1=0.0039934851703, O2=0.00211531623122, O3=0.0032234732117
+
+48. Raw tails?
+
+O1=0.0370731707317, O2=0.000975609756098, O3=0.000975609756098
+
+49. maxT tails?
+
+O1=0.121951219512, O2=0.000975609756098, O3=0.000975609756098
+
+50. T_sum tail?
+
+0.000975609756098; sum observed=11.5253048147
+
+51. T_min tail?
+
+0.000975609756098; min observed=1.70825731079
+
+52. Does STRICT_SOURCE_FIDELITY_PERSISTS hold?
+
+YES.
+
+53. What fraction of stub-pairing attempts are simple for each pair?
+
+P12=0.1434173669467787; P13=0.7366906474820144; P23=0.3526170798898072
+
+54. Is every accepted graph generated from a fresh independent pairing?
+
+YES; direct independently seeded labeled-stub permutations, no chain.
+
+55. Are nonsimple graphs discarded and resampled?
+
+YES; discard the entire nonsimple pairing and resample.
+
+56. What is the maximum number of attempts required for one accepted graph?
+
+P12=43; P13=5; P23=24
+
+57. Why can T_min be supported when one component maxT is not?
+
+T_min compares the weakest observed standardized component with the null minimum; component maxT compares each observed component with the null maximum. These are different rejection events. A supported weakest-component family test does not imply that every marginal maxT test passes.
+
+58. What are strict state source-fidelity effects?
+
+O1=0.068291792127, O2=0.0853418399004, O3=0.0793357004228
+
+59. What are strict matched-state-coherence effects?
+
+O1=0.240280675841, O2=0.123997136803, O3=0.182327110658
+
+60. What is strict S1 O1/O2/O3?
+
+O1=207, O2=287, O3=252; reference means O1=168.541015625, O2=222.12109375, O3=209.309570312
+
+61. Which components are adjusted-supported?
+
+All three S1 components; maxT tails O1=0.000975609756098, O2=0.000975609756098, O3=0.000975609756098
+
+62. Is strict S1 aggregate supported?
+
+0.000975609756098; sum observed=14.4315982176
+
+63. Is strict S1 weakest-component supported?
+
+0.000975609756098; min observed=3.9502337588
+
+64. What do matched-size kNN held-out comparisons show?
+
+state/O1 native-minus-baseline=0.05116357674624349 n=207; heldout/O1 native-minus-baseline=-0.018163057071841557 n=207; state/O2 native-minus-baseline=0.07883353059334812 n=287; heldout/O2 native-minus-baseline=0.0018189830505207388 n=287; state/O3 native-minus-baseline=0.06619723244000908 n=252; heldout/O3 native-minus-baseline=-0.006020498914403253 n=252; negative favors native, descriptive common-support comparison only.
+
+65. Native MNN5?
+
+state/O1 native-minus-baseline=0.07446591175679457 n=161; heldout/O1 native-minus-baseline=-0.0030735185803012362 n=161; state/O2 native-minus-baseline=0.06687529811057569 n=211; heldout/O2 native-minus-baseline=-0.017434413778502803 n=211; state/O3 native-minus-baseline=0.05618838274070703 n=191; heldout/O3 native-minus-baseline=-0.020289674772854316 n=191; negative favors native, descriptive common-support comparison only.
+
+66. Fixed-size MNN?
+
+state/O1 native-minus-baseline=0.04608613461057951 n=96; heldout/O1 native-minus-baseline=-0.03193710218609649 n=96; state/O2 native-minus-baseline=0.0668780004381904 n=39; heldout/O2 native-minus-baseline=-0.011031963245780357 n=39; state/O3 native-minus-baseline=0.059677909616351305 n=31; heldout/O3 native-minus-baseline=-0.019882901727610244 n=31; negative favors native, descriptive common-support comparison only.
+
+67. Do the competitive conclusions remain descriptive?
+
+YES; no competitive population inference.
+
+68. Does strict hash/PCA32 held-out direction persist?
+
+YES.
+
+69. PCA64?
+
+YES.
+
+70. What are strict hash/PCA edge Jaccards?
+
+hash_primary/pca32/P12=0.024949426837491573; hash_primary/pca32/P13=0.021035150844173817; hash_primary/pca32/P23=0.02857401211682792; hash_primary/pca64/P12=0.030792100233595243; hash_primary/pca64/P13=0.026183549325575244; hash_primary/pca64/P23=0.03270354994492926; hash/pca32/P12=0.003205862147927639; hash/pca32/P13=0.0003290556103981573; hash/pca32/P23=0.002482929857231533; hash/pca64/P12=0.0032303654350898446; hash/pca64/P13=0.0005847953216374269; hash/pca64/P23=0.0024807056229327455
+
+71. Domain Jaccards?
+
+hash_primary/pca32/L12=0.2606060606060606; hash_primary/pca32/L21=0.21496598639455783; hash_primary/pca32/L13=0.2554858934169279; hash_primary/pca32/L31=0.22721437740693196; hash_primary/pca32/L23=0.23469387755102042; hash_primary/pca32/L32=0.2223529411764706; hash_primary/pca64/L12=0.25226586102719034; hash_primary/pca64/L21=0.20648967551622419; hash_primary/pca64/L13=0.2419871794871795; hash_primary/pca64/L31=0.23046875; hash_primary/pca64/L23=0.24209078404401652; hash_primary/pca64/L32=0.2433734939759036; hash/pca32/L12=0.1920152091254753; hash/pca32/L21=0.22443181818181818; hash/pca32/L13=0.18705035971223022; hash/pca32/L31=0.1763046544428773; hash/pca32/L23=0.21151271753681392; hash/pca32/L32=0.17941176470588235; hash/pca64/L12=0.17073170731707318; hash/pca64/L21=0.23161189358372458; hash/pca64/L13=0.19848771266540643; hash/pca64/L31=0.20851688693098386; hash/pca64/L23=0.21037463976945245; hash/pca64/L32=0.21745788667687596
+
+72. Overlap-cell Jaccards?
+
+hash_primary/pca32/O1=0.188212927756654; hash_primary/pca32/O2=0.16876971608832808; hash_primary/pca32/O3=0.14331210191082802; hash_primary/pca64/O1=0.18587360594795538; hash_primary/pca64/O2=0.18760757314974183; hash_primary/pca64/O3=0.1650485436893204; hash/pca32/O1=0.13012048192771083; hash/pca32/O2=0.18739903069466882; hash/pca32/O3=0.11155378486055777; hash/pca64/O1=0.13411764705882354; hash/pca64/O2=0.193717277486911; hash/pca64/O3=0.14519427402862986
+
+73. Does "effect direction persists across the tested representations; finite object identity changes" remain supported?
+
+YES, across these tested representations only; finite objects are not equal.
+
+74. Do strict q25 R0–R3 tested references reproduce the observations?
+
+NO; all tested R0–R3 state/heldout defect/fidelity sum and minimum tails are at 1/1025; no necessity inferred.
+
+75. Does any retention conclusion reverse?
+
+NO; tested-reference nonreproduction persists.
+
+76. What embryonic compartments dominate the strict P12 system?
+
+cellType: Nascent mesoderm (30.263%); germLayer: Mesoderm (57.895%); state: Mesoderm|G2/M|donor (57.895%); phase: G2/M (100.000%); full fractions and separate source/target compositions in biology/
+
+77. P13?
+
+cellType: Rostral ectoderm (25.000%); germLayer: Mesoderm (45.833%); state: Mesoderm|G2/M|donor (45.833%); phase: G2/M (95.833%); full fractions and separate source/target compositions in biology/
+
+78. P23?
+
+cellType: Extraembryonic mesoderm (39.286%); germLayer: Mesoderm (75.000%); state: Mesoderm|G2/M|donor (73.214%); phase: G2/M (96.429%); full fractions and separate source/target compositions in biology/
+
+79. O1?
+
+cellType: Nascent mesoderm (48.309%); germLayer: Mesoderm (64.734%); state: Mesoderm|G2/M|donor (60.386%); phase: G2/M (93.237%); full fractions and separate source/target compositions in biology/
+
+80. O2?
+
+cellType: Rostral ectoderm (27.526%); germLayer: Mesoderm (42.857%); state: Mesoderm|G2/M|donor (40.418%); phase: G2/M (94.425%); full fractions and separate source/target compositions in biology/
+
+81. O3?
+
+cellType: Rostral ectoderm (25.397%); germLayer: Mesoderm (40.873%); state: Mesoderm|G2/M|donor (39.683%); phase: G2/M (92.460%); full fractions and separate source/target compositions in biology/
+
+82. Does any annotation-based causal claim follow?
+
+NO; biological composition is descriptive, not causal.
+
+83. Which G_R claims are now genuinely construction-held-out?
+
+The strict edge GR agreement, matched GR coherence and degree-controlled GR source fidelity; strict baseline comparisons and controls use construction-heldout GR too. Historical lane-bank claims are not retroactively heldout.
+
+84. Which previously used G_R claims weaken?
+
+Edge reduction magnitudes decrease in all pairs; matched coherence O2 decreases; fidelity O1 maxT weakens from .05561 to .12195. No principal sign reverses. See comparison/referee04_vs_strict.csv.
+
+85. Which strengthen?
+
+Matched coherence O1/O3 and all fidelity reduction magnitudes increase. S1 O1 and weakest-family support strengthen on the new object. No closed program is reopened.
+
+86. Does any principal G_R direction reverse?
+
+NO.
+
+87. Does the source-fidelity family result remain detectable?
+
+YES. Family supported; O1 marginal maxT unsupported.
+
+88. Is complete gene-level feature separation verified?
+
+YES.
+
+89. Is the referee's remaining held-out objection resolved?
+
+YES. The construction-feature-reuse objection is resolved for the new strict primary object, not for historical analyses; no external replication is claimed.
+
+90. Does any positive claim depend on partially reused G_R features?
+
+NO.
+
+91. Does any positive claim depend on a failed-chain reference?
+
+NO; all retained references are direct IID draws.
+
+92. Are all actual figures present in the reviewer package?
+
+YES; six actual PDFs, PNGs and source CSVs are in figures/ and reviewer_release/figures/.
+
+93. Does the standalone verifier pass?
+
+YES; reviewer_release/verification/validation_receipt.json records the full standalone pass. This answer is accepted only together with that passed receipt, which the final release gate enforces.
+
+94. Is any additional scientific tranche required?
+
+NO; this is terminal within the directive.
+
+95. Is Paper 3 scientifically ready for final acceptance review?
+
+YES. Ready for final acceptance review of the revised within-carrier scientific claims after the full standalone checks pass; not a guarantee of journal acceptance or external confirmation.

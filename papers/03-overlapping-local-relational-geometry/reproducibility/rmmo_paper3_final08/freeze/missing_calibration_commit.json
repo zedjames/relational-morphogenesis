@@ -1,0 +1,8 @@
+{
+  "frozen_before_new_calibration": true,
+  "implementation_sha256": "64adfa6f4c86d1dd5656dbebe12d4d7091362eff02d0ba9511b1ee44fbabb3fa",
+  "original_commit": "ddf55ef5a33917cbbd9afbcfc764558156337380",
+  "original_utc": "2026-10-04T18:48:20.306725+00:00",
+  "plan_sha256": "39c26c08d73f31994628738d65945c6f45ec1d71eca1c8f477e7505dbee08dd2",
+  "reachable_commit": "4fd5a89d8a17b6d20d8e884dd3b0549b82072ad1"
+}

@@ -1,0 +1,17 @@
+pair,stratum,observed_count,pool_edges,state_only_matching
+P12,0,7,11948,True
+P12,40,2,7167,True
+P12,240,1,264,True
+P12,440,3,8087,True
+P12,480,9,11611,True
+P12,840,37,29200,True
+P13,0,2,13298,True
+P13,10,1,2405,True
+P13,480,6,13087,True
+P13,840,8,29255,True
+P23,0,5,19361,True
+P23,480,2,20285,True
+P23,490,1,5990,True
+P23,810,1,12673,True
+P23,840,34,26506,True
+P23,850,1,2709,True

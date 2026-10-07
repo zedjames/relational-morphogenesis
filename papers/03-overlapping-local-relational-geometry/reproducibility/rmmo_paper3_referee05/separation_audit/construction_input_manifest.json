@@ -1,0 +1,11 @@
+{
+  "construction_module_sha256": "d95837f7f9a28210aafabcb0234c96319536fdd2aa738bbcd3a927d032d34a65",
+  "files": {
+    "authority/primary_GS.csv.gz": "1a2bfeca983ba1dc2f61014deaa483c2f4547acee6dea6f865a7448c8c32058b",
+    "data_authority/GS_raw_counts.npz": "3f74ff67ad0961465520d89f9535d2fbe51dbf5439b7157789e4bb5163b3f12d",
+    "data_authority/cell_identity.csv.gz": "52c03c1574df1294213c2baa4f590c6b89fbc00fe4d6979e1ddcb65e0b6d7864",
+    "freeze/analysis_plan.json": "94fe0863706a9d09e1f4c3efa62fcc8cfc6a6953ee4d549ac20f79e6938feaf1",
+    "freeze/strict_lane_plan.csv": "99cdf7da5616b3465ad84331da912259e03fbaf61d276071559df7a1536be1c9"
+  },
+  "forbidden_file_access_raises": true
+}

@@ -1,0 +1,148 @@
+{
+  "existing_audits": [
+    {
+      "artifact": "edge_agreement/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "7fc741330ba1f9404dc90d2482a536aad56aeb48ec9d7e1297c297d67901b804",
+      "unique_seeds": 3072
+    },
+    {
+      "artifact": "matched_coherence/q10/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "92d0d4e0db41af633770d2e875c8ee0c413b3a52b018aed6bb98751ebadd8850",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "matched_coherence/q25/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "6443fb94be9c138153cc0217bb946cf16cf023dce90402b17a3bfa6b173bffe8",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "matched_coherence/q50/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "ce5154170bcd4c6f07d9e70a4d36e01a004be802e77169dbb1233fb441ed977c",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "representation/pca32/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "6f279c5d87b4c6f2de79488ca58328afa79d2088897e7330818d1a25d2c65ff2",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "representation/pca64/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "e94ed6e534f0203194d995ef35b75cb5748c5efa3e3f75ceb7fa75d2c40676ca",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "representation/target_pca32/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "f4eddcd6a65c7b9e6ef8b41e83de66fe4896a9b2ecc1e0ed40c7533ad2661f1e",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "retention/R0/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "aa3b5b2dcad929808e993121a83975f6d4dfff4995764446a0cb47d73422dd9c",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "retention/R1/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "3ef8830d112b7e2adde88fd9d4ec8f10dd7058d7cc0aef216f13770e42924180",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "retention/R2/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "f4f07459be57cdbe20954967639181174b65a72669eae0afc858dbabada4dc6f",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "retention/R3/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "80a7ccfd74464ec83271282d908bf699cc88b07c26cbb552da6f2afc22bdd32d",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "source_fidelity/degree_only_bank/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "320722ff53332bdc9fef93d64e773876f8cbfdbcdb02b6f7ba5aae63eaa03dbf",
+      "unique_seeds": 3072
+    },
+    {
+      "artifact": "source_fidelity/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "320722ff53332bdc9fef93d64e773876f8cbfdbcdb02b6f7ba5aae63eaa03dbf",
+      "unique_seeds": 3072
+    },
+    {
+      "artifact": "spatial_overlap/S1/graph_audit.csv",
+      "parent": "rmmo_paper3_referee05",
+      "sha256": "f05313be0d881b39b4f4371b3ed204b01ab8682252ff58fee850396fa560514f",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/edge_agreement/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "3844e660872ed7f44f84bc308f0de8f139092b13d8a3590a9cb1692361d54f43",
+      "unique_seeds": 3072
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/matched_coherence/q25/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "5b565f23c85d6471e9d8335cde12eb025faedeb108e8123671be0c2185283a6d",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/retention/R0/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "46e1937d3c7aa36a20963209ca82ac801f4e8693cb1b197ed6fb2a810fcab5b1",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/retention/R1/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "f8ae87f67033134b1ddd86d516a2d6cbff9298302bd5804d1a6903213af8a0ef",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/retention/R2/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "02a28171c99e2378df262785cf1385e0539b68c9ef23906e87535dfab1ae8a9c",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/retention/R3/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "96f0063e86afe5c557af72d9b37a47ef4df4ad3708600466dc7b9f0d22a64515",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/source_fidelity/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "ed11909caf46544007761966cfe1cf1b45541179613f1239462fe56af577546c",
+      "unique_seeds": 3072
+    },
+    {
+      "artifact": "statistical_robustness/independent_calibration_bank/spatial_overlap/S1/graph_audit.csv",
+      "parent": "rmmo_paper3_revision06",
+      "sha256": "b2c27763c0763614904c853d363fbb6df4fc27ffa56c9f94820975494ad1b63b",
+      "unique_seeds": 6144
+    },
+    {
+      "artifact": "acceptance07/representation/hash_s0_q25/graph_audit.csv",
+      "parent": "rmmo_paper3_acceptance07",
+      "sha256": "b8e018bbe379dc3b90f2b13d71ded1a7e2b3526aea14cfa0a24abed527a35c4e",
+      "unique_seeds": 6144
+    }
+  ],
+  "intersection": 0,
+  "outcomes_inspected": false,
+  "passed": true,
+  "planned_new_seed_count": 33792,
+  "planned_seed_digest": "2096a9205557a77d695b6bfc3152ef525f6bb7396e83117f1123635b75796e64",
+  "prior_seed_count": 122880
+}

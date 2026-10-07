@@ -1,0 +1,25 @@
+{
+  "amends":"original Final08 no-new-random-bank constraint, explicitly authorized by user",
+  "B_cal":1024,"B_inferential":1024,"alpha":0.05,"eta":1e-8,"SD_ddof":1,
+  "seed_namespace":"RMMO_P3_FINAL08_CALIBRATION_V1|",
+  "banks":[
+    {"bank":"matched_coherence/q10","variant":"hash","scale":"q10","metric":"defect"},
+    {"bank":"matched_coherence/q50","variant":"hash","scale":"q50","metric":"defect"},
+    {"bank":"source_fidelity/q10","variant":"hash","scale":"q10","metric":"source_error"},
+    {"bank":"source_fidelity/q50","variant":"hash","scale":"q50","metric":"source_error"},
+    {"bank":"acceptance07/representation/hash_s0_q25","variant":"hash_primary","scale":"q25","metric":"defect"},
+    {"bank":"representation/pca32","variant":"pca32","scale":"q25","metric":"defect"},
+    {"bank":"representation/pca64","variant":"pca64","scale":"q25","metric":"defect"}
+  ],
+  "new_scored_banks":7,"new_families":14,"panels":["state","heldout"],
+  "target_PCA":"excluded: not reported in current manuscript or supplement",
+  "reported_final_families":36,"reported_final_components":108,
+  "matched_law":"same source domain/cell, target embryo, native fiber cardinality, sourcewise exact target coarse-state and anchor-distance-decile histogram; whole target pools; uniform without replacement; no fallback",
+  "matched_implementation":"unchanged Sampler constraints; k>8 requests use direct NumPy choice without replacement, identical uniform subset law; no exponential duplicate rejection on large fibers",
+  "degree_law":"same exact endpoint populations, source/target degree sequences; uniformly permuted labeled target stubs; whole nonsimple proposals rejected; no Markov chain",
+  "synchronization":"six oriented matched-target systems per synchronized draw; degree P12/P13/P23 graph shared wherever pair occurs; same new degree graph draw supplies q10 and q50 calibration statistics",
+  "outputs":"six columns per new bank: state O1/O2/O3, GR O1/O2/O3 for its authorized metric only; calibration-bank diagnostics are NOT inferential tests",
+  "independence":"new seeds disjoint from every retained inferential audit and previous independent calibration audit; no inferior original bank resampled/replaced",
+  "terminal_rule":"fixed independent calibration constants standardize maxT/sum/min; original inferential vectors supply inclusive plus-one ranks; all old/new support decisions reported without rescue",
+  "prohibited":"new biological analysis, null law, scale, representation, inferential bank, outcome-conditioned seed/size/gate/rescue, target-PCA calibration"
+}

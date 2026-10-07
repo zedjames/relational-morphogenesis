@@ -1,0 +1,15 @@
+{
+  "approved_public_commit": "f610941858046ba05c15effe5a6c5e9bda77e1cb",
+  "methods_sha256": "32fb973f7286ad5a13a1a62f10183b950521542953bf6d9ee9c0623321771712",
+  "permitted_adaptation": "Preamble-only public graphic paths, ragged subsection headings and URL wrapping. Full document bodies and Methods remain byte-identical.",
+  "sources": {
+    "manuscript/RMMO_Paper3_Manuscript_preDOI.tex": {
+      "document_body_sha256": "26cafa88ca64e01dc05926c642b1e7dc41e0398320ddbec3eeacdd63de4ccd63",
+      "original_sha256": "ab37e261e2366583196a9cc8267506146d0362c76170dd0ab3db63f51f675c0d"
+    },
+    "supplement/SupplementaryEvidence.tex": {
+      "document_body_sha256": "e18f2a7555529fa10baecbbb59d01a4784428c8891be1c0874774f9eb9939acc",
+      "original_sha256": "80a94e64c580e111c3b2c825fe133afe7269cafaf0a9f9d356df4e1ce6046769"
+    }
+  }
+}

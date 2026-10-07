@@ -1,0 +1,15 @@
+{
+  "G_R_genes": 6339,
+  "G_S_genes": 14660,
+  "embeddings": {
+    "heldout_hash": "fd64419abcab64148ff1fd6676a048fa3df3c159607eb2c7dbb93dd0c92d5f62",
+    "pca32": "4a9b2b17afcd2ab57ad8fe2084308466cb359be10d1525b71c37a74ac292065c",
+    "pca64": "b1926a2bfc993ae46778d4ca2bd61dd14a82d313761918e58d156cdd8585b3bd",
+    "target_pca32": "833247c6b2914eb5002e34a7d3cd945213a37dadaae2717aa3a87c82b7afedfa"
+  },
+  "heldout_expression_sha256": "34406dc97d621aa51ae339daf14cc58b73cc1a0b9066fae4eb402b3af01f885a",
+  "parent_normalization_reconstruction_verified": true,
+  "source": "Referee04 GS-only isolated state expression/PCA and GR-only target PCA",
+  "state_expression_sha256": "0171eb72032a7a061934ffeb8c57b8c7aa3897dc97e6e7156f427e1461e1a407",
+  "state_geometry_does_not_read_GR": true
+}

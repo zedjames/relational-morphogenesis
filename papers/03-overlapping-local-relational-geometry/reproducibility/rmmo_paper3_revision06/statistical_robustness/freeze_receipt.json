@@ -1,0 +1,7 @@
+{
+  "independent_calibration_not_run_before_original_commit": true,
+  "original_commit": "10cbc62f9f8c66b6cc07ebfe91142ef197c74130",
+  "original_utc": "2026-10-04T15:18:31.979699+00:00",
+  "plan_sha256": "46595e8a97ca0ed3f2a97c5cea1d6ab55d0a3d98154a706a47dfd5085f5e4dc1",
+  "reachable_commit": "7addf93932ce412742e7f942453af66a2e8b3a33"
+}

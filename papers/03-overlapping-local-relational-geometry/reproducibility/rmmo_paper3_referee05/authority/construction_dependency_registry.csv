@@ -1,0 +1,5 @@
+variable,source,reason,permitted
+GS_counts,data_authority/GS_raw_counts.npz,only ordered frozen G_S columns,True
+GS_geneId_geneIndex,authority/primary_GS.csv.gz,membership and signed-hash projection,True
+cellHash_replicate,data_authority/cell_identity.csv.gz,ordered cell alignment and pair carriers,True
+plan_seeds_constants,freeze/analysis_plan.json and strict_lane_plan.csv,precommitted deterministic lane/geometry specification,True

@@ -1,0 +1,57 @@
+{
+  "actual_git_payloads": 466,
+  "clean_dependency_environment": true,
+  "clone_remote": "https://github.com/zedjames/relational-morphogenesis.git",
+  "committed_lfs_pointers": 0,
+  "documents": {
+    "compiled_pdfs_are_validation_outputs_not_final_scholarly_pdf": true,
+    "documents": [
+      {
+        "overfull_boxes": 0,
+        "pages": 32,
+        "source": "manuscript/RMMO_Paper3_Manuscript_preDOI.tex",
+        "tex_sha256": "187f8f8efa198b267fe00d1ca3733ffed02eb5ebb10c864c573ffd29cac99dcd",
+        "undefined_references": 0,
+        "validation_pdf_sha256": "0710e37106ceb37990a0ccc663ded8fa7581f7a568d493f85cf9a64e663554bc"
+      },
+      {
+        "overfull_boxes": 0,
+        "pages": 6,
+        "source": "supplement/SupplementaryEvidence.tex",
+        "tex_sha256": "db329ae49f2b68f3b09b4c67f0252d701adca76deab402339bd588552cbf9969",
+        "undefined_references": 0,
+        "validation_pdf_sha256": "a82e43937caa9e0539cb387494f0b190414ae970d55b7cb09d10822bb118a522"
+      }
+    ],
+    "final_author_supplied_pdf": "pending",
+    "full_approved_methods_unchanged": true,
+    "passed": true,
+    "scientific_figures": 10
+  },
+  "numerical": {
+    "aggregate_minimum_events": 72,
+    "component_decisions_changed": 0,
+    "components": 108,
+    "document_layout_validation": "separate",
+    "exact_bridge_overlaps": 3,
+    "exact_composition_routes": 3,
+    "exact_graph_draw_computations": 33792,
+    "families": 36,
+    "family_decisions_changed": 0,
+    "figures": 10,
+    "independent_calibration_banks": 7,
+    "inferential_banks_changed": 0,
+    "passed": true,
+    "private_checkout_required": false,
+    "raw_acquisition_required": false,
+    "scientific_bytes": 195430565,
+    "scientific_files": 466
+  },
+  "paper1_checks": 95,
+  "paper2_checks": 25,
+  "passed": true,
+  "private_checkout_or_raw_archive_required": false,
+  "public_clone_commit": "a967ac41c9c4a3115389e0d0ed531bad5031eac4",
+  "release_manifest_sha256": "b5a886266741c5ea619ce4b34af8012bc801578f1053da37beb451f4dd22ec3f",
+  "tracked_clone_status": "clean"
+}

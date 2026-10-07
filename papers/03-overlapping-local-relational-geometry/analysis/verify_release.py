@@ -54,7 +54,7 @@ def main():
     expected_pairs = ("P12", "P13", "P23")
     for lane in range(9):
         for pair in expected_pairs:
-            require(f"$\ell_{lane}$&{pair}&" in supplement,
+            require(rf"$\ell_{lane}$&{pair}&" in supplement,
                     f"Missing supplementary lane {lane}/{pair}")
     for fig in ("FigureS1_", "FigureS2_", "FigureS3_", "FigureS4_"):
         require(fig in supplement, "Missing supplementary figure " + fig)
@@ -128,7 +128,7 @@ def main():
     print("Methods retained; appendix detached; main figures referenced: 6")
     print("Supplementary lane/pair authorities: 27; raw source records: 3")
     print(f"Manuscript-derived public CSV tables checked: {len(expected)}")
-    print("LIMIT: no independent numerical replay or figure-binary verification")
+    print("Document structure gate passed; full numerical/binary replay runs separately via verify_numerical.py")
 
 
 if __name__ == "__main__":

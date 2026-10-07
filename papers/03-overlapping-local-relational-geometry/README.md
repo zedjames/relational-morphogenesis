@@ -3,9 +3,9 @@
 **Relational Morphogenesis and Multicellular Organization (RMMO), Paper 3**  
 **Zed James | October 2026**
 
-**Release status: pre-DOI public staging.** The final DOI and canonical scholarly PDF will be added when the publication record is ready.
+**Release status: verified public reproducibility companion; final scholarly PDF and DOI pending.** No immutable Paper 3 tag has been created. Publication requires passing final-head numerical and document CI gates.
 
-The [pre-DOI manuscript](manuscript/RMMO_Paper3_Manuscript_preDOI.tex) preserves all original Methods, main Results, and six principal figure references. The [detached supplement](supplement/SupplementaryEvidence.tex) contains only the former end appendix. Figure references currently require the final binary artwork.
+The [approved pre-DOI manuscript](manuscript/RMMO_Paper3_Manuscript_preDOI.tex) preserves its complete document body and full Methods. The [detached supplement](supplement/SupplementaryEvidence.tex) retains the former end appendix. All ten actual frozen scientific figure PDFs and source-data tables are in [figures/](figures/). Only preamble paths, heading wrapping and URL wrapping were adapted for public compilation.
 
 ## Scientific scope
 
@@ -13,11 +13,25 @@ The study describes three lineage-qualified E7.5 mouse embryo carriers (3,704 ce
 
 ## Public evidence status
 
-- Available: Methods-complete manuscript source, detached appendix, source-data provenance/byte hashes, 14 manuscript-derived CSV tables, public verification, citation and publication navigation.
-- Pending verified binary transfer: ten figure PDFs and accompanying source-data authorities; compressed null and independent calibration banks; standalone full replay checks.
-- Pending publication: final Zenodo DOI, final PDF SHA-256 and immutable release tag.
+- Released: 466 byte-exact Final08 scientific files, 195,430,565 bytes, including derived inputs, original inferential banks, independent calibration banks, numerical replay code, ten vector figures and their source tables.
+- Independent verification: seven authorized calibration banks; 33,792 exact graph computations; 108 component rankings; 72 aggregate/minimum rankings; all 36 families; zero changed support decisions or inferential banks; exact finite composition and all 746 cellwise bridge checks.
+- Document validation: approved manuscript and detached supplement compile using the actual figures. Validation-build PDFs are not published as the final scholarly PDF.
+- Pending publication: author-supplied final PDF and checksum, version DOI, all-versions DOI, and associated immutable release/tag.
 
-The paper's Methods specify its reference laws, score calibration and structural tests. The listed numerical findings are manuscript results, not independently regenerated from the limited public companion presently available.
+The full verifier uses only these public files and declared software dependencies. Raw MELA acquisition, a private checkout, Git and Lean are unnecessary for numerical verification. The manifest records six excluded older combined-manuscript files and one excluded source Git LFS configuration; no scientific dependency was omitted.
+
+## Run verification
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r papers/03-overlapping-local-relational-geometry/analysis/requirements.txt
+make verify PYTHON=.venv/bin/python
+.venv/bin/python papers/03-overlapping-local-relational-geometry/analysis/verify_documents.py --engine latexmk --output /tmp/rmmo-paper3-documents
+```
+
+Numerical and document validation are separate gates. LaTeX needs `latexmk`, TeX Live latex-extra, science and recommended fonts, or Tectonic. See [reproducibility](docs/REPRODUCIBILITY.md) for coverage and the [source-to-destination manifest](verification/source_export_manifest.json).
+
+Full hosted exact replay passes on Ubuntu 24.04/x86_64, Python 3.12.15 and fixed Haswell OpenBLAS kernels (AVX2/FMA required). The wrapper pins the execution kernel automatically on Linux x86_64. Independent local macOS replay also passes. Unrestricted backend portability is not claimed; see the documented [runtime boundary and validation](docs/REPRODUCIBILITY.md). Frozen scientific code, banks and strict comparisons remain unchanged.
 
 ## Source and licensing
 

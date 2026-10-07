@@ -1,0 +1,7 @@
+{
+  "committed_before_rescore": true,
+  "constants_sha256": "4807766f3eddf25f87ea8df76c79337230e9e6a801ae1fb9beedf634767b0b27",
+  "original_commit": "57ecb413b1a7c799db8a0eb33e6df9fb04d56311",
+  "original_constants_utc": "2026-10-04T15:26:27.217696+00:00",
+  "reachable_commit": "8ce4c756929fdaa630b225490fa5a628ea0e9769"
+}

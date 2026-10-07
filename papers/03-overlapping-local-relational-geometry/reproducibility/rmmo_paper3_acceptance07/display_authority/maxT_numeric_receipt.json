@@ -1,0 +1,401 @@
+{
+  "checks": [
+    {
+      "bank": "rmmo_paper3_referee05/edge_agreement",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "edge_distance",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/spatial_overlap/S1",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "overlap",
+      "panel": "overlap"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/matched_coherence/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q10",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/source_fidelity/q50",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R0",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R0",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R0",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R0",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R1",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R1",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R1",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R1",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R2",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R2",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R2",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R2",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R3",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R3",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R3",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/retention/R3",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca64",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca64",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca64",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/pca64",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/target_pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/target_pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "state"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/target_pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    },
+    {
+      "bank": "rmmo_paper3_referee05/representation/target_pca32",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "source_error",
+      "panel": "heldout"
+    },
+    {
+      "bank": "own/acceptance07/representation/hash_s0_q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "state"
+    },
+    {
+      "bank": "own/acceptance07/representation/hash_s0_q25",
+      "components": 3,
+      "maxT_reproduced": true,
+      "metric": "defect",
+      "panel": "heldout"
+    }
+  ],
+  "epsilon": 1e-08,
+  "new_random_banks": 0,
+  "original_bank_standardization": true,
+  "passed": true,
+  "sample_SD_ddof": 1
+}

@@ -1,0 +1,12 @@
+replicate,tree,observedCellCount,matchedLineageLeafCount,internalNodeCount,sourceOwnedTree
+E7.5-R1,E7.5-R1-C1,850,850,634,True
+E7.5-R1,E7.5-R1-C2,492,182,121,True
+E7.5-R2,E7.5-R2-C1,757,757,575,True
+E7.5-R2,E7.5-R2-C2,197,197,152,True
+E7.5-R2,E7.5-R2-C3,162,162,125,True
+E7.5-R2,E7.5-R2-C4,110,110,89,True
+E7.5-R2,E7.5-R2-C5,47,47,36,True
+E7.5-R2,E7.5-R2-C6,565,25,22,True
+E7.5-R3,E7.5-R3-C1,1019,1019,680,True
+E7.5-R3,E7.5-R3-C2,189,189,131,True
+E7.5-R3,E7.5-R3-C3,260,166,121,True

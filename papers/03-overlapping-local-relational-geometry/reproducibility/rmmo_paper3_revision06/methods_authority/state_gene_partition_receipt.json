@@ -1,0 +1,30 @@
+{
+  "algorithm": {
+    "cellTypeUsed": false,
+    "eligibleGeneCount": 20999,
+    "historyUsed": false,
+    "lineageUsed": false,
+    "minimumDetectionFractionPerEmbryo": 0.01,
+    "minimumEmbryosPassing": 2,
+    "mitochondrialGenesExcluded": true,
+    "outcomeUsed": false,
+    "panelsExactlyDisjoint": true,
+    "partitionSeed": "RMMO12_STATE_REALIZATION_V1",
+    "positiveMeanCountRequired": true,
+    "predictionErrorUsed": false,
+    "realizationGeneCount": 6339,
+    "ribosomalPrefixesExcluded": [
+      "Rpl",
+      "Rps"
+    ],
+    "stateGeneCount": 14660
+  },
+  "eligibility_scope": "all source transcriptome cells per embryo, not only lineage-qualified cells",
+  "eligibility_sha256": "cd15d4464ff17b2d866b2ac7f2af0e6474058f28576d732f6eacaa6306836c44",
+  "frozen_partition_sha256": "39fa64283570d9a355678a6cd439ab48b34e77264f0dcc0808f6dd84ec11e570",
+  "hash": "unsigned big-endian first8 SHA256 UTF8 bytes",
+  "mitochondrial_flag": "var/mito",
+  "panel_assignment": "H(RMMO12_STATE_REALIZATION_V1|geneId)%10<7 -> GS; else GR",
+  "positive_mean": "any embryo mean >0",
+  "unchanged": true
+}

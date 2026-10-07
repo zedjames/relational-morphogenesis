@@ -1,0 +1,63 @@
+{
+  "all_objects_equal": false,
+  "direction": [
+    {
+      "componentwise_supported": true,
+      "panel": "state",
+      "positive_component_signs": true,
+      "reductions": "0.24028067584126914|0.12399713680292158|0.18232711065816537",
+      "representation": "hash"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "heldout",
+      "positive_component_signs": true,
+      "reductions": "0.25145567551715114|0.07032747506602983|0.1488171688153125",
+      "representation": "hash"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "state",
+      "positive_component_signs": true,
+      "reductions": "0.4791488003435876|0.5074521438831563|0.5177930416976385",
+      "representation": "pca32"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "heldout",
+      "positive_component_signs": true,
+      "reductions": "0.06076068811491403|0.04674852185903664|0.03345288411996492",
+      "representation": "pca32"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "state",
+      "positive_component_signs": true,
+      "reductions": "0.4292281502832227|0.4497936686199993|0.4513561230472931",
+      "representation": "pca64"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "heldout",
+      "positive_component_signs": true,
+      "reductions": "0.06576392973806112|0.046342918636018145|0.04320850289564404",
+      "representation": "pca64"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "state",
+      "positive_component_signs": true,
+      "reductions": "0.2400041618577743|0.12390704231506315|0.1823990412541534",
+      "representation": "target_pca32"
+    },
+    {
+      "componentwise_supported": true,
+      "panel": "heldout",
+      "positive_component_signs": true,
+      "reductions": "0.2829882094625585|0.1914105596368453|0.1817545744238015",
+      "representation": "target_pca32"
+    }
+  ],
+  "object_identity_threshold_invented": false,
+  "wording": "persists across representations when component signs remain positive, not independent replication"
+}

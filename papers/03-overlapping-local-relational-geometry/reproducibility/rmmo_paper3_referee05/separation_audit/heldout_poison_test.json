@@ -1,0 +1,15 @@
+{
+  "GR_capability_supplied_to_construction": false,
+  "GR_poison_method": "deterministic nonnegative pseudorandom0..100 on all existing GR nonzero slots",
+  "GR_values_changed": 7944627,
+  "actual_compute_function_reexecuted": true,
+  "biological_evidence": false,
+  "completed_utc": "2026-10-04T05:44:16.426212+00:00",
+  "compressed_geometry_byte_identical": true,
+  "every_array_content_hash_identical": true,
+  "geometry_container_sha256": "34f6dfd459f9228f505d49c22f7d14ef5e00d207aa996f08f24ab5686f29ff46",
+  "numeric_arrays_compared": 219,
+  "original_GS_bytes_identical": true,
+  "passed": true,
+  "poison_harness_outside_StageA": true
+}

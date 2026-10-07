@@ -1,0 +1,3 @@
+# Verification PASS
+
+All 7,859 immutable parent files and committed pre-outcome plan/geometry hashes checked. All219 GS-only arrays, lane-local denominators, complete domains/fibers/overlaps, embargo and actual geometry invariance checked. Every retained1024-member direct IID graph bank independently replayed and scored (10 incidence,1 edge,1 S1,3 degree scale banks). PCA scores/eigenpairs, descriptive baseline cells/compositions, all95 answers,20 claims, six actual figures and rendered v5 manuscript verified. Portable release separately verifies its own ordinary-file manifest and supplied GS input, not raw-H5TD acquisition or the entire historical repository. No whole Lean build.

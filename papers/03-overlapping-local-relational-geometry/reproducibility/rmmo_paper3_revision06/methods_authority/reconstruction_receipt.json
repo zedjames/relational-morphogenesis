@@ -1,0 +1,96 @@
+{
+  "cells": 3704,
+  "composition": [
+    {
+      "composed": 4161,
+      "composed_only": 3911,
+      "direct": 329,
+      "direct_only": 79,
+      "exact_equality": false,
+      "intersection": 250,
+      "route": "1->2->3",
+      "scope": "O1 q25; intermediate second-domain restriction"
+    },
+    {
+      "composed": 1677,
+      "composed_only": 1306,
+      "direct": 517,
+      "direct_only": 146,
+      "exact_equality": false,
+      "intersection": 371,
+      "route": "1->3->2",
+      "scope": "O1 q25; intermediate second-domain restriction"
+    },
+    {
+      "composed": 862,
+      "composed_only": 541,
+      "direct": 2105,
+      "direct_only": 1784,
+      "exact_equality": false,
+      "intersection": 321,
+      "route": "2->1->3",
+      "scope": "O2 q25; intermediate second-domain restriction"
+    }
+  ],
+  "lane_vote_counts": [
+    {
+      "consensus": 59,
+      "exactly7": 35,
+      "exactly8": 18,
+      "exactly9": 6,
+      "pair": "P12",
+      "union_edges": 31062
+    },
+    {
+      "consensus": 17,
+      "exactly7": 13,
+      "exactly8": 4,
+      "exactly9": 0,
+      "pair": "P13",
+      "union_edges": 28988
+    },
+    {
+      "consensus": 44,
+      "exactly7": 25,
+      "exactly8": 14,
+      "exactly9": 5,
+      "pair": "P23",
+      "union_edges": 32175
+    }
+  ],
+  "methods_do_not_change_objects": true,
+  "refinement": [
+    {
+      "complete": false,
+      "criterion": "at least one bridge pair; NOT universal partner coverage",
+      "failing": 42,
+      "fraction": 0.7971014492753623,
+      "full_partner_coverage": 97,
+      "overlap": "O1",
+      "satisfying": 165,
+      "tested": 207
+    },
+    {
+      "complete": false,
+      "criterion": "at least one bridge pair; NOT universal partner coverage",
+      "failing": 119,
+      "fraction": 0.5853658536585366,
+      "full_partner_coverage": 1,
+      "overlap": "O2",
+      "satisfying": 168,
+      "tested": 287
+    },
+    {
+      "complete": false,
+      "criterion": "at least one bridge pair; NOT universal partner coverage",
+      "failing": 66,
+      "fraction": 0.7380952380952381,
+      "full_partner_coverage": 1,
+      "overlap": "O3",
+      "satisfying": 186,
+      "tested": 252
+    }
+  ],
+  "status": "PASS",
+  "thresholds": 27
+}

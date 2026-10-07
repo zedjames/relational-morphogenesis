@@ -1,0 +1,131 @@
+{
+  "calibration_seed_count": 43008,
+  "constants_sha256": "4807766f3eddf25f87ea8df76c79337230e9e6a801ae1fb9beedf634767b0b27",
+  "inferential_copies": [
+    {
+      "artifact": "statistical_robustness/inferential_bank/edge_agreement/bank.npz",
+      "parent": "edge_agreement/bank.npz",
+      "sha256": "e4ce6510ee5c451160be97724b816713b183cb35db9c377755b7c32d55e151f2"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/edge_agreement/component_statistics.csv",
+      "parent": "edge_agreement/component_statistics.csv",
+      "sha256": "dd40f9e504117ab98c1976b9e8e5cdbc9de7b63f8296a8bc91e9fc48d7936ca3"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/edge_agreement/family_statistics.csv",
+      "parent": "edge_agreement/family_statistics.csv",
+      "sha256": "74239b2175099a88339932707ab6ffdf1088c5258a07e1b13cdb980ecc397227"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/matched_coherence/q25/bank.npz",
+      "parent": "matched_coherence/q25/bank.npz",
+      "sha256": "4d80060678ee101fcfde4efe1f9a11d3a760deb5cda2b807cd576b2f1004bdc6"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/matched_coherence/q25/component_statistics.csv",
+      "parent": "matched_coherence/q25/component_statistics.csv",
+      "sha256": "5b1183fb3c04debf43b548a39f04fb95386ce8c65c17153451b428ccaf457ec5"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/matched_coherence/q25/family_statistics.csv",
+      "parent": "matched_coherence/q25/family_statistics.csv",
+      "sha256": "fb22f3e1396c4a445ba600a9da8e9a44756987f2d68d25007b6f4e4ac2a71813"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/source_fidelity/q25/bank.npz",
+      "parent": "source_fidelity/q25/bank.npz",
+      "sha256": "958874d5e9c14746538a9224960a2cedecda499fe49a431a437ae58443493619"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/source_fidelity/q25/component_statistics.csv",
+      "parent": "source_fidelity/q25/component_statistics.csv",
+      "sha256": "1a8cdf1d07471ac4a0ac0ed01fcf95b8d3b417346e06de13c6d2e2ce0e7f94dc"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/source_fidelity/q25/family_statistics.csv",
+      "parent": "source_fidelity/q25/family_statistics.csv",
+      "sha256": "a92bafb9773a1c1d6d573c6c6afc743e4a13392bcdf1cf08df01708e236fdd7d"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/spatial_overlap/S1/bank.npz",
+      "parent": "spatial_overlap/S1/bank.npz",
+      "sha256": "319dd53fd6b813d3f5f548de7ebea9eb2eaa51b715033d53fb98220a0fab67b4"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/spatial_overlap/S1/component_statistics.csv",
+      "parent": "spatial_overlap/S1/component_statistics.csv",
+      "sha256": "4d92e49b8320d40bf188bd0938daf1d2292a90412f46f446be8549bf20431759"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/spatial_overlap/S1/family_statistics.csv",
+      "parent": "spatial_overlap/S1/family_statistics.csv",
+      "sha256": "840f5fb6d96e94721726f6568473638c0f99601cf4ddbde6d11738dfbe6b196f"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R0/bank.npz",
+      "parent": "retention/R0/bank.npz",
+      "sha256": "4af8322376620669c2a3aa7dcbb1ff1ba06332702d56609b07e264313d8e87ad"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R0/component_statistics.csv",
+      "parent": "retention/R0/component_statistics.csv",
+      "sha256": "612884a4eb7bdb0727333b92a2c0b1c4696384f5b5592b4112d19ea97f307235"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R0/family_statistics.csv",
+      "parent": "retention/R0/family_statistics.csv",
+      "sha256": "52f61470174e766d79e2476bb51da49c08542e40156df90b976790a9927180f7"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R1/bank.npz",
+      "parent": "retention/R1/bank.npz",
+      "sha256": "3ee137d165c55f48c5153a9ba01a8dcd8884b5fd42bbfde2fd400e10c4336d13"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R1/component_statistics.csv",
+      "parent": "retention/R1/component_statistics.csv",
+      "sha256": "fbceac6e328f6bfd2b5561e9a35c9841d8826c3c8e36a0409a0614a034dc7dab"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R1/family_statistics.csv",
+      "parent": "retention/R1/family_statistics.csv",
+      "sha256": "1a10b3efe9087f4b7c801f55ffba7f064d22977c856e4c8a6f83c1cc6d7d539d"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R2/bank.npz",
+      "parent": "retention/R2/bank.npz",
+      "sha256": "ce76cdae8a56b6a12cbc38a60de3cdae037ce328dd2053ba84a8c95d9ae9ccbe"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R2/component_statistics.csv",
+      "parent": "retention/R2/component_statistics.csv",
+      "sha256": "6804fa203ffe8f58324de0b88790ef200f98eea3ac1a1dc04c4aabdb745de148"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R2/family_statistics.csv",
+      "parent": "retention/R2/family_statistics.csv",
+      "sha256": "37db9c6998ffa948cec135c09e0cf4dac90170db5f9753d8b6319c69b5ab6317"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R3/bank.npz",
+      "parent": "retention/R3/bank.npz",
+      "sha256": "3173fd7c2ae3bf39bc926485c561609d425204a2f0df77b34279df5b7e450711"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R3/component_statistics.csv",
+      "parent": "retention/R3/component_statistics.csv",
+      "sha256": "7d11775126728723486bc71e9914eec6d22d8b0cf9fa33e45a94204a5760a974"
+    },
+    {
+      "artifact": "statistical_robustness/inferential_bank/retention/R3/family_statistics.csv",
+      "parent": "retention/R3/family_statistics.csv",
+      "sha256": "9431d63d03494b5b054975ea71d5093400833258d85cd3b9b140d7dfa9d1addc"
+    }
+  ],
+  "inferential_seed_count": 43008,
+  "plan_sha256": "46595e8a97ca0ed3f2a97c5cea1d6ab55d0a3d98154a706a47dfd5085f5e4dc1",
+  "rescoring_not_yet_run": true,
+  "seed_intersection": 0,
+  "utc": "2026-10-04T15:26:27.217696+00:00"
+}

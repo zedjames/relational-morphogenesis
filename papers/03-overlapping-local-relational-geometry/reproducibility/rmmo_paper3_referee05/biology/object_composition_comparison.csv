@@ -1,0 +1,49 @@
+object,field,v4_dominant,v4_fraction,isolated_dominant,isolated_fraction,dominant_preserved
+O1,cellType,Nascent mesoderm,0.4429530201342282,Nascent mesoderm,0.4830917874396135,True
+O1,germLayer,Mesoderm,0.5973154362416108,Mesoderm,0.6473429951690821,True
+O1,state,Mesoderm|G2/M|donor,0.5704697986577181,Mesoderm|G2/M|donor,0.6038647342995169,True
+O1,phase,G2/M,0.9530201342281879,G2/M,0.9323671497584541,True
+O2,cellType,Rostral ectoderm,0.2737642585551331,Rostral ectoderm,0.27526132404181186,True
+O2,germLayer,Mesoderm,0.4144486692015209,Mesoderm,0.42857142857142855,True
+O2,state,Mesoderm|G2/M|donor,0.3916349809885932,Mesoderm|G2/M|donor,0.40418118466898956,True
+O2,phase,G2/M,0.9505703422053232,G2/M,0.9442508710801394,True
+O3,cellType,Rostral ectoderm,0.27235772357723576,Rostral ectoderm,0.25396825396825395,True
+O3,germLayer,Mesoderm,0.3861788617886179,Mesoderm,0.4087301587301587,True
+O3,state,Mesoderm|G2/M|donor,0.36585365853658536,Mesoderm|G2/M|donor,0.3968253968253968,True
+O3,phase,G2/M,0.9105691056910569,G2/M,0.9246031746031746,True
+P12,cellType,Nascent mesoderm,0.3582089552238806,Nascent mesoderm,0.3026315789473684,True
+P12,germLayer,Mesoderm,0.6567164179104478,Mesoderm,0.5789473684210527,True
+P12,state,Mesoderm|G2/M|donor,0.6417910447761194,Mesoderm|G2/M|donor,0.5789473684210527,True
+P12,phase,G2/M,0.9850746268656716,G2/M,1.0,True
+P12_source,cellType,Nascent mesoderm,0.5116279069767442,Nascent mesoderm,0.44,True
+P12_source,germLayer,Mesoderm,0.7674418604651163,Mesoderm,0.66,True
+P12_source,state,Mesoderm|G2/M|donor,0.7674418604651163,Mesoderm|G2/M|donor,0.66,True
+P12_source,phase,G2/M,1.0,G2/M,1.0,True
+P12_target,cellType,Rostral ectoderm,0.25,Rostral ectoderm,0.3076923076923077,True
+P12_target,germLayer,Mesoderm,0.4583333333333333,Mesoderm,0.4230769230769231,True
+P12_target,state,Mesoderm|G2/M|donor,0.4166666666666667,Mesoderm|G2/M|donor,0.4230769230769231,True
+P12_target,phase,G2/M,0.9583333333333334,G2/M,1.0,True
+P13,cellType,Epiblast,0.35294117647058826,Rostral ectoderm,0.25,False
+P13,germLayer,Epiblast,0.47058823529411764,Mesoderm,0.4583333333333333,False
+P13,state,Epiblast|G2/M|donor,0.47058823529411764,Mesoderm|G2/M|donor,0.4583333333333333,False
+P13,phase,G2/M,0.9411764705882353,G2/M,0.9583333333333334,True
+P13_source,cellType,Epiblast,0.5,Epiblast,0.3333333333333333,True
+P13_source,germLayer,Epiblast,0.6,Mesoderm,0.4,False
+P13_source,state,Epiblast|G2/M|donor,0.6,Mesoderm|G2/M|donor,0.4,False
+P13_source,phase,G2/M,1.0,G2/M,1.0,True
+P13_target,cellType,Rostral ectoderm,0.2857142857142857,Rostral ectoderm,0.3333333333333333,True
+P13_target,germLayer,Mesoderm,0.42857142857142855,Mesoderm,0.5555555555555556,True
+P13_target,state,Mesoderm|G2/M|donor,0.42857142857142855,Mesoderm|G2/M|donor,0.5555555555555556,True
+P13_target,phase,G2/M,0.8571428571428571,G2/M,0.8888888888888888,True
+P23,cellType,Extraembryonic mesoderm,0.36585365853658536,Extraembryonic mesoderm,0.39285714285714285,True
+P23,germLayer,Mesoderm,0.7073170731707317,Mesoderm,0.75,True
+P23,state,Mesoderm|G2/M|donor,0.6829268292682927,Mesoderm|G2/M|donor,0.7321428571428571,True
+P23,phase,G2/M,0.975609756097561,G2/M,0.9642857142857143,True
+P23_source,cellType,Extraembryonic mesoderm,0.4,Extraembryonic mesoderm,0.45,True
+P23_source,germLayer,Mesoderm,0.6,Mesoderm,0.65,True
+P23_source,state,Mesoderm|G2/M|donor,0.6,Mesoderm|G2/M|donor,0.65,True
+P23_source,phase,G2/M,1.0,G2/M,1.0,True
+P23_target,cellType,Nascent mesoderm,0.38461538461538464,Extraembryonic mesoderm,0.3611111111111111,False
+P23_target,germLayer,Mesoderm,0.7692307692307693,Mesoderm,0.8055555555555556,True
+P23_target,state,Mesoderm|G2/M|donor,0.7307692307692307,Mesoderm|G2/M|donor,0.7777777777777778,True
+P23_target,phase,G2/M,0.9615384615384616,G2/M,0.9444444444444444,True

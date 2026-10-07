@@ -1,0 +1,9 @@
+{
+  "G_R_sha256": "c91053b01fc5369e3deae799443791b7339477424e152a8097a1ae2f6d8211d2",
+  "G_S_sha256": "1a2bfeca983ba1dc2f61014deaa483c2f4547acee6dea6f865a7448c8c32058b",
+  "disjoint": true,
+  "gene_order_preserved": true,
+  "partition_seed": "RMMO12_STATE_REALIZATION_V1",
+  "partition_sha256": "39fa64283570d9a355678a6cd439ab48b34e77264f0dcc0808f6dd84ec11e570",
+  "source": "relational_morphogenesis12/genes/state_realization_partition.csv.gz"
+}

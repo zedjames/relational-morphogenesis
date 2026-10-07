@@ -1,0 +1,31 @@
+{
+  "GR_columns_used": 0,
+  "GR_counts_read_during_StageA": false,
+  "ZR_loaded_during_StageA": false,
+  "annotations_used": false,
+  "enforcement": "both builtins.open and io.open allowlisted; no parent/evaluation imports; pure computation receives only GS arrays and identity",
+  "heldout_statistics_accessed": false,
+  "history_used": false,
+  "instrumented_file_accesses": [
+    {
+      "mode": "rb",
+      "path": "data_authority/GS_raw_counts.npz"
+    },
+    {
+      "mode": "rb",
+      "path": "authority/primary_GS.csv.gz"
+    },
+    {
+      "mode": "rb",
+      "path": "data_authority/cell_identity.csv.gz"
+    },
+    {
+      "mode": "r",
+      "path": "freeze/analysis_plan.json"
+    },
+    {
+      "mode": "rt",
+      "path": "freeze/strict_lane_plan.csv"
+    }
+  ]
+}

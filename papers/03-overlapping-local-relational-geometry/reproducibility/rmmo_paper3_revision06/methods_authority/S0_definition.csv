@@ -1,0 +1,12 @@
+category,total,definition,E7.5-R1,E7.5-R2,E7.5-R3
+Ectoderm|G2/M|donor,664,germ_layer|phase|type,152,234,278
+Ectoderm|S|donor,219,germ_layer|phase|type,63,61,95
+Endoderm|G2/M|donor,114,germ_layer|phase|type,30,58,26
+Endoderm|S|donor,31,germ_layer|phase|type,9,9,13
+Epiblast|G2/M|donor,787,germ_layer|phase|type,183,290,314
+Epiblast|S|donor,316,germ_layer|phase|type,83,87,146
+Mesoderm|G0/G1|donor,7,germ_layer|phase|type,2,5,0
+Mesoderm|G2/M|donor,1362,germ_layer|phase|type,445,485,432
+Mesoderm|S|donor,197,germ_layer|phase|type,62,67,68
+Primordial germ cell|G2/M|donor,4,germ_layer|phase|type,0,2,2
+Primordial germ cell|S|donor,3,germ_layer|phase|type,3,0,0

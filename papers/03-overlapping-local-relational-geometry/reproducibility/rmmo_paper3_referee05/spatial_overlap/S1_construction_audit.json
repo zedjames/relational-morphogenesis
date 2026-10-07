@@ -1,0 +1,7 @@
+{
+  "S2_rerun": false,
+  "exact_wording": "Each S1 reference landmark system is formed by independent uniform sampling without replacement within fixed precomputed cell-level strata.",
+  "fixed_before_sampling": true,
+  "recorded_utc": "2026-10-04T05:46:08.232141+00:00",
+  "strata_sha256": "7c22390a89657f813b6e1f8a3c145636bd0a13a9e30cb22f0488efb00616d5ff"
+}

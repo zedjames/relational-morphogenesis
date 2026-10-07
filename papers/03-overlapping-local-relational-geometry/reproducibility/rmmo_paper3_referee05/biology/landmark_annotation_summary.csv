@@ -1,0 +1,541 @@
+normalization,object,field,category,count,cells,fraction,descriptive_only
+v4,P12_source,cellType,Definitive endoderm,1,43,0.023255813953488372,True
+v4,P12_source,cellType,Epiblast,3,43,0.06976744186046512,True
+v4,P12_source,cellType,Extraembryonic mesoderm,9,43,0.20930232558139536,True
+v4,P12_source,cellType,Hematoendothelial progenitor,2,43,0.046511627906976744,True
+v4,P12_source,cellType,Nascent mesoderm,22,43,0.5116279069767442,True
+v4,P12_source,cellType,Notochord,0,43,0.0,True
+v4,P12_source,cellType,Prechordal plate,0,43,0.0,True
+v4,P12_source,cellType,Primitive streak,0,43,0.0,True
+v4,P12_source,cellType,Primordial germ cell,0,43,0.0,True
+v4,P12_source,cellType,Rostral ectoderm,6,43,0.13953488372093023,True
+v4,P12_source,cellType,Visceral endoderm,0,43,0.0,True
+v4,P12_source,germLayer,Ectoderm,6,43,0.13953488372093023,True
+v4,P12_source,germLayer,Endoderm,1,43,0.023255813953488372,True
+v4,P12_source,germLayer,Epiblast,3,43,0.06976744186046512,True
+v4,P12_source,germLayer,Mesoderm,33,43,0.7674418604651163,True
+v4,P12_source,germLayer,Primordial germ cell,0,43,0.0,True
+v4,P12_source,state,Ectoderm|G2/M|donor,6,43,0.13953488372093023,True
+v4,P12_source,state,Ectoderm|S|donor,0,43,0.0,True
+v4,P12_source,state,Endoderm|G2/M|donor,1,43,0.023255813953488372,True
+v4,P12_source,state,Endoderm|S|donor,0,43,0.0,True
+v4,P12_source,state,Epiblast|G2/M|donor,3,43,0.06976744186046512,True
+v4,P12_source,state,Epiblast|S|donor,0,43,0.0,True
+v4,P12_source,state,Mesoderm|G0/G1|donor,0,43,0.0,True
+v4,P12_source,state,Mesoderm|G2/M|donor,33,43,0.7674418604651163,True
+v4,P12_source,state,Mesoderm|S|donor,0,43,0.0,True
+v4,P12_source,state,Primordial germ cell|G2/M|donor,0,43,0.0,True
+v4,P12_source,state,Primordial germ cell|S|donor,0,43,0.0,True
+v4,P12_source,phase,G0/G1,0,43,0.0,True
+v4,P12_source,phase,G2/M,43,43,1.0,True
+v4,P12_source,phase,S,0,43,0.0,True
+v4,P12_target,cellType,Definitive endoderm,2,24,0.08333333333333333,True
+v4,P12_target,cellType,Epiblast,5,24,0.20833333333333334,True
+v4,P12_target,cellType,Extraembryonic mesoderm,6,24,0.25,True
+v4,P12_target,cellType,Hematoendothelial progenitor,3,24,0.125,True
+v4,P12_target,cellType,Nascent mesoderm,2,24,0.08333333333333333,True
+v4,P12_target,cellType,Notochord,0,24,0.0,True
+v4,P12_target,cellType,Prechordal plate,0,24,0.0,True
+v4,P12_target,cellType,Primitive streak,0,24,0.0,True
+v4,P12_target,cellType,Primordial germ cell,0,24,0.0,True
+v4,P12_target,cellType,Rostral ectoderm,6,24,0.25,True
+v4,P12_target,cellType,Visceral endoderm,0,24,0.0,True
+v4,P12_target,germLayer,Ectoderm,6,24,0.25,True
+v4,P12_target,germLayer,Endoderm,2,24,0.08333333333333333,True
+v4,P12_target,germLayer,Epiblast,5,24,0.20833333333333334,True
+v4,P12_target,germLayer,Mesoderm,11,24,0.4583333333333333,True
+v4,P12_target,germLayer,Primordial germ cell,0,24,0.0,True
+v4,P12_target,state,Ectoderm|G2/M|donor,6,24,0.25,True
+v4,P12_target,state,Ectoderm|S|donor,0,24,0.0,True
+v4,P12_target,state,Endoderm|G2/M|donor,2,24,0.08333333333333333,True
+v4,P12_target,state,Endoderm|S|donor,0,24,0.0,True
+v4,P12_target,state,Epiblast|G2/M|donor,5,24,0.20833333333333334,True
+v4,P12_target,state,Epiblast|S|donor,0,24,0.0,True
+v4,P12_target,state,Mesoderm|G0/G1|donor,0,24,0.0,True
+v4,P12_target,state,Mesoderm|G2/M|donor,10,24,0.4166666666666667,True
+v4,P12_target,state,Mesoderm|S|donor,1,24,0.041666666666666664,True
+v4,P12_target,state,Primordial germ cell|G2/M|donor,0,24,0.0,True
+v4,P12_target,state,Primordial germ cell|S|donor,0,24,0.0,True
+v4,P12_target,phase,G0/G1,0,24,0.0,True
+v4,P12_target,phase,G2/M,23,24,0.9583333333333334,True
+v4,P12_target,phase,S,1,24,0.041666666666666664,True
+v4,P12,cellType,Definitive endoderm,3,67,0.04477611940298507,True
+v4,P12,cellType,Epiblast,8,67,0.11940298507462686,True
+v4,P12,cellType,Extraembryonic mesoderm,15,67,0.22388059701492538,True
+v4,P12,cellType,Hematoendothelial progenitor,5,67,0.07462686567164178,True
+v4,P12,cellType,Nascent mesoderm,24,67,0.3582089552238806,True
+v4,P12,cellType,Notochord,0,67,0.0,True
+v4,P12,cellType,Prechordal plate,0,67,0.0,True
+v4,P12,cellType,Primitive streak,0,67,0.0,True
+v4,P12,cellType,Primordial germ cell,0,67,0.0,True
+v4,P12,cellType,Rostral ectoderm,12,67,0.1791044776119403,True
+v4,P12,cellType,Visceral endoderm,0,67,0.0,True
+v4,P12,germLayer,Ectoderm,12,67,0.1791044776119403,True
+v4,P12,germLayer,Endoderm,3,67,0.04477611940298507,True
+v4,P12,germLayer,Epiblast,8,67,0.11940298507462686,True
+v4,P12,germLayer,Mesoderm,44,67,0.6567164179104478,True
+v4,P12,germLayer,Primordial germ cell,0,67,0.0,True
+v4,P12,state,Ectoderm|G2/M|donor,12,67,0.1791044776119403,True
+v4,P12,state,Ectoderm|S|donor,0,67,0.0,True
+v4,P12,state,Endoderm|G2/M|donor,3,67,0.04477611940298507,True
+v4,P12,state,Endoderm|S|donor,0,67,0.0,True
+v4,P12,state,Epiblast|G2/M|donor,8,67,0.11940298507462686,True
+v4,P12,state,Epiblast|S|donor,0,67,0.0,True
+v4,P12,state,Mesoderm|G0/G1|donor,0,67,0.0,True
+v4,P12,state,Mesoderm|G2/M|donor,43,67,0.6417910447761194,True
+v4,P12,state,Mesoderm|S|donor,1,67,0.014925373134328358,True
+v4,P12,state,Primordial germ cell|G2/M|donor,0,67,0.0,True
+v4,P12,state,Primordial germ cell|S|donor,0,67,0.0,True
+v4,P12,phase,G0/G1,0,67,0.0,True
+v4,P12,phase,G2/M,66,67,0.9850746268656716,True
+v4,P12,phase,S,1,67,0.014925373134328358,True
+v4,P13_source,cellType,Definitive endoderm,0,10,0.0,True
+v4,P13_source,cellType,Epiblast,5,10,0.5,True
+v4,P13_source,cellType,Extraembryonic mesoderm,1,10,0.1,True
+v4,P13_source,cellType,Hematoendothelial progenitor,0,10,0.0,True
+v4,P13_source,cellType,Nascent mesoderm,2,10,0.2,True
+v4,P13_source,cellType,Notochord,0,10,0.0,True
+v4,P13_source,cellType,Prechordal plate,0,10,0.0,True
+v4,P13_source,cellType,Primitive streak,1,10,0.1,True
+v4,P13_source,cellType,Primordial germ cell,0,10,0.0,True
+v4,P13_source,cellType,Rostral ectoderm,1,10,0.1,True
+v4,P13_source,cellType,Visceral endoderm,0,10,0.0,True
+v4,P13_source,germLayer,Ectoderm,1,10,0.1,True
+v4,P13_source,germLayer,Endoderm,0,10,0.0,True
+v4,P13_source,germLayer,Epiblast,6,10,0.6,True
+v4,P13_source,germLayer,Mesoderm,3,10,0.3,True
+v4,P13_source,germLayer,Primordial germ cell,0,10,0.0,True
+v4,P13_source,state,Ectoderm|G2/M|donor,1,10,0.1,True
+v4,P13_source,state,Ectoderm|S|donor,0,10,0.0,True
+v4,P13_source,state,Endoderm|G2/M|donor,0,10,0.0,True
+v4,P13_source,state,Endoderm|S|donor,0,10,0.0,True
+v4,P13_source,state,Epiblast|G2/M|donor,6,10,0.6,True
+v4,P13_source,state,Epiblast|S|donor,0,10,0.0,True
+v4,P13_source,state,Mesoderm|G0/G1|donor,0,10,0.0,True
+v4,P13_source,state,Mesoderm|G2/M|donor,3,10,0.3,True
+v4,P13_source,state,Mesoderm|S|donor,0,10,0.0,True
+v4,P13_source,state,Primordial germ cell|G2/M|donor,0,10,0.0,True
+v4,P13_source,state,Primordial germ cell|S|donor,0,10,0.0,True
+v4,P13_source,phase,G0/G1,0,10,0.0,True
+v4,P13_source,phase,G2/M,10,10,1.0,True
+v4,P13_source,phase,S,0,10,0.0,True
+v4,P13_target,cellType,Definitive endoderm,0,7,0.0,True
+v4,P13_target,cellType,Epiblast,1,7,0.14285714285714285,True
+v4,P13_target,cellType,Extraembryonic mesoderm,1,7,0.14285714285714285,True
+v4,P13_target,cellType,Hematoendothelial progenitor,0,7,0.0,True
+v4,P13_target,cellType,Nascent mesoderm,2,7,0.2857142857142857,True
+v4,P13_target,cellType,Notochord,0,7,0.0,True
+v4,P13_target,cellType,Prechordal plate,0,7,0.0,True
+v4,P13_target,cellType,Primitive streak,1,7,0.14285714285714285,True
+v4,P13_target,cellType,Primordial germ cell,0,7,0.0,True
+v4,P13_target,cellType,Rostral ectoderm,2,7,0.2857142857142857,True
+v4,P13_target,cellType,Visceral endoderm,0,7,0.0,True
+v4,P13_target,germLayer,Ectoderm,2,7,0.2857142857142857,True
+v4,P13_target,germLayer,Endoderm,0,7,0.0,True
+v4,P13_target,germLayer,Epiblast,2,7,0.2857142857142857,True
+v4,P13_target,germLayer,Mesoderm,3,7,0.42857142857142855,True
+v4,P13_target,germLayer,Primordial germ cell,0,7,0.0,True
+v4,P13_target,state,Ectoderm|G2/M|donor,1,7,0.14285714285714285,True
+v4,P13_target,state,Ectoderm|S|donor,1,7,0.14285714285714285,True
+v4,P13_target,state,Endoderm|G2/M|donor,0,7,0.0,True
+v4,P13_target,state,Endoderm|S|donor,0,7,0.0,True
+v4,P13_target,state,Epiblast|G2/M|donor,2,7,0.2857142857142857,True
+v4,P13_target,state,Epiblast|S|donor,0,7,0.0,True
+v4,P13_target,state,Mesoderm|G0/G1|donor,0,7,0.0,True
+v4,P13_target,state,Mesoderm|G2/M|donor,3,7,0.42857142857142855,True
+v4,P13_target,state,Mesoderm|S|donor,0,7,0.0,True
+v4,P13_target,state,Primordial germ cell|G2/M|donor,0,7,0.0,True
+v4,P13_target,state,Primordial germ cell|S|donor,0,7,0.0,True
+v4,P13_target,phase,G0/G1,0,7,0.0,True
+v4,P13_target,phase,G2/M,6,7,0.8571428571428571,True
+v4,P13_target,phase,S,1,7,0.14285714285714285,True
+v4,P13,cellType,Definitive endoderm,0,17,0.0,True
+v4,P13,cellType,Epiblast,6,17,0.35294117647058826,True
+v4,P13,cellType,Extraembryonic mesoderm,2,17,0.11764705882352941,True
+v4,P13,cellType,Hematoendothelial progenitor,0,17,0.0,True
+v4,P13,cellType,Nascent mesoderm,4,17,0.23529411764705882,True
+v4,P13,cellType,Notochord,0,17,0.0,True
+v4,P13,cellType,Prechordal plate,0,17,0.0,True
+v4,P13,cellType,Primitive streak,2,17,0.11764705882352941,True
+v4,P13,cellType,Primordial germ cell,0,17,0.0,True
+v4,P13,cellType,Rostral ectoderm,3,17,0.17647058823529413,True
+v4,P13,cellType,Visceral endoderm,0,17,0.0,True
+v4,P13,germLayer,Ectoderm,3,17,0.17647058823529413,True
+v4,P13,germLayer,Endoderm,0,17,0.0,True
+v4,P13,germLayer,Epiblast,8,17,0.47058823529411764,True
+v4,P13,germLayer,Mesoderm,6,17,0.35294117647058826,True
+v4,P13,germLayer,Primordial germ cell,0,17,0.0,True
+v4,P13,state,Ectoderm|G2/M|donor,2,17,0.11764705882352941,True
+v4,P13,state,Ectoderm|S|donor,1,17,0.058823529411764705,True
+v4,P13,state,Endoderm|G2/M|donor,0,17,0.0,True
+v4,P13,state,Endoderm|S|donor,0,17,0.0,True
+v4,P13,state,Epiblast|G2/M|donor,8,17,0.47058823529411764,True
+v4,P13,state,Epiblast|S|donor,0,17,0.0,True
+v4,P13,state,Mesoderm|G0/G1|donor,0,17,0.0,True
+v4,P13,state,Mesoderm|G2/M|donor,6,17,0.35294117647058826,True
+v4,P13,state,Mesoderm|S|donor,0,17,0.0,True
+v4,P13,state,Primordial germ cell|G2/M|donor,0,17,0.0,True
+v4,P13,state,Primordial germ cell|S|donor,0,17,0.0,True
+v4,P13,phase,G0/G1,0,17,0.0,True
+v4,P13,phase,G2/M,16,17,0.9411764705882353,True
+v4,P13,phase,S,1,17,0.058823529411764705,True
+v4,P23_source,cellType,Definitive endoderm,0,15,0.0,True
+v4,P23_source,cellType,Epiblast,2,15,0.13333333333333333,True
+v4,P23_source,cellType,Extraembryonic mesoderm,6,15,0.4,True
+v4,P23_source,cellType,Hematoendothelial progenitor,1,15,0.06666666666666667,True
+v4,P23_source,cellType,Nascent mesoderm,2,15,0.13333333333333333,True
+v4,P23_source,cellType,Notochord,0,15,0.0,True
+v4,P23_source,cellType,Prechordal plate,0,15,0.0,True
+v4,P23_source,cellType,Primitive streak,1,15,0.06666666666666667,True
+v4,P23_source,cellType,Primordial germ cell,0,15,0.0,True
+v4,P23_source,cellType,Rostral ectoderm,3,15,0.2,True
+v4,P23_source,cellType,Visceral endoderm,0,15,0.0,True
+v4,P23_source,germLayer,Ectoderm,3,15,0.2,True
+v4,P23_source,germLayer,Endoderm,0,15,0.0,True
+v4,P23_source,germLayer,Epiblast,3,15,0.2,True
+v4,P23_source,germLayer,Mesoderm,9,15,0.6,True
+v4,P23_source,germLayer,Primordial germ cell,0,15,0.0,True
+v4,P23_source,state,Ectoderm|G2/M|donor,3,15,0.2,True
+v4,P23_source,state,Ectoderm|S|donor,0,15,0.0,True
+v4,P23_source,state,Endoderm|G2/M|donor,0,15,0.0,True
+v4,P23_source,state,Endoderm|S|donor,0,15,0.0,True
+v4,P23_source,state,Epiblast|G2/M|donor,3,15,0.2,True
+v4,P23_source,state,Epiblast|S|donor,0,15,0.0,True
+v4,P23_source,state,Mesoderm|G0/G1|donor,0,15,0.0,True
+v4,P23_source,state,Mesoderm|G2/M|donor,9,15,0.6,True
+v4,P23_source,state,Mesoderm|S|donor,0,15,0.0,True
+v4,P23_source,state,Primordial germ cell|G2/M|donor,0,15,0.0,True
+v4,P23_source,state,Primordial germ cell|S|donor,0,15,0.0,True
+v4,P23_source,phase,G0/G1,0,15,0.0,True
+v4,P23_source,phase,G2/M,15,15,1.0,True
+v4,P23_source,phase,S,0,15,0.0,True
+v4,P23_target,cellType,Definitive endoderm,0,26,0.0,True
+v4,P23_target,cellType,Epiblast,1,26,0.038461538461538464,True
+v4,P23_target,cellType,Extraembryonic mesoderm,9,26,0.34615384615384615,True
+v4,P23_target,cellType,Hematoendothelial progenitor,1,26,0.038461538461538464,True
+v4,P23_target,cellType,Nascent mesoderm,10,26,0.38461538461538464,True
+v4,P23_target,cellType,Notochord,0,26,0.0,True
+v4,P23_target,cellType,Prechordal plate,0,26,0.0,True
+v4,P23_target,cellType,Primitive streak,1,26,0.038461538461538464,True
+v4,P23_target,cellType,Primordial germ cell,0,26,0.0,True
+v4,P23_target,cellType,Rostral ectoderm,4,26,0.15384615384615385,True
+v4,P23_target,cellType,Visceral endoderm,0,26,0.0,True
+v4,P23_target,germLayer,Ectoderm,4,26,0.15384615384615385,True
+v4,P23_target,germLayer,Endoderm,0,26,0.0,True
+v4,P23_target,germLayer,Epiblast,2,26,0.07692307692307693,True
+v4,P23_target,germLayer,Mesoderm,20,26,0.7692307692307693,True
+v4,P23_target,germLayer,Primordial germ cell,0,26,0.0,True
+v4,P23_target,state,Ectoderm|G2/M|donor,4,26,0.15384615384615385,True
+v4,P23_target,state,Ectoderm|S|donor,0,26,0.0,True
+v4,P23_target,state,Endoderm|G2/M|donor,0,26,0.0,True
+v4,P23_target,state,Endoderm|S|donor,0,26,0.0,True
+v4,P23_target,state,Epiblast|G2/M|donor,2,26,0.07692307692307693,True
+v4,P23_target,state,Epiblast|S|donor,0,26,0.0,True
+v4,P23_target,state,Mesoderm|G0/G1|donor,0,26,0.0,True
+v4,P23_target,state,Mesoderm|G2/M|donor,19,26,0.7307692307692307,True
+v4,P23_target,state,Mesoderm|S|donor,1,26,0.038461538461538464,True
+v4,P23_target,state,Primordial germ cell|G2/M|donor,0,26,0.0,True
+v4,P23_target,state,Primordial germ cell|S|donor,0,26,0.0,True
+v4,P23_target,phase,G0/G1,0,26,0.0,True
+v4,P23_target,phase,G2/M,25,26,0.9615384615384616,True
+v4,P23_target,phase,S,1,26,0.038461538461538464,True
+v4,P23,cellType,Definitive endoderm,0,41,0.0,True
+v4,P23,cellType,Epiblast,3,41,0.07317073170731707,True
+v4,P23,cellType,Extraembryonic mesoderm,15,41,0.36585365853658536,True
+v4,P23,cellType,Hematoendothelial progenitor,2,41,0.04878048780487805,True
+v4,P23,cellType,Nascent mesoderm,12,41,0.2926829268292683,True
+v4,P23,cellType,Notochord,0,41,0.0,True
+v4,P23,cellType,Prechordal plate,0,41,0.0,True
+v4,P23,cellType,Primitive streak,2,41,0.04878048780487805,True
+v4,P23,cellType,Primordial germ cell,0,41,0.0,True
+v4,P23,cellType,Rostral ectoderm,7,41,0.17073170731707318,True
+v4,P23,cellType,Visceral endoderm,0,41,0.0,True
+v4,P23,germLayer,Ectoderm,7,41,0.17073170731707318,True
+v4,P23,germLayer,Endoderm,0,41,0.0,True
+v4,P23,germLayer,Epiblast,5,41,0.12195121951219512,True
+v4,P23,germLayer,Mesoderm,29,41,0.7073170731707317,True
+v4,P23,germLayer,Primordial germ cell,0,41,0.0,True
+v4,P23,state,Ectoderm|G2/M|donor,7,41,0.17073170731707318,True
+v4,P23,state,Ectoderm|S|donor,0,41,0.0,True
+v4,P23,state,Endoderm|G2/M|donor,0,41,0.0,True
+v4,P23,state,Endoderm|S|donor,0,41,0.0,True
+v4,P23,state,Epiblast|G2/M|donor,5,41,0.12195121951219512,True
+v4,P23,state,Epiblast|S|donor,0,41,0.0,True
+v4,P23,state,Mesoderm|G0/G1|donor,0,41,0.0,True
+v4,P23,state,Mesoderm|G2/M|donor,28,41,0.6829268292682927,True
+v4,P23,state,Mesoderm|S|donor,1,41,0.024390243902439025,True
+v4,P23,state,Primordial germ cell|G2/M|donor,0,41,0.0,True
+v4,P23,state,Primordial germ cell|S|donor,0,41,0.0,True
+v4,P23,phase,G0/G1,0,41,0.0,True
+v4,P23,phase,G2/M,40,41,0.975609756097561,True
+v4,P23,phase,S,1,41,0.024390243902439025,True
+isolated,P12_source,cellType,Definitive endoderm,1,50,0.02,True
+isolated,P12_source,cellType,Epiblast,7,50,0.14,True
+isolated,P12_source,cellType,Extraembryonic mesoderm,8,50,0.16,True
+isolated,P12_source,cellType,Hematoendothelial progenitor,3,50,0.06,True
+isolated,P12_source,cellType,Nascent mesoderm,22,50,0.44,True
+isolated,P12_source,cellType,Notochord,0,50,0.0,True
+isolated,P12_source,cellType,Prechordal plate,0,50,0.0,True
+isolated,P12_source,cellType,Primitive streak,1,50,0.02,True
+isolated,P12_source,cellType,Primordial germ cell,0,50,0.0,True
+isolated,P12_source,cellType,Rostral ectoderm,8,50,0.16,True
+isolated,P12_source,cellType,Visceral endoderm,0,50,0.0,True
+isolated,P12_source,germLayer,Ectoderm,8,50,0.16,True
+isolated,P12_source,germLayer,Endoderm,1,50,0.02,True
+isolated,P12_source,germLayer,Epiblast,8,50,0.16,True
+isolated,P12_source,germLayer,Mesoderm,33,50,0.66,True
+isolated,P12_source,germLayer,Primordial germ cell,0,50,0.0,True
+isolated,P12_source,state,Ectoderm|G2/M|donor,8,50,0.16,True
+isolated,P12_source,state,Ectoderm|S|donor,0,50,0.0,True
+isolated,P12_source,state,Endoderm|G2/M|donor,1,50,0.02,True
+isolated,P12_source,state,Endoderm|S|donor,0,50,0.0,True
+isolated,P12_source,state,Epiblast|G2/M|donor,8,50,0.16,True
+isolated,P12_source,state,Epiblast|S|donor,0,50,0.0,True
+isolated,P12_source,state,Mesoderm|G0/G1|donor,0,50,0.0,True
+isolated,P12_source,state,Mesoderm|G2/M|donor,33,50,0.66,True
+isolated,P12_source,state,Mesoderm|S|donor,0,50,0.0,True
+isolated,P12_source,state,Primordial germ cell|G2/M|donor,0,50,0.0,True
+isolated,P12_source,state,Primordial germ cell|S|donor,0,50,0.0,True
+isolated,P12_source,phase,G0/G1,0,50,0.0,True
+isolated,P12_source,phase,G2/M,50,50,1.0,True
+isolated,P12_source,phase,S,0,50,0.0,True
+isolated,P12_target,cellType,Definitive endoderm,1,26,0.038461538461538464,True
+isolated,P12_target,cellType,Epiblast,5,26,0.19230769230769232,True
+isolated,P12_target,cellType,Extraembryonic mesoderm,6,26,0.23076923076923078,True
+isolated,P12_target,cellType,Hematoendothelial progenitor,4,26,0.15384615384615385,True
+isolated,P12_target,cellType,Nascent mesoderm,1,26,0.038461538461538464,True
+isolated,P12_target,cellType,Notochord,0,26,0.0,True
+isolated,P12_target,cellType,Prechordal plate,0,26,0.0,True
+isolated,P12_target,cellType,Primitive streak,1,26,0.038461538461538464,True
+isolated,P12_target,cellType,Primordial germ cell,0,26,0.0,True
+isolated,P12_target,cellType,Rostral ectoderm,8,26,0.3076923076923077,True
+isolated,P12_target,cellType,Visceral endoderm,0,26,0.0,True
+isolated,P12_target,germLayer,Ectoderm,8,26,0.3076923076923077,True
+isolated,P12_target,germLayer,Endoderm,1,26,0.038461538461538464,True
+isolated,P12_target,germLayer,Epiblast,6,26,0.23076923076923078,True
+isolated,P12_target,germLayer,Mesoderm,11,26,0.4230769230769231,True
+isolated,P12_target,germLayer,Primordial germ cell,0,26,0.0,True
+isolated,P12_target,state,Ectoderm|G2/M|donor,8,26,0.3076923076923077,True
+isolated,P12_target,state,Ectoderm|S|donor,0,26,0.0,True
+isolated,P12_target,state,Endoderm|G2/M|donor,1,26,0.038461538461538464,True
+isolated,P12_target,state,Endoderm|S|donor,0,26,0.0,True
+isolated,P12_target,state,Epiblast|G2/M|donor,6,26,0.23076923076923078,True
+isolated,P12_target,state,Epiblast|S|donor,0,26,0.0,True
+isolated,P12_target,state,Mesoderm|G0/G1|donor,0,26,0.0,True
+isolated,P12_target,state,Mesoderm|G2/M|donor,11,26,0.4230769230769231,True
+isolated,P12_target,state,Mesoderm|S|donor,0,26,0.0,True
+isolated,P12_target,state,Primordial germ cell|G2/M|donor,0,26,0.0,True
+isolated,P12_target,state,Primordial germ cell|S|donor,0,26,0.0,True
+isolated,P12_target,phase,G0/G1,0,26,0.0,True
+isolated,P12_target,phase,G2/M,26,26,1.0,True
+isolated,P12_target,phase,S,0,26,0.0,True
+isolated,P12,cellType,Definitive endoderm,2,76,0.02631578947368421,True
+isolated,P12,cellType,Epiblast,12,76,0.15789473684210525,True
+isolated,P12,cellType,Extraembryonic mesoderm,14,76,0.18421052631578946,True
+isolated,P12,cellType,Hematoendothelial progenitor,7,76,0.09210526315789473,True
+isolated,P12,cellType,Nascent mesoderm,23,76,0.3026315789473684,True
+isolated,P12,cellType,Notochord,0,76,0.0,True
+isolated,P12,cellType,Prechordal plate,0,76,0.0,True
+isolated,P12,cellType,Primitive streak,2,76,0.02631578947368421,True
+isolated,P12,cellType,Primordial germ cell,0,76,0.0,True
+isolated,P12,cellType,Rostral ectoderm,16,76,0.21052631578947367,True
+isolated,P12,cellType,Visceral endoderm,0,76,0.0,True
+isolated,P12,germLayer,Ectoderm,16,76,0.21052631578947367,True
+isolated,P12,germLayer,Endoderm,2,76,0.02631578947368421,True
+isolated,P12,germLayer,Epiblast,14,76,0.18421052631578946,True
+isolated,P12,germLayer,Mesoderm,44,76,0.5789473684210527,True
+isolated,P12,germLayer,Primordial germ cell,0,76,0.0,True
+isolated,P12,state,Ectoderm|G2/M|donor,16,76,0.21052631578947367,True
+isolated,P12,state,Ectoderm|S|donor,0,76,0.0,True
+isolated,P12,state,Endoderm|G2/M|donor,2,76,0.02631578947368421,True
+isolated,P12,state,Endoderm|S|donor,0,76,0.0,True
+isolated,P12,state,Epiblast|G2/M|donor,14,76,0.18421052631578946,True
+isolated,P12,state,Epiblast|S|donor,0,76,0.0,True
+isolated,P12,state,Mesoderm|G0/G1|donor,0,76,0.0,True
+isolated,P12,state,Mesoderm|G2/M|donor,44,76,0.5789473684210527,True
+isolated,P12,state,Mesoderm|S|donor,0,76,0.0,True
+isolated,P12,state,Primordial germ cell|G2/M|donor,0,76,0.0,True
+isolated,P12,state,Primordial germ cell|S|donor,0,76,0.0,True
+isolated,P12,phase,G0/G1,0,76,0.0,True
+isolated,P12,phase,G2/M,76,76,1.0,True
+isolated,P12,phase,S,0,76,0.0,True
+isolated,P13_source,cellType,Definitive endoderm,0,15,0.0,True
+isolated,P13_source,cellType,Epiblast,5,15,0.3333333333333333,True
+isolated,P13_source,cellType,Extraembryonic mesoderm,3,15,0.2,True
+isolated,P13_source,cellType,Hematoendothelial progenitor,0,15,0.0,True
+isolated,P13_source,cellType,Nascent mesoderm,3,15,0.2,True
+isolated,P13_source,cellType,Notochord,0,15,0.0,True
+isolated,P13_source,cellType,Prechordal plate,0,15,0.0,True
+isolated,P13_source,cellType,Primitive streak,1,15,0.06666666666666667,True
+isolated,P13_source,cellType,Primordial germ cell,0,15,0.0,True
+isolated,P13_source,cellType,Rostral ectoderm,3,15,0.2,True
+isolated,P13_source,cellType,Visceral endoderm,0,15,0.0,True
+isolated,P13_source,germLayer,Ectoderm,3,15,0.2,True
+isolated,P13_source,germLayer,Endoderm,0,15,0.0,True
+isolated,P13_source,germLayer,Epiblast,6,15,0.4,True
+isolated,P13_source,germLayer,Mesoderm,6,15,0.4,True
+isolated,P13_source,germLayer,Primordial germ cell,0,15,0.0,True
+isolated,P13_source,state,Ectoderm|G2/M|donor,3,15,0.2,True
+isolated,P13_source,state,Ectoderm|S|donor,0,15,0.0,True
+isolated,P13_source,state,Endoderm|G2/M|donor,0,15,0.0,True
+isolated,P13_source,state,Endoderm|S|donor,0,15,0.0,True
+isolated,P13_source,state,Epiblast|G2/M|donor,6,15,0.4,True
+isolated,P13_source,state,Epiblast|S|donor,0,15,0.0,True
+isolated,P13_source,state,Mesoderm|G0/G1|donor,0,15,0.0,True
+isolated,P13_source,state,Mesoderm|G2/M|donor,6,15,0.4,True
+isolated,P13_source,state,Mesoderm|S|donor,0,15,0.0,True
+isolated,P13_source,state,Primordial germ cell|G2/M|donor,0,15,0.0,True
+isolated,P13_source,state,Primordial germ cell|S|donor,0,15,0.0,True
+isolated,P13_source,phase,G0/G1,0,15,0.0,True
+isolated,P13_source,phase,G2/M,15,15,1.0,True
+isolated,P13_source,phase,S,0,15,0.0,True
+isolated,P13_target,cellType,Definitive endoderm,0,9,0.0,True
+isolated,P13_target,cellType,Epiblast,1,9,0.1111111111111111,True
+isolated,P13_target,cellType,Extraembryonic mesoderm,3,9,0.3333333333333333,True
+isolated,P13_target,cellType,Hematoendothelial progenitor,0,9,0.0,True
+isolated,P13_target,cellType,Nascent mesoderm,2,9,0.2222222222222222,True
+isolated,P13_target,cellType,Notochord,0,9,0.0,True
+isolated,P13_target,cellType,Prechordal plate,0,9,0.0,True
+isolated,P13_target,cellType,Primitive streak,0,9,0.0,True
+isolated,P13_target,cellType,Primordial germ cell,0,9,0.0,True
+isolated,P13_target,cellType,Rostral ectoderm,3,9,0.3333333333333333,True
+isolated,P13_target,cellType,Visceral endoderm,0,9,0.0,True
+isolated,P13_target,germLayer,Ectoderm,3,9,0.3333333333333333,True
+isolated,P13_target,germLayer,Endoderm,0,9,0.0,True
+isolated,P13_target,germLayer,Epiblast,1,9,0.1111111111111111,True
+isolated,P13_target,germLayer,Mesoderm,5,9,0.5555555555555556,True
+isolated,P13_target,germLayer,Primordial germ cell,0,9,0.0,True
+isolated,P13_target,state,Ectoderm|G2/M|donor,2,9,0.2222222222222222,True
+isolated,P13_target,state,Ectoderm|S|donor,1,9,0.1111111111111111,True
+isolated,P13_target,state,Endoderm|G2/M|donor,0,9,0.0,True
+isolated,P13_target,state,Endoderm|S|donor,0,9,0.0,True
+isolated,P13_target,state,Epiblast|G2/M|donor,1,9,0.1111111111111111,True
+isolated,P13_target,state,Epiblast|S|donor,0,9,0.0,True
+isolated,P13_target,state,Mesoderm|G0/G1|donor,0,9,0.0,True
+isolated,P13_target,state,Mesoderm|G2/M|donor,5,9,0.5555555555555556,True
+isolated,P13_target,state,Mesoderm|S|donor,0,9,0.0,True
+isolated,P13_target,state,Primordial germ cell|G2/M|donor,0,9,0.0,True
+isolated,P13_target,state,Primordial germ cell|S|donor,0,9,0.0,True
+isolated,P13_target,phase,G0/G1,0,9,0.0,True
+isolated,P13_target,phase,G2/M,8,9,0.8888888888888888,True
+isolated,P13_target,phase,S,1,9,0.1111111111111111,True
+isolated,P13,cellType,Definitive endoderm,0,24,0.0,True
+isolated,P13,cellType,Epiblast,6,24,0.25,True
+isolated,P13,cellType,Extraembryonic mesoderm,6,24,0.25,True
+isolated,P13,cellType,Hematoendothelial progenitor,0,24,0.0,True
+isolated,P13,cellType,Nascent mesoderm,5,24,0.20833333333333334,True
+isolated,P13,cellType,Notochord,0,24,0.0,True
+isolated,P13,cellType,Prechordal plate,0,24,0.0,True
+isolated,P13,cellType,Primitive streak,1,24,0.041666666666666664,True
+isolated,P13,cellType,Primordial germ cell,0,24,0.0,True
+isolated,P13,cellType,Rostral ectoderm,6,24,0.25,True
+isolated,P13,cellType,Visceral endoderm,0,24,0.0,True
+isolated,P13,germLayer,Ectoderm,6,24,0.25,True
+isolated,P13,germLayer,Endoderm,0,24,0.0,True
+isolated,P13,germLayer,Epiblast,7,24,0.2916666666666667,True
+isolated,P13,germLayer,Mesoderm,11,24,0.4583333333333333,True
+isolated,P13,germLayer,Primordial germ cell,0,24,0.0,True
+isolated,P13,state,Ectoderm|G2/M|donor,5,24,0.20833333333333334,True
+isolated,P13,state,Ectoderm|S|donor,1,24,0.041666666666666664,True
+isolated,P13,state,Endoderm|G2/M|donor,0,24,0.0,True
+isolated,P13,state,Endoderm|S|donor,0,24,0.0,True
+isolated,P13,state,Epiblast|G2/M|donor,7,24,0.2916666666666667,True
+isolated,P13,state,Epiblast|S|donor,0,24,0.0,True
+isolated,P13,state,Mesoderm|G0/G1|donor,0,24,0.0,True
+isolated,P13,state,Mesoderm|G2/M|donor,11,24,0.4583333333333333,True
+isolated,P13,state,Mesoderm|S|donor,0,24,0.0,True
+isolated,P13,state,Primordial germ cell|G2/M|donor,0,24,0.0,True
+isolated,P13,state,Primordial germ cell|S|donor,0,24,0.0,True
+isolated,P13,phase,G0/G1,0,24,0.0,True
+isolated,P13,phase,G2/M,23,24,0.9583333333333334,True
+isolated,P13,phase,S,1,24,0.041666666666666664,True
+isolated,P23_source,cellType,Definitive endoderm,0,20,0.0,True
+isolated,P23_source,cellType,Epiblast,2,20,0.1,True
+isolated,P23_source,cellType,Extraembryonic mesoderm,9,20,0.45,True
+isolated,P23_source,cellType,Hematoendothelial progenitor,3,20,0.15,True
+isolated,P23_source,cellType,Nascent mesoderm,1,20,0.05,True
+isolated,P23_source,cellType,Notochord,0,20,0.0,True
+isolated,P23_source,cellType,Prechordal plate,0,20,0.0,True
+isolated,P23_source,cellType,Primitive streak,1,20,0.05,True
+isolated,P23_source,cellType,Primordial germ cell,0,20,0.0,True
+isolated,P23_source,cellType,Rostral ectoderm,4,20,0.2,True
+isolated,P23_source,cellType,Visceral endoderm,0,20,0.0,True
+isolated,P23_source,germLayer,Ectoderm,4,20,0.2,True
+isolated,P23_source,germLayer,Endoderm,0,20,0.0,True
+isolated,P23_source,germLayer,Epiblast,3,20,0.15,True
+isolated,P23_source,germLayer,Mesoderm,13,20,0.65,True
+isolated,P23_source,germLayer,Primordial germ cell,0,20,0.0,True
+isolated,P23_source,state,Ectoderm|G2/M|donor,4,20,0.2,True
+isolated,P23_source,state,Ectoderm|S|donor,0,20,0.0,True
+isolated,P23_source,state,Endoderm|G2/M|donor,0,20,0.0,True
+isolated,P23_source,state,Endoderm|S|donor,0,20,0.0,True
+isolated,P23_source,state,Epiblast|G2/M|donor,3,20,0.15,True
+isolated,P23_source,state,Epiblast|S|donor,0,20,0.0,True
+isolated,P23_source,state,Mesoderm|G0/G1|donor,0,20,0.0,True
+isolated,P23_source,state,Mesoderm|G2/M|donor,13,20,0.65,True
+isolated,P23_source,state,Mesoderm|S|donor,0,20,0.0,True
+isolated,P23_source,state,Primordial germ cell|G2/M|donor,0,20,0.0,True
+isolated,P23_source,state,Primordial germ cell|S|donor,0,20,0.0,True
+isolated,P23_source,phase,G0/G1,0,20,0.0,True
+isolated,P23_source,phase,G2/M,20,20,1.0,True
+isolated,P23_source,phase,S,0,20,0.0,True
+isolated,P23_target,cellType,Definitive endoderm,0,36,0.0,True
+isolated,P23_target,cellType,Epiblast,1,36,0.027777777777777776,True
+isolated,P23_target,cellType,Extraembryonic mesoderm,13,36,0.3611111111111111,True
+isolated,P23_target,cellType,Hematoendothelial progenitor,4,36,0.1111111111111111,True
+isolated,P23_target,cellType,Nascent mesoderm,12,36,0.3333333333333333,True
+isolated,P23_target,cellType,Notochord,0,36,0.0,True
+isolated,P23_target,cellType,Prechordal plate,0,36,0.0,True
+isolated,P23_target,cellType,Primitive streak,2,36,0.05555555555555555,True
+isolated,P23_target,cellType,Primordial germ cell,0,36,0.0,True
+isolated,P23_target,cellType,Rostral ectoderm,4,36,0.1111111111111111,True
+isolated,P23_target,cellType,Visceral endoderm,0,36,0.0,True
+isolated,P23_target,germLayer,Ectoderm,4,36,0.1111111111111111,True
+isolated,P23_target,germLayer,Endoderm,0,36,0.0,True
+isolated,P23_target,germLayer,Epiblast,3,36,0.08333333333333333,True
+isolated,P23_target,germLayer,Mesoderm,29,36,0.8055555555555556,True
+isolated,P23_target,germLayer,Primordial germ cell,0,36,0.0,True
+isolated,P23_target,state,Ectoderm|G2/M|donor,4,36,0.1111111111111111,True
+isolated,P23_target,state,Ectoderm|S|donor,0,36,0.0,True
+isolated,P23_target,state,Endoderm|G2/M|donor,0,36,0.0,True
+isolated,P23_target,state,Endoderm|S|donor,0,36,0.0,True
+isolated,P23_target,state,Epiblast|G2/M|donor,2,36,0.05555555555555555,True
+isolated,P23_target,state,Epiblast|S|donor,1,36,0.027777777777777776,True
+isolated,P23_target,state,Mesoderm|G0/G1|donor,0,36,0.0,True
+isolated,P23_target,state,Mesoderm|G2/M|donor,28,36,0.7777777777777778,True
+isolated,P23_target,state,Mesoderm|S|donor,1,36,0.027777777777777776,True
+isolated,P23_target,state,Primordial germ cell|G2/M|donor,0,36,0.0,True
+isolated,P23_target,state,Primordial germ cell|S|donor,0,36,0.0,True
+isolated,P23_target,phase,G0/G1,0,36,0.0,True
+isolated,P23_target,phase,G2/M,34,36,0.9444444444444444,True
+isolated,P23_target,phase,S,2,36,0.05555555555555555,True
+isolated,P23,cellType,Definitive endoderm,0,56,0.0,True
+isolated,P23,cellType,Epiblast,3,56,0.05357142857142857,True
+isolated,P23,cellType,Extraembryonic mesoderm,22,56,0.39285714285714285,True
+isolated,P23,cellType,Hematoendothelial progenitor,7,56,0.125,True
+isolated,P23,cellType,Nascent mesoderm,13,56,0.23214285714285715,True
+isolated,P23,cellType,Notochord,0,56,0.0,True
+isolated,P23,cellType,Prechordal plate,0,56,0.0,True
+isolated,P23,cellType,Primitive streak,3,56,0.05357142857142857,True
+isolated,P23,cellType,Primordial germ cell,0,56,0.0,True
+isolated,P23,cellType,Rostral ectoderm,8,56,0.14285714285714285,True
+isolated,P23,cellType,Visceral endoderm,0,56,0.0,True
+isolated,P23,germLayer,Ectoderm,8,56,0.14285714285714285,True
+isolated,P23,germLayer,Endoderm,0,56,0.0,True
+isolated,P23,germLayer,Epiblast,6,56,0.10714285714285714,True
+isolated,P23,germLayer,Mesoderm,42,56,0.75,True
+isolated,P23,germLayer,Primordial germ cell,0,56,0.0,True
+isolated,P23,state,Ectoderm|G2/M|donor,8,56,0.14285714285714285,True
+isolated,P23,state,Ectoderm|S|donor,0,56,0.0,True
+isolated,P23,state,Endoderm|G2/M|donor,0,56,0.0,True
+isolated,P23,state,Endoderm|S|donor,0,56,0.0,True
+isolated,P23,state,Epiblast|G2/M|donor,5,56,0.08928571428571429,True
+isolated,P23,state,Epiblast|S|donor,1,56,0.017857142857142856,True
+isolated,P23,state,Mesoderm|G0/G1|donor,0,56,0.0,True
+isolated,P23,state,Mesoderm|G2/M|donor,41,56,0.7321428571428571,True
+isolated,P23,state,Mesoderm|S|donor,1,56,0.017857142857142856,True
+isolated,P23,state,Primordial germ cell|G2/M|donor,0,56,0.0,True
+isolated,P23,state,Primordial germ cell|S|donor,0,56,0.0,True
+isolated,P23,phase,G0/G1,0,56,0.0,True
+isolated,P23,phase,G2/M,54,56,0.9642857142857143,True
+isolated,P23,phase,S,2,56,0.03571428571428571,True

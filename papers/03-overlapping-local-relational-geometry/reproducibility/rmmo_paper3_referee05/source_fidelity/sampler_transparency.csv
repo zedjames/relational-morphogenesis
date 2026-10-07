@@ -1,0 +1,4 @@
+pair,attempted_stub_pairings,simple_pairings,acceptance_fraction,rejected_nonsimple,mean_proposals_per_accepted,median_proposals_per_accepted,maximum_proposals,fresh_independent_pairing,nonsimple_discarded_completely,Markov_chain_used
+P12,7140,1024,0.1434173669467787,6116,6.97265625,5.0,43,True,True,False
+P13,1390,1024,0.7366906474820144,366,1.357421875,1.0,5,True,True,False
+P23,2904,1024,0.3526170798898072,1880,2.8359375,2.0,24,True,True,False

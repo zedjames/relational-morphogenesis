@@ -1,0 +1,14 @@
+{
+  "all_reported_families_independently_calibrated": true,
+  "component_decisions_changed": [],
+  "components": 108,
+  "families": 36,
+  "family_decisions_changed": [],
+  "family_events": 72,
+  "new_calibration_banks": 7,
+  "no_rescue": true,
+  "old_inferential_banks_changed": 0,
+  "publication_freeze_complete": true,
+  "status": "CALIBRATION_PRESERVED",
+  "target_PCA_reported": false
+}

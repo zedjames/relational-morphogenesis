@@ -1,0 +1,11 @@
+{
+  "original_plan_commit": "726fb7258c9d8eaa78765f1dbae0544cd3b48754",
+  "original_seal_utc": "2026-10-04T05:41:08.094218+00:00",
+  "plan_sha256": {
+    "freeze/analysis_plan.json": "94fe0863706a9d09e1f4c3efa62fcc8cfc6a6953ee4d549ac20f79e6938feaf1",
+    "freeze/analysis_plan.md": "b9b9b881f77817102b4473811719558adf4c6cd539b9a215a274ceeadf2f5e3f",
+    "freeze/strict_lane_plan.csv": "99cdf7da5616b3465ad84331da912259e03fbaf61d276071559df7a1536be1c9"
+  },
+  "reachable_plan_commit": "0046775c60349f4eebbcade613d8fd56c9385b10",
+  "wording": "The strict feature-separation construction and evaluation plan was committed before execution of the newly specified reconstruction."
+}

@@ -1,0 +1,264 @@
+{
+  "components": 108,
+  "constants_sha256": "77d34f32a20621b8141b45139663f0395a88dc9c5460541a40fcda38108f4612",
+  "existing_inferential_banks_unchanged": true,
+  "families": 36,
+  "new_banks": 7,
+  "plan_sha256": "39c26c08d73f31994628738d65945c6f45ec1d71eca1c8f477e7505dbee08dd2",
+  "rescoring_not_yet_run": true,
+  "sources": [
+    {
+      "bank": "edge_agreement",
+      "metric": "edge_distance",
+      "panel": "heldout",
+      "sha256": "63e163e8c896b8cb01947f06737baa069da68027eabb5e36f557dfc282dda646",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "spatial_overlap/S1",
+      "metric": "overlap_size",
+      "panel": "spatial",
+      "sha256": "25cc1291f45c5e90499872dab17b65a2fb927fffaf2f6d6d55a283dfb9f8186b",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "matched_coherence/q10",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "a1188acd64201c26e01b1095cf8c986546fab36f23c1958dae3737033227d8f5",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "matched_coherence/q10",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "a1188acd64201c26e01b1095cf8c986546fab36f23c1958dae3737033227d8f5",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "matched_coherence/q25",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "89096500d2f38104610fb3d791229e72fe67081b4a52f7acff74da810a61e15c",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "matched_coherence/q25",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "89096500d2f38104610fb3d791229e72fe67081b4a52f7acff74da810a61e15c",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "matched_coherence/q50",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "87fd1ebfa42ecec055298fd575fa2c9fbf6942bfebefa15b0a3e54beaae13d16",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "matched_coherence/q50",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "87fd1ebfa42ecec055298fd575fa2c9fbf6942bfebefa15b0a3e54beaae13d16",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "source_fidelity/q10",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "159aa90b5edf3391fab9b947486055ae3fcd34defe0e5f8de2ea386ed8bf6360",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "source_fidelity/q10",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "159aa90b5edf3391fab9b947486055ae3fcd34defe0e5f8de2ea386ed8bf6360",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "source_fidelity/q25",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "a3680361641c2e5ab16083731b8bf5ebcf684f5c62497ef90e01da1622bb4dd0",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "source_fidelity/q25",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "a3680361641c2e5ab16083731b8bf5ebcf684f5c62497ef90e01da1622bb4dd0",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "source_fidelity/q50",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "369183107f1ab9e570973eed36863ca95f1c62ccc0eaba52d22f0047da7feac4",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "source_fidelity/q50",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "369183107f1ab9e570973eed36863ca95f1c62ccc0eaba52d22f0047da7feac4",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "retention/R0",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "ca909b682d319e72f0daf4b9387f80e9e8258d13c191b08ad4c2433d17a610a7",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R0",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "ca909b682d319e72f0daf4b9387f80e9e8258d13c191b08ad4c2433d17a610a7",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R0",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "ca909b682d319e72f0daf4b9387f80e9e8258d13c191b08ad4c2433d17a610a7",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R0",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "ca909b682d319e72f0daf4b9387f80e9e8258d13c191b08ad4c2433d17a610a7",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R1",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "02d165ffb8b238a428bb04b0afdeb5a6d89ebe82e3157dbbb3c0d604523c7c20",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R1",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "02d165ffb8b238a428bb04b0afdeb5a6d89ebe82e3157dbbb3c0d604523c7c20",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R1",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "02d165ffb8b238a428bb04b0afdeb5a6d89ebe82e3157dbbb3c0d604523c7c20",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R1",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "02d165ffb8b238a428bb04b0afdeb5a6d89ebe82e3157dbbb3c0d604523c7c20",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R2",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "24e96ad3ee2ce49762ae9b0fa02440b014d4fbfd9638781a44017d19cc10cdf6",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R2",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "24e96ad3ee2ce49762ae9b0fa02440b014d4fbfd9638781a44017d19cc10cdf6",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R2",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "24e96ad3ee2ce49762ae9b0fa02440b014d4fbfd9638781a44017d19cc10cdf6",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R2",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "24e96ad3ee2ce49762ae9b0fa02440b014d4fbfd9638781a44017d19cc10cdf6",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R3",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "8e0979fceed8a2a3d84eea5d2f6a20187e7b9af76e47c72fd58c5217f88666b1",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R3",
+      "metric": "source_error",
+      "panel": "state",
+      "sha256": "8e0979fceed8a2a3d84eea5d2f6a20187e7b9af76e47c72fd58c5217f88666b1",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R3",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "8e0979fceed8a2a3d84eea5d2f6a20187e7b9af76e47c72fd58c5217f88666b1",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "retention/R3",
+      "metric": "source_error",
+      "panel": "heldout",
+      "sha256": "8e0979fceed8a2a3d84eea5d2f6a20187e7b9af76e47c72fd58c5217f88666b1",
+      "source": "existing_Revision06"
+    },
+    {
+      "bank": "representation/pca32",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "a3e943141d71d028e8f98c9d2c34c58c2507bf9bf485a18baeafb81172dc9f58",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "representation/pca32",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "a3e943141d71d028e8f98c9d2c34c58c2507bf9bf485a18baeafb81172dc9f58",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "representation/pca64",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "63c0483663b47a234cce9b4884d3731c0706e50c18d50cc7f3f735ebf8505527",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "representation/pca64",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "63c0483663b47a234cce9b4884d3731c0706e50c18d50cc7f3f735ebf8505527",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "acceptance07/representation/hash_s0_q25",
+      "metric": "defect",
+      "panel": "state",
+      "sha256": "c72a8b5e78ed4dc37280a161ffac7e11abca3d56b2f96e3d10aaa5956ff2c98a",
+      "source": "authorized_Final08"
+    },
+    {
+      "bank": "acceptance07/representation/hash_s0_q25",
+      "metric": "defect",
+      "panel": "heldout",
+      "sha256": "c72a8b5e78ed4dc37280a161ffac7e11abca3d56b2f96e3d10aaa5956ff2c98a",
+      "source": "authorized_Final08"
+    }
+  ],
+  "utc": "2026-10-04T18:54:16.993032+00:00"
+}

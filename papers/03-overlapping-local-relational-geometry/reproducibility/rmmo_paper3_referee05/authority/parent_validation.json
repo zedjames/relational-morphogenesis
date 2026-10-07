@@ -1,0 +1,15 @@
+{
+  "full_rebuild_performed": false,
+  "parent_full_replay_receipt": {
+    "all_retained_draws_replayed": true,
+    "biological_replicates": 3,
+    "external_upload_performed": false,
+    "ordinary_files_verified": 299,
+    "passed": true,
+    "private_repository_required": false,
+    "raw_H5TD_required": false
+  },
+  "parent_immutable_files": 7859,
+  "parent_manifest_verified": 553,
+  "passed": true
+}

@@ -1,0 +1,12 @@
+scientific_object,frozen_artifact,independent_check,reviewer_package_included
+gene/lane registry,Referee05 authority + strict_lanes,recompute membership/GS-GR disjointness,True
+strict geometry,stageA_arrays.npz,"all 27 thresholds/edges, votes, fibers",True
+poison noninterference,Referee05 separation_audit,immutable validated parent receipt,True
+edge reference,edge_agreement,1024 graphs/full histograms replay,True
+matched-target reference,matched_coherence/q25,1024 incidence graphs independent scores,True
+S1 reference,spatial_overlap/S1,fixed strata and all1024 balanced draws,True
+degree-null graphs,source_fidelity,1024 margins/simplicity/fiber scores,True
+family-statistic calibration,component_calibration.csv,"disjoint seeds, fixed constants, all44 ranks",True
+baselines,baseline_support.csv,support intersection and parent comparisons,True
+PCA,pca_specification.csv,"loadings/energy, rebuilt object sizes",True
+figures,figures,source CSVs and rendered panels,True

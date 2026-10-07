@@ -1,0 +1,1653 @@
+RMMO-P3-REFEREE-05
+Strict Feature-Separation Closure
+=================================
+
+MISSION
+=======
+
+Resolve the final substantive methodological objection for Paper 3:
+
+    An Overlapping Local Relational Geometry of Early Mouse Embryogenesis
+
+Parent scientific authority:
+
+    research/rmmo_paper3_referee04/
+
+Immutable historical authority:
+
+    research/relational_morphogenesis12/
+    research/relational_morphogenesis13/
+    research/relational_morphogenesis14/
+    research/relational_morphogenesis15/
+    research/relational_morphogenesis16/
+    research/relational_morphogenesis17/
+
+    research/rmmo_paper3_referee01/
+    research/rmmo_paper3_referee02/
+    research/rmmo_paper3_referee03/
+    research/rmmo_paper3_referee04/
+
+Do not modify any parent artifact.
+
+All new work belongs under:
+
+    research/rmmo_paper3_referee05/
+
+The remaining scientific question is:
+
+    DO THE PRINCIPAL G_R MOLECULAR EFFECTS SURVIVE WHEN
+    NO GENE IN G_R CAN INFLUENCE ANY CONSTRUCTION LANE
+    USED TO SELECT THE FINAL RELATION?
+
+The historical primary state panel G_S and evaluation panel G_R are disjoint.
+REFEREE-04 removed the shared whole-library normalization denominator.
+
+However, some historical alternate-panel lanes contributing to the 7-of-9
+stable relation contain genes belonging to the primary G_R set.
+
+That creates the path:
+
+    G_R genes
+        ->
+    alternate state lanes
+        ->
+    7-of-9 edge selection
+        ->
+    final relation
+        ->
+    evaluation in G_R.
+
+This tranche must remove that path completely.
+
+The new publication-primary construction must satisfy:
+
+    union of gene identities used by ALL NINE construction lanes
+        ⊆ G_S
+
+and therefore:
+
+    (
+        union of construction-lane genes
+    )
+    ∩ G_R
+        =
+    ∅.
+
+No G_R counts, G_R coordinates, G_R gene identities, annotations derived from
+G_R, or G_R outcomes may influence final-relation construction.
+
+The tranche is terminal.
+
+If the clean G_R effects weaken, revise the claims.
+Do not create another robustness tranche to rescue them.
+
+
+0. OUTPUT TREE
+==============
+
+Create at minimum:
+
+research/rmmo_paper3_referee05/
+    README.md
+
+    authority/
+        parent_authority.json
+        parent_validation.json
+        feature_partition_receipt.json
+        construction_dependency_registry.csv
+        forbidden_input_registry.csv
+        primary_GS.csv.gz
+        primary_GR.csv.gz
+
+    freeze/
+        analysis_plan.md
+        analysis_plan.json
+        strict_lane_plan.csv
+        freeze_receipt.json
+        amendments/
+
+    strict_lanes/
+        lane_registry.csv
+        lane_gene_membership.csv.gz
+        lane_intersection_audit.csv
+        lane_embeddings/
+        lane_relations/
+        lane_thresholds.csv
+        consensus_edges.csv.gz
+        consensus_receipt.json
+
+    separation_audit/
+        union_gene_audit.json
+        construction_input_manifest.json
+        heldout_access_audit.json
+        heldout_poison_test.json
+        geometry_pre_reveal_hashes.json
+        reveal_receipt.json
+
+    geometry/
+        pair_landmark_summary.csv
+        pair_relations.csv.gz
+        q10_domains.csv.gz
+        q25_domains.csv.gz
+        q50_domains.csv.gz
+        overlaps.csv
+        v4_vs_strict_object_identity.csv
+        geometry_receipt.json
+
+    edge_agreement/
+        observed.csv
+        nulls_1024.csv
+        component_statistics.csv
+        family_statistics.csv
+        decision.json
+
+    spatial_overlap/
+        S1/
+        component_statistics.csv
+        family_statistics.csv
+        decision.json
+
+    matched_coherence/
+        q10/
+        q25/
+        q50/
+        component_statistics.csv
+        family_statistics.csv
+        decision.json
+
+    source_fidelity/
+        q10/
+        q25/
+        q50/
+        degree_only_bank/
+        component_statistics.csv
+        family_statistics.csv
+        sampler_transparency.csv
+        decision.json
+
+    baselines/
+        matched_knn/
+        mnn_k5/
+        mnn_fixed_size/
+        comparison.csv
+        decision.json
+
+    representation/
+        pca32/
+        pca64/
+        target_pca32/
+        effect_direction.csv
+        object_identity.csv
+        decision.json
+
+    retention/
+        R0/
+        R1/
+        R2/
+        R3/
+        component_statistics.csv
+        family_statistics.csv
+        decision.json
+
+    biology/
+        landmark_annotation_summary.csv
+        overlap_annotation_summary.csv
+        strict_vs_v4_composition.csv
+
+    figures/
+        figure01.pdf
+        figure01.png
+        ...
+        figure06.pdf
+        figure06.png
+        figure*_authority.csv
+
+    reviewer_release/
+        README.md
+        manuscript_authority/
+        analysis/
+        data_authority/
+        results/
+        figures/
+        verification/
+        verify_release.py
+
+    completion/
+        RESULTS.md
+        claim_matrix.csv
+        strict_feature_separation_decision.json
+        referee_response_matrix.csv
+        manuscript_handoff.md
+        validation_receipt.json
+        validation_receipt.md
+        artifact_manifest.json
+
+
+1. FREEZE BEFORE OUTCOME-BEARING COMPUTATION
+============================================
+
+Before building the strict lanes, commit:
+
+    freeze/analysis_plan.md
+    freeze/analysis_plan.json
+    freeze/strict_lane_plan.csv
+
+Record:
+
+    commit SHA
+    UTC timestamp
+    SHA256 of all freeze files.
+
+Use:
+
+    "The strict feature-separation construction and evaluation plan was
+     committed before execution of the newly specified reconstruction."
+
+Do not call this:
+
+    preregistration
+    prospective biological validation
+    independent replication.
+
+Biological n remains 3.
+
+
+2. FROZEN PRIMARY GENE SETS
+===========================
+
+Use the byte-identical RMMO-12 primary partition:
+
+    G_S:
+        14,660 state genes
+
+    G_R:
+        6,339 held-out/evaluation genes.
+
+Verify:
+
+    G_S ∩ G_R = ∅.
+
+Record:
+
+    ordered gene IDs
+    ordered gene indices
+    SHA256
+    partition source
+    partition seed/provenance.
+
+No new gene may enter G_S.
+
+No G_R gene may enter any strict construction lane.
+
+
+3. STRICT CONSTRUCTION-INPUT BOUNDARY
+=====================================
+
+The construction stage may read only:
+
+    raw counts for genes in G_S;
+    cell IDs;
+    embryo IDs;
+    frozen G_S gene IDs/indices;
+    frozen lane seeds;
+    deterministic numeric constants required by the relation algorithm.
+
+The construction stage MUST NOT read:
+
+    raw counts for G_R;
+    Z_R;
+    G_R gene identities except for the final set-disjointness audit;
+    cell_type;
+    germ_layer;
+    S0/coarse annotation if it is expression-derived;
+    lineage;
+    history;
+    any held-out molecular statistic;
+    any Paper 3 outcome.
+
+Important:
+
+If S0 or another annotation is currently used anywhere in actual EDGE
+CONSTRUCTION or consensus selection, remove it from the strict construction.
+
+Annotations may be used later for:
+
+    null matching
+    descriptive biology
+    post-construction analyses
+
+only after the strict geometry is frozen.
+
+Write:
+
+    authority/construction_dependency_registry.csv
+
+with every variable accessed by the construction code and why it is permitted.
+
+
+4. BUILD A NEW NINE-LANE BANK ENTIRELY INSIDE G_S
+=================================================
+
+Preserve:
+
+    9 lanes
+    7-of-9 stable-edge criterion
+    pair-native calibration
+    q50 landmark-relation construction
+    historical projection dimension
+    historical primary hash seed
+    historical four alternate projection seeds
+    deterministic construction conventions.
+
+The strict nine lanes are:
+
+
+LANE S0 — PRIMARY FULL G_S
+--------------------------
+
+Genes:
+
+    all 14,660 genes in G_S.
+
+Normalization:
+
+    own G_S library total only.
+
+Projection:
+
+    historical primary signed-hash seed.
+
+
+LANES S1–S4 — PROJECTION PERTURBATIONS
+---------------------------------------
+
+Genes:
+
+    all 14,660 G_S genes.
+
+Normalization:
+
+    own G_S library total only.
+
+Projection:
+
+    reuse the four historical alternate projection seeds.
+
+These lanes differ only in the deterministic projection.
+
+
+LANES S5–S8 — STRICT WITHIN-G_S SUBPANEL PERTURBATIONS
+-------------------------------------------------------
+
+The historical alternate panel lanes cannot be reused because some contain G_R.
+
+Create four new deterministic state subpanels whose selection universe is
+G_S ONLY.
+
+Reuse the four historical alternate panel-lane seeds if those seeds are
+available and stable.
+
+For each lane k:
+
+    rank genes ONLY within G_S by:
+
+        SHA256(
+            historical_alt_panel_seed_k
+            |
+            gene_id
+        )
+
+    retain exactly:
+
+        floor(0.70 × 14,660)
+        =
+        10,262 genes
+
+    using deterministic hash rank.
+
+The 70% fraction is inherited from the frozen historical state/realization
+partition design and is NOT selected from Paper 3 outcomes.
+
+If exact historical lane semantics already define an independent per-gene
+70/30 assignment, reproduce that semantics restricted to G_S and freeze the
+resulting size before outcomes.
+
+Do not choose between these procedures after seeing results.
+
+Resolve the exact historical semantics BEFORE the freeze and record the chosen
+strict construction in strict_lane_plan.csv.
+
+Each strict subpanel lane uses:
+
+    its own subpanel-only library denominator;
+    the historical primary projection seed unless historical alternate-panel
+    semantics specify an already-frozen projection seed.
+
+Absolutely require:
+
+    genes(S5∪S6∪S7∪S8) ⊆ G_S.
+
+
+5. STRICT LANE SEPARATION CERTIFICATE
+=====================================
+
+Before relation construction proceeds, generate:
+
+    strict_lanes/lane_intersection_audit.csv
+
+For each of nine lanes report:
+
+    lane ID
+    gene count
+    intersection with G_S
+    intersection with G_R
+    union membership hash.
+
+Require:
+
+    intersection_with_GR = 0
+
+for ALL nine lanes.
+
+Then compute:
+
+    C =
+      union_{lane=0}^8 genes(lane).
+
+Require:
+
+    C ⊆ G_S
+
+and:
+
+    |C ∩ G_R| = 0.
+
+If either check fails:
+
+    HALT.
+
+Do not run G_R evaluation.
+
+
+6. PANEL-ISOLATED NORMALIZATION REMAINS MANDATORY
+=================================================
+
+Every strict state lane uses ONLY the counts of the genes present in that lane
+to compute its library denominator.
+
+For lane l:
+
+    L_l(x)
+      =
+      Σ_{g∈G_l} c_g(x).
+
+Then:
+
+    X_l(x,g)
+      =
+      log1p(
+        10000 c_g(x)/L_l(x)
+      ).
+
+Thus neither:
+
+    G_R counts
+
+nor:
+
+    whole-cell total
+
+enters the construction coordinate.
+
+The evaluation representation remains:
+
+    Z_R^iso
+
+from REFEREE-04:
+
+    normalization denominator =
+        sum of counts over G_R only.
+
+
+7. TWO-STAGE HOLDOUT EMBARGO
+============================
+
+Implement the tranche as two explicit stages.
+
+
+STAGE A — STRICT CONSTRUCTION
+-----------------------------
+
+Allowed inputs:
+
+    G_S raw counts only
+    cell/embryo identity
+    frozen lane plan.
+
+Produce and freeze:
+
+    all nine lane embeddings
+    all pair-lane relations
+    thresholds
+    7-of-9 consensus edges
+    L_ij
+    U_i^{ij}(q10/q25/q50)
+    F_ij
+    O_i^{jk}
+    geometry hashes.
+
+Write:
+
+    separation_audit/geometry_pre_reveal_hashes.json
+
+Then freeze/commit the strict geometry.
+
+NO G_R representation may be loaded before this receipt exists.
+
+
+STAGE B — G_R REVEAL AND EVALUATION
+-----------------------------------
+
+Only after Stage A geometry is frozen:
+
+    load Z_R^iso
+
+and run the molecular evaluation.
+
+Write:
+
+    separation_audit/reveal_receipt.json
+
+recording:
+
+    geometry commit/hash
+    evaluation start timestamp
+    Z_R authority hash.
+
+
+8. HELD-OUT ACCESS AUDIT
+========================
+
+Instrument or statically audit Stage A.
+
+Create:
+
+    separation_audit/heldout_access_audit.json
+
+with:
+
+    G_R raw counts read during Stage A = false
+    Z_R loaded during Stage A = false
+    G_R feature columns used = 0
+    annotation outcomes used in edge selection = false
+    history used = false
+    held-out evaluation statistics accessed = false.
+
+This is a publication-facing proof of construction separation.
+
+
+9. ADVERSARIAL G_R POISON TEST
+==============================
+
+Perform one implementation-level invariance check.
+
+Construct an in-memory alternative source in which:
+
+    G_R counts are independently permuted between cells
+    OR replaced by deterministic pseudorandom nonnegative counts
+
+while:
+
+    G_S counts remain byte-identical.
+
+Rerun Stage A.
+
+Require:
+
+    all strict lane embeddings identical
+    all lane relation hashes identical
+    all consensus edge hashes identical
+    all L/U/F/O hashes identical.
+
+Record:
+
+    separation_audit/heldout_poison_test.json
+
+This is not biological evidence.
+
+It verifies operationally that changing G_R cannot change the strict
+construction.
+
+
+10. REBUILD THE FINAL PUBLICATION-PRIMARY RELATION
+==================================================
+
+For P12/P13/P23:
+
+rebuild pair-native q50 relations independently from the strict lanes.
+
+Use exactly:
+
+    7-of-9 consensus.
+
+Report:
+
+    stable edge count
+    source endpoint count
+    target endpoint count
+    edge multiplicity distribution.
+
+This strict relation becomes the NEW publication-primary Paper 3 object.
+
+The REFEREE-04 object becomes:
+
+    normalization-isolated historical-lane sensitivity/provenance.
+
+Do not maintain two equal-status "primary" geometries.
+
+
+11. COMPARE STRICT VS REFEREE-04 OBJECTS
+=======================================
+
+For P12/P13/P23 calculate:
+
+    source-endpoint Jaccard
+    target-endpoint Jaccard
+    edge Jaccard.
+
+At q10/q25/q50 calculate:
+
+    source-domain Jaccard.
+
+At q25 calculate:
+
+    O1/O2/O3 cell Jaccards.
+
+Report:
+
+    strict counts
+    Referee04 counts
+    gained/lost edges
+    gained/lost endpoints
+    overlap-size changes.
+
+No identity threshold is required.
+
+
+12. REPLAY THE q25 SOURCE DOMAINS AND FIBERS
+============================================
+
+From strict relation L:
+
+construct:
+
+    U_i^{ij}(q10)
+    U_i^{ij}(q25)
+    U_i^{ij}(q50)
+
+    F_ij^q
+
+and:
+
+    O1
+    O2
+    O3.
+
+q25 remains publication-primary.
+
+Fiber nonemptiness remains:
+
+    CONSTRUCTION_GUARANTEE
+
+and must not be counted as empirical evidence.
+
+
+13. PRIMARY HELD-OUT TEST 1:
+    LANDMARK-EDGE G_R AGREEMENT
+================================
+
+Only after Stage A freeze, reveal Z_R^iso.
+
+For every strict observed landmark edge:
+
+    d_R(x,y)
+      =
+      ||Z_R^iso(x)-Z_R^iso(y)||_2.
+
+Rebuild the final authorized matched-edge reference with:
+
+    embryo pair
+    endpoint S0
+    strict-state-distance stratum
+
+as post-construction matching variables.
+
+Run:
+
+    B = 1024 IID draws.
+
+Report for P12/P13/P23:
+
+    observed mean
+    reference mean
+    reference SD
+    absolute effect
+    relative effect
+    raw conditional tail
+    maxT tail
+    T_sum
+    T_min.
+
+Primary success classification:
+
+    STRICT_EDGE_HELDOUT_PERSISTS
+
+iff:
+
+    all three relative reductions > 0
+    AND joint T_sum tail <= .05
+    AND T_min tail <= .05.
+
+Also report component support independently.
+
+
+14. PRIMARY HELD-OUT TEST 2:
+    MATCHED-TARGET G_R COHERENCE
+================================
+
+For strict q25 overlaps calculate:
+
+    D_R(x)
+      =
+      || μ_R(F_ij(x)) - μ_R(F_ik(x)) ||_2.
+
+Rebuild the authorized IID matched-target reference preserving:
+
+    source cell
+    target embryo
+    target-set size
+    target S0 histogram
+    strict-state anchor-distance-bin histogram.
+
+Run:
+
+    B = 1024.
+
+Report:
+
+    O1/O2/O3 observed defect
+    reference mean
+    reference SD
+    relative reduction
+    raw tail
+    maxT tail
+    T_sum / tail
+    T_min / tail.
+
+Primary classification:
+
+    STRICT_MATCHED_COHERENCE_PERSISTS
+
+iff:
+
+    all three component reductions > 0
+    AND T_sum tail <= .05
+    AND T_min tail <= .05.
+
+
+15. PRIMARY HELD-OUT TEST 3:
+    DEGREE-CONTROLLED G_R SOURCE FIDELITY
+=========================================
+
+This is the most important relation-specific replay.
+
+For strict relation calculate:
+
+    E_R(x)
+      =
+      || Z_R^iso(x) - μ_R(F_ij(x)) ||_2.
+
+Reference preserves:
+
+    exact strict source endpoint population
+    exact strict target endpoint population
+    exact source degrees
+    exact target degrees
+    graph simplicity.
+
+Randomize connectivity with the already-proved:
+
+    independent uniform labeled-stub pairing
+    conditioned on simplicity.
+
+Run:
+
+    B = 1024 IID simple graphs.
+
+Report O1/O2/O3:
+
+    observed source error
+    reference mean
+    reference SD
+    absolute reduction
+    relative reduction
+    raw tail
+    maxT tail.
+
+Report:
+
+    T_sum
+    T_min
+    corresponding tails.
+
+Primary classification:
+
+    STRICT_SOURCE_FIDELITY_PERSISTS
+
+iff:
+
+    every component relative reduction > 0
+    AND joint T_sum tail <= .05
+    AND T_min tail <= .05.
+
+Component maxT support remains a separate statement.
+
+DO NOT require all three maxT components for the family result.
+
+
+16. EXPLAIN maxT VERSUS T_min EXPLICITLY
+========================================
+
+Create a manuscript-ready note explaining:
+
+    component maxT and T_min answer different questions.
+
+The component maxT test asks:
+
+    whether a particular observed component is extreme after comparison
+    with the largest null component.
+
+The T_min test asks:
+
+    whether the weakest of the observed standardized effects is unusually
+    large relative to the null distribution of the weakest component.
+
+Therefore:
+
+    all three moderately aligned effects can yield a highly unusual T_min
+    even when one marginal component misses maxT adjustment.
+
+Include this exact conceptual distinction in:
+
+    completion/manuscript_handoff.md
+
+for insertion into v5 Methods/Results.
+
+
+17. DEGREE-ONLY SAMPLER TRANSPARENCY
+====================================
+
+The referee requests implementation transparency.
+
+For every pair/reference bank record:
+
+    number of attempted stub pairings
+    number producing simple graphs
+    simplicity acceptance fraction
+    total rejected nonsimple proposals
+    mean proposals per accepted graph
+    median proposals per accepted graph
+    maximum proposals for one accepted graph.
+
+Confirm explicitly:
+
+    every null member starts from an independent fresh stub pairing.
+
+Confirm:
+
+    nonsimple pairings are discarded completely and resampled.
+
+No Markov chain is used.
+
+Write:
+
+    source_fidelity/sampler_transparency.csv
+
+and publication-ready Methods wording.
+
+
+18. REPLAY STATE SOURCE FIDELITY
+================================
+
+Although G_R leakage does not invalidate the state-space result, recompute:
+
+    E_S
+
+on the new strict final relation for internal manuscript consistency.
+
+Use the same degree-only IID simple-graph reference.
+
+Report state:
+
+    effect sizes
+    reference means/SDs
+    component tails
+    T_sum
+    T_min.
+
+This is not the decisive held-out test but keeps one publication-primary object.
+
+
+19. REPLAY MATCHED STATE COHERENCE
+==================================
+
+Similarly compute strict:
+
+    D_S
+
+and its matched-target reference at q25.
+
+This keeps the state and G_R target-set summaries attached to the same strict
+geometry.
+
+
+20. REPLAY S1 SPATIAL OVERLAP
+=============================
+
+Because the strict relation becomes publication-primary, rebuild S1 on the
+strict q25 source domains.
+
+Use the already-frozen semantics:
+
+    fixed precomputed per-cell:
+        embryo
+        S0
+        density quartile
+        radial-distance bin
+        local-NN-distance bin.
+
+Then:
+
+    independent uniform sampling without replacement inside fixed strata.
+
+B = 1024.
+
+Report:
+
+    strict O1/O2/O3
+    null mean/SD
+    maxT
+    T_sum
+    T_min.
+
+Do not reopen S2.
+
+
+21. REPLAY BIOLOGICAL DESCRIPTION
+=================================
+
+Because the strict object may change, update descriptively:
+
+    landmark endpoint cell type
+    germ layer
+    S0
+    phase
+
+and:
+
+    O1/O2/O3 composition.
+
+No annotation p-values.
+
+Compare:
+
+    strict
+    REFEREE-04 isolated historical-lane object
+
+descriptively.
+
+
+22. COMPETITIVE BASELINE:
+    MATCHED-SIZE kNN
+=========================
+
+Using the strict final source support/fiber sizes:
+
+for every strict source x:
+
+    k = |F_ij^strict(x)|.
+
+Select the k nearest target cells using the primary strict G_S state
+coordinate.
+
+Report:
+
+    state source error
+    G_R source error
+
+on:
+
+    O1/O2/O3
+    all six orientations.
+
+Keep descriptive.
+
+
+23. COMPETITIVE BASELINE:
+    MNN k=5
+=========================
+
+Build MNN5 using the strict primary G_S coordinate.
+
+Evaluate:
+
+    native MNN support
+    common strict-source support.
+
+Report:
+
+    state source error
+    G_R source error.
+
+
+24. MULTIPLICITY-MATCHED MNN
+============================
+
+Preserve the REFEREE-04 frozen rule:
+
+For a strict source cell where:
+
+    MNN degree >= strict native fiber size,
+
+select the nearest MNN subset of exactly:
+
+    |F_ij^strict(x)|.
+
+No new tuning.
+
+Report:
+
+    eligibility count
+    coverage
+    state error
+    G_R error
+
+for O1/O2/O3.
+
+Descriptive only.
+
+
+25. PCA32/PCA64 REPRESENTATION SENSITIVITY
+==========================================
+
+The PCA state representations use G_S only and are already strictly separated
+from G_R in feature identity.
+
+Rebuild or reuse only if byte-authority proves they use:
+
+    G_S only
+    G_S-only panel normalization.
+
+Construct q50 PCA32/PCA64 relation systems.
+
+Compare the NEW strict publication-primary hash relation with PCA relations.
+
+Report:
+
+    source endpoint Jaccard
+    target endpoint Jaccard
+    edge Jaccard
+    q25 domain Jaccard
+    overlap-cell Jaccard
+    matched G_R defect direction.
+
+Preferred statement remains:
+
+    "effect direction persists across the tested representations;
+     finite object identity changes."
+
+Never write:
+
+    "more stable than any finite representation."
+
+
+26. REPLAY q25 R0–R3
+====================
+
+Because the strict relation is publication-primary, replay the authorized q25:
+
+    R0
+    R1
+    R2
+    R3
+
+reference families on the strict object.
+
+Do NOT reopen:
+
+    R4
+    R5.
+
+The only permitted conclusion is:
+
+    "the tested R0–R3 reference families do not reproduce
+     the observed statistics"
+
+if that remains true.
+
+No structural necessity claim.
+
+
+27. STRICT FEATURE-SEPARATION SUCCESS MATRIX
+============================================
+
+Create:
+
+    completion/claim_matrix.csv
+
+with at least:
+
+A. Strict lane union intersects G_R?
+B. G_R accessed before geometry freeze?
+C. G_R poison test geometry invariant?
+D. Strict landmark-edge G_R agreement.
+E. Strict matched-target G_R coherence.
+F. Strict degree-controlled G_R source fidelity.
+G. Strict matched-size kNN G_R comparison.
+H. Strict native MNN G_R comparison.
+I. Strict multiplicity-matched MNN G_R comparison.
+J. Strict S1 spatial overlap.
+K. Strict state matched coherence.
+L. Strict state source fidelity.
+M. Hash/PCA effect-direction persistence.
+N. Hash/PCA finite-object identity.
+O. q25 R0.
+P. q25 R1.
+Q. q25 R2.
+R. q25 R3.
+S. Biological landmark composition.
+T. Biological overlap composition.
+
+Use statuses:
+
+    STRICT_FEATURE_SEPARATION_VERIFIED
+    DIRECTION_PERSISTS
+    FAMILY_INFERENCE_PERSISTS
+    COMPONENT_SUPPORT_PARTIAL
+    COMPONENTWISE_SUPPORTED
+    DESCRIPTIVE_STABLE
+    DESCRIPTIVE_CHANGED
+    REPRESENTATION_DIRECTION_PERSISTS
+    OBJECT_IDENTITY_NOT_PRESERVED
+    NOT_REPRODUCED_BY_TESTED_REFERENCE
+    DOES_NOT_PERSIST
+    OUTSIDE_AUTHORITY.
+
+
+28. TERMINAL OUTCOME A:
+    CLEAN HELD-OUT VALIDATION SURVIVES
+=====================================
+
+If:
+
+    all strict construction lanes are G_S-only;
+
+    landmark-edge G_R reductions remain positive;
+
+    matched-target G_R reductions remain positive;
+
+    degree-controlled G_R source-fidelity reductions remain positive;
+
+    source-fidelity T_sum and T_min remain <= .05;
+
+then classify:
+
+    STRICT_HELDOUT_VALIDATION_ESTABLISHED_WITHIN_CARRIER.
+
+Paper wording may then use:
+
+    "construction-held-out molecular panel"
+
+for the strict publication-primary analysis.
+
+Still do not claim statistical or biological independence.
+
+
+29. TERMINAL OUTCOME B:
+    EFFECTS PERSIST WITH ATTENUATION
+===================================
+
+If all G_R directions remain positive and the key family statistics remain
+supported, while magnitudes weaken:
+
+    STRICT_HELDOUT_PERSISTS_WITH_MAGNITUDE_DEPENDENCE.
+
+Report attenuation directly.
+
+Do not rescue effect size.
+
+
+30. TERMINAL OUTCOME C:
+    PARTIAL STRICT SURVIVAL
+==========================
+
+If some G_R results survive and others do not:
+
+    STRICT_HELDOUT_PARTIAL.
+
+Make surviving strict results primary.
+
+Demote failed results.
+
+Do not reintroduce historical partially reused G_R evidence as held-out
+validation.
+
+
+31. TERMINAL OUTCOME D:
+    STRICT G_R EFFECT COLLAPSES
+===============================
+
+If the clean reconstruction removes the core G_R findings:
+
+    STRICT_HELDOUT_NOT_ESTABLISHED.
+
+Then the paper may still retain:
+
+    state-space geometry
+    S1
+    biology
+    state source fidelity
+    representation dependence
+    exact/global negatives
+
+while historical G_R behavior is reframed as:
+
+    cross-panel molecular concordance under partially reused features.
+
+No new rescue tranche.
+
+
+32. NO REOPENING OF CLOSED PROGRAMS
+===================================
+
+Do NOT reopen:
+
+    landmark-count significance
+    broad composition enrichment
+    local composition enrichment
+    common-refinement/bridge enrichment
+    R4
+    R5
+    strict ownership theorem
+    S2
+    exact descent
+    global equivalence.
+
+REFEREE-03/04 decisions remain final.
+
+
+33. EXPLORATORY STATUS
+======================
+
+Prepare this sentence for the final Limitations section:
+
+    "The final inferential hierarchy was developed and stress-tested on the
+     same E7.5 carrier; independent embryos are required for external
+     confirmation of the typed relational signature."
+
+Do not claim external confirmation.
+
+Do not call the referee-stage freeze an independent replication.
+
+
+34. UPDATED FIGURE PACKAGE
+==========================
+
+Generate six real review figures from the strict feature-separated object.
+
+Suggested architecture:
+
+FIGURE 1 — Strict feature separation
+    A. nine-lane schematic
+    B. every lane subset of G_S
+    C. union ∩ G_R = 0
+    D. strict vs REFEREE-04 edge/domain Jaccards
+
+FIGURE 2 — Strict G_R validation
+    A. landmark-edge G_R observed vs null
+    B. matched-target G_R coherence
+    C. degree-controlled G_R source fidelity
+    D. component maxT versus T_min explanation
+
+FIGURE 3 — Spatial/biological geometry
+    A. strict O1/O2/O3
+    B. S1 distributions
+    C. landmark biology
+    D. overlap biology
+
+FIGURE 4 — Competitive baselines
+    A. matched-size kNN state/G_R
+    B. native MNN state/G_R
+    C. fixed-size MNN state/G_R
+    D. coverage/support
+
+FIGURE 5 — Representation persistence
+    A. strict hash G_R effects
+    B. PCA32
+    C. PCA64
+    D. endpoint/edge/domain/overlap Jaccards
+
+FIGURE 6 — Final authority
+    A. R0–R3 tested-family results
+    B. retained within-carrier conditional inference
+    C. demoted/closed claims
+    D. exact global boundary
+
+Every figure must include its source CSV.
+
+
+35. REVIEWER PACKAGE
+====================
+
+The next reviewer package MUST include:
+
+    rendered manuscript PDF
+    all six actual figure PDFs
+    PNG previews
+    source-value CSVs
+    strict lane registry
+    feature-separation receipt
+    heldout access audit
+    poison-test receipt
+    all 1024-member reference tables
+    degree sampler acceptance logs
+    verifier.
+
+This directly addresses the referee's final-review requirement.
+
+
+36. VALIDATION REQUIREMENTS
+===========================
+
+REFEREE-05 is incomplete unless:
+
+    all parent files are unchanged;
+
+    freeze occurs before strict outcome computation;
+
+    all 9 strict lane gene sets are subsets of G_S;
+
+    every lane has zero G_R intersection;
+
+    union of all lane genes has zero G_R intersection;
+
+    all construction normalization denominators use lane genes only;
+
+    Stage A never loads G_R counts or Z_R;
+
+    geometry is frozen before G_R reveal;
+
+    G_R poison test leaves geometry byte-identical;
+
+    strict 7-of-9 relations are complete;
+
+    q10/q25/q50 domains and fibers are complete;
+
+    all retained IID banks have 1024 members;
+
+    no early stopping;
+
+    degree-only sampler transparency is complete;
+
+    every degree-only null draw is an independent fresh pairing;
+
+    nonsimple stub proposals are discarded/resampled;
+
+    strict edge G_R analysis complete;
+
+    strict matched-target G_R analysis complete;
+
+    strict source-fidelity G_R analysis complete;
+
+    kNN/MNN/fixed-size MNN analyses complete;
+
+    S1 replay complete;
+
+    PCA representation replay complete;
+
+    q25 R0–R3 replay complete;
+
+    updated biology complete;
+
+    six figures present;
+
+    reviewer package verifier passes.
+
+
+37. REQUIRED COMPLETION QUESTIONS
+=================================
+
+Write:
+
+    completion/RESULTS.md
+
+and answer explicitly:
+
+1. What is G_S?
+2. What is G_R?
+3. Are they disjoint?
+4. What exact genes occur in each strict lane?
+5. How many genes occur in each lane?
+6. Does any lane contain a G_R gene?
+7. Does the union of all nine lane genes contain any G_R gene?
+8. How are S5–S8 selected?
+9. Was their rule frozen before outcomes?
+10. Does any construction lane use a whole-cell denominator?
+11. Does any construction lane denominator include G_R counts?
+12. Does Stage A read G_R raw counts?
+13. Does Stage A load Z_R?
+14. Does Stage A read annotation outcomes?
+15. Does Stage A read lineage/history?
+16. Was geometry frozen before G_R reveal?
+17. Does the G_R poison test leave every geometry hash unchanged?
+18. What are strict P12/P13/P23 edge counts?
+19. How do they compare with REFEREE-04 56/11/36?
+20. What are source-endpoint Jaccards?
+21. Target-endpoint Jaccards?
+22. Edge Jaccards?
+23. What are strict q25 O1/O2/O3 sizes?
+24. What are strict-vs-REFEREE04 overlap-cell Jaccards?
+25. Does strict landmark-edge G_R agreement remain positive in P12?
+26. P13?
+27. P23?
+28. What are their observed means?
+29. Reference means?
+30. Reference SDs?
+31. Relative reductions?
+32. Raw tails?
+33. maxT tails?
+34. Joint T_sum tail?
+35. T_min tail?
+36. Does STRICT_EDGE_HELDOUT_PERSISTS hold?
+37. What are strict matched-target G_R defect reductions in O1/O2/O3?
+38. Are all three positive?
+39. Component maxT tails?
+40. Joint T_sum tail?
+41. T_min tail?
+42. Does STRICT_MATCHED_COHERENCE_PERSISTS hold?
+43. What are strict degree-controlled G_R source-fidelity reductions?
+44. Are all three positive?
+45. What are observed source errors?
+46. Reference means?
+47. Reference SDs?
+48. Raw tails?
+49. maxT tails?
+50. T_sum tail?
+51. T_min tail?
+52. Does STRICT_SOURCE_FIDELITY_PERSISTS hold?
+53. What fraction of stub-pairing attempts are simple for each pair?
+54. Is every accepted graph generated from a fresh independent pairing?
+55. Are nonsimple graphs discarded and resampled?
+56. What is the maximum number of attempts required for one accepted graph?
+57. Why can T_min be supported when one component maxT is not?
+58. What are strict state source-fidelity effects?
+59. What are strict matched-state-coherence effects?
+60. What is strict S1 O1/O2/O3?
+61. Which components are adjusted-supported?
+62. Is strict S1 aggregate supported?
+63. Is strict S1 weakest-component supported?
+64. What do matched-size kNN held-out comparisons show?
+65. Native MNN5?
+66. Fixed-size MNN?
+67. Do the competitive conclusions remain descriptive?
+68. Does strict hash/PCA32 held-out direction persist?
+69. PCA64?
+70. What are strict hash/PCA edge Jaccards?
+71. Domain Jaccards?
+72. Overlap-cell Jaccards?
+73. Does "effect direction persists across the tested representations;
+    finite object identity changes" remain supported?
+74. Do strict q25 R0–R3 tested references reproduce the observations?
+75. Does any retention conclusion reverse?
+76. What embryonic compartments dominate the strict P12 system?
+77. P13?
+78. P23?
+79. O1?
+80. O2?
+81. O3?
+82. Does any annotation-based causal claim follow?
+83. Which G_R claims are now genuinely construction-held-out?
+84. Which previously used G_R claims weaken?
+85. Which strengthen?
+86. Does any principal G_R direction reverse?
+87. Does the source-fidelity family result remain detectable?
+88. Is complete gene-level feature separation verified?
+89. Is the referee's remaining held-out objection resolved?
+90. Does any positive claim depend on partially reused G_R features?
+91. Does any positive claim depend on a failed-chain reference?
+92. Are all actual figures present in the reviewer package?
+93. Does the standalone verifier pass?
+94. Is any additional scientific tranche required?
+95. Is Paper 3 scientifically ready for final acceptance review?
+
+Required terminal targets:
+
+    Q88 = YES.
+    Q90 = NO.
+    Q91 = NO.
+    Q94 = NO.
+
+Q89/Q95 must follow the actual result and must not be forced.
+
+
+38. MANUSCRIPT HANDOFF
+======================
+
+Create:
+
+    completion/manuscript_handoff.md
+
+with exact v5 wording.
+
+
+A. FEATURE-SEPARATION WORDING
+
+If successful:
+
+    "The publication-primary relation was reconstructed from nine state lanes
+     whose complete gene union is contained in G_S and disjoint from G_R.
+     Geometry was frozen before G_R was loaded for evaluation."
+
+Use:
+
+    "construction-held-out molecular panel"
+
+only for the strict reconstruction.
+
+Do not retroactively call the historical lane construction strictly held out.
+
+
+B. SOURCE-FIDELITY WORDING
+
+Keep the exact effect sizes, reference means/SDs, raw tails, maxT tails,
+T_sum and T_min.
+
+If one maxT component misses 0.05 while T_min remains supported, explain that
+the tests answer different family/marginal questions.
+
+
+C. REPRESENTATION WORDING
+
+Use:
+
+    "the effect direction is more stable across the tested representations
+     than the identity of the finite objects that realize it."
+
+Do not use:
+
+    "more stable than any finite representation."
+
+
+D. EXPLORATORY LIMITATION
+
+Insert:
+
+    "The final inferential hierarchy was developed and stress-tested on the
+     same E7.5 carrier; independent embryos are required for external
+     confirmation of the typed relational signature."
+
+
+E. DEGREE-SAMPLER METHODS
+
+Report:
+
+    simplicity acceptance rate
+    independent fresh pairing
+    rejection/resampling of nonsimple proposals.
+
+
+39. DO NOT START PAPER 4 WORK HERE
+=================================
+
+This tranche belongs entirely to Paper 3 closure.
+
+Do not use REFEREE-05 to:
+
+    explore E8.0/E8.5
+    search cross-horizon recurrence
+    alter the Phase I paper map
+    engineer new relational laws.
+
+Those begin only after Paper 3 is scientifically frozen.
+
+
+40. TERMINAL STANDARD
+=====================
+
+REFEREE-05 ends when either:
+
+A.
+
+    strict G_S-only nine-lane construction succeeds,
+    principal G_R outcomes are replayed,
+    final claims are typed,
+    figures/reviewer package are complete,
+
+or:
+
+B.
+
+    strict G_R effects fail,
+    the affected G_R claims are demoted,
+    the paper is rewritten around the surviving state/local geometry.
+
+Either is terminal.
+
+Do not optimize the strict lane bank after seeing G_R outcomes.
+Do not change 7-of-9.
+Do not alter the 70% subpanel fraction after seeing results.
+Do not introduce new projection seeds post hoc.
+Do not rescue failed held-out effects with another feature split.
+
+The scientific objective is complete feature separation, not preservation of
+the current conclusion.

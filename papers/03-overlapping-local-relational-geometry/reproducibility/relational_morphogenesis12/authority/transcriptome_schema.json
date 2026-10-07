@@ -1,0 +1,52 @@
+{
+  "duplicateGeneIdCount": 0,
+  "duplicateGeneNameCount": 0,
+  "encoding": "H5AD-compatible CSR matrix",
+  "encodingType": "csr_matrix",
+  "exactCellIdJoinCount": 3704,
+  "featureAxisSharedExactlyAcrossEmbryos": true,
+  "geneCount": 78258,
+  "geneIdentifierType": "source var/gene_ids stable identifiers",
+  "lineageQualifiedCellCount": 3704,
+  "matrixSemantics": "raw nonnegative integer gene-expression counts",
+  "normalizationInSourceMatrix": false,
+  "replicates": [
+    {
+      "cellCount": 1342,
+      "geneCount": 78258,
+      "integerCounts": true,
+      "maximumLibrarySize": 124666.0,
+      "medianLibrarySize": 49238.0,
+      "minimumLibrarySize": 24216.0,
+      "nonzeroCount": 10257206,
+      "replicate": "E7.5-R1",
+      "rowSumMatchesTotalCounts": true,
+      "sparsity": 0.9023330068881794
+    },
+    {
+      "cellCount": 1838,
+      "geneCount": 78258,
+      "integerCounts": true,
+      "maximumLibrarySize": 105892.0,
+      "medianLibrarySize": 33150.0,
+      "minimumLibrarySize": 22313.0,
+      "nonzeroCount": 12318886,
+      "replicate": "E7.5-R2",
+      "rowSumMatchesTotalCounts": true,
+      "sparsity": 0.9143559523309954
+    },
+    {
+      "cellCount": 1468,
+      "geneCount": 78258,
+      "integerCounts": true,
+      "maximumLibrarySize": 102305.0,
+      "medianLibrarySize": 45052.5,
+      "minimumLibrarySize": 32253.0,
+      "nonzeroCount": 11036300,
+      "replicate": "E7.5-R3",
+      "rowSumMatchesTotalCounts": true,
+      "sparsity": 0.9039342235766932
+    }
+  ],
+  "rowOrderAssumed": false
+}
