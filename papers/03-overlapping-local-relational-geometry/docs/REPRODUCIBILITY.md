@@ -18,7 +18,7 @@ Run from repository root:
 python3 papers/03-overlapping-local-relational-geometry/analysis/verify_release.py
 ```
 
-The pre-DOI verifier checks the presence and internal consistency of manuscript, Methods, supplement, primary figure references, and declared MELA source records. It **does not independently recompute** the numerical experiment. Such a replay requires the verified binary banks and source/figure evidence described in [release boundary](RELEASE_BOUNDARY.md).
+The pre-DOI verifier checks the manuscript, original Methods, detached supplement, primary figure references, MELA source records, and 14 manuscript-derived numerical tables, including the nine-lane construction, exact finite relation decompositions and bridge counts. It **does not independently recompute** the numerical experiment. Such a replay requires the verified binary banks and source/figure evidence described in [release boundary](RELEASE_BOUNDARY.md).
 
 The manuscript reports 108/108 preserved component maxT decisions and 72/72 aggregate/minimum decisions after separate same-law calibration. Those are reported experimental findings awaiting transfer of the corresponding audit banks for independent public replay.
 
