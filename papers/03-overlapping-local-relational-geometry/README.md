@@ -13,7 +13,7 @@ The study describes three lineage-qualified E7.5 mouse embryo carriers (3,704 ce
 
 ## Public evidence status
 
-- Available: manuscript source, detached appendix, source-data provenance/byte hashes, publication navigation.
+- Available: Methods-complete manuscript source, detached appendix, source-data provenance/byte hashes, 14 manuscript-derived CSV tables, public verification, citation and publication navigation.
 - Pending verified binary transfer: ten figure PDFs and accompanying source-data authorities; compressed null and independent calibration banks; standalone full replay checks.
 - Pending publication: final Zenodo DOI, final PDF SHA-256 and immutable release tag.
 
