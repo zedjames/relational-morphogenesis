@@ -18,7 +18,7 @@ The geometry gate reconstructs q10/q25/q50 domains, active anchors, fibers and o
 
 ### Exact-replay runtime boundary
 
-The full clean-room replay passed on Apple Silicon/macOS with Python 3.9 and the original pinned NumPy/SciPy wheels. Public CI uses `macos-15` (ARM64), Python 3.12.15 and the same numerical pins, retaining the Accelerate backend. This platform requirement is part of the declared execution environment, not a change to the frozen algorithm or banks.
+The full clean-room replay passed on Apple Silicon/macOS with Python 3.9 and the original pinned NumPy/SciPy wheels. Public CI uses `macos-15` (ARM64), Python 3.12.10 (the published Actions ARM64 build) and the same numerical pins, retaining the Accelerate backend. This platform requirement is part of the declared execution environment, not a change to the frozen algorithm or banks.
 
 Linux/OpenBLAS exact replay is not claimed portable: public Actions run 37692093364 passed all 33,792 computations, while runs 37692384954 and 37692395029, with identical scientific inputs, failed the original first-draw graph-hash assertion for `acceptance07/representation/hash_s0_q25`. Runtime-sensitive floating-point distance/decile construction is a suspected cause; it has not been established conclusively. These failures are recorded, not waived. No rounding, hash comparison, statistical tolerance, null model, bank, or decision was changed. Unsupported runtimes still fail the full gate on any discrepancy; Linux remains a separate required packaging/document-validation job.
 

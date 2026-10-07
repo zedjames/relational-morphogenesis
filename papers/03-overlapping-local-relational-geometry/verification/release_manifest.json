@@ -58,8 +58,8 @@
       "sha256": "46c5ec08f7c658914750afd62d5c6096d49ee65db170602686b36a3dfa096a2a"
     },
     "docs/REPRODUCIBILITY.md": {
-      "bytes": 5505,
-      "sha256": "9bee519f04482584fe1de420ed216dec458e30ad94496add2abac06edc9de3c5"
+      "bytes": 5541,
+      "sha256": "e63206e47d394213caa92d6e14fa838800d9876b20387a397a81e14aac200346"
     },
     "docs/RESULT_MAP.md": {
       "bytes": 2644,
@@ -2047,7 +2047,7 @@
     },
     "verification/public_boundary_audit.json": {
       "bytes": 1944,
-      "sha256": "ddb6fbc1bd53c4dc1ef815709835cecbe7f0756840dcec5eb53c5d200c7fa3fe"
+      "sha256": "70cf3e7748ae6b887ecba661472e388623c7230ef583252d71298cac9ec615ad"
     },
     "verification/publication_authority.json": {
       "bytes": 1795,
